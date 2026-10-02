@@ -102,3 +102,20 @@ and never places bets. Missing odds history is accumulated prospectively.
 
 Python 3.10+; requests and pytest. No website, injury feed, or automatic bet
 placement is included.
+
+## Current research build
+
+The [broad fixed-cohort study](research/README.md) contains 1,449 development
+and 1,343 validation player games with complete dated team context. The
+development-selected prior-season blend and negative-binomial distribution
+now drive the paper recorder. Its validation Brier is 0.146610 versus 0.148067
+for the season baseline; the paired interval includes zero, so superiority
+and a market edge are not established. The final holdout remains unopened.
+
+Eligible paper forecasts require one current appearance and twenty prior-season
+appearances. Early team changes remain blocked until ten current appearances.
+The legacy shots.py CLI remains unchanged for comparison. Model inputs and
+version hashes are captured; prospective results are separated by version.
+
+See [agent reads](docs/AGENT_INTERFACE.md) for the credential-free JSON CLI and
+[build status](docs/BUILD_STATUS.md) for implemented work and remaining tasks.

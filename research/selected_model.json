@@ -1,0 +1,19 @@
+{
+  "name": "blend20_nb20",
+  "spec": {
+    "kind": "blend",
+    "strength": 20,
+    "dispersion": 20
+  },
+  "protocol_sha256": "531bc7265bdc6844a3c4d86607be6dbae0296c9dca7a53d599d0aa8b5993d764",
+  "development_scores": {
+    "season_poisson": 0.15653600414822547,
+    "recent10_poisson": 0.16188420449295135,
+    "blend10_poisson": 0.15368033469826664,
+    "blend20_poisson": 0.15372746391081518,
+    "blend20_nb10": 0.1536446915822423,
+    "blend20_nb20": 0.15358629818221095,
+    "blend20_nb40": 0.15362719040800324,
+    "legacy_full": 0.15833908278104739
+  }
+}

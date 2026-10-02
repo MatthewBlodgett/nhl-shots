@@ -2,11 +2,17 @@ name: NHL Odds Recorder
 
 on:
   push:
-    branches: [codex/odds-recorder, master]
+    branches: [codex/odds-recorder, codex/model-research, master]
     paths:
       - odds_recorder.py
       - .github/workflows/record-odds.yml
       - tests/test_odds_recorder.py
+      - probability_model.py
+      - paper_model_config.json
+      - paper_model.py
+      - performance_report.py
+      - health_report.py
+      - agent_tool.py
   schedule:
     - cron: '13,43 * * * *'
   workflow_dispatch:
