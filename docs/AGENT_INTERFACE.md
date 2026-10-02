@@ -64,3 +64,10 @@ All successful JSON responses have `Cache-Control: no-store`; errors return
 400/404/503. POST is unsupported. The API integration is exercised by real local
 HTTP requests in regression tests. Hosting this Python service for access from
 a phone/Chromebook needs a host; none has been provisioned or purchased.
+
+## Static public dashboard
+
+The GitHub Pages build uses the same UI with archive-summary reads. It consumes
+no sportsbook credits and is separate from the loopback Python API. See
+[DASHBOARD.md](DASHBOARD.md) for the publishing workflow, freshness behavior and
+the one-time owner Pages setting. The page is not live until deployment succeeds.

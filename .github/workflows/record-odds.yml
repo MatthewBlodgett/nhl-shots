@@ -13,6 +13,7 @@ on:
       - performance_report.py
       - health_report.py
       - agent_tool.py
+      - build_dashboard.py
       - settlement_rules.py
       - sportsbook_rules.json
       - context_inputs.py

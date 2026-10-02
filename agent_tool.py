@@ -36,11 +36,16 @@ def query(data_dir, command, player_id=None, now=None):
             'quota_state':read('state.json'),'health':read('health.json'),
             'mode':'paper_only','fresh_live_quotes':False}
     if command not in ('candidates','player'): raise ValueError('Unknown read command')
+    records=load_observations(root)
+    if command=='player': records=[r for r in records if r.get('player_id')==player_id]
+    return observation_result(records,command,now)
+
+
+def load_observations(root):
     records=[]
     for path in sorted((root/'snapshots').glob('*/*.json.gz')):
         with gzip.open(path,'rt') as f: snap=json.load(f)
         for q in snap['quotes']:
-            if command=='player' and q.get('player_id')!=player_id: continue
             model=snap.get('models',{}).get(q['player'],{})
             details={k:model[k] for k in ('status','model_name','expected_shots','history_games','prior_games',
                 'input_sha256','feature_coverage','warning','team_changed_since_prior','supplemental_context') if k in model}
@@ -48,6 +53,10 @@ def query(data_dir, command, player_id=None, now=None):
                 'model_details':details,
                 'source_revision':snap.get('source_revision'),
                 'event_id':snap['event']['id'],'game_start':snap['event']['commence_time']})
+    return records
+
+
+def observation_result(records,command,now):
     latest={}
     for r in sorted(records,key=lambda x:x['collected_at']):
         latest[(r['event_id'],r.get('player_id'),r['book'],r['line'],r['side'])]=r
@@ -67,7 +76,7 @@ def query(data_dir, command, player_id=None, now=None):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command',choices=['status','candidates','player','performance'])
+    parser.add_argument('command',choices=['status','candidates','player','performance','research'])
     parser.add_argument('--data-dir',type=Path,default=Path('data'))
     parser.add_argument('--player-id',type=int)
     args=parser.parse_args()

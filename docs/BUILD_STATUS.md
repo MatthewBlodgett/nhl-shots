@@ -2,6 +2,20 @@
 
 Updated 2026-10-02. Paper research only. Repository implementation is authoritative.
 
+## Dashboard publishing extension
+
+- Static public dashboard now reads a credential-free `data/review.json` summary
+  exported by the existing recorder. Refreshing/viewing players uses no odds credits.
+- Opportunities, Performance and Health views share the local API UI; browser
+  timestamps recalculate staleness/expiry without pretending to refresh odds.
+- GitHub Pages build, regression tests and deploy workflow are implemented.
+  Publishing is limited to master; local Python API remains separate.
+- Local regression:112 passed. Static build and export passed (60 archived players
+  in the inspected archive). Browser binary unavailable; rendered mobile QA is
+  still pending. Owner Pages activation may be required; deployment not yet verified.
+- [Dashboard instructions and setup](DASHBOARD.md). No secret or paid service is needed.
+
+
 ## Implemented operations extension
 
 - Durable Git request reservation before each paid call; failed acknowledgment
