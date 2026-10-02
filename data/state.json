@@ -1,0 +1,23 @@
+{
+  "attempts": {
+    "5b5466f836933f5fb3ed4b9f267cce75:middle": {
+      "at": "2026-10-02T20:43:17.015493+00:00",
+      "status": "saved"
+    }
+  },
+  "days": {
+    "2026-10-02": [
+      "5b5466f836933f5fb3ed4b9f267cce75",
+      "dfc3a73fc50d3d1c4b58150c834e2e7d",
+      "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
+      "797f03124f9bb08624b199c28f621c61",
+      "bae72d1f63e132b366d199db2807c4df"
+    ]
+  },
+  "last_quota": {
+    "remaining": 498,
+    "used": 2
+  },
+  "paper_alert_keys": [],
+  "schema_version": 1
+}
