@@ -12,7 +12,16 @@ Updated 2026-10-02. Paper research only. Repository implementation is authoritat
   Publishing is limited to master; local Python API remains separate.
 - Local regression:112 passed. Static build and export passed (60 archived players
   in the inspected archive). Browser binary unavailable; rendered mobile QA is
-  still pending. Owner Pages activation may be required; deployment not yet verified.
+  still pending. [PR5](https://github.com/MatthewBlodgett/nhl-shots/pull/5) merged. Remote
+  build/artifact upload passed in [run37076819392](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37076819392).
+  Master build passed in [run37076909863](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37076909863),
+  but deployment stopped at Pages configuration with HTTP404: Pages is not enabled
+  for GitHub Actions. Owner must set Source=GitHub Actions in repository Settings >
+  Pages, then rerun deployment. Dashboard is not internet-live. The connected tools
+  cannot change Pages administration; no new token or paid service is needed.
+- Master [recorder run37076909867](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37076909867)
+  passed and persisted `data/review.json`:60 player summaries; quota9 used/491
+  remaining at that recorded run. Browser reads consume no odds credits.
 - [Dashboard instructions and setup](DASHBOARD.md). No secret or paid service is needed.
 
 
