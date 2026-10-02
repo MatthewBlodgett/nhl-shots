@@ -192,3 +192,20 @@ def test_status_report(tmp_path):
     r.write_report(tmp_path, summary)
     text = (tmp_path / "README.md").read_text()
     assert "Paper research only" in text and "Test Player" in text
+
+
+def test_report_uses_collection_time_not_filename_order(tmp_path):
+    summary = r.collect(tmp_path, FakeClient(), now=NOW, predictor=model)
+    path = next((tmp_path / "snapshots" / summary["day"]).glob("*.gz"))
+    with gzip.open(path, "rt") as f:
+        original = json.load(f)
+    original["quotes"][0]["paper_candidate"] = True
+    with gzip.open(path, "wt") as f:
+        json.dump(original, f)
+    original["collected_at"] = (NOW + timedelta(minutes=30)).isoformat()
+    for quote in original["quotes"]:
+        quote["paper_candidate"] = False
+    with gzip.open(path.parent / "000-newest.json.gz", "wt") as f:
+        json.dump(original, f)
+    r.write_report(tmp_path, summary)
+    assert "No qualifying paper candidates" in (tmp_path / "README.md").read_text()

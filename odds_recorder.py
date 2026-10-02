@@ -395,11 +395,13 @@ def settle_recent(data_dir, now=None):
 def write_report(data_dir, summary):
     """A readable status page beside the compressed research records."""
     root = Path(data_dir)
-    quotes, snapshots = [], 0
+    quotes, snapshots, observations = [], 0, []
     for path in sorted((root / "snapshots" / summary["day"]).glob("*.json.gz")):
         with gzip.open(path, "rt") as f:
             data = json.load(f)
         snapshots += 1
+        observations.append(data)
+    for data in sorted(observations, key=lambda item: parse_time(item["collected_at"])):
         quotes.extend(data["quotes"])
     usable = sum(q.get("model_status") == "ok" for q in quotes)
     small = sum(q.get("model_status") == "insufficient_current_season_history" for q in quotes)
