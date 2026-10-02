@@ -17,6 +17,8 @@ class Handler(BaseHTTPRequestHandler):
         path=urlparse(self.path)
         if path.path in ('/','/dashboard'):
             payload=(Path(__file__).parent/'dashboard'/'index.html').read_bytes(); mime='text/html; charset=utf-8'
+        elif path.path=='/archive-client.js':
+            payload=(Path(__file__).parent/'dashboard'/'archive-client.js').read_bytes(); mime='text/javascript; charset=utf-8'
         elif path.path.startswith('/api/'):
             command=path.path[5:]
             if command not in ('status','candidates','player','performance','research'):return self.send_error(404)
@@ -32,7 +34,7 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-Type',mime);self.send_header('Cache-Control','no-store')
         self.send_header('X-Content-Type-Options','nosniff')
-        self.send_header('Content-Security-Policy',"default-src 'self'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'")
+        self.send_header('Content-Security-Policy',"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'self'; frame-ancestors 'none'")
         self.send_header('Content-Length',str(len(payload)));self.end_headers();self.wfile.write(payload)
     def log_message(self,*args):pass
 

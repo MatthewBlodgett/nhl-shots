@@ -557,6 +557,8 @@ def main():
         write_performance(args.data_dir)
         atomic_json(args.data_dir / 'latest_run.json', summary)
         record_health(args.data_dir, summary, success=not summary['errors'])
+        from build_dashboard import write_summary
+        write_summary(args.data_dir)
         text = (f"Saved {summary['snapshots']} snapshots / {summary['quotes']} quotes; "
                 f"{summary['new_paper_candidates']} new paper candidates. "
                 f"Credits used this billing cycle: {summary['quota']['used']}; "
