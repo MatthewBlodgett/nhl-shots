@@ -1,0 +1,1297 @@
+{
+  "period": "20232024 development only",
+  "studies": {
+    "zero_current_history": {
+      "player_games": 22,
+      "players": 22,
+      "paired_games": 22,
+      "baseline_brier": 0.13419805641294122,
+      "shadow_brier": 0.13173026432337676,
+      "status": "descriptive_development_only_no_promotion"
+    },
+    "team_changes": {
+      "player_games": 6,
+      "players": 6,
+      "paired_games": 0,
+      "baseline_brier": null,
+      "shadow_brier": null,
+      "status": "descriptive_development_only_no_promotion"
+    },
+    "role_changes": {
+      "player_games": 128,
+      "players": 17,
+      "paired_games": 128,
+      "baseline_brier": 0.1376459381806733,
+      "shadow_brier": 0.1419523235506759,
+      "status": "descriptive_development_only_no_promotion"
+    },
+    "rookies": {
+      "status": "awaiting_separate_rookie_cohort",
+      "player_games": 0,
+      "reason": "existing >=40-GP established-player cohort cannot support rookie evaluation"
+    }
+  },
+  "rows": {
+    "zero_current_history": [
+      {
+        "player_id": "8473422",
+        "game_id": 2023020002,
+        "date": "2023-10-10",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.15531042639860196,
+        "shadow_brier": 0.1576175743619085
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023020014,
+        "date": "2023-10-12",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.10805078636482407,
+        "shadow_brier": 0.1269995591326552
+      },
+      {
+        "player_id": "8475764",
+        "game_id": 2023020031,
+        "date": "2023-10-14",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.08948394768123452,
+        "shadow_brier": 0.06932377444239127
+      },
+      {
+        "player_id": "8475797",
+        "game_id": 2023020002,
+        "date": "2023-10-10",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.009859880709687378,
+        "shadow_brier": 0.006346838728025181
+      },
+      {
+        "player_id": "8475842",
+        "game_id": 2023020031,
+        "date": "2023-10-14",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.023025642209501887,
+        "shadow_brier": 0.01893545478687755
+      },
+      {
+        "player_id": "8475913",
+        "game_id": 2023020003,
+        "date": "2023-10-10",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.2737457257664926,
+        "shadow_brier": 0.2615438618277471
+      },
+      {
+        "player_id": "8476374",
+        "game_id": 2023020011,
+        "date": "2023-10-12",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.12874214332822737,
+        "shadow_brier": 0.1404522103284378
+      },
+      {
+        "player_id": "8476826",
+        "game_id": 2023020003,
+        "date": "2023-10-10",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.2683216231781101,
+        "shadow_brier": 0.24295636530920497
+      },
+      {
+        "player_id": "8476889",
+        "game_id": 2023020013,
+        "date": "2023-10-12",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.03273337899094146,
+        "shadow_brier": 0.05737897402262663
+      },
+      {
+        "player_id": "8477492",
+        "game_id": 2023020008,
+        "date": "2023-10-11",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.033150672599687694,
+        "shadow_brier": 0.03718821565509637
+      },
+      {
+        "player_id": "8477851",
+        "game_id": 2023020007,
+        "date": "2023-10-11",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.028782392747034608,
+        "shadow_brier": 0.033902452379844246
+      },
+      {
+        "player_id": "8478038",
+        "game_id": 2023020008,
+        "date": "2023-10-11",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.16594890072957583,
+        "shadow_brier": 0.19090082982702794
+      },
+      {
+        "player_id": "8479318",
+        "game_id": 2023020005,
+        "date": "2023-10-11",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.06569609367076028,
+        "shadow_brier": 0.053993266085988256
+      },
+      {
+        "player_id": "8479439",
+        "game_id": 2023020156,
+        "date": "2023-11-02",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.3771300117350611,
+        "shadow_brier": 0.27705514064919895
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023020002,
+        "date": "2023-10-10",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.07015825532170428,
+        "shadow_brier": 0.06522207571922913
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020007,
+        "date": "2023-10-11",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.3813092345771494,
+        "shadow_brier": 0.4229452585544848
+      },
+      {
+        "player_id": "8480205",
+        "game_id": 2023020011,
+        "date": "2023-10-12",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.1063485706581293,
+        "shadow_brier": 0.10206663018026485
+      },
+      {
+        "player_id": "8480807",
+        "game_id": 2023020010,
+        "date": "2023-10-12",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.06303498211845472,
+        "shadow_brier": 0.050029459582385055
+      },
+      {
+        "player_id": "8481524",
+        "game_id": 2023020008,
+        "date": "2023-10-11",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.08426293637169112,
+        "shadow_brier": 0.11123101288551628
+      },
+      {
+        "player_id": "8481542",
+        "game_id": 2023020012,
+        "date": "2023-10-12",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.2754678978270331,
+        "shadow_brier": 0.25607578430748235
+      },
+      {
+        "player_id": "8482105",
+        "game_id": 2023020004,
+        "date": "2023-10-11",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.10691373813687254,
+        "shadow_brier": 0.10480960338697269
+      },
+      {
+        "player_id": "8482149",
+        "game_id": 2023020007,
+        "date": "2023-10-11",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.1048799999639316,
+        "shadow_brier": 0.11109147296092396
+      }
+    ],
+    "team_changes": [
+      {
+        "player_id": "8473422",
+        "game_id": 2023020002,
+        "date": "2023-10-10",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.1576175743619085,
+        "shadow_brier": null
+      },
+      {
+        "player_id": "8475842",
+        "game_id": 2023020995,
+        "date": "2024-03-07",
+        "earlier_appearances": 61,
+        "baseline_brier": 0.040548705353176485,
+        "shadow_brier": null
+      },
+      {
+        "player_id": "8477851",
+        "game_id": 2023020007,
+        "date": "2023-10-11",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.033902452379844246,
+        "shadow_brier": null
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020007,
+        "date": "2023-10-11",
+        "earlier_appearances": 0,
+        "baseline_brier": 0.4229452585544848,
+        "shadow_brier": null
+      },
+      {
+        "player_id": "8480205",
+        "game_id": 2023020917,
+        "date": "2024-02-25",
+        "earlier_appearances": 32,
+        "baseline_brier": 0.28581797364897205,
+        "shadow_brier": null
+      },
+      {
+        "player_id": "8481524",
+        "game_id": 2023021000,
+        "date": "2024-03-07",
+        "earlier_appearances": 55,
+        "baseline_brier": 0.37466297567146123,
+        "shadow_brier": null
+      }
+    ],
+    "role_changes": [
+      {
+        "player_id": "8473422",
+        "game_id": 2023020728,
+        "date": "2024-01-22",
+        "earlier_appearances": 39,
+        "baseline_brier": 0.559288686018101,
+        "shadow_brier": 0.6695602602074539
+      },
+      {
+        "player_id": "8473422",
+        "game_id": 2023020743,
+        "date": "2024-01-24",
+        "earlier_appearances": 40,
+        "baseline_brier": 0.2687130761048128,
+        "shadow_brier": 0.35108567547663966
+      },
+      {
+        "player_id": "8473422",
+        "game_id": 2023020754,
+        "date": "2024-01-25",
+        "earlier_appearances": 41,
+        "baseline_brier": 0.1152875235841374,
+        "shadow_brier": 0.06615296785372303
+      },
+      {
+        "player_id": "8473422",
+        "game_id": 2023020832,
+        "date": "2024-02-13",
+        "earlier_appearances": 45,
+        "baseline_brier": 0.1249328725560024,
+        "shadow_brier": 0.18805840546060373
+      },
+      {
+        "player_id": "8473422",
+        "game_id": 2023020845,
+        "date": "2024-02-15",
+        "earlier_appearances": 46,
+        "baseline_brier": 0.122941182933428,
+        "shadow_brier": 0.18531368056993136
+      },
+      {
+        "player_id": "8473422",
+        "game_id": 2023020851,
+        "date": "2024-02-17",
+        "earlier_appearances": 47,
+        "baseline_brier": 0.10383282391250254,
+        "shadow_brier": 0.10293187957172821
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023020330,
+        "date": "2023-11-28",
+        "earlier_appearances": 19,
+        "baseline_brier": 0.1075810315552771,
+        "shadow_brier": 0.06134038983741454
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023020347,
+        "date": "2023-11-30",
+        "earlier_appearances": 20,
+        "baseline_brier": 0.2843885359846605,
+        "shadow_brier": 0.3663114527411529
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023020695,
+        "date": "2024-01-18",
+        "earlier_appearances": 43,
+        "baseline_brier": 0.11482854857870063,
+        "shadow_brier": 0.0658652207297491
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023020704,
+        "date": "2024-01-19",
+        "earlier_appearances": 44,
+        "baseline_brier": 0.11299595655318044,
+        "shadow_brier": 0.06471771628753356
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023020719,
+        "date": "2024-01-21",
+        "earlier_appearances": 45,
+        "baseline_brier": 0.10887892666767413,
+        "shadow_brier": 0.062148069859720136
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023020793,
+        "date": "2024-02-07",
+        "earlier_appearances": 49,
+        "baseline_brier": 0.10873142450917563,
+        "shadow_brier": 0.10093867478888395
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023020801,
+        "date": "2024-02-09",
+        "earlier_appearances": 50,
+        "baseline_brier": 0.10330694437850385,
+        "shadow_brier": 0.15795895476136698
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023020822,
+        "date": "2024-02-12",
+        "earlier_appearances": 51,
+        "baseline_brier": 0.09980496274686575,
+        "shadow_brier": 0.1530207772194789
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023020836,
+        "date": "2024-02-14",
+        "earlier_appearances": 52,
+        "baseline_brier": 0.0984681940180017,
+        "shadow_brier": 0.15113084408214297
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023021037,
+        "date": "2024-03-12",
+        "earlier_appearances": 61,
+        "baseline_brier": 0.3110035974292787,
+        "shadow_brier": 0.3913410062114487
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023021054,
+        "date": "2024-03-14",
+        "earlier_appearances": 62,
+        "baseline_brier": 0.11521935408971527,
+        "shadow_brier": 0.1458754300958309
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023021069,
+        "date": "2024-03-16",
+        "earlier_appearances": 63,
+        "baseline_brier": 0.08793866363625157,
+        "shadow_brier": 0.04926280460377741
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023021091,
+        "date": "2024-03-19",
+        "earlier_appearances": 64,
+        "baseline_brier": 0.08534917764612304,
+        "shadow_brier": 0.1324324356730975
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023021097,
+        "date": "2024-03-20",
+        "earlier_appearances": 65,
+        "baseline_brier": 0.0828537619866661,
+        "shadow_brier": 0.1288435468398048
+      },
+      {
+        "player_id": "8475149",
+        "game_id": 2023021115,
+        "date": "2024-03-23",
+        "earlier_appearances": 66,
+        "baseline_brier": 0.08200949237334383,
+        "shadow_brier": 0.12762689774213276
+      },
+      {
+        "player_id": "8475764",
+        "game_id": 2023020386,
+        "date": "2023-12-05",
+        "earlier_appearances": 24,
+        "baseline_brier": 0.06819340838144532,
+        "shadow_brier": 0.10753395488250513
+      },
+      {
+        "player_id": "8475764",
+        "game_id": 2023020973,
+        "date": "2024-03-03",
+        "earlier_appearances": 59,
+        "baseline_brier": 0.06532445182307543,
+        "shadow_brier": 0.03572472415800491
+      },
+      {
+        "player_id": "8475764",
+        "game_id": 2023020992,
+        "date": "2024-03-06",
+        "earlier_appearances": 60,
+        "baseline_brier": 0.06321587458992844,
+        "shadow_brier": 0.03448445418717411
+      },
+      {
+        "player_id": "8475764",
+        "game_id": 2023021007,
+        "date": "2024-03-08",
+        "earlier_appearances": 61,
+        "baseline_brier": 0.6495212376081612,
+        "shadow_brier": 0.7437430950065584
+      },
+      {
+        "player_id": "8475764",
+        "game_id": 2023021057,
+        "date": "2024-03-15",
+        "earlier_appearances": 65,
+        "baseline_brier": 0.13116954421559743,
+        "shadow_brier": 0.1095264738260942
+      },
+      {
+        "player_id": "8475764",
+        "game_id": 2023021079,
+        "date": "2024-03-17",
+        "earlier_appearances": 66,
+        "baseline_brier": 0.06419190088156615,
+        "shadow_brier": 0.10164622637229333
+      },
+      {
+        "player_id": "8475764",
+        "game_id": 2023021091,
+        "date": "2024-03-19",
+        "earlier_appearances": 67,
+        "baseline_brier": 0.06365144913076341,
+        "shadow_brier": 0.10084851852808051
+      },
+      {
+        "player_id": "8475797",
+        "game_id": 2023020384,
+        "date": "2023-12-05",
+        "earlier_appearances": 11,
+        "baseline_brier": 0.007484257199305005,
+        "shadow_brier": 0.0036104652888713177
+      },
+      {
+        "player_id": "8475797",
+        "game_id": 2023020845,
+        "date": "2024-02-15",
+        "earlier_appearances": 30,
+        "baseline_brier": 0.007725931245953269,
+        "shadow_brier": 0.003732112010569271
+      },
+      {
+        "player_id": "8475797",
+        "game_id": 2023021173,
+        "date": "2024-03-30",
+        "earlier_appearances": 45,
+        "baseline_brier": 0.24536677125318265,
+        "shadow_brier": 0.27023797179079734
+      },
+      {
+        "player_id": "8475842",
+        "game_id": 2023020175,
+        "date": "2023-11-05",
+        "earlier_appearances": 10,
+        "baseline_brier": 0.1885897747979198,
+        "shadow_brier": 0.1585529755258142
+      },
+      {
+        "player_id": "8475842",
+        "game_id": 2023020399,
+        "date": "2023-12-07",
+        "earlier_appearances": 25,
+        "baseline_brier": 0.1656273975871134,
+        "shadow_brier": 0.1366338255217978
+      },
+      {
+        "player_id": "8475842",
+        "game_id": 2023020444,
+        "date": "2023-12-13",
+        "earlier_appearances": 27,
+        "baseline_brier": 0.036351867801630446,
+        "shadow_brier": 0.059664293957343545
+      },
+      {
+        "player_id": "8475842",
+        "game_id": 2023020995,
+        "date": "2024-03-07",
+        "earlier_appearances": 61,
+        "baseline_brier": 0.040548705353176485,
+        "shadow_brier": 0.06612331930419796
+      },
+      {
+        "player_id": "8475842",
+        "game_id": 2023021070,
+        "date": "2024-03-16",
+        "earlier_appearances": 64,
+        "baseline_brier": 0.03773655866474662,
+        "shadow_brier": 0.01984425971071161
+      },
+      {
+        "player_id": "8475842",
+        "game_id": 2023021118,
+        "date": "2024-03-23",
+        "earlier_appearances": 67,
+        "baseline_brier": 0.03728471728688067,
+        "shadow_brier": 0.019591102182622118
+      },
+      {
+        "player_id": "8475842",
+        "game_id": 2023021128,
+        "date": "2024-03-24",
+        "earlier_appearances": 68,
+        "baseline_brier": 0.036112375362179996,
+        "shadow_brier": 0.01893545478687755
+      },
+      {
+        "player_id": "8475842",
+        "game_id": 2023021306,
+        "date": "2024-04-17",
+        "earlier_appearances": 75,
+        "baseline_brier": 0.16338717806701564,
+        "shadow_brier": 0.13462577318442
+      },
+      {
+        "player_id": "8475842",
+        "game_id": 2023021310,
+        "date": "2024-04-18",
+        "earlier_appearances": 76,
+        "baseline_brier": 0.03705520237729878,
+        "shadow_brier": 0.06075050274855228
+      },
+      {
+        "player_id": "8476374",
+        "game_id": 2023020485,
+        "date": "2023-12-19",
+        "earlier_appearances": 32,
+        "baseline_brier": 0.3629002906973826,
+        "shadow_brier": 0.4376952001415686
+      },
+      {
+        "player_id": "8476374",
+        "game_id": 2023020673,
+        "date": "2024-01-15",
+        "earlier_appearances": 35,
+        "baseline_brier": 0.056690212919734306,
+        "shadow_brier": 0.030671975153695418
+      },
+      {
+        "player_id": "8476374",
+        "game_id": 2023020703,
+        "date": "2024-01-19",
+        "earlier_appearances": 36,
+        "baseline_brier": 0.14003387841526424,
+        "shadow_brier": 0.17611207708642695
+      },
+      {
+        "player_id": "8476374",
+        "game_id": 2023020753,
+        "date": "2024-01-25",
+        "earlier_appearances": 38,
+        "baseline_brier": 0.3678464390501066,
+        "shadow_brier": 0.30115802701234434
+      },
+      {
+        "player_id": "8476374",
+        "game_id": 2023020772,
+        "date": "2024-01-27",
+        "earlier_appearances": 39,
+        "baseline_brier": 0.05998311888539387,
+        "shadow_brier": 0.09541784719823644
+      },
+      {
+        "player_id": "8476374",
+        "game_id": 2023020774,
+        "date": "2024-01-28",
+        "earlier_appearances": 40,
+        "baseline_brier": 0.36188049699780217,
+        "shadow_brier": 0.29493446927717376
+      },
+      {
+        "player_id": "8476374",
+        "game_id": 2023020776,
+        "date": "2024-01-30",
+        "earlier_appearances": 41,
+        "baseline_brier": 0.06246724239452014,
+        "shadow_brier": 0.09909850337934133
+      },
+      {
+        "player_id": "8476374",
+        "game_id": 2023020826,
+        "date": "2024-02-13",
+        "earlier_appearances": 43,
+        "baseline_brier": 0.0687305873436527,
+        "shadow_brier": 0.1083219103880428
+      },
+      {
+        "player_id": "8476374",
+        "game_id": 2023020886,
+        "date": "2024-02-21",
+        "earlier_appearances": 46,
+        "baseline_brier": 0.6340544430592555,
+        "shadow_brier": 0.7312866282765794
+      },
+      {
+        "player_id": "8476374",
+        "game_id": 2023021296,
+        "date": "2024-04-16",
+        "earlier_appearances": 61,
+        "baseline_brier": 0.0707171729724491,
+        "shadow_brier": 0.1112310128855163
+      },
+      {
+        "player_id": "8477851",
+        "game_id": 2023020570,
+        "date": "2023-12-31",
+        "earlier_appearances": 10,
+        "baseline_brier": 0.025814489290083866,
+        "shadow_brier": 0.04318769377818501
+      },
+      {
+        "player_id": "8477851",
+        "game_id": 2023020578,
+        "date": "2024-01-02",
+        "earlier_appearances": 11,
+        "baseline_brier": 0.18303572096605247,
+        "shadow_brier": 0.15304850054708527
+      },
+      {
+        "player_id": "8477851",
+        "game_id": 2023020649,
+        "date": "2024-01-11",
+        "earlier_appearances": 14,
+        "baseline_brier": 0.030426025059571028,
+        "shadow_brier": 0.01578079549274761
+      },
+      {
+        "player_id": "8477851",
+        "game_id": 2023020735,
+        "date": "2024-01-23",
+        "earlier_appearances": 19,
+        "baseline_brier": 0.025814489290083866,
+        "shadow_brier": 0.013255920442278897
+      },
+      {
+        "player_id": "8477851",
+        "game_id": 2023020753,
+        "date": "2024-01-25",
+        "earlier_appearances": 20,
+        "baseline_brier": 0.023981368027847654,
+        "shadow_brier": 0.01226137387404482
+      },
+      {
+        "player_id": "8477851",
+        "game_id": 2023020980,
+        "date": "2024-03-04",
+        "earlier_appearances": 21,
+        "baseline_brier": 0.024025178006783415,
+        "shadow_brier": 0.012285078944788265
+      },
+      {
+        "player_id": "8479318",
+        "game_id": 2023020993,
+        "date": "2024-03-07",
+        "earlier_appearances": 61,
+        "baseline_brier": 0.14292910137264267,
+        "shadow_brier": 0.18621375389233039
+      },
+      {
+        "player_id": "8479439",
+        "game_id": 2023020494,
+        "date": "2023-12-19",
+        "earlier_appearances": 14,
+        "baseline_brier": 0.28221425749603835,
+        "shadow_brier": 0.36422246971048183
+      },
+      {
+        "player_id": "8479439",
+        "game_id": 2023020777,
+        "date": "2024-01-30",
+        "earlier_appearances": 17,
+        "baseline_brier": 0.11485078737207931,
+        "shadow_brier": 0.17410841312653821
+      },
+      {
+        "player_id": "8479439",
+        "game_id": 2023020846,
+        "date": "2024-02-15",
+        "earlier_appearances": 20,
+        "baseline_brier": 0.10616069117080718,
+        "shadow_brier": 0.16196939984084505
+      },
+      {
+        "player_id": "8479439",
+        "game_id": 2023021076,
+        "date": "2024-03-17",
+        "earlier_appearances": 25,
+        "baseline_brier": 0.10705627624296299,
+        "shadow_brier": 0.10120997208218191
+      },
+      {
+        "player_id": "8479439",
+        "game_id": 2023021088,
+        "date": "2024-03-19",
+        "earlier_appearances": 26,
+        "baseline_brier": 0.10677596766307172,
+        "shadow_brier": 0.10128636252674651
+      },
+      {
+        "player_id": "8479439",
+        "game_id": 2023021147,
+        "date": "2024-03-26",
+        "earlier_appearances": 29,
+        "baseline_brier": 0.10219464414312408,
+        "shadow_brier": 0.05800093089859173
+      },
+      {
+        "player_id": "8479439",
+        "game_id": 2023021231,
+        "date": "2024-04-07",
+        "earlier_appearances": 31,
+        "baseline_brier": 0.09265798634270118,
+        "shadow_brier": 0.05213896878184359
+      },
+      {
+        "player_id": "8479439",
+        "game_id": 2023021251,
+        "date": "2024-04-09",
+        "earlier_appearances": 32,
+        "baseline_brier": 0.0883041944121886,
+        "shadow_brier": 0.04948497666179586
+      },
+      {
+        "player_id": "8479439",
+        "game_id": 2023021263,
+        "date": "2024-04-11",
+        "earlier_appearances": 33,
+        "baseline_brier": 0.08679327026516043,
+        "shadow_brier": 0.04856728496535675
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023020612,
+        "date": "2024-01-06",
+        "earlier_appearances": 10,
+        "baseline_brier": 0.05737897402262663,
+        "shadow_brier": 0.09154500165352486
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023020622,
+        "date": "2024-01-08",
+        "earlier_appearances": 11,
+        "baseline_brier": 0.052579921138002216,
+        "shadow_brier": 0.08436778637466125
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023020643,
+        "date": "2024-01-11",
+        "earlier_appearances": 12,
+        "baseline_brier": 0.048270909677551994,
+        "shadow_brier": 0.07787668771820828
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023020801,
+        "date": "2024-02-09",
+        "earlier_appearances": 20,
+        "baseline_brier": 0.02970763946161892,
+        "shadow_brier": 0.015385408234342821
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023020917,
+        "date": "2024-02-25",
+        "earlier_appearances": 24,
+        "baseline_brier": 0.025814489290083866,
+        "shadow_brier": 0.04318769377818501
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023020937,
+        "date": "2024-02-27",
+        "earlier_appearances": 25,
+        "baseline_brier": 0.02418131134852573,
+        "shadow_brier": 0.04059591263706854
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023020983,
+        "date": "2024-03-05",
+        "earlier_appearances": 29,
+        "baseline_brier": 0.02431239079873328,
+        "shadow_brier": 0.04080435269683399
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023020998,
+        "date": "2024-03-07",
+        "earlier_appearances": 30,
+        "baseline_brier": 0.02291781272531081,
+        "shadow_brier": 0.03858281525777422
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023021110,
+        "date": "2024-03-22",
+        "earlier_appearances": 38,
+        "baseline_brier": 0.18589067368184273,
+        "shadow_brier": 0.2207890395292398
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023021154,
+        "date": "2024-03-28",
+        "earlier_appearances": 41,
+        "baseline_brier": 0.1803576729892429,
+        "shadow_brier": 0.1504375603994485
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023021171,
+        "date": "2024-03-30",
+        "earlier_appearances": 42,
+        "baseline_brier": 0.02829159670430914,
+        "shadow_brier": 0.04709777242979959
+      },
+      {
+        "player_id": "8480058",
+        "game_id": 2023021191,
+        "date": "2024-04-02",
+        "earlier_appearances": 44,
+        "baseline_brier": 0.025814489290083866,
+        "shadow_brier": 0.04318769377818501
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020160,
+        "date": "2023-11-04",
+        "earlier_appearances": 10,
+        "baseline_brier": 0.20335130681852512,
+        "shadow_brier": 0.2922278484991457
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020425,
+        "date": "2023-12-10",
+        "earlier_appearances": 25,
+        "baseline_brier": 0.15884731195953003,
+        "shadow_brier": 0.09407608405773377
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020446,
+        "date": "2023-12-13",
+        "earlier_appearances": 27,
+        "baseline_brier": 0.15497297830675497,
+        "shadow_brier": 0.09154500165352485
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020564,
+        "date": "2023-12-31",
+        "earlier_appearances": 34,
+        "baseline_brier": 0.14229578539760848,
+        "shadow_brier": 0.21176420086303827
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020601,
+        "date": "2024-01-04",
+        "earlier_appearances": 36,
+        "baseline_brier": 0.10118290309139626,
+        "shadow_brier": 0.10843321277409697
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020814,
+        "date": "2024-02-10",
+        "earlier_appearances": 49,
+        "baseline_brier": 0.1211924622370006,
+        "shadow_brier": 0.0698674702085029
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020835,
+        "date": "2024-02-14",
+        "earlier_appearances": 50,
+        "baseline_brier": 0.1193890499599483,
+        "shadow_brier": 0.06873058734365342
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020880,
+        "date": "2024-02-20",
+        "earlier_appearances": 53,
+        "baseline_brier": 0.10802480270700172,
+        "shadow_brier": 0.061616418180402054
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020934,
+        "date": "2024-02-27",
+        "earlier_appearances": 56,
+        "baseline_brier": 0.10708272152017138,
+        "shadow_brier": 0.10120328200427864
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020947,
+        "date": "2024-02-29",
+        "earlier_appearances": 57,
+        "baseline_brier": 0.10691373813687254,
+        "shadow_brier": 0.10124754867758216
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020956,
+        "date": "2024-03-02",
+        "earlier_appearances": 58,
+        "baseline_brier": 0.27317619578068103,
+        "shadow_brier": 0.20864852106675133
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020971,
+        "date": "2024-03-03",
+        "earlier_appearances": 59,
+        "baseline_brier": 0.1060598149798103,
+        "shadow_brier": 0.10153112405273573
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023020986,
+        "date": "2024-03-05",
+        "earlier_appearances": 60,
+        "baseline_brier": 0.11187152091803552,
+        "shadow_brier": 0.16995899796517913
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023021008,
+        "date": "2024-03-08",
+        "earlier_appearances": 61,
+        "baseline_brier": 0.10858995847145049,
+        "shadow_brier": 0.16537381511309954
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023021158,
+        "date": "2024-03-28",
+        "earlier_appearances": 72,
+        "baseline_brier": 0.10065327037011958,
+        "shadow_brier": 0.05704905673859576
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023021209,
+        "date": "2024-04-04",
+        "earlier_appearances": 75,
+        "baseline_brier": 0.11247428283208095,
+        "shadow_brier": 0.14182362652857522
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023021219,
+        "date": "2024-04-06",
+        "earlier_appearances": 76,
+        "baseline_brier": 0.09361909002233744,
+        "shadow_brier": 0.05272674148185976
+      },
+      {
+        "player_id": "8480113",
+        "game_id": 2023021247,
+        "date": "2024-04-09",
+        "earlier_appearances": 77,
+        "baseline_brier": 0.0927155140717225,
+        "shadow_brier": 0.052174131251672175
+      },
+      {
+        "player_id": "8480205",
+        "game_id": 2023020463,
+        "date": "2023-12-16",
+        "earlier_appearances": 16,
+        "baseline_brier": 0.10617158858179032,
+        "shadow_brier": 0.13108011228088087
+      },
+      {
+        "player_id": "8480205",
+        "game_id": 2023020917,
+        "date": "2024-02-25",
+        "earlier_appearances": 32,
+        "baseline_brier": 0.28581797364897205,
+        "shadow_brier": 0.36768096075365636
+      },
+      {
+        "player_id": "8480205",
+        "game_id": 2023020937,
+        "date": "2024-02-27",
+        "earlier_appearances": 33,
+        "baseline_brier": 0.10399052555639805,
+        "shadow_brier": 0.05911209115756866
+      },
+      {
+        "player_id": "8480205",
+        "game_id": 2023020950,
+        "date": "2024-02-29",
+        "earlier_appearances": 34,
+        "baseline_brier": 0.10891097238903731,
+        "shadow_brier": 0.13608458875734533
+      },
+      {
+        "player_id": "8480205",
+        "game_id": 2023020998,
+        "date": "2024-03-07",
+        "earlier_appearances": 38,
+        "baseline_brier": 0.5390656542200921,
+        "shadow_brier": 0.43556483425776293
+      },
+      {
+        "player_id": "8480205",
+        "game_id": 2023021182,
+        "date": "2024-04-01",
+        "earlier_appearances": 48,
+        "baseline_brier": 0.10336954791570631,
+        "shadow_brier": 0.05872761911547488
+      },
+      {
+        "player_id": "8480205",
+        "game_id": 2023021191,
+        "date": "2024-04-02",
+        "earlier_appearances": 49,
+        "baseline_brier": 0.101902381999207,
+        "shadow_brier": 0.057820315398351106
+      },
+      {
+        "player_id": "8480205",
+        "game_id": 2023021279,
+        "date": "2024-04-13",
+        "earlier_appearances": 54,
+        "baseline_brier": 0.09141753147568464,
+        "shadow_brier": 0.05138136686953942
+      },
+      {
+        "player_id": "8480205",
+        "game_id": 2023021289,
+        "date": "2024-04-15",
+        "earlier_appearances": 55,
+        "baseline_brier": 0.11461960283308785,
+        "shadow_brier": 0.1450116071847441
+      },
+      {
+        "player_id": "8480807",
+        "game_id": 2023020229,
+        "date": "2023-11-14",
+        "earlier_appearances": 12,
+        "baseline_brier": 0.17140992244510136,
+        "shadow_brier": 0.20754380465607747
+      },
+      {
+        "player_id": "8480807",
+        "game_id": 2023020252,
+        "date": "2023-11-17",
+        "earlier_appearances": 13,
+        "baseline_brier": 0.03399029218117457,
+        "shadow_brier": 0.017753124371781778
+      },
+      {
+        "player_id": "8480807",
+        "game_id": 2023020285,
+        "date": "2023-11-22",
+        "earlier_appearances": 15,
+        "baseline_brier": 0.44888149216571654,
+        "shadow_brier": 0.39008290257483097
+      },
+      {
+        "player_id": "8480807",
+        "game_id": 2023020322,
+        "date": "2023-11-27",
+        "earlier_appearances": 18,
+        "baseline_brier": 0.032844294136210365,
+        "shadow_brier": 0.01711708556608824
+      },
+      {
+        "player_id": "8480807",
+        "game_id": 2023020445,
+        "date": "2023-12-13",
+        "earlier_appearances": 25,
+        "baseline_brier": 0.16453154985513785,
+        "shadow_brier": 0.13564826789484333
+      },
+      {
+        "player_id": "8480807",
+        "game_id": 2023020460,
+        "date": "2023-12-15",
+        "earlier_appearances": 26,
+        "baseline_brier": 0.037261874691238824,
+        "shadow_brier": 0.06106938681599617
+      },
+      {
+        "player_id": "8480807",
+        "game_id": 2023020737,
+        "date": "2024-01-23",
+        "earlier_appearances": 40,
+        "baseline_brier": 0.03737234936906952,
+        "shadow_brier": 0.019640180817050955
+      },
+      {
+        "player_id": "8481524",
+        "game_id": 2023020742,
+        "date": "2024-01-24",
+        "earlier_appearances": 39,
+        "baseline_brier": 0.06743204212747494,
+        "shadow_brier": 0.03696837238013088
+      },
+      {
+        "player_id": "8481524",
+        "game_id": 2023020757,
+        "date": "2024-01-26",
+        "earlier_appearances": 40,
+        "baseline_brier": 0.06657614529933052,
+        "shadow_brier": 0.036462851538241255
+      },
+      {
+        "player_id": "8481524",
+        "game_id": 2023021009,
+        "date": "2024-03-09",
+        "earlier_appearances": 56,
+        "baseline_brier": 0.6679259588343287,
+        "shadow_brier": 0.5789411207840807
+      },
+      {
+        "player_id": "8481524",
+        "game_id": 2023021031,
+        "date": "2024-03-12",
+        "earlier_appearances": 57,
+        "baseline_brier": 0.6560821939073627,
+        "shadow_brier": 0.5653105042079208
+      },
+      {
+        "player_id": "8481524",
+        "game_id": 2023021045,
+        "date": "2024-03-14",
+        "earlier_appearances": 58,
+        "baseline_brier": 0.06439539228881734,
+        "shadow_brier": 0.10194642381108937
+      },
+      {
+        "player_id": "8481542",
+        "game_id": 2023020547,
+        "date": "2023-12-29",
+        "earlier_appearances": 35,
+        "baseline_brier": 0.13044701141127715,
+        "shadow_brier": 0.19562961838468082
+      },
+      {
+        "player_id": "8482105",
+        "game_id": 2023020851,
+        "date": "2024-02-17",
+        "earlier_appearances": 47,
+        "baseline_brier": 0.15583759865750127,
+        "shadow_brier": 0.0921090733647078
+      },
+      {
+        "player_id": "8482105",
+        "game_id": 2023020875,
+        "date": "2024-02-19",
+        "earlier_appearances": 48,
+        "baseline_brier": 0.15327390029111307,
+        "shadow_brier": 0.09043784686858886
+      },
+      {
+        "player_id": "8482105",
+        "game_id": 2023020876,
+        "date": "2024-02-20",
+        "earlier_appearances": 49,
+        "baseline_brier": 0.14831219228015885,
+        "shadow_brier": 0.08721468740294575
+      },
+      {
+        "player_id": "8482149",
+        "game_id": 2023020160,
+        "date": "2023-11-04",
+        "earlier_appearances": 10,
+        "baseline_brier": 0.11466403463405551,
+        "shadow_brier": 0.17384868093152558
+      },
+      {
+        "player_id": "8482149",
+        "game_id": 2023020580,
+        "date": "2024-01-02",
+        "earlier_appearances": 35,
+        "baseline_brier": 0.2137414636906304,
+        "shadow_brier": 0.2939624514615948
+      },
+      {
+        "player_id": "8482149",
+        "game_id": 2023020934,
+        "date": "2024-02-27",
+        "earlier_appearances": 56,
+        "baseline_brier": 0.10093072708805517,
+        "shadow_brier": 0.11478007018709979
+      },
+      {
+        "player_id": "8482149",
+        "game_id": 2023020947,
+        "date": "2024-02-29",
+        "earlier_appearances": 57,
+        "baseline_brier": 0.14974185122607248,
+        "shadow_brier": 0.08814187140938923
+      },
+      {
+        "player_id": "8482149",
+        "game_id": 2023020971,
+        "date": "2024-03-03",
+        "earlier_appearances": 58,
+        "baseline_brier": 0.10105394521843558,
+        "shadow_brier": 0.11618306878916312
+      },
+      {
+        "player_id": "8482149",
+        "game_id": 2023021219,
+        "date": "2024-04-06",
+        "earlier_appearances": 68,
+        "baseline_brier": 0.14265071425706416,
+        "shadow_brier": 0.2122447435360264
+      },
+      {
+        "player_id": "8482149",
+        "game_id": 2023021247,
+        "date": "2024-04-09",
+        "earlier_appearances": 69,
+        "baseline_brier": 0.14089510299579835,
+        "shadow_brier": 0.2098662480579735
+      }
+    ]
+  },
+  "limits": [
+    "No parameter selection or live eligibility changes.",
+    "Historical stats contain later corrections.",
+    "Injury/lineup/PP features require timestamped prospective observations; no fabricated history."
+  ],
+  "dataset_sha256": "f03bd72358300189b8b09f87b360ea45c8d84a54a074a92a269ca7cd0e8fcab4",
+  "implementation_sha256": "67e6e05907a497f79a1780efd91ec76b36a2dba6fdbae79e73df6d60188d30cf"
+}

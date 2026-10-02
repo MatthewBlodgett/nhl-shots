@@ -14,6 +14,14 @@ from performance_report import make_report
 
 def query(data_dir, command, player_id=None, now=None):
     now=now or datetime.now(timezone.utc); root=Path(data_dir)
+    if command=='research':
+        base=Path(__file__).parent
+        with gzip.open(base/'research'/'rookies'/'report.json.gz','rt') as f:
+            rookie=json.load(f)
+        return {'mode':'paper_only','rookie_study':{k:v for k,v in rookie.items() if k!='rows'},'historical':(base/'research'/'README.md').read_text(),
+            'next_protocol':json.loads((base/'research'/'next_protocol.json').read_text()),
+            'sportsbook_rules':json.loads((base/'sportsbook_rules.json').read_text()),
+            'coverage_studies':{k:v for k,v in json.loads((base/'research'/'coverage_studies.json').read_text()).items() if k!='rows'}}
     if command=='performance':
         return make_report(root,now)
     if command=='status':
@@ -35,7 +43,7 @@ def query(data_dir, command, player_id=None, now=None):
             if command=='player' and q.get('player_id')!=player_id: continue
             model=snap.get('models',{}).get(q['player'],{})
             details={k:model[k] for k in ('status','model_name','expected_shots','history_games','prior_games',
-                'input_sha256','feature_coverage','warning','team_changed_since_prior') if k in model}
+                'input_sha256','feature_coverage','warning','team_changed_since_prior','supplemental_context') if k in model}
             records.append({**q,'collected_at':snap['collected_at'],'stage':snap['stage'],
                 'model_details':details,
                 'source_revision':snap.get('source_revision'),

@@ -1,0 +1,82 @@
+{
+  "season": "20232024",
+  "selection": "12 deterministic hash picks from official isRookie=1 census, no minimum GP or replacements",
+  "cohort": [
+    {
+      "id": 8481592,
+      "name": "Jakob Pelletier",
+      "expected_games": 13
+    },
+    {
+      "id": 8482765,
+      "name": "Isak Ros\u00e9n",
+      "expected_games": 7
+    },
+    {
+      "id": 8480245,
+      "name": "Olle Lycksell",
+      "expected_games": 18
+    },
+    {
+      "id": 8482092,
+      "name": "Ridly Greig",
+      "expected_games": 72
+    },
+    {
+      "id": 8481564,
+      "name": "Ryan Johnson",
+      "expected_games": 41
+    },
+    {
+      "id": 8482451,
+      "name": "Mikael Pyyhtia",
+      "expected_games": 17
+    },
+    {
+      "id": 8482659,
+      "name": "Josh Doan",
+      "expected_games": 11
+    },
+    {
+      "id": 8480032,
+      "name": "Shane Bowers",
+      "expected_games": 8
+    },
+    {
+      "id": 8479330,
+      "name": "Brandon Gignac",
+      "expected_games": 7
+    },
+    {
+      "id": 8481679,
+      "name": "Maxence Guenette",
+      "expected_games": 7
+    },
+    {
+      "id": 8482809,
+      "name": "Jackson Blake",
+      "expected_games": 1
+    },
+    {
+      "id": 8481655,
+      "name": "Cole Schwindt",
+      "expected_games": 4
+    }
+  ],
+  "warmup": 5,
+  "lines": [
+    1.5,
+    2.5,
+    3.5
+  ],
+  "models": [
+    "season_nb20",
+    "recent5_nb20"
+  ],
+  "limits": [
+    "Retrospective completed-season census has participation selection bias.",
+    "Development descriptive only; no live promotion or unseen validation claim."
+  ],
+  "holdout": "20252026 never requested",
+  "census_sha256": "8bf6faccf49bbd680a6df5269063943e0e5d0c03e2a6f4f36d7a422168c2813a"
+}

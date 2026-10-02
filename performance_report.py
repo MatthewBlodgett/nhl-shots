@@ -9,6 +9,7 @@ import gzip
 import json
 from pathlib import Path
 import random
+import math
 
 POLICY = {'schema_version':1,'stage':'middle','min_estimated_return':.05,
           'decision':'highest modeled return per event/player; stable book/line/side tie break',
@@ -32,6 +33,35 @@ def grouped_interval(rows):
     draws.sort()
     return {'games':len(groups),'lower':draws[25],'upper':draws[975],
             'status':'descriptive_interval_not_a_profitability_guarantee'}
+
+
+def mean(values):
+    return sum(values)/len(values) if values else None
+
+
+def wilson(successes, n):
+    if not n: return [None,None]
+    z=1.96; p=successes/n; denominator=1+z*z/n
+    center=(p+z*z/(2*n))/denominator
+    radius=z*math.sqrt(p*(1-p)/n+z*z/(4*n*n))/denominator
+    return [center-radius,center+radius]
+
+
+def paired_brier_interval(rows):
+    groups={}
+    for q in rows:
+        if q.get('market_no_vig_probability') is None or q['actual_shots']==q['line']:continue
+        y=int((q['actual_shots']>q['line'])==(q['side']=='Over'))
+        d=(q['model_probability']-y)**2-(q['market_no_vig_probability']-y)**2
+        groups.setdefault(q['event_id'],[]).append(d)
+    if len(groups)<20:return {'games':len(groups),'lower':None,'upper':None,'status':'insufficient_game_clusters'}
+    rng=random.Random(1847);values=list(groups.values());draws=[]
+    for _ in range(1000):
+        sample=[rng.choice(values) for _ in values]
+        draws.append(sum(map(sum,sample))/sum(map(len,sample)))
+    draws.sort()
+    return {'games':len(groups),'lower':draws[25],'upper':draws[975],
+            'status':'descriptive_paired_game_cluster_interval'}
 
 
 def make_report(data_dir, now=None):
@@ -62,7 +92,7 @@ def make_report(data_dir, now=None):
             key=(event,q.get('player_id'),q['book'],q['line'],q['side'],snap['collected_at'])
             outcome=settlements.get(key)
             if outcome:
-                row.update({k:outcome[k] for k in ('actual_shots','result','hypothetical_unit_return') if k in outcome})
+                row.update({k:outcome[k] for k in ('actual_shots','result','hypothetical_unit_return','sportsbook_settlement') if k in outcome})
             else:
                 row.update({'actual_shots':None,'result':'pending_or_unresolved'})
             eligible.setdefault((event,q['player_id']),[]).append(row)
@@ -98,18 +128,29 @@ def make_report(data_dir, now=None):
         # Drawdown is marked only after all paper decisions in each game settle.
         game_profits={}
         for q in resolved: game_profits[q['event_id']]=game_profits.get(q['event_id'],0)+q['hypothetical_unit_return']
-        for value in game_profits.values():
+        incomplete={q['event_id'] for q in picks if q.get('result') not in ('win','loss','push')}
+        for eid,value in game_profits.items():
+            if eid in incomplete: continue
             balance+=value; peak=max(peak,balance); drawdown=max(drawdown,peak-balance)
         versions[version]={'forecast_player_games':len(forecasts),'brier':sum(briers)/len(briers) if briers else None,
             'matched_market_games':len(market),'matched_model_brier':sum(a for a,b in market)/len(market) if market else None,
             'market_no_vig_brier':sum(b for a,b in market)/len(market) if market else None,
             'calibration':[{'lower':i/10,'count':len(b),'predicted':sum(p for p,y in b)/len(b),
-                            'observed':sum(y for p,y in b)/len(b)} for i,b in enumerate(calibration) if b],
+                            'observed':sum(y for p,y in b)/len(b),
+                            'observed_wilson_95':wilson(sum(y for p,y in b),len(b))} for i,b in enumerate(calibration) if b],
             'paper_decisions':len(picks),'resolved':len(resolved),'unresolved':len(picks)-len(resolved),
             'hypothetical_profit_units':profit,'hypothetical_roi':profit/len(resolved) if resolved else None,
-            'maximum_game_settled_drawdown_units':drawdown,'roi_interval':grouped_interval(resolved)}
+            'maximum_game_settled_drawdown_units':drawdown,'roi_interval':grouped_interval(resolved),
+            'incomplete_games_excluded_from_drawdown':len(incomplete),
+            'sportsbook_supported_decisions':sum(q.get('sportsbook_settlement',{}).get('status')=='supported' for q in resolved),
+            'sportsbook_unresolved_decisions':sum(q.get('sportsbook_settlement',{}).get('status')!='supported' for q in picks),
+            'price_movement_pairs':sum(q.get('late_implied_probability_change') is not None for q in picks),
+            'mean_late_implied_probability_change':mean([q['late_implied_probability_change'] for q in picks if q.get('late_implied_probability_change') is not None]),
+            'matched_brier_difference_interval':paired_brier_interval(forecasts)}
     return {'generated_at':now.isoformat(),'policy':POLICY,'snapshot_count':len(snapshots),
         'quote_count':sum(len(s['quotes']) for s in snapshots),'blocked_quote_counts':dict(blockers),
+        'unique_observed_events':len({s['event']['id'] for s in snapshots}),
+        'unique_observed_player_games':len({(s['event']['id'],q.get('player_id') or q['player']) for s in snapshots for q in s['quotes']}),
         'eligible_middle_player_games':len(eligible),'versions':versions,'paper_decisions':decisions,
         'limitations':['No actual stakes or bet execution; hypothetical prices may not have been available.',
             'Missing participation and bookmaker rules are unresolved, not automatic losses.',

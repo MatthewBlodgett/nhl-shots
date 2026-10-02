@@ -2,7 +2,7 @@ name: NHL Odds Recorder
 
 on:
   push:
-    branches: [codex/odds-recorder, codex/model-research, master]
+    branches: [codex/odds-recorder, codex/model-research, codex/research-operations, master]
     paths:
       - odds_recorder.py
       - .github/workflows/record-odds.yml
@@ -13,6 +13,11 @@ on:
       - performance_report.py
       - health_report.py
       - agent_tool.py
+      - settlement_rules.py
+      - sportsbook_rules.json
+      - context_inputs.py
+      - official_context.py
+      - tests/test_review_extension.py
   schedule:
     - cron: '13,43 * * * *'
   workflow_dispatch:
@@ -43,6 +48,9 @@ jobs:
         with:
           ref: odds-records
           path: records
+      - name: Ensure durable branch checkout
+        working-directory: records
+        run: git checkout -B odds-records origin/odds-records
       - name: Install dependencies
         working-directory: code
         run: python3 -m pip install -r requirements.txt
@@ -55,7 +63,15 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           REQUEST_LIMIT: ${{ github.event_name == 'schedule' && '5' || inputs.max_requests || '1' }}
         working-directory: code
-        run: python3 odds_recorder.py --data-dir ../records/data --max-requests "$REQUEST_LIMIT"
+        run: python3 odds_recorder.py --data-dir ../records/data --max-requests "$REQUEST_LIMIT" --durable-reservations --sampling-policy hash_five_v2
+      - name: Upload recovery archive before Git persistence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: odds-recovery-${{ github.run_id }}-${{ github.run_attempt }}
+          path: records/data
+          retention-days: 14
+          if-no-files-found: warn
       - name: Preserve snapshots and request reservations
         if: always()
         working-directory: records

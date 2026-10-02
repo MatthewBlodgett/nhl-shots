@@ -6,8 +6,10 @@ The NHL Odds Recorder workflow checks collection windows twice per hour at
 13 and 43 minutes past the hour (UTC). GitHub schedules may run late or miss
 a run. This is pregame sampling, not continuous market monitoring.
 
-The first five upcoming games available on each America/Chicago calendar day
-are fixed in the ledger. Additional games never rotate in after those begin.
+Existing first-five selections remain fixed. Newly selected days use hash_five_v2:
+five deterministic day/event hash picks, independent of prices/model. Additional
+games never rotate in after selection. One selected early window is explicitly
+omitted on a five-game day; middle and late windows remain planned.
 The collector uses only player_shots_on_goal from US-region bookmakers:
 
 | Window | Time remaining before puck drop |
@@ -18,7 +20,7 @@ The collector uses only player_shots_on_goal from US-region bookmakers:
 
 At most one paid request is attempted for each game/window. Each request
 collects all returned players and books, including quotes with no apparent
-edge. Three snapshots for five games is at most 15 paid calls per day.
+edge. Sampling v2 plans at most 14 paid calls per day (434 over 31 days).
 Actual calls can be fewer when windows are missed or props are unavailable.
 The late snapshot is not guaranteed to be a true closing price.
 
@@ -49,10 +51,10 @@ do not discard purchased quotes. The workflow commits the request ledger and
 data even if the collector step fails. Runs are serialized across branches.
 
 A slot is reserved before the request, and unknown failures are not retried
-automatically, because the server may already have charged a credit. A runner
-or persistence failure can still lose a local reservation before Git push;
-the next provider usage check prevents unlimited spending, but cannot make
-the API call and Git commit atomic. Check failed Actions runs rather than
+automatically, because the server may already have charged a credit. The Actions collector now requires an acknowledged Git push of each reservation
+before making the paid call. A failed push stops the call; a killed runner can
+lose its response but its acknowledged slot cannot be retried automatically.
+A 14-day recovery artifact precedes the final archive push. Check failed Actions runs rather than
 blindly rerunning them. No workflow is triggered by data-branch commits.
 
 Records are stored for this user's research, not provided as a competing raw
@@ -85,8 +87,10 @@ The study reconstructs dated opponent context for the legacy comparison and
 feature diagnostics. The selected paper model uses count history alone.
 Injury, opponent and PP adjustments are not applied to it. PP context was
 unavailable from the inspected boxscore schema. Missing inputs are exposed.
-No injuries, expected deployment or verified starting line information is
-currently integrated. Candidates remain unvalidated research observations.
+Supplemental projected NHL editorial injuries, scratch lists and line combinations
+are archived with source hashes and publication/observation times. They do not
+change the frozen probabilities. PP roles and projected TOI remain missing unless
+an explicit timestamped official observation is supplied; recent TOI is a proxy. Candidates remain unvalidated research observations.
 
 Only the studied half-point lines 1.5, 2.5 and 3.5 can qualify. Other lines are
 archived with outside_studied_lines status. For decimal odds d and model probability p,
@@ -132,14 +136,15 @@ price movement uses the last saved late quote, not a guaranteed closing price.
 
 data/health.json tracks recent runs, failures, credit pause, blockers, missing
 elapsed windows on observed games and settlement backlog. A failed runner cannot
-update it; agent status marks archives older than two hours as stale. Games without
-any snapshot are absent from observed-game coverage. No external notifications
+update it; agent status marks archives older than two hours as stale. A discovery census now includes selected games with no snapshots and unsampled
+games; provider-undiscovered games remain unknown. No external notifications
 are sent.
 
 agent_tool.py provides read-only status, candidates, player and performance JSON.
 It makes no network requests or bets and accepts no credentials. Candidates are
 archived observations and marked expired against the query time. See
-docs/AGENT_INTERFACE.md. A hosted MCP service is not yet included.
+docs/AGENT_INTERFACE.md. A tested loopback read-only HTTP API and mobile dashboard are implemented in
+review_server.py. No internet service is deployed. See docs/RESEARCH_OPERATIONS.md.
 
 ## Running and pausing
 

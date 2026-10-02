@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "revision": "2026-10-02-review-1",
+  "books": {
+    "fanduel": {
+      "status": "partial",
+      "jurisdiction": "US-IL",
+      "reviewed_at": "2026-10-02T22:20:00Z",
+      "effective_date": "2026-07-30",
+      "source": "https://www.fanduel.com/fanduel-sportsbook-house-rules-il",
+      "sections": [
+        "15.1",
+        "15.5",
+        "Part B settlement/resettlement"
+      ],
+      "participation": "Any time on ice per official boxscore; no time on ice voids full game player props.",
+      "overtime": "Included unless explicitly period or 60-minute market; shootout player stats excluded unless explicit.",
+      "void": "General game requirement 55 minutes; postponement and suspension exceptions require event evidence.",
+      "stat_corrections": "May amend/reverse when official result differs or settlement error exists; within a reasonable period, no precise numeric cutoff specified.",
+      "blockers": [
+        "US-region API quote does not identify jurisdiction",
+        "no precise resettlement cutoff; cannot assume 7-day NHL recheck matches bookmaker regrade",
+        "abnormal completion evidence not implemented"
+      ]
+    },
+    "draftkings": {
+      "status": "unverified",
+      "jurisdiction": null,
+      "source": "https://sportsbook.draftkings.com/help/sport-rules/hockey",
+      "blockers": [
+        "retrieved page contained navigation without rule body; no settlement assumptions"
+      ]
+    },
+    "bovada": {
+      "status": "partial",
+      "jurisdiction": null,
+      "blockers": [
+        "Retrieved general hockey rules do not establish SOG-specific participation, shootout player-stat exclusion or correction policy"
+      ],
+      "source": "https://www.bovada.lv/help/common-faq/hockey-betting-rules",
+      "reviewed_at": "2026-10-02T22:35:00Z",
+      "general_rules": "55-minute official game; whole-game OT included; third-period OT excluded."
+    },
+    "betonlineag": {
+      "status": "partial",
+      "jurisdiction": null,
+      "blockers": [
+        "Matchup-prop participation rule cannot be assumed to apply to individual SOG over/under",
+        "SOG shootout player-stat and correction policy not established"
+      ],
+      "source": "https://help.betonline.ag/en/articles/185189-hockey-rules",
+      "reviewed_at": "2026-10-02T22:35:00Z",
+      "general_rules": "55-minute game; scheduled date/site; general game wagers include OT/shootout unless specified. Matchup props require quoted players to compete."
+    }
+  }
+}

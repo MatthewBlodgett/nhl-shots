@@ -40,3 +40,27 @@ in the snapshots; this CLI returns summaries to keep agent context bounded.
 
 This is a CLI contract for a shell-capable agent. A hosted API/MCP service and
 an autonomous agent deployment remain separate build tasks.
+
+## Implemented HTTP API and dashboard (2026-10-02)
+
+Run `python review_server.py --data-dir ../records/data` and open
+http://127.0.0.1:8765 on the same host. The mobile layout uses responsive cards,
+visible focus, plain status text, probability/break-even comparisons, blockers,
+model versions, calibrated outcome frequencies, hypothetical returns and quota.
+The server binds loopback only, supports GET only, never accepts a credential,
+never pulls Git or calls sportsbook endpoints, and never exposes arbitrary files.
+Refresh the archive separately. No internet hosting or autonomous agent is active.
+
+| Route | Output |
+| --- | --- |
+| GET /api/status | Freshness, recorded quota and operational health |
+| GET /api/candidates | Latest archived research opportunities, expiry and blockers |
+| GET /api/player?player_id=8477492 | Forecast observations including supplemental context |
+| GET /api/performance | Version-separated prospective statistical paper results |
+| GET /api/research | Historical studies, next frozen protocol, rule-review blockers |
+| GET / | Mobile review dashboard |
+
+All successful JSON responses have `Cache-Control: no-store`; errors return
+400/404/503. POST is unsupported. The API integration is exercised by real local
+HTTP requests in regression tests. Hosting this Python service for access from
+a phone/Chromebook needs a host; none has been provisioned or purchased.

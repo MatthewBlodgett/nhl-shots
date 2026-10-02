@@ -1,0 +1,16 @@
+name: Research regression tests
+on:
+  pull_request:
+  push:
+    branches: [master, codex/research-operations]
+permissions:
+  contents: read
+jobs:
+  offline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - run: python3 -m pip install -r requirements.txt
+      - run: python3 -m pytest tests/ -q
+      - run: python3 coverage_studies.py --output /tmp/coverage-studies.json
+      - run: python3 rookie_study.py

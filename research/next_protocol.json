@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-10-02T22:30:00Z",
+  "mode": "prospective_shadow_research_no_live_model_promotion",
+  "development": {
+    "start": "2026-10-03",
+    "end": "2026-11-30"
+  },
+  "fresh_validation": {
+    "start": "2026-12-02",
+    "end": "2026-12-31"
+  },
+  "reserved_final_holdout": {
+    "start": "2027-01-01",
+    "end": "2027-01-31",
+    "automatic_access": false
+  },
+  "historical_reserved_holdout": "20252026 remains unopened by study loaders",
+  "unit": "one player/game at middle window, one fixed 2.5 line Over quote then alphabetic book; other lines descriptive only",
+  "studies": [
+    {
+      "name": "timestamped_features",
+      "features": [
+        "injury_status",
+        "lineup_status",
+        "projected_toi_minutes",
+        "line_assignment",
+        "power_play_role"
+      ],
+      "baseline": "frozen blend20_nb20",
+      "missing": "explicit missing category; paired comparisons only on same available player games",
+      "selection": "development only; separately test each feature before any combination"
+    },
+    {
+      "name": "zero_current_history",
+      "shadow": "prior30 NB20 without current history, min20 prior games",
+      "promotion": false
+    },
+    {
+      "name": "rookies",
+      "shadow": "position prior learned exclusively in development; recent10 after minimum5 appearances",
+      "promotion": false,
+      "cohort": "all exactly matched roster players with fewer than20 prior appearances; never substitute cohort players"
+    },
+    {
+      "name": "team_changes",
+      "definition": "target team differs from last earlier appearance team",
+      "shadow": "frozen forecast vs current-team-only history where >=10 current-team appearances",
+      "promotion": false
+    },
+    {
+      "name": "role_changes",
+      "definition": "earlier recent3 TOI / previous7 TOI outside [0.8,1.2], minimum10 earlier appearances",
+      "shadow": "frozen mean vs mean scaled by recent3/previous7 TOI ratio clipped [0.8,1.2]",
+      "promotion": false
+    }
+  ],
+  "primary_metric": "paired Brier difference at same player/game/line",
+  "uncertainty": "1000 player-cluster bootstrap samples, seed1847; minimum20 players and100 player-games per study",
+  "reporting": "coverage, missingness, cohort strata, log loss, calibration, paired Brier; no profitability claim",
+  "promotion": "requires completed fresh validation with frozen development implementation/config hashes and written review; cannot tune to already inspected 20242025 results",
+  "final_holdout_gate": "requires explicit future authorization and immutable development artifact hash; no current script opens final holdout",
+  "feature_model_form": "Independent categorical rate multiplier (sum actual SOG +20)/(sum frozen expected SOG +20) for each observed category; projected TOI bins of5 minutes; line_assignment captures listed-linemates coverage, not rank. Missing/unseen categories excluded from paired feature comparison.",
+  "multiple_comparisons": "Five single-feature comparisons are descriptive; intervals do not adjust for all selection uncertainty."
+}
