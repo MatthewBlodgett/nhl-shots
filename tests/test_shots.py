@@ -27,7 +27,7 @@ from shots import (
 
 def test_poisson_zero_lambda():
     """An expected value of 0 should always yield 0 shots."""
-    assert poisson_probability(0, 0) == 0.0
+    assert poisson_probability(0, 0) == 1.0
     assert poisson_probability(5, 0) == 0.0
 
 
@@ -95,7 +95,7 @@ def test_calculate_stats_basic():
 
 
 def test_calculate_stats_last_n():
-    games = [{"shots": i} for i in range(1, 11)]
+    games = [{"shots": i, "gameDate": f"2025-01-{i:02d}"} for i in range(1, 11)]
     s = calculate_stats(games, 3)
     assert s["games"] == 3
     assert s["total"] == 8 + 9 + 10  # 27
@@ -152,9 +152,12 @@ def test_is_b2b_false():
 
 # ── Season detection ───────────────────────────────────────────────
 
-def test_get_current_season_format():
+def test_get_current_season_format(monkeypatch):
     """Season string should be 8 digits: '20252026' pattern."""
-    s = get_current_season()
+    import shots
+    monkeypatch.setattr(shots, "api_request", lambda *a, **k: {"seasons": [
+        {"id": 20262027, "standingsStart": "2026-09-29"}]})
+    s = get_current_season("2026-10-02")
     assert len(s) == 8
     assert s.isdigit()
     # first 4 digits + 1 should equal last 4 digits

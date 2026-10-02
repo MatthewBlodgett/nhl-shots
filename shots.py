@@ -7,9 +7,9 @@ import requests
 import json
 import time
 import warnings
-from math import factorial, exp
+from math import factorial, exp, floor, isfinite
 from typing import Optional
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # ── API layer: caching, rate limiting, retry ────────────────────────
 
@@ -67,14 +67,40 @@ def api_request(url: str, cache_ttl: int | None = None) -> dict | None:
 
 # ── Season auto-detection ──────────────────────────────────────────
 
-def get_current_season() -> str:
-    """Auto-detect the current NHL season ID.
+def get_current_season(game_date: str | None = None, *, use_api: bool = True) -> str:
+    """Resolve the season from NHL start dates, including September openers.
 
-    The NHL season ID format is ``YYYYYYYY`` (e.g. ``20252026``).
-    A season starts in October; games before Oct belong to the previous year's season.
+    Use the most recent season that has actually started on the target date.
+    An explicit date never resolves to a later season just because it is now
+    current. Verified recent starts provide a fallback during API outages.
     """
-    now = datetime.now()
+    now = datetime.strptime(game_date, "%Y-%m-%d") if game_date else datetime.now()
+    target = now.strftime("%Y-%m-%d")
+    data = api_request(f"{BASE_URL}/standings-season", cache_ttl=3600) if use_api else None
+    candidates = []
+    for entry in (data or {}).get("seasons", []):
+        season_id = str(entry.get("id", ""))
+        start = entry.get("standingsStart", "")
+        try:
+            datetime.strptime(start, "%Y-%m-%d")
+        except (ValueError, TypeError):
+            continue
+        if (len(season_id) == 8 and season_id.isdigit()
+                and int(season_id[4:]) == int(season_id[:4]) + 1
+                and start <= target):
+            candidates.append((start, season_id))
+    if candidates:
+        return max(candidates)[1]
+
+    if use_api:
+        warnings.warn("NHL season metadata unavailable; using fallback season boundary")
     year, month = now.year, now.month
+    # Source: NHL official regular-season schedule releases. Do not change
+    # the boundary for every historical season to September.
+    verified_starts = {2025: "2025-10-07", 2026: "2026-09-29"}
+    if year in verified_starts:
+        start_year = year if target >= verified_starts[year] else year - 1
+        return f"{start_year}{start_year + 1}"
     if month >= 10:
         return f"{year}{year + 1}"
     return f"{year - 1}{year}"
@@ -119,13 +145,21 @@ def get_team_stats(season: str | None = None) -> dict:
     """Fetch all team stats including shots against per game."""
     global TEAM_STATS_CACHE, LEAGUE_AVG_SHOTS_AGAINST, TEAM_IDS
 
-    if TEAM_STATS_CACHE:
-        return TEAM_STATS_CACHE
-
     if season is None:
         season = get_current_season()
 
-    url = f"{STATS_URL}/team/summary?cayenneExp=seasonId={season}"
+    if season in TEAM_STATS_CACHE:
+        stats = TEAM_STATS_CACHE[season]
+        total_games = sum(t["games"] for t in stats.values())
+        LEAGUE_AVG_SHOTS_AGAINST = (
+            sum(t["shots_against_pg"] * t["games"] for t in stats.values()) / total_games
+            if total_games else 30.0
+        )
+        return stats
+
+    stats = {}
+
+    url = f"{STATS_URL}/team/summary?cayenneExp=seasonId={season}%20and%20gameTypeId=2"
     data = api_request(url)
     if not data:
         warnings.warn("Failed to fetch team stats; opponent adjustment disabled")
@@ -144,7 +178,7 @@ def get_team_stats(season: str | None = None) -> dict:
 
         abbrev = get_team_abbrev(team_name)
 
-        TEAM_STATS_CACHE[abbrev] = {
+        stats[abbrev] = {
             "name": team_name,
             "id": team_id,
             "shots_against_pg": shots_against,
@@ -157,7 +191,9 @@ def get_team_stats(season: str | None = None) -> dict:
         total_games += games
 
     LEAGUE_AVG_SHOTS_AGAINST = total_shots_against / total_games if total_games > 0 else 30.0
-    return TEAM_STATS_CACHE
+    if stats:
+        TEAM_STATS_CACHE[season] = stats
+    return stats
 
 
 def get_team_abbrev(full_name: str) -> str:
@@ -193,6 +229,7 @@ def get_team_abbrev(full_name: str) -> str:
         "Tampa Bay Lightning": "TBL",
         "Toronto Maple Leafs": "TOR",
         "Utah Hockey Club": "UTA",
+        "Utah Mammoth": "UTA",
         "Vancouver Canucks": "VAN",
         "Vegas Golden Knights": "VGK",
         "Washington Capitals": "WSH",
@@ -201,20 +238,24 @@ def get_team_abbrev(full_name: str) -> str:
     return mapping.get(full_name, full_name[:3].upper())
 
 
-def get_opponent_adjustment(opponent_abbrev: str) -> float:
+def get_opponent_adjustment(opponent_abbrev: str, team_stats: dict | None = None) -> float:
     """Calculate opponent strength adjustment factor.
 
     Returns a multiplier based on how many shots the opponent allows
     vs. league average. >1.0 means opponent allows more shots (good),
     <1.0 means opponent allows fewer shots (bad).
     """
-    team_stats = get_team_stats()
+    team_stats = get_team_stats() if team_stats is None else team_stats
     if not team_stats or opponent_abbrev not in team_stats:
         return 1.0
 
     opp_sa = team_stats[opponent_abbrev]["shots_against_pg"]
-    league_avg = LEAGUE_AVG_SHOTS_AGAINST or 30.0
-    return opp_sa / league_avg
+    total_games = sum(t["games"] for t in team_stats.values())
+    league_avg = (
+        sum(t["shots_against_pg"] * t["games"] for t in team_stats.values()) / total_games
+        if total_games else 0
+    )
+    return opp_sa / league_avg if league_avg > 0 else 1.0
 
 
 def get_player_game_log(player_id: int, season: str | None = None) -> list:
@@ -226,7 +267,11 @@ def get_player_game_log(player_id: int, season: str | None = None) -> list:
     if not data:
         warnings.warn(f"No game log data for player {player_id}")
         return []
-    return data.get("gameLog", [])
+    if data.get("seasonId") is not None and str(data["seasonId"]) != season:
+        raise ValueError(f"NHL game log returned season {data['seasonId']}, expected {season}")
+    if data.get("gameTypeId") is not None and data["gameTypeId"] != 2:
+        raise ValueError("NHL game log is not regular-season data")
+    return prepare_game_log(data.get("gameLog", []))
 
 
 def get_player_info(player_id: int) -> dict:
@@ -266,6 +311,22 @@ def parse_toi(toi_str: str) -> float:
         return 0.0
 
 
+def prepare_game_log(games: list, before_date: str | None = None) -> list:
+    """Return dated games newest first, strictly before the prediction date.
+
+    Never mutate the caller's data. Undated rows are only allowed for
+    standalone summary calculations, never for prediction history.
+    """
+    if before_date is not None:
+        datetime.strptime(before_date, "%Y-%m-%d")
+    for game in games:
+        datetime.strptime(game["gameDate"], "%Y-%m-%d")
+    return sorted(
+        (g for g in games if before_date is None or g["gameDate"] < before_date),
+        key=lambda g: (g["gameDate"], g.get("gameId", 0)), reverse=True,
+    )
+
+
 # ── Rest analysis ──────────────────────────────────────────────────
 
 def analyze_rest_days(games: list) -> dict:
@@ -289,6 +350,7 @@ def analyze_rest_days(games: list) -> dict:
             "is_default": True,
         }
 
+    games = prepare_game_log(games)
     b2b_shots = []
     one_day_shots = []
     two_day_shots = []
@@ -439,10 +501,9 @@ def get_days_rest(games: list, game_date: Optional[str] = None) -> int:
     if not games:
         return 2
 
-    if game_date:
-        target_date = datetime.strptime(game_date, "%Y-%m-%d")
-    else:
-        target_date = datetime.now() + timedelta(days=1)
+    game_date = game_date or datetime.now().strftime("%Y-%m-%d")
+    target_date = datetime.strptime(game_date, "%Y-%m-%d")
+    games = prepare_game_log(games, game_date)
 
     for game in games:
         try:
@@ -461,7 +522,8 @@ def is_player_on_b2b(games: list, game_date: Optional[str] = None) -> bool:
 
 # ── PP time & TOI analysis ─────────────────────────────────────────
 
-def analyze_pp_time(games: list, player_id: int, num_games: int = 5) -> dict:
+def analyze_pp_time(games: list, player_id: int, num_games: int = 5,
+                    boxscores: dict | None = None) -> dict:
     """Analyze player's power play time from recent games.
 
     Fetches boxscore data to get PP TOI. Limited to 3 API calls;
@@ -484,7 +546,8 @@ def analyze_pp_time(games: list, player_id: int, num_games: int = 5) -> dict:
             continue
         attempts += 1
 
-        boxscore = get_boxscore(game_id)
+        boxscore = (get_boxscore(game_id) if boxscores is None
+                    else boxscores.get(str(game_id), boxscores.get(game_id, {})))
         if not boxscore:
             continue
 
@@ -568,6 +631,8 @@ def analyze_toi_trends(games: list, player_id: int, num_recent: int = 5) -> dict
 
 def calculate_stats(games: list, num_games: Optional[int] = None) -> dict:
     """Calculate shooting statistics from game log."""
+    if games and all("gameDate" in g for g in games):
+        games = prepare_game_log(games)
     if num_games:
         games = games[:num_games]
     if not games:
@@ -592,21 +657,32 @@ def calculate_stats(games: list, num_games: Optional[int] = None) -> dict:
 
 def poisson_probability(k: int, lambda_: float) -> float:
     """Calculate P(X = k) for Poisson distribution."""
-    if lambda_ <= 0:
-        return 0.0
+    if not isfinite(lambda_) or lambda_ < 0:
+        raise ValueError("Expected shots must be finite and nonnegative")
+    if not isinstance(k, int) or k < 0:
+        raise ValueError("Shot count must be a nonnegative integer")
+    if lambda_ == 0:
+        return 1.0 if k == 0 else 0.0
     return (lambda_ ** k * exp(-lambda_)) / factorial(k)
 
 
 def prob_over(line: float, lambda_: float) -> float:
     """Calculate probability of going OVER a line (e.g., 3.5 shots)."""
-    threshold = int(line)
+    if not isfinite(line) or line < 0:
+        raise ValueError("Line must be finite and nonnegative")
+    threshold = floor(line)
     prob_under_or_equal = sum(poisson_probability(k, lambda_) for k in range(threshold + 1))
-    return 1 - prob_under_or_equal
+    return max(0.0, min(1.0, 1 - prob_under_or_equal))
 
 
 def prob_under(line: float, lambda_: float) -> float:
     """Calculate probability of going UNDER a line."""
-    return 1 - prob_over(line, lambda_)
+    if not isfinite(line) or line < 0:
+        raise ValueError("Line must be finite and nonnegative")
+    # At integer lines, P(equal) is a push, not an under win.
+    poisson_probability(0, lambda_)  # validate even when no counts are below the line
+    threshold = int(line) - 1 if float(line).is_integer() else floor(line)
+    return sum(poisson_probability(k, lambda_) for k in range(threshold + 1))
 
 
 # ── Main analysis ──────────────────────────────────────────────────
@@ -618,10 +694,34 @@ def analyze_player(
     opponent: Optional[str] = None,
     is_b2b: Optional[bool] = None,
     game_date: Optional[str] = None,
+    *,
+    season: str | None = None,
+    games: list | None = None,
+    player_info: dict | None = None,
+    team_stats: dict | None = None,
+    boxscores: dict | None = None,
+    weights: tuple[float, float, float] = (0.5, 0.3, 0.2),
 ) -> dict:
-    """Full analysis for a player."""
-    games = get_player_game_log(player_id)
-    info = get_player_info(player_id)
+    """Analyze only history before the target date (today by default).
+
+    Supplied history runs without live metadata, opponent stats or boxscore
+    calls. Historical callers must supply dated team stats explicitly;
+    otherwise opponent adjustment is neutral rather than leaking future data.
+    Explicit `rest` means at least one rest day, retaining the inferred tier.
+    """
+    if len(weights) != 3 or any(not isfinite(w) or w < 0 for w in weights) or abs(sum(weights) - 1) > 1e-9:
+        raise ValueError("Three nonnegative weights must sum to one")
+    isolated = games is not None or game_date is not None
+    game_date = game_date or datetime.now().strftime("%Y-%m-%d")
+    season = season or get_current_season(game_date, use_api=games is None)
+    if games is None:
+        games = get_player_game_log(player_id, season)
+    games = prepare_game_log(games, game_date)
+    info = player_info if player_info is not None else ({} if isolated else get_player_info(player_id))
+    if boxscores is None and isolated:
+        boxscores = {}
+    if team_stats is None:
+        team_stats = {} if isolated else (get_team_stats(season) if opponent else {})
 
     if not games:
         return {"error": "No game data found"}
@@ -634,11 +734,14 @@ def analyze_player(
     rest_analysis = analyze_rest_days(games)
     days_rest = get_days_rest(games, game_date)
     b2b_analysis = analyze_back_to_back(games)
-    if is_b2b is None:
-        is_b2b = days_rest == 0
+    if is_b2b is True:
+        days_rest = 0
+    elif is_b2b is False:
+        days_rest = max(1, days_rest)
+    is_b2b = days_rest == 0
 
     # PP time & TOI trends
-    pp_analysis = analyze_pp_time(games, player_id)
+    pp_analysis = analyze_pp_time(games, player_id, boxscores=boxscores)
     toi_analysis = analyze_toi_trends(games, player_id)
 
     # Home/away splits
@@ -646,9 +749,9 @@ def analyze_player(
 
     # Weighted average: 50% season, 30% last 10, 20% last 5
     base_lambda = (
-        season_stats["avg"] * 0.5
-        + last_10["avg"] * 0.3
-        + last_5["avg"] * 0.2
+        season_stats["avg"] * weights[0]
+        + last_10["avg"] * weights[1]
+        + last_5["avg"] * weights[2]
     )
 
     # Location factor (player-specific)
@@ -664,14 +767,15 @@ def analyze_player(
     opponent_info = None
     if opponent:
         opp = opponent.upper()
-        opponent_factor = get_opponent_adjustment(opp)
-        team_stats = get_team_stats()
+        opponent_factor = get_opponent_adjustment(opp, team_stats)
         if opp in team_stats:
+            total_games = sum(t["games"] for t in team_stats.values())
+            league_avg = sum(t["shots_against_pg"] * t["games"] for t in team_stats.values()) / total_games if total_games else 0
             opponent_info = {
                 "abbrev": opp,
                 "name": team_stats[opp]["name"],
                 "shots_against_pg": round(team_stats[opp]["shots_against_pg"], 1),
-                "league_avg": round(LEAGUE_AVG_SHOTS_AGAINST, 1),
+                "league_avg": round(league_avg, 1),
                 "factor": round(opponent_factor, 3),
             }
         adjusted_lambda *= opponent_factor
@@ -702,6 +806,14 @@ def analyze_player(
     team = info.get("currentTeamAbbrev", "")
 
     result = {
+        "game_date": game_date,
+        "season_id": season,
+        "history_through": games[0]["gameDate"],
+        "data_quality": {
+            "small_sample": len(games) < 10,
+            "opponent_adjustment_available": opponent_info is not None,
+            "pp_data_available": pp_analysis["games_analyzed"] > 0,
+        },
         "player": player_name,
         "team": team,
         "player_id": player_id,
@@ -763,6 +875,7 @@ def analyze_player(
             "pp_factor": round(pp_factor, 3),
             "toi_factor": round(toi_factor, 3),
             "final_lambda": round(adjusted_lambda, 2),
+            "expected_shots": adjusted_lambda,
             "location": "home" if is_home else "away",
         },
         "opponent": opponent_info,
@@ -779,7 +892,7 @@ def analyze_player(
         over = prob_over(l, adjusted_lambda)
         result["probabilities"][f"{l}"] = {
             "over": f"{over*100:.1f}%",
-            "under": f"{(1-over)*100:.1f}%",
+            "under": f"{prob_under(l, adjusted_lambda)*100:.1f}%",
         }
 
     return result
@@ -796,6 +909,9 @@ def print_analysis(result: dict):
     print(f"\n{'='*60}")
     print(f"  {result['player']} ({result['team']})")
     print(f"{'='*60}")
+
+    if result.get("data_quality", {}).get("small_sample"):
+        print("\n⚠️  Early-season sample: fewer than 10 completed games; probabilities are provisional.")
 
     print(f"\n📊 Season Stats ({result['season']['games']} games):")
     print(f"   Total Shots: {result['season']['total_shots']}")
@@ -949,7 +1065,7 @@ def main():
         print(f"NHL Shots on Goal Predictor — {season[:4]}-{season[4:]} season")
         print("=" * 48)
         print("\nUsage:")
-        print("  python shots.py <player> [opponent] [line] [home|away] [b2b|rest]")
+        print("  python shots.py <player> [opponent] [line] [home|away] [b2b|rest] [--date YYYY-MM-DD] [--season ID]")
         print("  python shots.py teams            (list team shot stats)")
         print("  python shots.py clear-cache      (flush API cache)")
         print("\nExamples:")
@@ -987,12 +1103,17 @@ def main():
             return
 
     # Parse remaining args
+    import argparse
+    parser = argparse.ArgumentParser(add_help=False)
+    parser.add_argument("--date", help="Target game date, YYYY-MM-DD (default: today)")
+    parser.add_argument("--season", help="Season ID, e.g. 20242025")
+    options, remaining = parser.parse_known_args(sys.argv[2:])
     opponent = None
     line = None
     is_home = True
     is_b2b = None
 
-    for arg in sys.argv[2:]:
+    for arg in remaining:
         al = arg.lower()
         if al == "home":
             is_home = True
@@ -1010,7 +1131,8 @@ def main():
             except ValueError:
                 pass
 
-    result = analyze_player(player_id, line, is_home, opponent, is_b2b)
+    result = analyze_player(player_id, line, is_home, opponent, is_b2b,
+                            game_date=options.date, season=options.season)
     print_analysis(result)
 
 
