@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-10-02T21:05:02.689501+00:00",
+  "cohort_season": "20222023",
+  "development_season": "20232024",
+  "validation_season": "20242025",
+  "reserved_holdout": "20252026",
+  "cohort": [
+    {
+      "id": 8476374,
+      "name": "Sean Kuraly",
+      "position": "F",
+      "volume_tier": "low",
+      "cohort_games": 71,
+      "cohort_shots_pg": 1.408450704225352
+    },
+    {
+      "id": 8476889,
+      "name": "Radek Faksa",
+      "position": "F",
+      "volume_tier": "low",
+      "cohort_games": 81,
+      "cohort_shots_pg": 1.0864197530864197
+    },
+    {
+      "id": 8473422,
+      "name": "Nick Foligno",
+      "position": "F",
+      "volume_tier": "low",
+      "cohort_games": 60,
+      "cohort_shots_pg": 1.1833333333333333
+    },
+    {
+      "id": 8475842,
+      "name": "Sam Carrick",
+      "position": "F",
+      "volume_tier": "low",
+      "cohort_games": 52,
+      "cohort_shots_pg": 0.9615384615384616
+    },
+    {
+      "id": 8475149,
+      "name": "Marcus Johansson",
+      "position": "F",
+      "volume_tier": "medium",
+      "cohort_games": 80,
+      "cohort_shots_pg": 1.7125
+    },
+    {
+      "id": 8482149,
+      "name": "Cole Perfetti",
+      "position": "F",
+      "volume_tier": "medium",
+      "cohort_games": 51,
+      "cohort_shots_pg": 1.7647058823529411
+    },
+    {
+      "id": 8476826,
+      "name": "Yanni Gourde",
+      "position": "F",
+      "volume_tier": "medium",
+      "cohort_games": 81,
+      "cohort_shots_pg": 1.7407407407407407
+    },
+    {
+      "id": 8480205,
+      "name": "Emil Bemstrom",
+      "position": "F",
+      "volume_tier": "medium",
+      "cohort_games": 55,
+      "cohort_shots_pg": 1.7272727272727273
+    },
+    {
+      "id": 8475913,
+      "name": "Mark Stone",
+      "position": "F",
+      "volume_tier": "high",
+      "cohort_games": 43,
+      "cohort_shots_pg": 2.627906976744186
+    },
+    {
+      "id": 8477492,
+      "name": "Nathan MacKinnon",
+      "position": "F",
+      "volume_tier": "high",
+      "cohort_games": 71,
+      "cohort_shots_pg": 5.154929577464789
+    },
+    {
+      "id": 8479318,
+      "name": "Auston Matthews",
+      "position": "F",
+      "volume_tier": "high",
+      "cohort_games": 74,
+      "cohort_shots_pg": 4.418918918918919
+    },
+    {
+      "id": 8480113,
+      "name": "Alex Iafallo",
+      "position": "F",
+      "volume_tier": "high",
+      "cohort_games": 59,
+      "cohort_shots_pg": 2.2542372881355934
+    },
+    {
+      "id": 8478841,
+      "name": "Colton White",
+      "position": "D",
+      "volume_tier": "low",
+      "cohort_games": 46,
+      "cohort_shots_pg": 0.6521739130434783
+    },
+    {
+      "id": 8477851,
+      "name": "Jordan Oesterle",
+      "position": "D",
+      "volume_tier": "low",
+      "cohort_games": 52,
+      "cohort_shots_pg": 1.0384615384615385
+    },
+    {
+      "id": 8475747,
+      "name": "Patrik Nemeth",
+      "position": "D",
+      "volume_tier": "low",
+      "cohort_games": 75,
+      "cohort_shots_pg": 0.8266666666666667
+    },
+    {
+      "id": 8475797,
+      "name": "Jarred Tinordi",
+      "position": "D",
+      "volume_tier": "low",
+      "cohort_games": 44,
+      "cohort_shots_pg": 0.7272727272727273
+    },
+    {
+      "id": 8481524,
+      "name": "Bowen Byram",
+      "position": "D",
+      "volume_tier": "medium",
+      "cohort_games": 42,
+      "cohort_shots_pg": 1.5476190476190477
+    },
+    {
+      "id": 8480807,
+      "name": "Mattias Samuelsson",
+      "position": "D",
+      "volume_tier": "medium",
+      "cohort_games": 55,
+      "cohort_shots_pg": 1.3818181818181818
+    },
+    {
+      "id": 8480058,
+      "name": "Pierre-Olivier Joseph",
+      "position": "D",
+      "volume_tier": "medium",
+      "cohort_games": 75,
+      "cohort_shots_pg": 1.44
+    },
+    {
+      "id": 8479439,
+      "name": "Jacob MacDonald",
+      "position": "D",
+      "volume_tier": "medium",
+      "cohort_games": 58,
+      "cohort_shots_pg": 1.293103448275862
+    },
+    {
+      "id": 8475764,
+      "name": "Cam Fowler",
+      "position": "D",
+      "volume_tier": "high",
+      "cohort_games": 82,
+      "cohort_shots_pg": 1.5853658536585367
+    },
+    {
+      "id": 8478038,
+      "name": "Devon Toews",
+      "position": "D",
+      "volume_tier": "high",
+      "cohort_games": 80,
+      "cohort_shots_pg": 2.0625
+    },
+    {
+      "id": 8481542,
+      "name": "Moritz Seider",
+      "position": "D",
+      "volume_tier": "high",
+      "cohort_games": 82,
+      "cohort_shots_pg": 1.7073170731707317
+    },
+    {
+      "id": 8482105,
+      "name": "Jake Sanderson",
+      "position": "D",
+      "volume_tier": "high",
+      "cohort_games": 77,
+      "cohort_shots_pg": 1.7142857142857142
+    }
+  ],
+  "cohort_source_sha256": "9c3090d7f70a089bdb9d919f8916bc00d018478746b1aad805bce01bd6523988",
+  "cohort_rule": ">=40 cohort GP; F/D by shot-rate tertiles; four fixed hash picks per stratum; no replacements",
+  "lines_n_plus": [
+    2,
+    3,
+    4
+  ],
+  "prior_window": 30,
+  "min_current_for_common_sample": 10,
+  "min_prior_games": 20,
+  "candidates": {
+    "season_poisson": {
+      "kind": "season"
+    },
+    "recent10_poisson": {
+      "kind": "recent"
+    },
+    "blend10_poisson": {
+      "kind": "blend",
+      "strength": 10
+    },
+    "blend20_poisson": {
+      "kind": "blend",
+      "strength": 20
+    },
+    "blend20_nb10": {
+      "kind": "blend",
+      "strength": 20,
+      "dispersion": 10
+    },
+    "blend20_nb20": {
+      "kind": "blend",
+      "strength": 20,
+      "dispersion": 20
+    },
+    "blend20_nb40": {
+      "kind": "blend",
+      "strength": 20,
+      "dispersion": 40
+    },
+    "legacy_full": {
+      "kind": "legacy"
+    }
+  },
+  "selection": "Lowest equal-line pooled development Brier among candidate families; no validation tuning",
+  "bootstrap": "1000 paired player-cluster resamples; seed 1847",
+  "limitations": [
+    "Established-player cohort excludes rookies and short-season players.",
+    "No historical sportsbook prices; no market profitability conclusion.",
+    "Official historical stats include subsequent corrections.",
+    "Power-play, injuries and confirmed deployment are not supplied."
+  ]
+}

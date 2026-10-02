@@ -22,7 +22,6 @@ SPORT = "icehockey_nhl"
 MARKET = "player_shots_on_goal"
 DAILY_GAMES = 5
 MONTHLY_CREDIT_CAP = 450
-MIN_HISTORY = 10
 MIN_PAPER_EV = 0.05
 MAX_QUOTE_AGE = 600
 LOCAL_ZONE = ZoneInfo("America/Chicago")
@@ -182,7 +181,30 @@ def roster_names(team, season):
     return result
 
 
-def predict_players(event, quotes, now):
+def player_history(player_id, season, now, *, prior=False, data_dir=None):
+    """Retain prior logs for seven days; distinguish outages from zero games."""
+    cache = Path(data_dir) / 'model_inputs' / 'prior' / f'{player_id}-{season}.json.gz' if prior and data_dir else None
+    data = None
+    if cache and cache.exists():
+        with gzip.open(cache, 'rt') as f:
+            record = json.load(f)
+        age = (now - parse_time(record['fetched_at'])).total_seconds()
+        if 0 <= age < 7 * 86400:
+            data = record['response']
+    if data is None:
+        data = shots.api_request(f'{shots.BASE_URL}/player/{player_id}/game-log/{season}/2')
+        if data is None:
+            raise ValueError('Player history unavailable')
+        if data.get('seasonId') is not None and str(data['seasonId']) != season:
+            raise ValueError('Wrong player season')
+        if data.get('gameTypeId') is not None and data['gameTypeId'] != 2:
+            raise ValueError('Wrong player game type')
+        if cache:
+            atomic_json(cache, {'fetched_at': now.isoformat(), 'response': data}, compressed=True)
+    return shots.prepare_game_log(data.get('gameLog', []))
+
+
+def predict_players(event, quotes, now, data_dir=None):
     """Use exact normalized roster matches only. No fuzzy player guessing."""
     game, home, away = map_nhl_game(event)
     if game is None:
@@ -201,23 +223,20 @@ def predict_players(event, quotes, now):
             continue
         player = players[0]
         try:
-            history = shots.prepare_game_log(shots.get_player_game_log(player["id"], season), day)
+            history = shots.prepare_game_log(player_history(player['id'], season, now), day)
             base = {"player_id": player["id"], "nhl_game_id": game["id"], "season": season,
                     "history_games": len(history), "input_as_of": now.isoformat()}
-            if len(history) < MIN_HISTORY:
-                models[name] = {**base, "status": "insufficient_current_season_history"}
-                continue
-            result = shots.analyze_player(player["id"], is_home=player["team"] == home,
-                opponent=away if player["team"] == home else home, game_date=day,
-                season=season, games=history, player_info=player["info"],
-                team_stats=shots.get_team_stats(season), boxscores={})
-            models[name] = {**base, "status": "ok", "prediction": result}
+            from paper_model import forecast
+            prior_season = f'{int(season[:4])-1}{season[:4]}'
+            prior = player_history(player['id'], prior_season, now, prior=True, data_dir=data_dir)
+            models[name] = {**base, **forecast(history, prior, day, player['team'])}
         except (ValueError, KeyError, TypeError):
             models[name] = {"status": "invalid_nhl_data", "player_id": player["id"]}
     return models
 
 
 def enrich_quotes(quotes, models, now, model_version):
+    paper_lines = json.loads(Path(__file__).with_name('paper_model_config.json').read_text())['paper_lines']
     prices = {(q["book"], q["player"], q["line"], q["side"]): q["decimal_odds"] for q in quotes}
     for q in quotes:
         model = models.get(q["player"], {"status": "no_model"})
@@ -235,8 +254,11 @@ def enrich_quotes(quotes, models, now, model_version):
         if q["line"] % 1 != .5:
             q["blocked_reason"] = "only_half_point_lines_supported"
             continue
-        mean = model["prediction"]["projection"]["expected_shots"]
-        p = shots.prob_over(q["line"], mean)
+        if q['line'] not in paper_lines:
+            q['blocked_reason'] = 'outside_studied_lines'
+            continue
+        from paper_model import probability
+        p = probability(model['prediction'], q['line'])
         p = p if q["side"] == "Over" else 1 - p
         q.update({"model_probability": p, "model_fair_decimal_odds": 1 / p if p else None,
                   "expected_return": p * q["decimal_odds"] - 1,
@@ -269,7 +291,8 @@ def collect(data_dir, client, *, now=None, max_requests=5, predictor=predict_pla
     state["last_quota"] = usage
     day, selected = select_events(events, state, now)
     atomic_json(state_path, state)
-    version = hashlib.sha256(Path(shots.__file__).read_bytes()).hexdigest()
+    from paper_model import version as model_version
+    version = model_version()
     summary = {"recorded_at": now.isoformat(), "day": day, "requests": 0,
                "snapshots": 0, "quotes": 0, "new_paper_candidates": 0, "errors": [], "quota": usage}
     for event in selected:
@@ -298,7 +321,7 @@ def collect(data_dir, client, *, now=None, max_requests=5, predictor=predict_pla
                         "model_version": version, "quotes": quotes, "models": {}}
             snapshot["collector_version"] = hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
             snapshot["source_revision"] = os.environ.get("GITHUB_SHA")
-            snapshot["paper_protocol"] = {"min_history": MIN_HISTORY, "min_ev": MIN_PAPER_EV,
+            snapshot["paper_protocol"] = {"model_config": json.loads(Path(__file__).with_name('paper_model_config.json').read_text()), "min_ev": MIN_PAPER_EV,
                                           "max_quote_age_seconds": MAX_QUOTE_AGE}
             path = root / "snapshots" / day / f"{event['id']}-{stage}.json.gz"
             atomic_json(path, snapshot, compressed=True)
@@ -342,14 +365,16 @@ def collect(data_dir, client, *, now=None, max_requests=5, predictor=predict_pla
     return summary
 
 
-def settle_recent(data_dir, now=None):
+def settle_recent(data_dir, now=None, lookback_days=14):
     """Attach official outcomes to saved quotes; never fetch sportsbook results."""
     root = Path(data_dir)
     now = now or datetime.now(timezone.utc)
+    if not 1 <= lookback_days <= 365:
+        raise ValueError('Settlement lookback must be 1 to 365 days')
     groups = {}
     for path in sorted((root / "snapshots").glob("*/*.json.gz")):
         day = datetime.fromisoformat(path.parent.name).replace(tzinfo=LOCAL_ZONE)
-        if (now - day.astimezone(timezone.utc)).days > 14:
+        if (now - day.astimezone(timezone.utc)).days > lookback_days:
             continue
         with gzip.open(path, "rt") as f:
             snapshot = json.load(f)
@@ -358,18 +383,30 @@ def settle_recent(data_dir, now=None):
     completed = 0
     for event_id, snapshots in groups.items():
         target = root / "settlements" / f"{event_id}.json.gz"
+        previous = None
         if target.exists():
-            continue
+            with gzip.open(target, 'rt') as f:
+                previous = json.load(f)
+            checked = previous.get('checked_at', previous['settled_at'])
+            if parse_time(checked).date() == now.date():
+                continue
+            age = (now - parse_time(snapshots[0]['event']['commence_time'])).days
+            unresolved = any(q.get('actual_shots') is None for q in previous['quotes'])
+            if age > 7 and not unresolved:
+                continue
         ids = {m["nhl_game_id"] for s in snapshots for m in s["models"].values() if "nhl_game_id" in m}
         if len(ids) != 1:
             continue
-        boxscore = shots.get_boxscore(ids.pop())
+        game_id = ids.pop()
+        boxscore = shots.get_boxscore(game_id)
         if boxscore.get("gameState") not in ("OFF", "FINAL"):
             continue
         actuals = {}
         for team in ("homeTeam", "awayTeam"):
             for position in ("forwards", "defense"):
                 for p in boxscore.get("playerByGameStats", {}).get(team, {}).get(position, []):
+                    if p.get('toi') and shots.parse_toi(p['toi']) == 0:
+                        continue
                     if isinstance(p.get("sog"), int):
                         actuals[p["playerId"]] = p["sog"]
         rows = []
@@ -386,9 +423,17 @@ def settle_recent(data_dir, now=None):
                     if "model_probability" in q and row["result"] != "push":
                         row["brier"] = (q["model_probability"] - int(row["result"] == "win")) ** 2
                 rows.append(row)
-        atomic_json(target, {"event_id": event_id, "settled_at": now.isoformat(), "quotes": rows,
+        revisions = previous.get('revisions', []) if previous else []
+        old_actuals = {str(q.get('player_id')): q.get('actual_shots') for q in previous['quotes']} if previous else {}
+        new_actuals = {str(q.get('player_id')): q.get('actual_shots') for q in rows}
+        changed = bool(previous and old_actuals != new_actuals)
+        if changed:
+            revisions.append({'replaced_at': now.isoformat(), 'previous_actuals': old_actuals})
+        atomic_json(target, {"event_id": event_id, 'nhl_game_id': game_id,
+            "settled_at": previous['settled_at'] if previous else now.isoformat(),
+            'checked_at': now.isoformat(), 'revisions': revisions, "quotes": rows,
             "warning": "Official full-game SOG including overtime. Hypothetical returns; sportsbook participation and settlement rules require verification."}, compressed=True)
-        completed += 1
+        completed += int(previous is None or changed)
     return completed
 
 
@@ -404,14 +449,15 @@ def write_report(data_dir, summary):
     for data in sorted(observations, key=lambda item: parse_time(item["collected_at"])):
         quotes.extend(data["quotes"])
     usable = sum(q.get("model_status") == "ok" for q in quotes)
-    small = sum(q.get("model_status") == "insufficient_current_season_history" for q in quotes)
+    small = sum(q.get("model_status") in ('insufficient_current_season_history', 'insufficient_prior_season_history', 'team_change_review_required') for q in quotes)
     lines = ["# NHL odds research recorder", "", f"Updated: {summary['recorded_at']}", "",
         f"Today's archive: **{snapshots} snapshots / {len(quotes)} quotes**.", "",
-        f"Quotes with usable model history: {usable}. Blocked by early-season history: {small}.", "",
+        f"Quotes with usable model history: {usable}. Blocked by history or team-change rules: {small}.", "",
         f"API billing-cycle usage: {summary['quota']['used']} credits; {summary['quota']['remaining']} remaining.", "",
         "Five selected games per Chicago calendar day; three collection windows; 450-credit cap.", "",
         "**Paper research only. The model has not demonstrated a betting edge. No bets are placed.**", "",
         "Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settlements/.", "",
+        "[Prospective paper performance](PERFORMANCE.md) · [Operational health](health.json)", "",
         "## Latest paper candidates", ""]
     # Keep the most recently observed quote for each book/player/line/side.
     latest = {(q.get("event_id"), q["book"], q["player"], q["line"], q["side"]): q for q in quotes}
@@ -438,13 +484,19 @@ def main():
     parser.add_argument("--max-requests", type=int, default=5)
     args = parser.parse_args()
     try:
-        summary = collect(args.data_dir, OddsClient(os.environ.get("ODDS_API_KEY")), max_requests=args.max_requests)
+        summary = collect(args.data_dir, OddsClient(os.environ.get("ODDS_API_KEY")), max_requests=args.max_requests,
+            predictor=lambda event, quotes, now: predict_players(event, quotes, now, args.data_dir))
         try:
             settled = settle_recent(args.data_dir)
         except Exception:
             settled = 0
             summary["errors"].append("Outcome update failed; saved odds retained")
         write_report(args.data_dir, summary)
+        from performance_report import write_performance
+        from health_report import record_health
+        write_performance(args.data_dir)
+        atomic_json(args.data_dir / 'latest_run.json', summary)
+        record_health(args.data_dir, summary, success=not summary['errors'])
         text = (f"Saved {summary['snapshots']} snapshots / {summary['quotes']} quotes; "
                 f"{summary['new_paper_candidates']} new paper candidates. "
                 f"Credits used this billing cycle: {summary['quota']['used']}; "
@@ -460,6 +512,8 @@ def main():
         return 1 if summary["errors"] else 0
     except SafeAPIError as error:
         print(str(error))
+        from health_report import record_health
+        record_health(args.data_dir, {'errors': [str(error)]}, success=False)
         return 1
     except Exception:
         print("Collector failed; diagnostic details withheld to protect credentials")

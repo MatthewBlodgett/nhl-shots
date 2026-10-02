@@ -66,25 +66,37 @@ time within 15 minutes. Players must match exactly one normalized roster name.
 Accents and punctuation are normalized; fuzzy guesses are not used. Unmatched
 or ambiguous players are recorded with a blocked model status.
 
-The current model requires at least ten completed appearances in the current
-season before the target date. Early-season odds are still archived, but no
-paper candidates are produced for shorter histories. Prior-season blending
-is a future accuracy change; it is not silently substituted here.
+The paper collector uses the development-selected blend20_nb20 model,
+documented in research/README.md. The current-season shot sum is shrunk toward
+the last thirty prior-season appearances with weight equivalent to twenty
+games. Probabilities use negative binomial NB2 dispersion twenty, rather than
+the legacy CLI's Poisson engine. The CLI remains available for comparison.
 
-Live opponent season-to-date summaries are captured as available at the
-snapshot. PP context is not available from the inspected current boxscore
-schema and remains neutral. Missing inputs are exposed in the prediction.
+At least one completed current-season appearance and twenty prior-season
+appearances are required. Zero-current-history players and rookies without
+enough prior history remain blocked. A change from the last prior-season team
+blocks candidates until ten current-season appearances; this is a conservative
+operating guard, not a fitted effect. Inputs are strictly before the game date,
+recorded with hashes and feature coverage. Prior logs have a seven-day durable
+cache; current logs refresh on subsequent collections. HTTP outages are treated
+as invalid NHL data rather than invented zero-shot games.
+
+The study reconstructs dated opponent context for the legacy comparison and
+feature diagnostics. The selected paper model uses count history alone.
+Injury, opponent and PP adjustments are not applied to it. PP context was
+unavailable from the inspected boxscore schema. Missing inputs are exposed.
 No injuries, expected deployment or verified starting line information is
 currently integrated. Candidates remain unvalidated research observations.
 
-Half-point lines only can qualify. For decimal odds d and model probability p,
+Only the studied half-point lines 1.5, 2.5 and 3.5 can qualify. Other lines are
+archived with outside_studied_lines status. For decimal odds d and model probability p,
 the estimated return is p*d-1. Break-even probability is 1/d. A proportional
 margin-removed market estimate is available when both sides at the identical
 book/player/line are present; it is a benchmark, not the wager's break-even.
 
 Paper candidates require estimated return >=5%, a bookmaker update no more
 than ten minutes old (and no more than one minute in the future), a unique
-player match, and enough history. These are operating thresholds, not tuned
+player match, and the history and team-change gates. These are operating thresholds, not tuned
 profitability claims. Alert deduplication uses event/book/player/line/side,
 price and model version. Changed prices can generate another observation.
 
@@ -103,9 +115,31 @@ rules must be checked for each sportsbook before interpreting real returns.
 Settlements include hypothetical one-unit returns and Brier errors where a
 pre-game probability exists. Repeated quotes across books and windows are
 not independent games: group by player/game and a fixed observation window
-for a performance study. Current settlement files are created once and are
-not automatically revised for later NHL stat corrections. Games more than
-14 days old require a manual recovery after a prolonged outage.
+for a performance study. Settlements are rechecked once daily for seven days,
+with prior actuals retained in a revision ledger when counts change. Unresolved
+participation is rechecked through the lookback window. Games more than fourteen
+days old require manual recovery after a prolonged outage; settle_recent supports
+an explicit lookback up to 365 days. Sportsbook void rules remain unverified.
+
+## Prospective reports and agent reads
+
+data/PERFORMANCE.md and data/performance.json apply a fixed middle-window policy:
+at most one paper decision per player/game, selecting highest modeled return
+with stable tie breaks. Calibration uses one fixed quote per player/game.
+Results are split by model version. Missing results remain unresolved. Hypothetical
+ROI intervals use game clusters and are withheld below twenty settled games;
+price movement uses the last saved late quote, not a guaranteed closing price.
+
+data/health.json tracks recent runs, failures, credit pause, blockers, missing
+elapsed windows on observed games and settlement backlog. A failed runner cannot
+update it; agent status marks archives older than two hours as stale. Games without
+any snapshot are absent from observed-game coverage. No external notifications
+are sent.
+
+agent_tool.py provides read-only status, candidates, player and performance JSON.
+It makes no network requests or bets and accepts no credentials. Candidates are
+archived observations and marked expired against the query time. See
+docs/AGENT_INTERFACE.md. A hosted MCP service is not yet included.
 
 ## Running and pausing
 

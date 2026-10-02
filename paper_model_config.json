@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "name": "blend20_nb20",
+  "prior_strength": 20,
+  "prior_window": 30,
+  "dispersion": 20,
+  "paper_lines": [1.5, 2.5, 3.5],
+  "min_current_games": 1,
+  "min_prior_games": 20,
+  "team_change_min_current_games": 10,
+  "mode": "unvalidated_paper_research",
+  "selection": "Frozen from 20232024 development before 20242025 validation predictions",
+  "study_protocol": "research/protocol.json"
+}
