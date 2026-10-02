@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-10-02T21:44:08.975731+00:00",
-  "last_success_at": "2026-10-02T21:44:08.975731+00:00",
+  "last_attempt_at": "2026-10-02T22:35:25.292239+00:00",
+  "last_success_at": "2026-10-02T22:35:25.292239+00:00",
   "consecutive_failures": 0,
   "quota": {
-    "used": 6,
-    "remaining": 494
+    "used": 7,
+    "remaining": 493
   },
   "recent_runs": [
     {
@@ -21,20 +21,31 @@
       "requests": 1,
       "snapshots": 1,
       "errors": []
+    },
+    {
+      "at": "2026-10-02T22:35:25.292239+00:00",
+      "success": true,
+      "requests": 1,
+      "snapshots": 1,
+      "errors": []
     }
   ],
   "recent_blocked_quote_counts": {
-    "insufficient_current_season_history": 336,
+    "eligible": 106,
+    "insufficient_current_season_history": 362,
     "team_change_review_required": 22,
-    "eligible": 50,
     "nhl_game_unmatched": 84
   },
-  "observed_games_last_14_days": 4,
-  "missing_elapsed_windows_on_observed_games": 4,
+  "observed_games_last_14_days": 5,
+  "missing_elapsed_windows_on_observed_games": 5,
   "unsettled_games_more_than_6_hours_after_start": 0,
   "quota_paused": false,
+  "discovered_games_last_14_days": 5,
+  "selected_games_without_snapshots": 1,
+  "sampling_policies": {},
+  "planned_omitted_windows": 0,
   "limitations": [
     "No external notifications. A failed GitHub runner cannot update this file.",
-    "Games with no saved snapshot are absent from observed-game coverage."
+    "Discovery coverage starts with census deployment; games never discovered remain unknown."
   ]
 }
