@@ -1,154 +1,86 @@
 # NHL Shots on Goal Predictor 🏒
 
-**Predict shot totals for NHL player prop bets.**
+Python CLI for estimating player shots on goal and over/under probabilities.
+The model is a research prototype; predictive improvement and betting value have
+not yet been established by a clean historical study.
 
----
-
-## Quick Start
+## Setup and predictions
 
 ```bash
 pip install -r requirements.txt
-python shots.py mcdavid
-python shots.py matthews away
-python shots.py ovechkin 3.5 home
+python shots.py mcdavid CGY 3.5 away
+python shots.py matthews MIN 4.5 home b2b
+python shots.py mcdavid CGY 3.5 away --date 2025-01-15 --season 20242025
 ```
 
-## Usage
+Use a quick name from the CLI's name list, or any NHL player ID.
+Home is the default venue. The target date defaults to today, not tomorrow.
+Dates follow the machine's local calendar; supply --date when necessary.
+The season is inferred from the target date unless --season is supplied.
 
-```
-python shots.py <player_name_or_id> [opponent] [line] [home|away] [b2b|rest]
-```
+Predictions blend season, last-ten and last-five averages (default 50/30/20),
+then apply location, opponent, rest, power-play and ice-time factors.
+A Poisson distribution converts the expected shots into probabilities.
+These factors are heuristics, not proven effects.
 
-### Quick names
+Explicit dates and supplied histories use isolated prediction context:
+current player metadata, season-end opponent statistics and live boxscores
+are not silently imported. Missing dated opponent/PP data yields a neutral
+factor. The Python API accepts supplied dated context; see the evaluation guide.
 
-| Tier | Players |
-|---|---|
-| ⭐ Elite | mcdavid, draisaitl, matthews, mackinnon, kucherov, ovechkin |
-| A-tier | makar, pastrnak, kaprizov, stamkos, rantanen, marchand |
-| B-tier | kconnor, werenski, chychrun, guenther, meier, boldy, forsberg, caufield, larkin, bouchard, panarin, debrusk |
-| C-tier | kempe, jarvis, kadri, keller, svechnikov, hischier, hagel, reinhart, johnston, fiala, stutzle, dahlin, qhughes, eichel, celebrini, and more |
-
-Or use any NHL player ID directly.
-
-### Example output
-
-```
-============================================================
-  Connor McDavid (EDM)
-============================================================
-
-📊 Season Stats (58 games):
-   Total Shots: 220
-   Average: 3.79 shots/game
-   Home Avg: 4.62 | Away Avg: 2.97
-
-🔥 Recent Form:
-   Last 5 games: [8, 4, 3, 2, 3] (avg: 4.0)
-   Last 10 avg: 3.9
-
-💤 Days Rest Analysis:
-   Current: 3+ days (factor: 1.03x)
-   Historical: B2B=3.7, 1-day=3.74, 2-day=4.0, 3+day=4.0
-
-⚡ Power Play Time (L3):
-   Avg PP TOI: 4.32 min/game
-   Status: PP1 player (factor: 1.08x)
-
-📈 Time on Ice Trend:
-   Recent (L5): 24.11 min | Season: 23.11 min
-   Trend: Stable (factor: 1.0x)
-
-🏠🛣️  Home/Away Splits:
-   Home: 4.62 avg (29 games)
-   Away: 2.97 avg (29 games)
-   H/A Ratio: 1.558x
-   🏡 Player-specific factors: Home=1.218x, Away=0.782x
-
-🎯 Projection (HOME):
-   Base: 3.87 × Loc: 1.218 × Rest: 1.03 × PP: 1.08
-   Expected shots: 5.42
-
-📈 Line Probabilities:
-   Line     Over       Under
-   ----------------------------
-   1.5      94.9%      5.1%
-   2.5      84.9%      15.1%
-   3.5      69.2%      30.8%
-   4.5      50.7%      49.3%
-   5.5      33.3%      66.7%
-```
-
-## How It Works
-
-1. **Data Source**: NHL API (free, no auth required)
-2. **Stats Calculated**:
-   - Season average (weight: 50%)
-   - Last 10 game form (weight: 30%)
-   - Last 5 game form (weight: 20%)
-   - Home/away splits (player-specific when ≥15 games per location)
-   - Opponent strength adjustment (shots allowed vs. league average)
-   - Days rest tiers (B2B / 1-day / 2-day / 3+day)
-   - Power play time correlation (from boxscore data)
-   - Time on ice trends (rising/stable/declining)
-3. **Projection**: Weighted average × all adjustment factors
-4. **Probabilities**: Poisson distribution for over/under lines
-
-## Backtesting
+## Honest historical evaluation
 
 ```bash
-python backtest.py mcdavid 3       # 3+ shots, 55% confidence
-python backtest.py matthews 4 65   # 4+ shots, 60% confidence
-python backtest.py all 3 55        # all players, 3+, 55%
+# Single season; 3 means THREE OR MORE shots, equivalent to over 2.5.
+python backtest.py mcdavid 3 55 --season 20242025 --output results.json
+
+# Development on earliest season; validation on middle season.
+# Latest season remains sealed and its player log is not requested.
+python backtest.py mcdavid 3 55 \
+  --seasons 20232024 20242025 20252026 \
+  --tune-weights --output development-validation.json
+
+# Open the final holdout only after choices are frozen.
+python backtest.py mcdavid 3 55 \
+  --seasons 20232024 20242025 20252026 \
+  --tune-weights --include-holdout --output final-evaluation.json
 ```
 
-## Testing
+The full model and season-average/recent-ten-average baselines are evaluated
+on identical games. Reports include MAE, RMSE, Brier score, calibration bins,
+data coverage and per-game predictions. Lower error and Brier are better.
+Optional weight tuning selects only on the earliest season's Brier score.
+The first ten player appearances of every season are warm-up by default.
+
+Historical player data can be fetched from the NHL API or supplied through
+--dataset. Opponent and power-play context must be supplied in that dataset;
+otherwise those adjustments remain neutral and report coverage is zero.
+Any reported ROI assumes hypothetical fixed -110 odds and is not evidence
+of profitability at real market prices.
+
+Read [docs/EVALUATION_GUIDE.md](docs/EVALUATION_GUIDE.md) for dataset format,
+the evaluation protocol, and limitations. Earlier Phase 1/2 documents are
+archived research notes; their accuracy and betting-edge claims are unverified.
+
+## Tests
 
 ```bash
-python -m pytest tests/ -v
+python -m pytest tests/ -q
 ```
 
-## Project Structure
+Tests run offline and check future-data isolation, threshold scoring, rest
+overrides, holdout exclusion, development-only tuning, calibration and CLI export.
 
-```
-nhl-shots/
-├── shots.py                # Prediction engine
-├── backtest.py             # Historical backtesting (uses shots.py)
-├── requirements.txt
-├── .gitignore
-├── README.md
-├── docs/                   # Phase research & validation docs
-│   ├── PHASE1_IMPLEMENTATION_SUMMARY.md
-│   ├── PHASE1_TEST_RESULTS.md
-│   ├── PHASE2_SUMMARY_FOR_MAIN.md
-│   ├── PHASE2_IMPLEMENTATION_SUMMARY.md
-│   ├── PHASE2_BEFORE_AFTER_COMPARISON.md
-│   ├── PHASE2_HOME_AWAY_RESEARCH.md
-│   ├── VALIDATION_TESTS.md
-│   └── USAGE_EXAMPLES.md
-├── home_away_research.py   # Phase 2 research script
-├── home_away_research_results.json
-└── tests/                  # Pytest suite
-    └── test_shots.py
-```
+## Structure
 
-## Dependencies
+| Path | Role |
+| --- | --- |
+| shots.py | NHL API access and prediction engine |
+| backtest.py | Walk-forward evaluation, benchmarks and development-only tuning |
+| tests/ | Offline regression tests |
+| docs/EVALUATION_GUIDE.md | Protocol, dataset schema and verification |
+| home_away_research.py | Original exploratory home/away research |
+| docs/PHASE*.md | Archived development notes |
 
-- Python 3.10+
-- `requests`
-- `pytest` (for running tests)
-
-## Data Source
-
-NHL API: `https://api-web.nhle.com/v1/`
-
-## Future Enhancements
-
-- [ ] Team shots allowed (opponent strength adjustment)
-- [ ] Line combos / projected TOI
-- [ ] Injury news integration
-- [ ] Batch analysis for all players in today's games
-- [ ] Web UI
-
-## License
-
-MIT
+Python 3.10+; requests and pytest. No website, sportsbook feed, injury feed,
+or automatic bet placement is included.

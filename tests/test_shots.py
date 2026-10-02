@@ -27,7 +27,7 @@ from shots import (
 
 def test_poisson_zero_lambda():
     """An expected value of 0 should always yield 0 shots."""
-    assert poisson_probability(0, 0) == 0.0
+    assert poisson_probability(0, 0) == 1.0
     assert poisson_probability(5, 0) == 0.0
 
 
@@ -95,7 +95,7 @@ def test_calculate_stats_basic():
 
 
 def test_calculate_stats_last_n():
-    games = [{"shots": i} for i in range(1, 11)]
+    games = [{"shots": i, "gameDate": f"2025-01-{i:02d}"} for i in range(1, 11)]
     s = calculate_stats(games, 3)
     assert s["games"] == 3
     assert s["total"] == 8 + 9 + 10  # 27
