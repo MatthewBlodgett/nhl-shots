@@ -3,11 +3,11 @@
   "errors": [],
   "new_paper_candidates": 0,
   "quota": {
-    "remaining": 498,
-    "used": 2
+    "remaining": 497,
+    "used": 3
   },
-  "quotes": 112,
-  "recorded_at": "2026-10-02T20:43:16.873038+00:00",
+  "quotes": 80,
+  "recorded_at": "2026-10-02T20:50:23.853550+00:00",
   "requests": 1,
   "snapshots": 1
 }
