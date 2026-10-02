@@ -14,11 +14,12 @@ Updated 2026-10-02. Paper research only. Repository implementation is authoritat
   in the inspected archive). Browser binary unavailable; rendered mobile QA is
   still pending. [PR5](https://github.com/MatthewBlodgett/nhl-shots/pull/5) merged. Remote
   build/artifact upload passed in [run37076819392](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37076819392).
-  Master build passed in [run37076909863](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37076909863),
-  but deployment stopped at Pages configuration with HTTP404: Pages is not enabled
-  for GitHub Actions. Owner must set Source=GitHub Actions in repository Settings >
-  Pages, then rerun deployment. Dashboard is not internet-live. The connected tools
-  cannot change Pages administration; no new token or paid service is needed.
+  Master build and deployment passed in [run37076909863, attempt2](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37076909863/attempts/2)
+  after the owner enabled GitHub Actions as the Pages source.
+  [Public dashboard](https://matthewblodgett.github.io/nhl-shots/) is deployed:
+  bounded checks on 2026-10-02 returned HTTP200 for the page, archive-client.js
+  and public archive summary (schema1,60 players, generated23:18:34 UTC; CORS enabled).
+  No recorder was rerun and no odds credits were consumed by deployment verification.
 - Master [recorder run37076909867](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37076909867)
   passed and persisted `data/review.json`:60 player summaries; quota9 used/491
   remaining at that recorded run. Browser reads consume no odds credits.
@@ -85,9 +86,9 @@ counts. Last prior recorder run37068563838 succeeded.
    not credible prospective evidence or authorization to relax eligibility.
 3. Bookmaker jurisdiction, full correction policies and abnormal-game evidence
    remain unresolved. Official statistical ROI is not executable-book ROI.
-4. Dashboard/API are implemented and tested locally. Internet hosting requires
-   an operating host; no hosted dashboard, autonomous agent or notifications
-   have been activated. No purchase or credentials were requested.
+4. Static dashboard is deployed and HTTP-verified on GitHub Pages. Rendered mobile
+   inspection remains pending. Python API remains local; no remote API, autonomous
+   agent or notifications have been activated. No purchase or credentials were requested.
 5. Sampling v2 needs prospective coverage review. It cannot recover never-discovered
    games or guarantee scheduled runner delivery. Abrupt death before artifact
    upload can lose a response, though acknowledged reservations survive.
