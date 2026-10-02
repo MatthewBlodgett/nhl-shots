@@ -1,64 +1,82 @@
 # NHL shots research build status
 
-Updated 2026-10-02. The odds recorder remains a paper research experiment.
+Updated 2026-10-02. Paper research only. Repository implementation is authoritative.
 
-## Completed in this build
+## Implemented operations extension
 
-1. Frozen 24-player cohort from 2022–23 with forwards/defensemen and shot-rate
-   strata; no later replacement of inactive players. Player logs match official
-   season game counts. Complete dated opponent context covers both study seasons.
-2. Reproducible development and validation study, compressed raw inputs and
-   per-game predictions. Eight predeclared model families, four legacy feature
-   ablations, line/position/volume breakdowns, calibration and paired player
-   cluster intervals. The 2025–26 holdout is not fetched by the study loader.
-3. Development-selected blend20_nb20 frozen for live paper forecasts. Prior
-   weighting and dispersion were not changed to match validation. Early-season
-   gates now require one current appearance, twenty prior appearances, and extra
-   caution for changed teams. Rookies and zero-current-history games stay blocked.
-   Candidate lines are restricted to the studied 1.5, 2.5 and 3.5 thresholds.
-4. Versioned reproducible live model inputs, seven-day prior-log cache and
-   distinct invalid-data versus history eligibility blocks.
-5. Prospective fixed-window reporting: one paper decision per player/game,
-   model-version separation, matched market benchmarks, calibration, hypothetical
-   returns and drawdowns, game-cluster intervals and unresolved outcomes.
-6. Once-daily stat-correction checks for seven days with previous-actual ledger;
-   longer unresolved recovery through a bounded explicit lookback.
-7. Operational health and bounded recent-run history, quote blockers, quota pause,
-   observed-game missing windows and settlement backlog. Read-only agent JSON CLI
-   returns timestamps, expiry, model coverage and research results without keys.
+- Durable Git request reservation before each paid call; failed acknowledgment
+  stops collection. Recovery artifact before final archive push; serialized runs.
+- Discovery census includes selected games without snapshots and unselected
+  games. Hash sampling for new daily selections records policy and a planned
+  early omission, preserving five middle/late windows and at most14 daily calls.
+  Existing selections are unchanged; 450-credit cap/50-credit reserve remain.
+- Official timestamped NHL projected injuries, scratch lists and line combinations
+  with exact IDs, same-day pregame gates, source hashes and explicit missingness.
+  Supplementary only: frozen live probabilities and eligibility are unchanged.
+- Separate reproducible development-only studies for zero-current-history,
+  team changes, TOI role changes and an official12-player rookie cohort.
+- Written future evaluation protocol plus per-feature shadow study code,
+  development artifact freeze, hash/version validation gates and no holdout reader.
+- Version-separated reporting adds Wilson bin intervals, paired market Brier
+  game-cluster uncertainty, unique sampling counts, price-movement coverage,
+  incomplete-game drawdown exclusion and unresolved bookmaker settlement counts.
+- Mobile dashboard and read-only HTTP API: status, candidates, player forecasts,
+  performance and research. Actual local HTTP integration tests exercise routes,
+  invalid inputs, no arbitrary files and no POST. Loopback only, no hosted service.
+- Rule registry covers all four sampled books; FanDuel Illinois and partial Bovada/BetOnline source reviews.
+  All current bookmaker settlements remain unresolved rather than invented.
 
-## Evidence and limits
+Details and study results: [RESEARCH_OPERATIONS.md](RESEARCH_OPERATIONS.md).
+API/dashboard: [AGENT_INTERFACE.md](AGENT_INTERFACE.md).
+Next frozen protocol: [next_protocol.json](../research/next_protocol.json).
+
+## Verification
+
+Local regression:109 passed. Offline replay of coverage and rookie studies passed.
+Local HTTP integration passed. Official NHL daily article returned HTTP200 with
+publication/modification time and SHA256 capture. Official rookie census and12
+player logs collected only for2023–24 development; all logs matched census GP.
+No historical validation or reserved2025–26 holdout was fetched by new studies.
+Remote verification: [recorder run37073265058](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37073265058)
+passed every step, including durable reservations, collection, recovery artifact
+and final persistence. One paid request saved82 quotes; usage7/493. Archive at
+19723d4 had six snapshots /574 quotes /four events. Twelve forecast records
+included supplemental context. No model/eligibility changes were made.
+Both [push regression](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37073265141)
+and [PR regression](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37073274367)
+passed. Recovery artifact11255926856 is available for14 days.
+Implementation: [PR4](https://github.com/MatthewBlodgett/nhl-shots/pull/4).
+
+Initial inspected master:94c223dff32073084968efe0e7ca4a1a40227cee; no open PRs.
+Inspected odds-records:1d27f87ad095ef58db27ac7676951cac9cfc8ed3; five snapshots,
+four events,492 quotes across DraftKings/FanDuel/Bovada/BetOnline. Provider usage
+at that saved check:6 used/494 remaining. These are dated observations, not live
+counts. Last prior recorder run37068563838 succeeded.
+
+## Functionality awaiting evidence or deployment
+
+1. Timestamped feature studies need future observations and settled games before
+   fitting/evaluating improvements. PP roles and projected TOI have no complete
+   reliable free structured source; missing fields must remain missing.
+2. Rookie/zero-history and role-change studies are development diagnostics,
+   not credible prospective evidence or authorization to relax eligibility.
+3. Bookmaker jurisdiction, full correction policies and abnormal-game evidence
+   remain unresolved. Official statistical ROI is not executable-book ROI.
+4. Dashboard/API are implemented and tested locally. Internet hosting requires
+   an operating host; no hosted dashboard, autonomous agent or notifications
+   have been activated. No purchase or credentials were requested.
+5. Sampling v2 needs prospective coverage review. It cannot recover never-discovered
+   games or guarantee scheduled runner delivery. Abrupt death before artifact
+   upload can lose a response, though acknowledged reservations survive.
+6. Probability-parameter uncertainty remains unvalidated; cluster intervals and
+   calibration intervals are descriptive, and sparse bins are explicitly limited.
+7. Both final holdouts remain closed. Live model promotion requires fresh validation;
+   historical validation already viewed cannot be used to choose new parameters.
+
+## Existing frozen model evidence
 
 Validation: 1,343 player games, including 180 with one through nine current
 appearances. Selected Brier 0.146610; season baseline 0.148067; recent ten
 0.153496; legacy engine 0.149249. Paired interval versus season baseline
 [-0.002958, 0.000408] includes zero. These results support continued paper
 testing, not a claim of predictive superiority or profitability. See research/README.md.
-
-## Remaining priorities
-
-1. Accumulate and review prospective results under the frozen model; verify
-   each sampled bookmaker's SOG participation, overtime and void rules before
-   interpreting hypothetical returns as executable results.
-2. Investigate reliable timestamped injuries, line deployment, projected ice
-   time and PP-role data. No external provider is selected or purchased. Future
-   feature studies must use development-only choices and a fresh validation
-   period rather than tune to the results already viewed.
-3. Study rookies, zero-current-history players and changed roles; the current
-   cohort does not support their eligibility. Consider probability calibration
-   only through a properly separated experiment; none has been fitted here.
-4. Add a convenient review dashboard or hosted agent API/MCP after agreeing
-   the operating environment. The GitHub status/performance pages and JSON CLI
-   work now; no autonomous reasoning agent or hosted dashboard is deployed.
-5. Review free-tier sampling coverage and reserve use after several weeks.
-   Selective/rotating sampling needs a recorded policy, not silent selection
-   of only apparently attractive odds.
-6. Improve runner/persistence failure recovery, archive growth management and
-   complete coverage of games with no snapshots. A failed runner cannot write
-   its own health file; GitHub Actions still needs occasional review.
-7. Freeze the next research protocol before opening the reserved holdout.
-   Prospective proof, operational reliability and a separate user decision
-   are required before any live wagering or paid expansion.
-
-The previous Word plan is a dated review document. This file and the archive
-status are the current implementation record.

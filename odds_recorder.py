@@ -109,7 +109,7 @@ def stage_for(start, now):
     return None
 
 
-def select_events(events, state, now):
+def select_events(events, state, now, policy="first_five_v1"):
     """Fix the day's first five available upcoming games; never rotate in extras."""
     day = now.astimezone(LOCAL_ZONE).date().isoformat()
     valid = {}
@@ -123,7 +123,11 @@ def select_events(events, state, now):
             continue
     selected = state.setdefault("days", {}).get(day)
     if selected is None and valid:
-        selected = sorted(valid, key=lambda eid: (valid[eid]["commence_time"], eid))[:DAILY_GAMES]
+        order=(lambda eid: hashlib.sha256((day+':hash_five_v2:'+eid).encode()).hexdigest()) if policy=='hash_five_v2' else (lambda eid:(valid[eid]['commence_time'],eid))
+        selected = sorted(valid,key=order)[:DAILY_GAMES]
+        state.setdefault('day_policies',{})[day]=policy
+        if policy=='hash_five_v2' and len(selected)==5:
+            state.setdefault('planned_omissions',{})[selected[-1]+':early']={'day':day,'reason':'14_call_daily_plan_preserves_middle_and_late'}
         state["days"][day] = selected
     return day, [valid[eid] for eid in selected or [] if eid in valid]
 
@@ -210,6 +214,13 @@ def predict_players(event, quotes, now, data_dir=None):
     if game is None:
         return {q["player"]: {"status": "nhl_game_unmatched"} for q in quotes}
     season = str(game["season"])
+    article = None
+    context_error = None
+    from official_context import load_article, player_observations
+    try:
+        article = load_article(data_dir, season, now)
+    except Exception:
+        context_error = 'official_editorial_unavailable'
     names = {}
     for team in (home, away):
         for key, players in roster_names(team, season).items():
@@ -230,6 +241,15 @@ def predict_players(event, quotes, now, data_dir=None):
             prior_season = f'{int(season[:4])-1}{season[:4]}'
             prior = player_history(player['id'], prior_season, now, prior=True, data_dir=data_dir)
             models[name] = {**base, **forecast(history, prior, day, player['team'])}
+            from context_inputs import context_for
+            observations=player_observations(article,event,player,now)
+            if observations and data_dir:
+                context_path=Path(data_dir)/'context'/'observations.json'
+                previous=json.loads(context_path.read_text()) if context_path.exists() else []
+                unique={hashlib.sha256(json.dumps(r,sort_keys=True).encode()).hexdigest():r for r in previous+observations}
+                atomic_json(context_path,list(unique.values()))
+            models[name]['supplemental_context'] = context_for(data_dir, player['id'], event['id'], now, history)
+            models[name]['supplemental_context']['collection_error'] = context_error
         except (ValueError, KeyError, TypeError):
             models[name] = {"status": "invalid_nhl_data", "player_id": player["id"]}
     return models
@@ -277,7 +297,7 @@ def enrich_quotes(quotes, models, now, model_version):
     return quotes
 
 
-def collect(data_dir, client, *, now=None, max_requests=5, predictor=predict_players):
+def collect(data_dir, client, *, now=None, max_requests=5, predictor=predict_players, reserve_callback=None, sampling_policy="first_five_v1"):
     realtime = now is None
     now = now or datetime.now(timezone.utc)
     if not 1 <= max_requests <= DAILY_GAMES:
@@ -289,7 +309,20 @@ def collect(data_dir, client, *, now=None, max_requests=5, predictor=predict_pla
         raise ValueError("Unsupported state schema; collection stopped")
     events, usage = client.events()
     state["last_quota"] = usage
-    day, selected = select_events(events, state, now)
+    day, selected = select_events(events, state, now, sampling_policy)
+    # Discovery census includes unsampled games and selected games with no props.
+    census = state.setdefault("event_census", {})
+    for event in events:
+        try:
+            start = parse_time(event["commence_time"])
+            if start.astimezone(LOCAL_ZONE).date().isoformat() != day:
+                continue
+            census[event["id"]] = {"event": event, "last_seen_at": now.isoformat(),
+                "first_seen_at": census.get(event["id"], {}).get("first_seen_at", now.isoformat()),
+                "selected": event["id"] in state.get("days", {}).get(day, []),
+                "sampling_policy": state.get("day_policies",{}).get(day,"first_five_v1")}
+        except (KeyError, TypeError, ValueError):
+            continue
     atomic_json(state_path, state)
     from paper_model import version as model_version
     version = model_version()
@@ -300,12 +333,15 @@ def collect(data_dir, client, *, now=None, max_requests=5, predictor=predict_pla
             now = datetime.now(timezone.utc)
         stage = stage_for(parse_time(event["commence_time"]), now)
         slot = event["id"] + ":" + str(stage)
-        if (stage is None or slot in state["attempts"] or summary["requests"] >= max_requests
+        if (stage is None or slot in state.get("planned_omissions",{}) or slot in state["attempts"] or summary["requests"] >= max_requests
                 or usage["used"] >= MONTHLY_CREDIT_CAP or usage["remaining"] <= 50):
             continue
         # Reserve the slot before the request: never blindly repeat a possibly billed call.
         state["attempts"][slot] = {"status": "reserved", "at": now.isoformat()}
         atomic_json(state_path, state)
+        if reserve_callback is not None:
+            # Paid call is forbidden unless the reservation is durably acknowledged.
+            reserve_callback(root)
         summary["requests"] += 1
         try:
             response, usage = client.odds(event["id"])
@@ -331,7 +367,8 @@ def collect(data_dir, client, *, now=None, max_requests=5, predictor=predict_pla
                 if parse_time(event["commence_time"]) <= collected_at:
                     snapshot["models"] = {q["player"]: {"status": "game_already_started"} for q in quotes}
                 else:
-                    snapshot["models"] = predictor(event, quotes, collected_at)
+                    snapshot["models"] = (predictor(event, quotes, collected_at, data_dir=root)
+                        if predictor is predict_players else predictor(event, quotes, collected_at))
                 snapshot["quotes"] = enrich_quotes(quotes, snapshot["models"], collected_at, version)
                 atomic_json(path, snapshot, compressed=True)
             except Exception:
@@ -422,6 +459,9 @@ def settle_recent(data_dir, now=None, lookback_days=14):
                         q["decimal_odds"] - 1 if row["result"] == "win" else -1)
                     if "model_probability" in q and row["result"] != "push":
                         row["brier"] = (q["model_probability"] - int(row["result"] == "win")) ** 2
+                # Official statistical outcomes and bookmaker settlements are distinct.
+                from settlement_rules import assess
+                row["sportsbook_settlement"] = assess(q, actual, now)
                 rows.append(row)
         revisions = previous.get('revisions', []) if previous else []
         old_actuals = {str(q.get('player_id')): q.get('actual_shots') for q in previous['quotes']} if previous else {}
@@ -478,14 +518,34 @@ def write_report(data_dir, summary):
     (root / "README.md").write_text("\n".join(lines) + "\n")
 
 
+def persist_reservation(root):
+    """Push only the ledger to odds-records before any possibly billed call."""
+    import subprocess
+    repo=Path(root).resolve().parent
+    def run(*args):
+        result=subprocess.run(['git','-C',str(repo),*args],capture_output=True,text=True)
+        if result.returncode: raise SafeAPIError('Reservation persistence failed; no paid call attempted')
+        return result.stdout.strip()
+    # Do not allow this option to write into the application branch.
+    branch=run('rev-parse','--abbrev-ref','HEAD')
+    if branch!='odds-records': raise SafeAPIError('Durable reservations require odds-records checkout')
+    run('config','user.name','NHL Odds Recorder')
+    run('config','user.email','nhl-odds-recorder@users.noreply.github.com')
+    run('add','-f','data/state.json')
+    run('commit','-m','Reserve odds request before collection')
+    run('push','origin','HEAD:odds-records')
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, default=Path("data"))
     parser.add_argument("--max-requests", type=int, default=5)
+    parser.add_argument("--durable-reservations", action="store_true")
+    parser.add_argument("--sampling-policy",choices=["first_five_v1","hash_five_v2"],default="first_five_v1")
     args = parser.parse_args()
     try:
         summary = collect(args.data_dir, OddsClient(os.environ.get("ODDS_API_KEY")), max_requests=args.max_requests,
-            predictor=lambda event, quotes, now: predict_players(event, quotes, now, args.data_dir))
+            reserve_callback=persist_reservation if args.durable_reservations else None, sampling_policy=args.sampling_policy)
         try:
             settled = settle_recent(args.data_dir)
         except Exception:
