@@ -34,11 +34,13 @@ configure-pages action also requires an administration-capable token to enable
 Pages automatically; the normal Actions token is insufficient for that setup.
 No additional token or paid service is needed when the owner enables the setting.
 
-Expected address after successful deployment:
-https://matthewblodgett.github.io/nhl-shots/
+Deployed dashboard: https://matthewblodgett.github.io/nhl-shots/
 
-That address must not be described as active until deployment and an HTTP check
-succeed. No notifications or autonomous agent are deployed by this workflow.
+[Deployment run37076909863, attempt2](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37076909863/attempts/2)
+succeeded on 2026-10-02 after the owner enabled the Pages source. Bounded public
+HTTP checks returned200 for HTML, JavaScript and the archive summary (schema1,
+60 players, generated23:18:34 UTC; CORS enabled). No odds requests were made.
+No notifications or autonomous agent are deployed by this workflow.
 
 ## Local verification
 
