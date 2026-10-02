@@ -152,9 +152,12 @@ def test_is_b2b_false():
 
 # ── Season detection ───────────────────────────────────────────────
 
-def test_get_current_season_format():
+def test_get_current_season_format(monkeypatch):
     """Season string should be 8 digits: '20252026' pattern."""
-    s = get_current_season()
+    import shots
+    monkeypatch.setattr(shots, "api_request", lambda *a, **k: {"seasons": [
+        {"id": 20262027, "standingsStart": "2026-09-29"}]})
+    s = get_current_season("2026-10-02")
     assert len(s) == 8
     assert s.isdigit()
     # first 4 digits + 1 should equal last 4 digits

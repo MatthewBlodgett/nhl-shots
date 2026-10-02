@@ -16,10 +16,16 @@ python shots.py mcdavid CGY 3.5 away --date 2025-01-15 --season 20242025
 Use a quick name from the CLI's name list, or any NHL player ID.
 Home is the default venue. The target date defaults to today, not tomorrow.
 Dates follow the machine's local calendar; supply --date when necessary.
-The season is inferred from the target date unless --season is supplied.
+The season is resolved from NHL start-date metadata unless --season is supplied.
+This handles the September 29 start of 2026–27 (season ID 20262027), rather
+than assuming every season starts in October. Verified 2025/2026 boundaries
+are used with a warning if season metadata is unavailable. Supplied offline
+histories avoid network lookups and should include an explicit season.
 
 Predictions blend season, last-ten and last-five averages (default 50/30/20),
 then apply location, opponent, rest, power-play and ice-time factors.
+Fewer than ten completed games triggers an early-season sample warning;
+the engine does not silently replace the current season with last year's log.
 A Poisson distribution converts the expected shots into probabilities.
 These factors are heuristics, not proven effects.
 

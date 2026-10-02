@@ -8,8 +8,8 @@ development-only weight selection and chronological multi-season evaluation.
 
 Verified on 2026-10-02 with offline regression tests. NHL player-log and team
 statistics requests returned HTTP 403 in the implementation environment.
-No genuine historical accuracy, calibration or profitability result is claimed.
-Synthetic fixtures validate software behavior, not predictive skill.
+Subsequent live requests succeeded after the season API update; see the live
+checks below. Synthetic fixtures validate software behavior, not predictive skill.
 
 ## Temporal boundaries
 
@@ -40,7 +40,12 @@ over 3.5 means >= 4. Integer lines have a push probability; an equal outcome is
 neither an over win nor an under win.
 
 Today is the default target date, using the machine's local calendar. --date
-removes ambiguity. --season overrides the October season-ID heuristic.
+removes ambiguity. --season overrides NHL start-date metadata. The resolver
+uses standings-season standingsStart dates, including September 29, 2026,
+for season 20262027. Verified 2025/2026 start dates provide an outage fallback;
+older unknown boundaries retain the calendar heuristic with a warning.
+Supplied offline histories do not fetch metadata; supply an explicit season
+for authoritative historical season selection.
 Explicit b2b forces zero rest days. Explicit rest forces at least one rest
 day, preserving a longer inferred rest interval. Rest is based on player
 appearances: missed appearances can make it differ from team schedule rest.
@@ -162,3 +167,49 @@ selection, causal feature validation and real-market odds remain future work.
 
 Earlier Phase 1/2 notes are exploratory. Their assertions of statistical
 significance and betting edge are not established by this implementation.
+
+## New-season API checks (2026-10-02)
+
+The NHL standings-season, schedule/now, player game-log/now, team summary
+and latest-game boxscore endpoints returned HTTP 200 during live inspection.
+The current player log reports seasonId 20262027 and gameTypeId 2. McDavid's
+log contained two completed regular-season games. The fetched boxscore did
+not contain powerPlayToi, so PP adjustment correctly remains neutral.
+
+The default season-specific log URL remains /player/ID/game-log/20262027/2.
+Returned season and game-type metadata are validated, logs are sorted, and
+empty new-season logs do not fall back silently to a prior season. Utah
+Mammoth is explicitly mapped to UTA. Projections with fewer than ten games
+display a provisional early-season warning. These checks verify current API
+compatibility, not model accuracy or an early-season betting edge.
+
+Sources for verified season boundaries:
+
+- https://www.nhl.com/news/nhl-announces-2026-27-regular-season-schedule
+- https://media.nhl.com/site/vasset/public/attachments/2025/07/19119/2025-26%20Regular-Season%20Schedule%20News%20Release.pdf
+- https://api-web.nhle.com/v1/standings-season
+
+### Historical API smoke evaluation
+
+After access recovered, a one-player McDavid run used 20232024 for development
+and 20242025 for validation at 3+ shots, with earliest-season weight tuning.
+The 20252026 holdout was neither loaded nor scored. Opponent/PP context was
+not supplied, so those multipliers were neutral. This is a partial-feature,
+selected-player check, not a broad accuracy study or a basis for betting.
+
+| Period | Eligible games | Model | MAE | RMSE | Brier |
+| --- | ---: | --- | ---: | ---: | ---: |
+| 20232024 development | 66 | full | 1.633 | 2.193 | 0.2414 |
+| 20232024 development | 66 | season_average | 1.754 | 2.239 | 0.2464 |
+| 20232024 development | 66 | recent_average | 1.882 | 2.296 | 0.2703 |
+| 20242025 validation | 57 | full | 1.731 | 2.121 | 0.2772 |
+| 20242025 validation | 57 | season_average | 1.706 | 2.085 | 0.2762 |
+| 20242025 validation | 57 | recent_average | 1.675 | 2.083 | 0.2662 |
+
+Development selected weights (1.0, 0.0, 0.0), retaining the engine's other
+available adjustment factors. Input logs had 76 and 67 games respectively,
+with ten warm-up games excluded per season.
+
+The full model did not outperform either baseline on this validation period.
+No parameters were changed in response to the validation result. A broader
+fixed player sample with consistent dated feature context is the next study.

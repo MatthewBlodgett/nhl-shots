@@ -67,14 +67,40 @@ def api_request(url: str, cache_ttl: int | None = None) -> dict | None:
 
 # ── Season auto-detection ──────────────────────────────────────────
 
-def get_current_season(game_date: str | None = None) -> str:
-    """Auto-detect the current NHL season ID.
+def get_current_season(game_date: str | None = None, *, use_api: bool = True) -> str:
+    """Resolve the season from NHL start dates, including September openers.
 
-    The NHL season ID format is ``YYYYYYYY`` (e.g. ``20252026``).
-    A season starts in October; games before Oct belong to the previous year's season.
+    Use the most recent season that has actually started on the target date.
+    An explicit date never resolves to a later season just because it is now
+    current. Verified recent starts provide a fallback during API outages.
     """
     now = datetime.strptime(game_date, "%Y-%m-%d") if game_date else datetime.now()
+    target = now.strftime("%Y-%m-%d")
+    data = api_request(f"{BASE_URL}/standings-season", cache_ttl=3600) if use_api else None
+    candidates = []
+    for entry in (data or {}).get("seasons", []):
+        season_id = str(entry.get("id", ""))
+        start = entry.get("standingsStart", "")
+        try:
+            datetime.strptime(start, "%Y-%m-%d")
+        except (ValueError, TypeError):
+            continue
+        if (len(season_id) == 8 and season_id.isdigit()
+                and int(season_id[4:]) == int(season_id[:4]) + 1
+                and start <= target):
+            candidates.append((start, season_id))
+    if candidates:
+        return max(candidates)[1]
+
+    if use_api:
+        warnings.warn("NHL season metadata unavailable; using fallback season boundary")
     year, month = now.year, now.month
+    # Source: NHL official regular-season schedule releases. Do not change
+    # the boundary for every historical season to September.
+    verified_starts = {2025: "2025-10-07", 2026: "2026-09-29"}
+    if year in verified_starts:
+        start_year = year if target >= verified_starts[year] else year - 1
+        return f"{start_year}{start_year + 1}"
     if month >= 10:
         return f"{year}{year + 1}"
     return f"{year - 1}{year}"
@@ -203,6 +229,7 @@ def get_team_abbrev(full_name: str) -> str:
         "Tampa Bay Lightning": "TBL",
         "Toronto Maple Leafs": "TOR",
         "Utah Hockey Club": "UTA",
+        "Utah Mammoth": "UTA",
         "Vancouver Canucks": "VAN",
         "Vegas Golden Knights": "VGK",
         "Washington Capitals": "WSH",
@@ -240,7 +267,11 @@ def get_player_game_log(player_id: int, season: str | None = None) -> list:
     if not data:
         warnings.warn(f"No game log data for player {player_id}")
         return []
-    return data.get("gameLog", [])
+    if data.get("seasonId") is not None and str(data["seasonId"]) != season:
+        raise ValueError(f"NHL game log returned season {data['seasonId']}, expected {season}")
+    if data.get("gameTypeId") is not None and data["gameTypeId"] != 2:
+        raise ValueError("NHL game log is not regular-season data")
+    return prepare_game_log(data.get("gameLog", []))
 
 
 def get_player_info(player_id: int) -> dict:
@@ -682,7 +713,7 @@ def analyze_player(
         raise ValueError("Three nonnegative weights must sum to one")
     isolated = games is not None or game_date is not None
     game_date = game_date or datetime.now().strftime("%Y-%m-%d")
-    season = season or get_current_season(game_date)
+    season = season or get_current_season(game_date, use_api=games is None)
     if games is None:
         games = get_player_game_log(player_id, season)
     games = prepare_game_log(games, game_date)
@@ -779,6 +810,7 @@ def analyze_player(
         "season_id": season,
         "history_through": games[0]["gameDate"],
         "data_quality": {
+            "small_sample": len(games) < 10,
             "opponent_adjustment_available": opponent_info is not None,
             "pp_data_available": pp_analysis["games_analyzed"] > 0,
         },
@@ -877,6 +909,9 @@ def print_analysis(result: dict):
     print(f"\n{'='*60}")
     print(f"  {result['player']} ({result['team']})")
     print(f"{'='*60}")
+
+    if result.get("data_quality", {}).get("small_sample"):
+        print("\n⚠️  Early-season sample: fewer than 10 completed games; probabilities are provisional.")
 
     print(f"\n📊 Season Stats ({result['season']['games']} games):")
     print(f"   Total Shots: {result['season']['total_shots']}")
@@ -1030,7 +1065,7 @@ def main():
         print(f"NHL Shots on Goal Predictor — {season[:4]}-{season[4:]} season")
         print("=" * 48)
         print("\nUsage:")
-        print("  python shots.py <player> [opponent] [line] [home|away] [b2b|rest]")
+        print("  python shots.py <player> [opponent] [line] [home|away] [b2b|rest] [--date YYYY-MM-DD] [--season ID]")
         print("  python shots.py teams            (list team shot stats)")
         print("  python shots.py clear-cache      (flush API cache)")
         print("\nExamples:")
