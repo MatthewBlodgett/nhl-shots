@@ -88,5 +88,17 @@ overrides, holdout exclusion, development-only tuning, calibration and CLI expor
 | home_away_research.py | Original exploratory home/away research |
 | docs/PHASE*.md | Archived development notes |
 
-Python 3.10+; requests and pytest. No website, sportsbook feed, injury feed,
-or automatic bet placement is included.
+## Odds recording and paper research
+
+The [NHL odds recorder](docs/ODDS_RECORDER.md) saves current sportsbook SOG
+prices using the repository secret ODDS_API_KEY. It collects up to five games
+per Chicago day, once in each of three pregame windows, and stops at 450 used
+credits or 50 remaining. Snapshots and hypothetical results live on the
+separate odds-records branch; its data/README.md is the readable status page.
+
+The scheduled GitHub Action checks windows twice per hour. It creates only
+unvalidated paper candidates, blocks stale quotes and short player histories,
+and never places bets. Missing odds history is accumulated prospectively.
+
+Python 3.10+; requests and pytest. No website, injury feed, or automatic bet
+placement is included.

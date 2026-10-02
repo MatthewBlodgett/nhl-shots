@@ -1,0 +1,65 @@
+name: NHL Odds Recorder
+
+on:
+  push:
+    branches: [codex/odds-recorder, master]
+    paths:
+      - odds_recorder.py
+      - .github/workflows/record-odds.yml
+      - tests/test_odds_recorder.py
+  schedule:
+    - cron: '13,43 * * * *'
+  workflow_dispatch:
+    inputs:
+      max_requests:
+        description: Maximum paid event requests (1 to 5)
+        default: '1'
+        required: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nhl-odds-recorder
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          path: code
+      - name: Check out durable records
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: odds-records
+          path: records
+      - name: Install dependencies
+        working-directory: code
+        run: python3 -m pip install -r requirements.txt
+      - name: Run offline regression tests
+        if: github.event_name != 'schedule'
+        working-directory: code
+        run: python3 -m pytest tests/ -q
+      - name: Collect bounded snapshots and paper candidates
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          REQUEST_LIMIT: ${{ github.event_name == 'schedule' && '5' || inputs.max_requests || '1' }}
+        working-directory: code
+        run: python3 odds_recorder.py --data-dir ../records/data --max-requests "$REQUEST_LIMIT"
+      - name: Preserve snapshots and request reservations
+        if: always()
+        working-directory: records
+        run: |
+          if [ -d data ]; then
+            git config user.name 'NHL Odds Recorder'
+            git config user.email 'nhl-odds-recorder@users.noreply.github.com'
+            git add -f data
+            if ! git diff --cached --quiet; then
+              git commit -m 'Save NHL odds snapshots and collection state'
+              git push origin HEAD:odds-records
+            fi
+          fi
