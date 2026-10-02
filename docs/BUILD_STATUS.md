@@ -37,7 +37,15 @@ Local HTTP integration passed. Official NHL daily article returned HTTP200 with
 publication/modification time and SHA256 capture. Official rookie census and12
 player logs collected only for2023–24 development; all logs matched census GP.
 No historical validation or reserved2025–26 holdout was fetched by new studies.
-Remote Actions verification will be recorded after the implementation PR runs.
+Remote verification: [recorder run37073265058](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37073265058)
+passed every step, including durable reservations, collection, recovery artifact
+and final persistence. One paid request saved82 quotes; usage7/493. Archive at
+19723d4 had six snapshots /574 quotes /four events. Twelve forecast records
+included supplemental context. No model/eligibility changes were made.
+Both [push regression](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37073265141)
+and [PR regression](https://github.com/MatthewBlodgett/nhl-shots/actions/runs/37073274367)
+passed. Recovery artifact11255926856 is available for14 days.
+Implementation: [PR4](https://github.com/MatthewBlodgett/nhl-shots/pull/4).
 
 Initial inspected master:94c223dff32073084968efe0e7ca4a1a40227cee; no open PRs.
 Inspected odds-records:1d27f87ad095ef58db27ac7676951cac9cfc8ed3; five snapshots,
