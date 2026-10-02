@@ -24,6 +24,10 @@
       "at": "2026-10-02T20:50:24.095416+00:00",
       "status": "saved"
     },
+    "f5a9759e52a784d5fdcc1f3a2fcfc5a2:late": {
+      "at": "2026-10-02T23:18:17.988451+00:00",
+      "status": "reserved"
+    },
     "f5a9759e52a784d5fdcc1f3a2fcfc5a2:middle": {
       "at": "2026-10-02T20:51:19.957634+00:00",
       "status": "saved"
@@ -49,7 +53,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-02T22:35:13.282094+00:00",
-      "last_seen_at": "2026-10-02T23:06:19.664002+00:00",
+      "last_seen_at": "2026-10-02T23:18:17.818236+00:00",
       "sampling_policy": "first_five_v1",
       "selected": true
     },
@@ -63,7 +67,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-02T22:35:13.282094+00:00",
-      "last_seen_at": "2026-10-02T23:06:19.664002+00:00",
+      "last_seen_at": "2026-10-02T23:18:17.818236+00:00",
       "sampling_policy": "first_five_v1",
       "selected": true
     },
@@ -77,21 +81,21 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-02T22:35:13.282094+00:00",
-      "last_seen_at": "2026-10-02T23:06:19.664002+00:00",
+      "last_seen_at": "2026-10-02T23:18:17.818236+00:00",
       "sampling_policy": "first_five_v1",
       "selected": true
     },
     "dfc3a73fc50d3d1c4b58150c834e2e7d": {
       "event": {
         "away_team": "Washington Capitals",
-        "commence_time": "2026-10-02T23:10:00Z",
+        "commence_time": "2026-10-02T23:08:41Z",
         "home_team": "Carolina Hurricanes",
         "id": "dfc3a73fc50d3d1c4b58150c834e2e7d",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-02T22:35:13.282094+00:00",
-      "last_seen_at": "2026-10-02T23:06:19.664002+00:00",
+      "last_seen_at": "2026-10-02T23:18:17.818236+00:00",
       "sampling_policy": "first_five_v1",
       "selected": true
     },
@@ -105,7 +109,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-02T22:35:13.282094+00:00",
-      "last_seen_at": "2026-10-02T23:06:19.664002+00:00",
+      "last_seen_at": "2026-10-02T23:18:17.818236+00:00",
       "sampling_policy": "first_five_v1",
       "selected": true
     }
