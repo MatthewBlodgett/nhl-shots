@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-10-02T21:42:29.572644+00:00",
+  "policy": {
+    "schema_version": 1,
+    "stage": "middle",
+    "min_estimated_return": 0.05,
+    "decision": "highest modeled return per event/player; stable book/line/side tie break",
+    "calibration": "one quote per event/player; line nearest 2.5 then Over then alphabetic book",
+    "unit_stake": 1,
+    "confidence_interval": "1000 game-cluster resamples; minimum 20 settled games",
+    "settlement": "official full-game SOG; unverified sportsbook participation and void rules"
+  },
+  "snapshot_count": 4,
+  "quote_count": 408,
+  "blocked_quote_counts": {
+    "insufficient_current_season_history": 336,
+    "team_change_review_required": 22,
+    "eligible": 50
+  },
+  "eligible_middle_player_games": 0,
+  "versions": {},
+  "paper_decisions": [],
+  "limitations": [
+    "No actual stakes or bet execution; hypothetical prices may not have been available.",
+    "Missing participation and bookmaker rules are unresolved, not automatic losses.",
+    "Only sampled games and returned props are represented; this is not league-wide coverage.",
+    "Late snapshots are not guaranteed closing prices; repeated observations are not independent."
+  ]
+}

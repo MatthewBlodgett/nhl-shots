@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "last_attempt_at": "2026-10-02T21:42:29.578607+00:00",
+  "last_success_at": "2026-10-02T21:42:29.578607+00:00",
+  "consecutive_failures": 0,
+  "quota": {
+    "used": 5,
+    "remaining": 495
+  },
+  "recent_runs": [
+    {
+      "at": "2026-10-02T21:42:29.578607+00:00",
+      "success": true,
+      "requests": 1,
+      "snapshots": 1,
+      "errors": []
+    }
+  ],
+  "recent_blocked_quote_counts": {
+    "insufficient_current_season_history": 336,
+    "team_change_review_required": 22,
+    "eligible": 50
+  },
+  "observed_games_last_14_days": 3,
+  "missing_elapsed_windows_on_observed_games": 3,
+  "unsettled_games_more_than_6_hours_after_start": 0,
+  "quota_paused": false,
+  "limitations": [
+    "No external notifications. A failed GitHub runner cannot update this file.",
+    "Games with no saved snapshot are absent from observed-game coverage."
+  ]
+}
