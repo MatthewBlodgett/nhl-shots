@@ -1,0 +1,113 @@
+name: Verify Odds API
+on:
+  push:
+    branches: [codex/odds-api-check]
+    paths: [.github/workflows/verify-odds-api.yml]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: verify-odds-api
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Verify secret, authentication and NHL shots props
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import re
+          import sys
+          import urllib.error
+          import urllib.parse
+          import urllib.request
+          from datetime import datetime, timezone
+          
+          def report(message):
+              print(message)
+              summary = os.environ.get("GITHUB_STEP_SUMMARY")
+              if summary:
+                  with open(summary, "a", encoding="utf-8") as f:
+                      f.write(message + "\n\n")
+          
+          def request(path, key, **params):
+              query = urllib.parse.urlencode({"apiKey": key, **params})
+              url = "https://api.the-odds-api.com/v4/" + path + "?" + query
+              # Never print request URLs, exception text, or raw response bodies.
+              try:
+                  with urllib.request.urlopen(url, timeout=20) as response:
+                      return json.load(response), response.headers
+              except urllib.error.HTTPError as error:
+                  report("FAIL: API returned HTTP " + str(error.code) + ".")
+                  raise SystemExit(1) from None
+              except Exception:
+                  report("FAIL: API connection or response parsing failed; details withheld to protect the key.")
+                  raise SystemExit(1) from None
+          
+          def main():
+              key = os.environ.get("ODDS_API_KEY", "").strip()
+              if not key:
+                  report("FAIL: ODDS_API_KEY is missing or empty in repository Actions secrets.")
+                  return 1
+              sports, headers = request("sports/", key)
+              if not isinstance(sports, list):
+                  report("FAIL: Sports endpoint returned an unexpected schema.")
+                  return 1
+              report("PASS: ODDS_API_KEY is available and accepted by The Odds API.")
+              nhl = any(isinstance(s, dict) and s.get("key") == "icehockey_nhl" for s in sports)
+              if not nhl:
+                  report("INCOMPLETE: Authentication works, but NHL is not listed as active.")
+                  return 0
+              report("PASS: NHL is listed as active.")
+              events, headers = request("sports/icehockey_nhl/events", key)
+              if not isinstance(events, list):
+                  report("FAIL: NHL events endpoint returned an unexpected schema.")
+                  return 1
+              now = datetime.now(timezone.utc)
+              upcoming = []
+              for event in events:
+                  try:
+                      start = datetime.fromisoformat(event["commence_time"].replace("Z", "+00:00"))
+                      if start > now and re.fullmatch(r"[a-fA-F0-9]{32}", event["id"]):
+                          upcoming.append(event)
+                  except (KeyError, TypeError, ValueError):
+                      continue
+              if not upcoming:
+                  report("INCOMPLETE: Authentication works; no upcoming NHL event available for a props check.")
+                  return 0
+              event = min(upcoming, key=lambda e: e["commence_time"])
+              data, headers = request("sports/icehockey_nhl/events/" + event["id"] + "/odds",
+                                      key, markets="player_shots_on_goal", regions="us",
+                                      oddsFormat="decimal")
+              if not isinstance(data, dict) or not isinstance(data.get("bookmakers"), list):
+                  report("FAIL: NHL event odds endpoint returned an unexpected schema.")
+                  return 1
+              markets = [m for b in data["bookmakers"] for m in b.get("markets", [])
+                         if m.get("key") == "player_shots_on_goal"]
+              count = sum(len(m.get("outcomes", [])) for m in markets)
+              if count:
+                  report("PASS: NHL shots-on-goal props returned " + str(count) +
+                         " outcomes across " + str(len(markets)) + " bookmaker markets.")
+              else:
+                  report("INCOMPLETE: Props endpoint accepted the request, but the selected game has no US shots props yet.")
+              for header, label in (("x-requests-last", "Credits used by props request"),
+                                    ("x-requests-remaining", "Credits remaining")):
+                  value = headers.get(header, "")
+                  if str(value).isdigit():
+                      report(label + ": " + str(value))
+              report("Check complete. No key or raw API responses were printed. No bets placed.")
+              return 0
+          
+          if __name__ == "__main__":
+              try:
+                  sys.exit(main())
+              except Exception:
+                  report("FAIL: Unexpected check error; details withheld to protect the key.")
+                  sys.exit(1)
+          PY
