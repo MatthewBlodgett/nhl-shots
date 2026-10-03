@@ -2,7 +2,7 @@
   "attempts": {
     "065b68a0db1926f7e3bff7ebd93e7624:early": {
       "at": "2026-10-03T15:15:09.504786+00:00",
-      "status": "reserved"
+      "status": "saved"
     },
     "25e8169a0a6e2a41ef0aef55d87b3639:early": {
       "at": "2026-10-03T11:39:51.264411+00:00",
@@ -327,8 +327,8 @@
     }
   },
   "last_quota": {
-    "remaining": 487,
-    "used": 13
+    "remaining": 486,
+    "used": 14
   },
   "paper_alert_keys": [
     "[\"5b5466f836933f5fb3ed4b9f267cce75\",\"draftkings\",8482109,2.5,\"Under\",1.65,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
