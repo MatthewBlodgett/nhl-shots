@@ -6,11 +6,15 @@
     },
     "065b68a0db1926f7e3bff7ebd93e7624:middle": {
       "at": "2026-10-03T22:08:02.231743+00:00",
-      "status": "reserved"
+      "status": "saved"
     },
     "25e8169a0a6e2a41ef0aef55d87b3639:early": {
       "at": "2026-10-03T11:39:51.264411+00:00",
       "status": "saved"
+    },
+    "25e8169a0a6e2a41ef0aef55d87b3639:middle": {
+      "at": "2026-10-03T22:08:03.590257+00:00",
+      "status": "reserved"
     },
     "3e2c8a883cae029144e27e4fca5ae9e8:early": {
       "at": "2026-10-03T15:14:53.647949+00:00",
@@ -335,8 +339,8 @@
     }
   },
   "last_quota": {
-    "remaining": 485,
-    "used": 15
+    "remaining": 484,
+    "used": 16
   },
   "paper_alert_keys": [
     "[\"5b5466f836933f5fb3ed4b9f267cce75\",\"draftkings\",8482109,2.5,\"Under\",1.65,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
