@@ -1,18 +1,18 @@
 {
   "candidates": {
-    "as_of": "2026-10-02T23:18:34.464204+00:00",
+    "as_of": "2026-10-03T00:30:32.616708+00:00",
     "command": "candidates",
     "mode": "archived_paper_research",
     "observations": [
       {
-        "age_seconds_now": 69.464204,
+        "age_seconds_now": 4387.616708,
         "book": "draftkings",
         "book_updated_at": "2026-10-02T23:17:25Z",
         "collected_at": "2026-10-02T23:18:19.264133+00:00",
         "decimal_odds": 1.8,
         "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
         "expected_return": 0.08861540548249436,
-        "expired_now": false,
+        "expired_now": true,
         "game_start": "2026-10-03T00:10:00Z",
         "line": 3.5,
         "market_no_vig_probability": 0.5148247978436657,
@@ -89,14 +89,14 @@
         "stage": "late"
       },
       {
-        "age_seconds_now": 69.464204,
+        "age_seconds_now": 4387.616708,
         "book": "draftkings",
         "book_updated_at": "2026-10-02T23:17:25Z",
         "collected_at": "2026-10-02T23:18:19.264133+00:00",
         "decimal_odds": 1.8,
         "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
         "expected_return": 0.21264890616822996,
-        "expired_now": false,
+        "expired_now": true,
         "game_start": "2026-10-03T00:10:00Z",
         "line": 1.5,
         "market_no_vig_probability": 0.5148247978436657,
@@ -172,14 +172,14 @@
         "stage": "late"
       },
       {
-        "age_seconds_now": 57.464204,
+        "age_seconds_now": 4375.616708,
         "book": "bovada",
         "book_updated_at": "2026-10-02T23:17:37Z",
         "collected_at": "2026-10-02T23:18:19.264133+00:00",
         "decimal_odds": 1.8,
         "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
         "expected_return": 0.08861540548249436,
-        "expired_now": false,
+        "expired_now": true,
         "game_start": "2026-10-03T00:10:00Z",
         "line": 3.5,
         "market_no_vig_probability": 0.5199999999999999,
@@ -256,14 +256,14 @@
         "stage": "late"
       },
       {
-        "age_seconds_now": 57.464204,
+        "age_seconds_now": 4375.616708,
         "book": "bovada",
         "book_updated_at": "2026-10-02T23:17:37Z",
         "collected_at": "2026-10-02T23:18:19.264133+00:00",
         "decimal_odds": 1.77,
         "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
         "expected_return": 0.1924380910654262,
-        "expired_now": false,
+        "expired_now": true,
         "game_start": "2026-10-03T00:10:00Z",
         "line": 1.5,
         "market_no_vig_probability": 0.5305039787798408,
@@ -339,14 +339,14 @@
         "stage": "late"
       },
       {
-        "age_seconds_now": 80.464204,
+        "age_seconds_now": 4398.616708,
         "book": "betonlineag",
         "book_updated_at": "2026-10-02T23:17:14Z",
         "collected_at": "2026-10-02T23:18:19.264133+00:00",
         "decimal_odds": 1.75,
         "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
         "expected_return": 0.058376088663536274,
-        "expired_now": false,
+        "expired_now": true,
         "game_start": "2026-10-03T00:10:00Z",
         "line": 3.5,
         "market_no_vig_probability": 0.537037037037037,
@@ -423,14 +423,14 @@
         "stage": "late"
       },
       {
-        "age_seconds_now": 80.464204,
+        "age_seconds_now": 4398.616708,
         "book": "betonlineag",
         "book_updated_at": "2026-10-02T23:17:14Z",
         "collected_at": "2026-10-02T23:18:19.264133+00:00",
         "decimal_odds": 1.68,
         "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
         "expected_return": 0.13180564575701448,
-        "expired_now": false,
+        "expired_now": true,
         "game_start": "2026-10-03T00:10:00Z",
         "line": 1.5,
         "market_no_vig_probability": 0.5590551181102362,
@@ -506,14 +506,14 @@
         "stage": "late"
       },
       {
-        "age_seconds_now": 37.464204,
+        "age_seconds_now": 4355.616708,
         "book": "fanduel",
         "book_updated_at": "2026-10-02T23:17:57Z",
         "collected_at": "2026-10-02T23:18:19.264133+00:00",
         "decimal_odds": 1.91,
         "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
         "expected_return": 0.07000850453030916,
-        "expired_now": false,
+        "expired_now": true,
         "game_start": "2026-10-03T00:10:00Z",
         "line": 1.5,
         "market_no_vig_probability": 0.49202127659574474,
@@ -590,14 +590,14 @@
         "stage": "late"
       },
       {
-        "age_seconds_now": 37.464204,
+        "age_seconds_now": 4355.616708,
         "book": "fanduel",
         "book_updated_at": "2026-10-02T23:17:57Z",
         "collected_at": "2026-10-02T23:18:19.264133+00:00",
         "decimal_odds": 1.77,
         "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
         "expected_return": 0.1924380910654262,
-        "expired_now": false,
+        "expired_now": true,
         "game_start": "2026-10-03T00:10:00Z",
         "line": 1.5,
         "market_no_vig_probability": 0.5305039787798408,
@@ -673,7 +673,7 @@
         "stage": "late"
       },
       {
-        "age_seconds_now": 745.464204,
+        "age_seconds_now": 5063.616708,
         "book": "draftkings",
         "book_updated_at": "2026-10-02T23:06:09Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -757,7 +757,7 @@
         "stage": "middle"
       },
       {
-        "age_seconds_now": 745.464204,
+        "age_seconds_now": 5063.616708,
         "book": "draftkings",
         "book_updated_at": "2026-10-02T23:06:09Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -840,7 +840,7 @@
         "stage": "middle"
       },
       {
-        "age_seconds_now": 745.464204,
+        "age_seconds_now": 5063.616708,
         "book": "draftkings",
         "book_updated_at": "2026-10-02T23:06:09Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -924,7 +924,7 @@
         "stage": "middle"
       },
       {
-        "age_seconds_now": 763.464204,
+        "age_seconds_now": 5081.616708,
         "book": "fanduel",
         "book_updated_at": "2026-10-02T23:05:51Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -1008,7 +1008,7 @@
         "stage": "middle"
       },
       {
-        "age_seconds_now": 763.464204,
+        "age_seconds_now": 5081.616708,
         "book": "fanduel",
         "book_updated_at": "2026-10-02T23:05:51Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -1091,7 +1091,7 @@
         "stage": "middle"
       },
       {
-        "age_seconds_now": 802.464204,
+        "age_seconds_now": 5120.616708,
         "book": "betonlineag",
         "book_updated_at": "2026-10-02T23:05:12Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -1174,7 +1174,7 @@
         "stage": "middle"
       },
       {
-        "age_seconds_now": 802.464204,
+        "age_seconds_now": 5120.616708,
         "book": "betonlineag",
         "book_updated_at": "2026-10-02T23:05:12Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -1258,7 +1258,7 @@
         "stage": "middle"
       },
       {
-        "age_seconds_now": 802.464204,
+        "age_seconds_now": 5120.616708,
         "book": "betonlineag",
         "book_updated_at": "2026-10-02T23:05:12Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -1342,7 +1342,7 @@
         "stage": "middle"
       },
       {
-        "age_seconds_now": 802.464204,
+        "age_seconds_now": 5120.616708,
         "book": "betonlineag",
         "book_updated_at": "2026-10-02T23:05:12Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -1426,7 +1426,7 @@
         "stage": "middle"
       },
       {
-        "age_seconds_now": 850.464204,
+        "age_seconds_now": 5168.616708,
         "book": "bovada",
         "book_updated_at": "2026-10-02T23:04:24Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -1510,7 +1510,7 @@
         "stage": "middle"
       },
       {
-        "age_seconds_now": 850.464204,
+        "age_seconds_now": 5168.616708,
         "book": "bovada",
         "book_updated_at": "2026-10-02T23:04:24Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -1594,7 +1594,7 @@
         "stage": "middle"
       },
       {
-        "age_seconds_now": 850.464204,
+        "age_seconds_now": 5168.616708,
         "book": "bovada",
         "book_updated_at": "2026-10-02T23:04:24Z",
         "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -1686,18 +1686,18 @@
     "observations_per_player_limit": 20,
     "player_count": 60
   },
-  "generated_at": "2026-10-02T23:18:34.464204+00:00",
+  "generated_at": "2026-10-03T00:30:32.616708+00:00",
   "mode": "public_paper_summary",
   "performance": {
     "blocked_quote_counts": {
       "eligible": 208,
       "insufficient_current_season_history": 454,
       "insufficient_prior_season_history": 16,
-      "nhl_game_unmatched": 84,
+      "nhl_game_unmatched": 168,
       "team_change_review_required": 32
     },
     "eligible_middle_player_games": 8,
-    "generated_at": "2026-10-02T23:18:34.464204+00:00",
+    "generated_at": "2026-10-03T00:30:32.616708+00:00",
     "limitations": [
       "No actual stakes or bet execution; hypothetical prices may not have been available.",
       "Missing participation and bookmaker rules are unresolved, not automatic losses.",
@@ -1714,8 +1714,8 @@
       "stage": "middle",
       "unit_stake": 1
     },
-    "quote_count": 794,
-    "snapshot_count": 8,
+    "quote_count": 878,
+    "snapshot_count": 9,
     "unique_observed_events": 5,
     "unique_observed_player_games": 71,
     "versions": {
@@ -1754,12 +1754,12 @@
   },
   "players": {
     "8471214": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
@@ -1839,7 +1839,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
@@ -1919,7 +1919,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
@@ -1999,7 +1999,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
@@ -2079,7 +2079,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
@@ -2159,7 +2159,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
@@ -2239,7 +2239,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
@@ -2319,7 +2319,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
@@ -2403,12 +2403,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8473533": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -2492,7 +2492,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -2576,7 +2576,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -2660,7 +2660,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -2744,7 +2744,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -2828,7 +2828,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -2916,12 +2916,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8473986": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -3001,7 +3001,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -3081,7 +3081,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -3161,7 +3161,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -3245,12 +3245,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8475753": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -3285,7 +3285,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -3320,7 +3320,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -3355,7 +3355,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -3390,7 +3390,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -3425,7 +3425,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -3464,12 +3464,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8475791": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -3553,7 +3553,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -3637,7 +3637,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -3721,7 +3721,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -3805,7 +3805,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -3889,7 +3889,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -3977,12 +3977,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8475798": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -4062,7 +4062,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -4142,7 +4142,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
@@ -4222,7 +4222,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
@@ -4302,7 +4302,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -4382,7 +4382,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -4462,7 +4462,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -4542,7 +4542,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -4626,12 +4626,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8475913": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -4715,7 +4715,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -4799,7 +4799,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -4883,7 +4883,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -4967,7 +4967,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -5051,7 +5051,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -5135,7 +5135,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -5219,7 +5219,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -5307,12 +5307,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8476448": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -5392,7 +5392,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -5472,7 +5472,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -5552,7 +5552,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -5632,7 +5632,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -5712,7 +5712,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -5796,12 +5796,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8476459": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -5840,7 +5840,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -5879,7 +5879,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -5918,7 +5918,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -5957,7 +5957,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -5996,7 +5996,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -6035,7 +6035,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -6074,7 +6074,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -6117,19 +6117,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8476460": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.35,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.39897698209718674,
@@ -6202,14 +6202,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.56,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.6010230179028133,
@@ -6282,14 +6282,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.35,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.4005102040816326,
@@ -6362,14 +6362,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.57,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.5994897959183673,
@@ -6442,14 +6442,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.36,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.39795918367346944,
@@ -6522,14 +6522,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.56,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.6020408163265306,
@@ -6602,14 +6602,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.42,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.38734177215189874,
@@ -6682,14 +6682,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.53,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.6126582278481012,
@@ -6766,12 +6766,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8476468": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -6810,7 +6810,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -6849,7 +6849,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -6888,7 +6888,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -6927,7 +6927,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -6966,7 +6966,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -7005,7 +7005,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -7044,7 +7044,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -7087,19 +7087,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8476854": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.91,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.37675522821184404,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4851752021563342,
@@ -7175,14 +7175,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.8,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.21264890616822996,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5148247978436657,
@@ -7258,14 +7258,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.0,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.34738767352025546,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4694960212201591,
@@ -7341,14 +7341,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.77,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.1924380910654262,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5305039787798408,
@@ -7424,14 +7424,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.13,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.3049678722990721,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4409448818897638,
@@ -7507,14 +7507,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.68,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.13180564575701448,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5590551181102362,
@@ -7590,14 +7590,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.0,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.34738767352025546,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4694960212201591,
@@ -7673,14 +7673,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.77,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.1924380910654262,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5305039787798408,
@@ -7760,12 +7760,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8476880": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
@@ -7845,7 +7845,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
@@ -7925,7 +7925,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
@@ -8005,7 +8005,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
@@ -8085,7 +8085,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
@@ -8165,7 +8165,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
@@ -8245,7 +8245,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
@@ -8325,7 +8325,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
@@ -8409,12 +8409,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8476881": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -8498,7 +8498,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -8582,7 +8582,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -8666,7 +8666,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -8750,7 +8750,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -8834,7 +8834,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -8918,7 +8918,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -9002,7 +9002,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -9090,12 +9090,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8476906": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -9178,7 +9178,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -9261,7 +9261,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -9344,7 +9344,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -9427,7 +9427,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -9510,7 +9510,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -9597,12 +9597,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8477416": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "team_change_review_required",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -9638,7 +9638,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "team_change_review_required",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -9674,7 +9674,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "team_change_review_required",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -9710,7 +9710,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "team_change_review_required",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -9746,7 +9746,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "blocked_reason": "team_change_review_required",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
@@ -9782,7 +9782,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "blocked_reason": "team_change_review_required",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
@@ -9818,7 +9818,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "team_change_review_required",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -9854,7 +9854,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "team_change_review_required",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -9894,12 +9894,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8477429": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -9934,7 +9934,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -9969,7 +9969,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -10004,7 +10004,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -10039,7 +10039,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -10074,7 +10074,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -10113,12 +10113,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8477447": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -10201,7 +10201,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -10284,7 +10284,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -10367,7 +10367,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -10450,7 +10450,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -10533,7 +10533,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -10616,7 +10616,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -10699,7 +10699,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -10786,19 +10786,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8477496": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.87,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.07867008387634877,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4945945945945946,
@@ -10875,14 +10875,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.83,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.07162232433490989,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5054054054054055,
@@ -10959,14 +10959,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.91,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.05896249208760773,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.48930481283422456,
@@ -11043,14 +11043,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.83,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.07162232433490989,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5106951871657753,
@@ -11127,14 +11127,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.86,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.08359698182353414,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5053191489361702,
@@ -11211,14 +11211,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.9,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.0361106099652071,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.49468085106382986,
@@ -11299,19 +11299,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8477504": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.35,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.39588688946015427,
@@ -11383,14 +11383,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.54,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.6041131105398457,
@@ -11462,14 +11462,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.25,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.4170984455958549,
@@ -11541,14 +11541,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.61,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.582901554404145,
@@ -11620,14 +11620,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.44,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.38539042821158687,
@@ -11699,14 +11699,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.53,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.614609571788413,
@@ -11782,12 +11782,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8477940": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -11871,7 +11871,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -11955,7 +11955,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -12039,7 +12039,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -12123,7 +12123,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -12207,7 +12207,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -12291,7 +12291,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -12375,7 +12375,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -12463,19 +12463,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8477956": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.91,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.24514190248420242,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.4851752021563342,
@@ -12552,14 +12552,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.8,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.08861540548249436,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.5148247978436657,
@@ -12636,14 +12636,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.95,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.229333355939369,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.48,
@@ -12720,14 +12720,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.8,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.08861540548249436,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.5199999999999999,
@@ -12804,14 +12804,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.03,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.19771626284970212,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.462962962962963,
@@ -12888,14 +12888,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.75,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.058376088663536274,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.537037037037037,
@@ -12972,14 +12972,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.06,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.185859852941077,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.45502645502645506,
@@ -13056,14 +13056,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.72,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.04023249857216138,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.544973544973545,
@@ -13144,12 +13144,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8477964": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -13233,7 +13233,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -13317,7 +13317,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -13401,7 +13401,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -13485,7 +13485,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -13569,7 +13569,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -13657,12 +13657,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8478109": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "team_change_review_required",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -13743,7 +13743,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "team_change_review_required",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -13828,12 +13828,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8478397": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -13916,7 +13916,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -13999,7 +13999,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -14082,7 +14082,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -14165,7 +14165,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -14248,7 +14248,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -14335,19 +14335,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8478398": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.2,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.42408376963350786,
@@ -14420,14 +14420,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.62,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.5759162303664922,
@@ -14500,14 +14500,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.2,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.4285714285714286,
@@ -14580,14 +14580,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.65,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.5714285714285715,
@@ -14660,14 +14660,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.24,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.4196891191709845,
@@ -14740,14 +14740,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.62,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.5803108808290156,
@@ -14820,14 +14820,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.3,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.4087403598971723,
@@ -14900,14 +14900,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.59,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 3.5,
           "market_no_vig_probability": 0.5912596401028277,
@@ -14984,19 +14984,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8478401": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.8,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.008384978091390938,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5148247978436657,
@@ -15073,14 +15073,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.91,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.16000850453030924,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4851752021563342,
@@ -15157,14 +15157,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.83,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.025191394392914068,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5106951871657753,
@@ -15241,14 +15241,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.91,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.16000850453030924,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.48930481283422456,
@@ -15325,14 +15325,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.87,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.047599949461611724,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.502659574468085,
@@ -15409,14 +15409,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.89,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.16880422699596043,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.49734042553191493,
@@ -15493,14 +15493,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.91,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.07000850453030916,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.49202127659574474,
@@ -15577,14 +15577,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.85,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.1863956719272628,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5079787234042553,
@@ -15665,12 +15665,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8478403": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -15754,7 +15754,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -15838,7 +15838,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -15922,7 +15922,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -16006,7 +16006,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -16090,7 +16090,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -16174,7 +16174,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -16258,7 +16258,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -16346,12 +16346,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8478427": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -16435,7 +16435,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -16519,7 +16519,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -16603,7 +16603,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -16687,7 +16687,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -16771,7 +16771,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -16855,7 +16855,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -16939,7 +16939,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -17027,12 +17027,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8478483": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -17116,7 +17116,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -17200,7 +17200,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -17284,7 +17284,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -17368,7 +17368,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -17452,7 +17452,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -17536,7 +17536,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -17620,7 +17620,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -17708,12 +17708,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8478882": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -17752,7 +17752,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -17791,7 +17791,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -17830,7 +17830,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -17869,7 +17869,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -17908,7 +17908,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -17951,12 +17951,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8479323": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -17995,7 +17995,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -18034,7 +18034,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -18073,7 +18073,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -18112,7 +18112,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -18151,7 +18151,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -18190,7 +18190,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -18229,7 +18229,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -18272,12 +18272,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8479337": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -18312,7 +18312,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -18347,7 +18347,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -18382,7 +18382,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -18417,7 +18417,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
@@ -18452,7 +18452,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
@@ -18487,7 +18487,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -18522,7 +18522,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -18561,12 +18561,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8479345": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
@@ -18645,7 +18645,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
@@ -18724,7 +18724,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
@@ -18803,7 +18803,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
@@ -18882,7 +18882,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
@@ -18961,7 +18961,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
@@ -19040,7 +19040,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
@@ -19119,7 +19119,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
@@ -19198,7 +19198,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 8897.464204,
+          "age_seconds_now": 13215.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T20:50:17Z",
@@ -19223,7 +19223,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 8897.464204,
+          "age_seconds_now": 13215.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T20:50:17Z",
@@ -19252,12 +19252,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8479353": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -19341,7 +19341,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -19425,7 +19425,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -19509,7 +19509,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
           "collected_at": "2026-10-02T23:06:21.148682+00:00",
@@ -19597,19 +19597,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8479987": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.51,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.10421693720056191,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.6186868686868687,
@@ -19686,14 +19686,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.45,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.0034228502374988867,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.38131313131313127,
@@ -19770,14 +19770,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.5,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.11014927536479657,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.625,
@@ -19854,14 +19854,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.5,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.01691545894132762,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.375,
@@ -19938,14 +19938,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.56,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.07455524637938837,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.6020408163265306,
@@ -20022,14 +20022,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.36,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.04003180675938678,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.39795918367346944,
@@ -20106,14 +20106,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.61,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.04489355555821495,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5839793281653746,
@@ -20190,14 +20190,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.26,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.0807084251170399,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4160206718346253,
@@ -20278,12 +20278,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8480009": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "team_change_review_required",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -20319,7 +20319,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "team_change_review_required",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -20355,7 +20355,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "team_change_review_required",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -20391,7 +20391,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "team_change_review_required",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -20427,7 +20427,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "team_change_review_required",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -20463,7 +20463,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "team_change_review_required",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -20503,19 +20503,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8480014": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.74,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5347593582887701,
@@ -20588,14 +20588,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.0,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.46524064171123,
@@ -20668,14 +20668,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.69,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.554089709762533,
@@ -20748,14 +20748,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.1,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.445910290237467,
@@ -20828,14 +20828,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.72,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5461741424802111,
@@ -20908,14 +20908,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.07,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.45382585751978893,
@@ -20988,14 +20988,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.69,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.554089709762533,
@@ -21068,14 +21068,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.1,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.445910290237467,
@@ -21152,12 +21152,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8480068": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -21237,7 +21237,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -21317,7 +21317,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -21397,7 +21397,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -21481,19 +21481,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8480145": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.8,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5148247978436657,
@@ -21565,14 +21565,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.91,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4851752021563342,
@@ -21644,14 +21644,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.8,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5199999999999999,
@@ -21723,14 +21723,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.95,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.48,
@@ -21802,14 +21802,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.87,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.502659574468085,
@@ -21881,14 +21881,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.89,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.49734042553191493,
@@ -21964,12 +21964,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8480830": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -22053,7 +22053,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -22137,7 +22137,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -22221,7 +22221,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -22305,7 +22305,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -22389,7 +22389,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -22473,7 +22473,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -22557,7 +22557,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -22645,12 +22645,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8481542": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -22685,7 +22685,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -22720,7 +22720,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -22755,7 +22755,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -22790,7 +22790,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
@@ -22825,7 +22825,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
@@ -22860,7 +22860,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -22895,7 +22895,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -22934,12 +22934,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8481604": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "team_change_review_required",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -22975,7 +22975,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "team_change_review_required",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -23011,7 +23011,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "team_change_review_required",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -23047,7 +23047,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "team_change_review_required",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -23083,7 +23083,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "blocked_reason": "team_change_review_required",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
@@ -23119,7 +23119,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "blocked_reason": "team_change_review_required",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
@@ -23155,7 +23155,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "team_change_review_required",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -23191,7 +23191,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "team_change_review_required",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -23231,12 +23231,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8481605": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -23315,7 +23315,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -23394,7 +23394,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
@@ -23473,7 +23473,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
@@ -23552,7 +23552,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -23631,7 +23631,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -23710,7 +23710,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -23789,7 +23789,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -23872,12 +23872,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8482078": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -23912,7 +23912,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -23947,7 +23947,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -23982,7 +23982,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
@@ -24017,7 +24017,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
@@ -24052,7 +24052,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
@@ -24087,7 +24087,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -24122,7 +24122,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -24161,12 +24161,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8482109": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -24205,7 +24205,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -24244,7 +24244,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -24283,7 +24283,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -24322,7 +24322,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -24361,7 +24361,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5839.464204,
+          "age_seconds_now": 10157.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T21:41:15Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -24400,7 +24400,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -24439,7 +24439,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -24482,19 +24482,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8482149": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.56,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5958549222797926,
@@ -24567,14 +24567,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.3,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.40414507772020725,
@@ -24647,14 +24647,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.57,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5994897959183673,
@@ -24727,14 +24727,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.35,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4005102040816326,
@@ -24807,14 +24807,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.58,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5948717948717949,
@@ -24887,14 +24887,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.32,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4051282051282052,
@@ -24967,14 +24967,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.59,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5912596401028277,
@@ -25047,14 +25047,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.3,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4087403598971723,
@@ -25131,12 +25131,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8482157": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -25175,7 +25175,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -25214,7 +25214,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -25253,7 +25253,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -25292,7 +25292,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -25331,7 +25331,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -25374,19 +25374,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8482175": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "team_change_review_required",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.45,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.38131313131313127,
@@ -25460,14 +25460,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "team_change_review_required",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.51,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.6186868686868687,
@@ -25541,14 +25541,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "team_change_review_required",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.4,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.39086294416243655,
@@ -25622,14 +25622,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "team_change_review_required",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.54,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.6091370558375634,
@@ -25703,14 +25703,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "blocked_reason": "team_change_review_required",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.54,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.3697270471464019,
@@ -25784,14 +25784,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "blocked_reason": "team_change_review_required",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.49,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 2.5,
           "market_no_vig_probability": 0.630272952853598,
@@ -25865,14 +25865,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "team_change_review_required",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.6,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5865633074935401,
@@ -25946,14 +25946,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "team_change_review_required",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.27,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.41343669250646,
@@ -26027,7 +26027,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 8902.464204,
+          "age_seconds_now": 13220.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T20:50:12Z",
@@ -26052,7 +26052,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 8902.464204,
+          "age_seconds_now": 13220.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T20:50:12Z",
@@ -26081,12 +26081,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8482702": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -26170,7 +26170,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -26254,7 +26254,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -26338,7 +26338,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -26422,7 +26422,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -26506,7 +26506,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -26594,12 +26594,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8482809": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -26683,7 +26683,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2610.464204,
+          "age_seconds_now": 6928.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T22:35:04Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -26767,7 +26767,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -26851,7 +26851,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2640.464204,
+          "age_seconds_now": 6958.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T22:34:34Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -26935,7 +26935,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -27019,7 +27019,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -27103,7 +27103,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -27187,7 +27187,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2714.464204,
+          "age_seconds_now": 7032.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T22:33:20Z",
           "collected_at": "2026-10-02T22:35:14.513398+00:00",
@@ -27275,12 +27275,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8483445": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -27360,7 +27360,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -27440,7 +27440,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
@@ -27520,7 +27520,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
@@ -27600,7 +27600,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -27680,7 +27680,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -27760,7 +27760,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -27840,7 +27840,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -27924,19 +27924,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8483489": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.05,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.019445580329968903,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.45187165775401067,
@@ -28013,14 +28013,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.69,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.1183594971913916,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5481283422459893,
@@ -28097,14 +28097,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.1,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.004470381125397882,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.445910290237467,
@@ -28181,14 +28181,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.69,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.1183594971913916,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.554089709762533,
@@ -28265,14 +28265,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.15,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.028386342580764223,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.43717277486910994,
@@ -28349,14 +28349,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.67,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.12879311260924498,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5628272251308901,
@@ -28433,14 +28433,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.1,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": 0.004470381125397882,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.445910290237467,
@@ -28517,14 +28517,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 37.464204,
+          "age_seconds_now": 4355.616708,
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:17:57Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.69,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
           "expected_return": -0.1183594971913916,
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.554089709762533,
@@ -28605,12 +28605,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8484153": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -28690,7 +28690,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -28770,7 +28770,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
@@ -28850,7 +28850,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
@@ -28930,7 +28930,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -29010,7 +29010,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -29090,7 +29090,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -29170,7 +29170,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -29254,12 +29254,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8484186": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
@@ -29339,7 +29339,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 2651.464204,
+          "age_seconds_now": 6969.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T22:34:23Z",
@@ -29423,12 +29423,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8484210": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -29467,7 +29467,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -29506,7 +29506,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -29545,7 +29545,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5795.464204,
+          "age_seconds_now": 10113.616708,
           "book": "bovada",
           "book_updated_at": "2026-10-02T21:41:59Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -29584,7 +29584,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -29623,7 +29623,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
           "collected_at": "2026-10-02T21:42:15.159793+00:00",
@@ -29666,12 +29666,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8484471": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -29706,7 +29706,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5799.464204,
+          "age_seconds_now": 10117.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T21:41:55Z",
@@ -29741,7 +29741,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -29776,7 +29776,7 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 5840.464204,
+          "age_seconds_now": 10158.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T21:41:14Z",
@@ -29815,12 +29815,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8484762": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -29900,7 +29900,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -29980,7 +29980,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
@@ -30060,7 +30060,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 763.464204,
+          "age_seconds_now": 5081.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "fanduel",
           "book_updated_at": "2026-10-02T23:05:51Z",
@@ -30140,7 +30140,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -30220,7 +30220,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -30300,7 +30300,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -30380,7 +30380,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 850.464204,
+          "age_seconds_now": 5168.616708,
           "blocked_reason": "insufficient_current_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:04:24Z",
@@ -30464,12 +30464,12 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8484803": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -30549,7 +30549,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 745.464204,
+          "age_seconds_now": 5063.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:06:09Z",
@@ -30629,7 +30629,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -30709,7 +30709,7 @@
           "stage": "middle"
         },
         {
-          "age_seconds_now": 802.464204,
+          "age_seconds_now": 5120.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:05:12Z",
@@ -30793,19 +30793,19 @@
       "warning": "No live price verification or demonstrated market edge."
     },
     "8485395": {
-      "as_of": "2026-10-02T23:18:34.464204+00:00",
+      "as_of": "2026-10-03T00:30:32.616708+00:00",
       "command": "player",
       "mode": "archived_paper_research",
       "observations": [
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.05,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4547872340425533,
@@ -30878,14 +30878,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 69.464204,
+          "age_seconds_now": 4387.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "draftkings",
           "book_updated_at": "2026-10-02T23:17:25Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.71,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5452127659574468,
@@ -30958,14 +30958,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.05,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4591029023746703,
@@ -31038,14 +31038,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 57.464204,
+          "age_seconds_now": 4375.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "bovada",
           "book_updated_at": "2026-10-02T23:17:37Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.74,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5408970976253298,
@@ -31118,14 +31118,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 2.13,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.4409448818897638,
@@ -31198,14 +31198,14 @@
           "stage": "late"
         },
         {
-          "age_seconds_now": 80.464204,
+          "age_seconds_now": 4398.616708,
           "blocked_reason": "insufficient_prior_season_history",
           "book": "betonlineag",
           "book_updated_at": "2026-10-02T23:17:14Z",
           "collected_at": "2026-10-02T23:18:19.264133+00:00",
           "decimal_odds": 1.68,
           "event_id": "f5a9759e52a784d5fdcc1f3a2fcfc5a2",
-          "expired_now": false,
+          "expired_now": true,
           "game_start": "2026-10-03T00:10:00Z",
           "line": 1.5,
           "market_no_vig_probability": 0.5590551181102362,
@@ -31527,13 +31527,13 @@
   },
   "schema_version": 1,
   "status": {
-    "as_of": "2026-10-02T23:18:34.464204+00:00",
+    "as_of": "2026-10-03T00:30:32.616708+00:00",
     "fresh_live_quotes": false,
     "health": {
       "consecutive_failures": 0,
       "discovered_games_last_14_days": 5,
-      "last_attempt_at": "2026-10-02T23:18:34.448889+00:00",
-      "last_success_at": "2026-10-02T23:18:34.448889+00:00",
+      "last_attempt_at": "2026-10-03T00:30:32.592481+00:00",
+      "last_success_at": "2026-10-03T00:30:32.592481+00:00",
       "limitations": [
         "No external notifications. A failed GitHub runner cannot update this file.",
         "Discovery coverage starts with census deployment; games never discovered remain unknown."
@@ -31542,32 +31542,32 @@
       "observed_games_last_14_days": 5,
       "planned_omitted_windows": 0,
       "quota": {
-        "remaining": 491,
-        "used": 9
+        "remaining": 490,
+        "used": 10
       },
       "quota_paused": false,
       "recent_blocked_quote_counts": {
         "eligible": 208,
         "insufficient_current_season_history": 454,
         "insufficient_prior_season_history": 16,
-        "nhl_game_unmatched": 84,
+        "nhl_game_unmatched": 168,
         "team_change_review_required": 32
       },
       "sampling_policies": {},
       "selected_games_without_snapshots": 0,
       "unsettled_games_more_than_6_hours_after_start": 0
     },
-    "last_attempt_age_seconds": 16.645968,
+    "last_attempt_age_seconds": 2.641196,
     "last_run": {
       "day": "2026-10-02",
       "errors": [],
-      "new_paper_candidates": 8,
+      "new_paper_candidates": 0,
       "quota": {
-        "remaining": 491,
-        "used": 9
+        "remaining": 490,
+        "used": 10
       },
-      "quotes": 104,
-      "recorded_at": "2026-10-02T23:18:17.818236+00:00",
+      "quotes": 84,
+      "recorded_at": "2026-10-03T00:30:29.975512+00:00",
       "requests": 1,
       "snapshots": 1
     },
