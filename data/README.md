@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-04T20:27:44.762747+00:00
+Updated: 2026-10-04T23:36:28.833662+00:00
 
-Today's archive: **7 snapshots / 694 quotes**.
+Today's archive: **10 snapshots / 1018 quotes**.
 
-Quotes with usable model history: 610. Blocked by history or team-change rules: 80.
+Quotes with usable model history: 904. Blocked by history or team-change rules: 104.
 
-API billing-cycle usage: 27 credits; 473 remaining.
+API billing-cycle usage: 30 credits; 470 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,25 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Kaapo Kakko | betonlineag | Under 1.5 | 1.740 | 77.4% | 34.7% |
+| Kaapo Kakko | betonlineag | Under 1.5 | 1.720 | 77.4% | 33.1% |
 | Shea Theodore | bovada | Under 1.5 | 2.350 | 56.4% | 32.5% |
 | Kaapo Kakko | draftkings | Under 1.5 | 1.710 | 77.4% | 32.3% |
-| Yegor Sharangovich | fanduel | Under 1.5 | 2.360 | 55.4% | 30.8% |
+| Shea Theodore | fanduel | Under 1.5 | 2.320 | 56.4% | 30.8% |
 | Yegor Sharangovich | draftkings | Under 1.5 | 2.350 | 55.4% | 30.2% |
-| Yegor Sharangovich | betonlineag | Under 1.5 | 2.330 | 55.4% | 29.1% |
-| Shea Theodore | fanduel | Under 1.5 | 2.280 | 56.4% | 28.6% |
-| Mark Stone | bovada | Under 2.5 | 1.710 | 74.3% | 27.1% |
-| Shea Theodore | betonlineag | Under 1.5 | 2.250 | 56.4% | 26.9% |
+| Leo Carlsson | fanduel | Over 2.5 | 2.220 | 57.4% | 27.5% |
+| Yegor Sharangovich | betonlineag | Under 1.5 | 2.290 | 55.4% | 26.9% |
 | Leo Carlsson | betonlineag | Over 2.5 | 2.200 | 57.4% | 26.4% |
 | Leo Carlsson | betmgm | Over 2.5 | 2.200 | 57.4% | 26.4% |
 | Leo Carlsson | bovada | Over 2.5 | 2.200 | 57.4% | 26.4% |
 | Linus Karlsson | bovada | Under 1.5 | 2.000 | 62.4% | 24.8% |
 | Beckett Sennecke | bovada | Over 2.5 | 2.500 | 49.9% | 24.7% |
-| Shea Theodore | draftkings | Under 1.5 | 2.200 | 56.4% | 24.1% |
+| Mark Stone | bovada | Under 2.5 | 1.670 | 74.3% | 24.1% |
 | Shea Theodore | betmgm | Under 1.5 | 2.200 | 56.4% | 24.1% |
+| Shea Theodore | betonlineag | Under 1.5 | 2.200 | 56.4% | 24.1% |
 | Leo Carlsson | draftkings | Over 2.5 | 2.150 | 57.4% | 23.5% |
-| Leo Carlsson | fanduel | Over 2.5 | 2.140 | 57.4% | 22.9% |
-| Mark Stone | draftkings | Under 2.5 | 1.650 | 74.3% | 22.7% |
-| Mark Stone | betonlineag | Under 2.5 | 1.620 | 74.3% | 20.4% |
+| Yegor Sharangovich | fanduel | Under 1.5 | 2.220 | 55.4% | 23.0% |
+| Beckett Sennecke | betonlineag | Over 2.5 | 2.460 | 49.9% | 22.7% |
+| Beckett Sennecke | fanduel | Over 2.5 | 2.460 | 49.9% | 22.7% |
+| Shea Theodore | draftkings | Under 1.5 | 2.150 | 56.4% | 21.2% |
 
 These are archived observations, not a statement that the price remains available.
