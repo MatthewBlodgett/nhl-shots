@@ -78,7 +78,8 @@
     }
   },
   "day_policies": {
-    "2026-10-03": "hash_five_v2"
+    "2026-10-03": "hash_five_v2",
+    "2026-10-04": "hash_five_v2"
   },
   "days": {
     "2026-10-02": [
@@ -94,6 +95,13 @@
       "25e8169a0a6e2a41ef0aef55d87b3639",
       "8d556511643d0c038bff0b7cf4f2b64f",
       "53b58ae0f99c8172ebee3bd82e7c83a7"
+    ],
+    "2026-10-04": [
+      "5393b504ffa70a2603259b2df414007f",
+      "8f3354586afd82f29d465e8634c3d905",
+      "6cac1fc86136075a23655625562fd8dc",
+      "d90c875a1c75ed65db6e3dc2f4a1afcc",
+      "d10f933c7fb656c7cfd1c98df4a650f8"
     ]
   },
   "event_census": {
@@ -209,6 +217,20 @@
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
+    "5393b504ffa70a2603259b2df414007f": {
+      "event": {
+        "away_team": "Utah Mammoth",
+        "commence_time": "2026-10-04T22:10:00Z",
+        "home_team": "New York Rangers",
+        "id": "5393b504ffa70a2603259b2df414007f",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-04T06:22:23.330181+00:00",
+      "last_seen_at": "2026-10-04T06:22:23.330181+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
     "53b58ae0f99c8172ebee3bd82e7c83a7": {
       "event": {
         "away_team": "Montr\u00e9al Canadiens",
@@ -251,6 +273,20 @@
       "sampling_policy": "first_five_v1",
       "selected": true
     },
+    "6cac1fc86136075a23655625562fd8dc": {
+      "event": {
+        "away_team": "Florida Panthers",
+        "commence_time": "2026-10-05T00:10:00Z",
+        "home_team": "Anaheim Ducks",
+        "id": "6cac1fc86136075a23655625562fd8dc",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-04T06:22:23.330181+00:00",
+      "last_seen_at": "2026-10-04T06:22:23.330181+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
     "797f03124f9bb08624b199c28f621c61": {
       "event": {
         "away_team": "St Louis Blues",
@@ -279,6 +315,20 @@
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
+    "8f3354586afd82f29d465e8634c3d905": {
+      "event": {
+        "away_team": "Vegas Golden Knights",
+        "commence_time": "2026-10-05T01:10:00Z",
+        "home_team": "Vancouver Canucks",
+        "id": "8f3354586afd82f29d465e8634c3d905",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-04T06:22:23.330181+00:00",
+      "last_seen_at": "2026-10-04T06:22:23.330181+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
     "bae72d1f63e132b366d199db2807c4df": {
       "event": {
         "away_team": "Anaheim Ducks",
@@ -291,6 +341,20 @@
       "first_seen_at": "2026-10-02T22:35:13.282094+00:00",
       "last_seen_at": "2026-10-03T00:30:29.975512+00:00",
       "sampling_policy": "first_five_v1",
+      "selected": true
+    },
+    "d10f933c7fb656c7cfd1c98df4a650f8": {
+      "event": {
+        "away_team": "Winnipeg Jets",
+        "commence_time": "2026-10-04T17:10:00Z",
+        "home_team": "Detroit Red Wings",
+        "id": "d10f933c7fb656c7cfd1c98df4a650f8",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-04T06:22:23.330181+00:00",
+      "last_seen_at": "2026-10-04T06:22:23.330181+00:00",
+      "sampling_policy": "hash_five_v2",
       "selected": true
     },
     "d8e6871b9b420af1492a655c1058244c": {
@@ -306,6 +370,20 @@
       "last_seen_at": "2026-10-04T00:37:36.036430+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
+    },
+    "d90c875a1c75ed65db6e3dc2f4a1afcc": {
+      "event": {
+        "away_team": "Calgary Flames",
+        "commence_time": "2026-10-05T00:10:00Z",
+        "home_team": "Seattle Kraken",
+        "id": "d90c875a1c75ed65db6e3dc2f4a1afcc",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-04T06:22:23.330181+00:00",
+      "last_seen_at": "2026-10-04T06:22:23.330181+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
     },
     "dfc3a73fc50d3d1c4b58150c834e2e7d": {
       "event": {
@@ -498,6 +576,10 @@
   "planned_omissions": {
     "53b58ae0f99c8172ebee3bd82e7c83a7:early": {
       "day": "2026-10-03",
+      "reason": "14_call_daily_plan_preserves_middle_and_late"
+    },
+    "d10f933c7fb656c7cfd1c98df4a650f8:early": {
+      "day": "2026-10-04",
       "reason": "14_call_daily_plan_preserves_middle_and_late"
     }
   },
