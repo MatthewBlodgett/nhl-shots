@@ -64,6 +64,10 @@
       "at": "2026-10-03T22:08:13.436620+00:00",
       "status": "saved"
     },
+    "8f3354586afd82f29d465e8634c3d905:early": {
+      "at": "2026-10-04T17:34:42.573516+00:00",
+      "status": "reserved"
+    },
     "bae72d1f63e132b366d199db2807c4df:middle": {
       "at": "2026-10-02T23:06:19.922513+00:00",
       "status": "saved"
@@ -239,7 +243,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-04T06:22:23.330181+00:00",
-      "last_seen_at": "2026-10-04T12:51:57.169689+00:00",
+      "last_seen_at": "2026-10-04T17:34:42.407158+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -295,7 +299,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-04T06:22:23.330181+00:00",
-      "last_seen_at": "2026-10-04T12:51:57.169689+00:00",
+      "last_seen_at": "2026-10-04T17:34:42.407158+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -337,7 +341,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-04T06:22:23.330181+00:00",
-      "last_seen_at": "2026-10-04T12:51:57.169689+00:00",
+      "last_seen_at": "2026-10-04T17:34:42.407158+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -358,14 +362,14 @@
     "d10f933c7fb656c7cfd1c98df4a650f8": {
       "event": {
         "away_team": "Winnipeg Jets",
-        "commence_time": "2026-10-04T17:10:00Z",
+        "commence_time": "2026-10-04T17:08:16Z",
         "home_team": "Detroit Red Wings",
         "id": "d10f933c7fb656c7cfd1c98df4a650f8",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-04T06:22:23.330181+00:00",
-      "last_seen_at": "2026-10-04T12:51:57.169689+00:00",
+      "last_seen_at": "2026-10-04T17:34:42.407158+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -393,7 +397,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-04T06:22:23.330181+00:00",
-      "last_seen_at": "2026-10-04T12:51:57.169689+00:00",
+      "last_seen_at": "2026-10-04T17:34:42.407158+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
