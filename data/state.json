@@ -70,7 +70,7 @@
     },
     "d90c875a1c75ed65db6e3dc2f4a1afcc:early": {
       "at": "2026-10-04T12:52:17.580556+00:00",
-      "status": "reserved"
+      "status": "saved"
     },
     "dfc3a73fc50d3d1c4b58150c834e2e7d:late": {
       "at": "2026-10-02T22:35:13.447683+00:00",
@@ -441,8 +441,8 @@
     }
   },
   "last_quota": {
-    "remaining": 478,
-    "used": 22
+    "remaining": 477,
+    "used": 23
   },
   "paper_alert_keys": [
     "[\"5b5466f836933f5fb3ed4b9f267cce75\",\"draftkings\",8482109,2.5,\"Under\",1.65,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
@@ -611,7 +611,24 @@
     "[\"6cac1fc86136075a23655625562fd8dc\",\"fanduel\",8482113,1.5,\"Over\",1.74,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
     "[\"6cac1fc86136075a23655625562fd8dc\",\"fanduel\",8484153,2.5,\"Over\",2.14,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
     "[\"6cac1fc86136075a23655625562fd8dc\",\"fanduel\",8484762,2.5,\"Over\",2.2,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
-    "[\"6cac1fc86136075a23655625562fd8dc\",\"fanduel\",8477409,2.5,\"Over\",2.48,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]"
+    "[\"6cac1fc86136075a23655625562fd8dc\",\"fanduel\",8477409,2.5,\"Over\",2.48,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"draftkings\",8477986,2.5,\"Over\",2.05,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"draftkings\",8482679,2.5,\"Over\",2.35,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"draftkings\",8482665,1.5,\"Under\",2.0,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"draftkings\",8480797,1.5,\"Under\",2.0,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"draftkings\",8484768,1.5,\"Under\",1.83,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"fanduel\",8482665,1.5,\"Under\",2.06,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"fanduel\",8484768,1.5,\"Under\",1.88,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"fanduel\",8477955,2.5,\"Under\",1.66,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"fanduel\",8480028,1.5,\"Under\",2.26,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"fanduel\",8480797,1.5,\"Under\",2.12,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"fanduel\",8482679,2.5,\"Over\",2.38,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"betonlineag\",8477986,2.5,\"Over\",2.02,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"betonlineag\",8482665,1.5,\"Under\",2.05,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"betonlineag\",8482679,2.5,\"Over\",2.41,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"betonlineag\",8484768,1.5,\"Under\",1.89,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"betonlineag\",8480797,1.5,\"Under\",2.14,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"d90c875a1c75ed65db6e3dc2f4a1afcc\",\"betonlineag\",8482259,2.5,\"Over\",1.93,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]"
   ],
   "planned_omissions": {
     "53b58ae0f99c8172ebee3bd82e7c83a7:early": {
