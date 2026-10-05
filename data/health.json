@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-10-04T23:36:54.448077+00:00",
-  "last_success_at": "2026-10-04T23:36:54.448077+00:00",
+  "last_attempt_at": "2026-10-05T02:24:40.062083+00:00",
+  "last_success_at": "2026-10-05T02:24:40.062083+00:00",
   "consecutive_failures": 0,
   "quota": {
     "used": 30,
@@ -126,6 +126,13 @@
       "requests": 3,
       "snapshots": 3,
       "errors": []
+    },
+    {
+      "at": "2026-10-05T02:24:40.062083+00:00",
+      "success": true,
+      "requests": 0,
+      "snapshots": 0,
+      "errors": []
     }
   ],
   "recent_blocked_quote_counts": {
@@ -137,7 +144,7 @@
     "player_unmatched_or_ambiguous": 16
   },
   "observed_games_last_14_days": 15,
-  "missing_elapsed_windows_on_observed_games": 13,
+  "missing_elapsed_windows_on_observed_games": 14,
   "unsettled_games_more_than_6_hours_after_start": 3,
   "quota_paused": false,
   "discovered_games_last_14_days": 23,
