@@ -34,7 +34,7 @@
     },
     "3a95439904d3d0af12970bb0c8e66a3a:middle": {
       "at": "2026-10-06T23:48:37.155758+00:00",
-      "status": "reserved"
+      "status": "saved"
     },
     "3b7b6520b0bc91f44cf9c9575d7e29f7:early": {
       "at": "2026-10-06T14:28:43.080080+00:00",
@@ -155,6 +155,10 @@
     "dfc3a73fc50d3d1c4b58150c834e2e7d:middle": {
       "at": "2026-10-02T20:50:24.095416+00:00",
       "status": "saved"
+    },
+    "e77f5de1229c03c1338f5cf3eb6797ba:late": {
+      "at": "2026-10-06T23:48:38.790886+00:00",
+      "status": "reserved"
     },
     "f5a9759e52a784d5fdcc1f3a2fcfc5a2:late": {
       "at": "2026-10-02T23:18:17.988451+00:00",
@@ -714,8 +718,8 @@
     }
   },
   "last_quota": {
-    "remaining": 459,
-    "used": 41
+    "remaining": 458,
+    "used": 42
   },
   "paper_alert_keys": [
     "[\"5b5466f836933f5fb3ed4b9f267cce75\",\"draftkings\",8482109,2.5,\"Under\",1.65,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
