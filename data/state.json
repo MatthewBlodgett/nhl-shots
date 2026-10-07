@@ -160,6 +160,10 @@
       "at": "2026-10-07T19:32:49.970353+00:00",
       "status": "saved"
     },
+    "db23cd7cb712b5c14c297aa6eece3627:middle": {
+      "at": "2026-10-07T23:50:19.626188+00:00",
+      "status": "reserved"
+    },
     "db6ecbc6d2657c39084510cf3e94f510:early": {
       "at": "2026-10-05T18:51:19.865312+00:00",
       "status": "saved"
@@ -545,14 +549,14 @@
     "8112572f236320d4d4c99b6eb0989b94": {
       "event": {
         "away_team": "Pittsburgh Penguins",
-        "commence_time": "2026-10-07T23:40:00Z",
+        "commence_time": "2026-10-07T23:43:04Z",
         "home_team": "Washington Capitals",
         "id": "8112572f236320d4d4c99b6eb0989b94",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-07T05:59:45.881579+00:00",
-      "last_seen_at": "2026-10-07T19:32:37.585168+00:00",
+      "last_seen_at": "2026-10-07T23:50:19.432482+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -629,14 +633,14 @@
     "c8c270e79cd56ca57baa21a49a0d1d9d": {
       "event": {
         "away_team": "Colorado Avalanche",
-        "commence_time": "2026-10-07T23:30:00Z",
+        "commence_time": "2026-10-07T23:45:00Z",
         "home_team": "Winnipeg Jets",
         "id": "c8c270e79cd56ca57baa21a49a0d1d9d",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-07T05:59:45.881579+00:00",
-      "last_seen_at": "2026-10-07T19:32:37.585168+00:00",
+      "last_seen_at": "2026-10-07T23:50:19.432482+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -706,7 +710,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-07T05:59:45.881579+00:00",
-      "last_seen_at": "2026-10-07T19:32:37.585168+00:00",
+      "last_seen_at": "2026-10-07T23:50:19.432482+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
