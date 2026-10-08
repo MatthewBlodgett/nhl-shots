@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-08T13:29:32.120095+00:00
+Updated: 2026-10-08T19:27:21.365522+00:00
 
-Today's archive: **4 snapshots / 476 quotes**.
+Today's archive: **8 snapshots / 1066 quotes**.
 
-Quotes with usable model history: 390. Blocked by history or team-change rules: 86.
+Quotes with usable model history: 910. Blocked by history or team-change rules: 148.
 
-API billing-cycle usage: 52 credits; 448 remaining.
+API billing-cycle usage: 56 credits; 444 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,25 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Logan Cooley | betmgm | Under 1.5 | 2.300 | 55.5% | 27.7% |
-| Logan Cooley | betonlineag | Under 1.5 | 2.150 | 55.5% | 19.3% |
+| Logan Cooley | fanduel | Under 1.5 | 2.360 | 55.5% | 31.0% |
+| Barrett Hayton | betmgm | Over 1.5 | 2.250 | 55.5% | 25.0% |
+| Logan Cooley | draftkings | Under 1.5 | 2.250 | 55.5% | 24.9% |
+| Logan Cooley | betmgm | Under 1.5 | 2.250 | 55.5% | 24.9% |
+| Logan Cooley | betonlineag | Under 1.5 | 2.240 | 55.5% | 24.3% |
+| William Carrier | draftkings | Under 1.5 | 1.670 | 72.6% | 21.2% |
+| William Carrier | betonlineag | Under 1.5 | 1.670 | 72.6% | 21.2% |
+| Andrei Svechnikov | draftkings | Under 2.5 | 2.150 | 56.1% | 20.7% |
+| Andrei Svechnikov | bovada | Under 2.5 | 2.150 | 56.1% | 20.7% |
+| Filip Hronek | fanduel | Over 1.5 | 2.040 | 59.2% | 20.7% |
+| Filip Hronek | betonlineag | Over 1.5 | 2.030 | 59.2% | 20.1% |
 | Hampus Lindholm | betmgm | Under 1.5 | 1.770 | 66.7% | 18.0% |
 | Mikko Rantanen | betmgm | Under 2.5 | 1.610 | 72.6% | 16.8% |
 | Mikko Rantanen | bovada | Under 2.5 | 1.610 | 72.6% | 16.8% |
 | Logan Cooley | bovada | Under 1.5 | 2.100 | 55.5% | 16.6% |
-| Mikko Rantanen | draftkings | Under 2.5 | 1.590 | 72.6% | 15.4% |
-| Owen Tippett | betonlineag | Over 2.5 | 2.200 | 52.2% | 14.9% |
-| Tyler Bertuzzi | betonlineag | Under 1.5 | 2.050 | 55.9% | 14.7% |
-| Tyler Bertuzzi | betmgm | Under 1.5 | 2.050 | 55.9% | 14.7% |
-| Tyler Seguin | betmgm | Under 1.5 | 1.910 | 60.0% | 14.6% |
-| Mikko Rantanen | betonlineag | Under 2.5 | 1.570 | 72.6% | 13.9% |
-| Logan Cooley | draftkings | Under 1.5 | 2.050 | 55.5% | 13.8% |
-| Jack Quinn | betonlineag | Over 2.5 | 2.020 | 56.1% | 13.4% |
-| Nick Schmaltz | fanduel | Over 2.5 | 2.040 | 55.2% | 12.7% |
-| Owen Tippett | draftkings | Over 2.5 | 2.150 | 52.2% | 12.3% |
-| Owen Tippett | betmgm | Over 2.5 | 2.150 | 52.2% | 12.3% |
-| Owen Tippett | bovada | Over 2.5 | 2.150 | 52.2% | 12.3% |
-| Jack Quinn | draftkings | Over 2.5 | 2.000 | 56.1% | 12.2% |
-| Jack Quinn | bovada | Over 2.5 | 2.000 | 56.1% | 12.2% |
+| Shayne Gostisbehere | bovada | Over 1.5 | 1.770 | 65.4% | 15.8% |
+| Cam York | betmgm | Under 1.5 | 1.530 | 75.6% | 15.6% |
+| Filip Hronek | betmgm | Over 1.5 | 1.950 | 59.2% | 15.4% |
+| Carl Grundstrom | betmgm | Under 1.5 | 1.610 | 71.6% | 15.3% |
+| Jack Quinn | draftkings | Over 2.5 | 2.050 | 56.1% | 15.0% |
 
 These are archived observations, not a statement that the price remains available.
