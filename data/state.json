@@ -409,7 +409,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-09T06:08:44.497954+00:00",
-      "last_seen_at": "2026-10-09T13:18:38.939381+00:00",
+      "last_seen_at": "2026-10-09T19:00:49.456915+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -479,7 +479,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-09T06:08:44.497954+00:00",
-      "last_seen_at": "2026-10-09T13:18:38.939381+00:00",
+      "last_seen_at": "2026-10-09T19:00:49.456915+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -619,7 +619,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-09T06:08:44.497954+00:00",
-      "last_seen_at": "2026-10-09T13:18:38.939381+00:00",
+      "last_seen_at": "2026-10-09T19:00:49.456915+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -759,7 +759,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-09T06:08:44.497954+00:00",
-      "last_seen_at": "2026-10-09T13:18:38.939381+00:00",
+      "last_seen_at": "2026-10-09T19:00:49.456915+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -1045,8 +1045,8 @@
     }
   },
   "last_quota": {
-    "remaining": 441,
-    "used": 59
+    "remaining": 440,
+    "used": 60
   },
   "paper_alert_keys": [
     "[\"5b5466f836933f5fb3ed4b9f267cce75\",\"draftkings\",8482109,2.5,\"Under\",1.65,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
