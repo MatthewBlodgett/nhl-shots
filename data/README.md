@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-10T02:46:55.079151+00:00
+Updated: 2026-10-10T09:50:30.756650+00:00
 
-Today's archive: **1 snapshots / 106 quotes**.
+Today's archive: **2 snapshots / 178 quotes**.
 
-Quotes with usable model history: 102. Blocked by history or team-change rules: 4.
+Quotes with usable model history: 128. Blocked by history or team-change rules: 46.
 
-API billing-cycle usage: 61 credits; 439 remaining.
+API billing-cycle usage: 63 credits; 437 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,21 +20,24 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Jackson LaCombe | betonlineag | Under 1.5 | 2.100 | 54.3% | 14.1% |
-| Jackson LaCombe | bovada | Under 1.5 | 2.100 | 54.3% | 14.1% |
-| Jackson LaCombe | betmgm | Under 1.5 | 2.100 | 54.3% | 14.1% |
-| Kyle Connor | bovada | Over 3.5 | 2.100 | 53.9% | 13.2% |
-| Leo Carlsson | betonlineag | Over 2.5 | 2.180 | 51.7% | 12.8% |
-| Neal Pionk | betonlineag | Under 2.5 | 1.550 | 72.0% | 11.6% |
-| Jackson LaCombe | draftkings | Under 1.5 | 2.050 | 54.3% | 11.4% |
-| Neal Pionk | draftkings | Under 1.5 | 2.350 | 46.4% | 9.0% |
-| Neal Pionk | fanduel | Under 2.5 | 1.510 | 72.0% | 8.7% |
-| Gabriel Vilardi | bovada | Under 1.5 | 2.050 | 52.9% | 8.4% |
-| Kyle Connor | betonlineag | Over 3.5 | 2.000 | 53.9% | 7.8% |
-| Kyle Connor | fanduel | Over 3.5 | 1.980 | 53.9% | 6.7% |
-| Neal Pionk | bovada | Under 1.5 | 2.300 | 46.4% | 6.7% |
-| Leo Carlsson | draftkings | Over 2.5 | 2.050 | 51.7% | 6.1% |
-| Cole Perfetti | draftkings | Under 2.5 | 1.870 | 56.5% | 5.6% |
-| Leo Carlsson | fanduel | Over 2.5 | 2.040 | 51.7% | 5.6% |
+| Timo Meier | draftkings | Over 3.5 | 2.250 | 54.9% | 23.5% |
+| Timo Meier | betonlineag | Over 2.5 | 1.620 | 73.5% | 19.0% |
+| Timo Meier | fanduel | Over 2.5 | 1.590 | 73.5% | 16.8% |
+| Timo Meier | betmgm | Over 2.5 | 1.540 | 73.5% | 13.2% |
+| Arseny Gritsyuk | betonlineag | Over 1.5 | 1.740 | 64.4% | 12.1% |
+| Marco Rossi | betonlineag | Under 1.5 | 1.820 | 61.0% | 11.0% |
+| Arseny Gritsyuk | betmgm | Over 1.5 | 1.710 | 64.4% | 10.1% |
+| Dawson Mercer | betonlineag | Over 1.5 | 1.880 | 58.1% | 9.2% |
+| Dawson Mercer | betmgm | Over 1.5 | 1.870 | 58.1% | 8.7% |
+| Arseny Gritsyuk | draftkings | Over 1.5 | 1.670 | 64.4% | 7.6% |
+| Igor Chernyshov | betmgm | Under 1.5 | 1.900 | 56.6% | 7.5% |
+| Connor McDavid | fanduel | Under 3.5 | 1.980 | 54.0% | 6.9% |
+| Dougie Hamilton | draftkings | Over 2.5 | 2.100 | 50.8% | 6.6% |
+| Dougie Hamilton | betonlineag | Over 2.5 | 2.100 | 50.8% | 6.6% |
+| Vasily Podkolzin | fanduel | Under 2.5 | 1.820 | 58.5% | 6.5% |
+| Filip Hronek | draftkings | Over 1.5 | 1.830 | 58.1% | 6.3% |
+| Jack Hughes | betmgm | Under 3.5 | 2.200 | 48.0% | 5.6% |
+| Kasperi Kapanen | betonlineag | Under 1.5 | 2.130 | 49.6% | 5.6% |
+| Tyler Toffoli | betonlineag | Over 1.5 | 1.700 | 61.9% | 5.2% |
 
 These are archived observations, not a statement that the price remains available.
