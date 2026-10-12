@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-12T02:39:42.451552+00:00
+Updated: 2026-10-12T09:47:22.688202+00:00
 
-Today's archive: **6 snapshots / 764 quotes**.
+Today's archive: **1 snapshots / 94 quotes**.
 
-Quotes with usable model history: 620. Blocked by history or team-change rules: 126.
+Quotes with usable model history: 86. Blocked by history or team-change rules: 8.
 
-API billing-cycle usage: 76 credits; 424 remaining.
+API billing-cycle usage: 77 credits; 423 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,15 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Jakob Chychrun | fanduel | Under 2.5 | 1.960 | 68.0% | 33.4% |
-| Jakob Chychrun | draftkings | Under 2.5 | 1.950 | 68.0% | 32.7% |
-| Jakob Chychrun | betonlineag | Under 2.5 | 1.950 | 68.0% | 32.7% |
-| Jakob Chychrun | betmgm | Under 2.5 | 1.950 | 68.0% | 32.7% |
-| Adam Fox | betonlineag | Under 1.5 | 1.950 | 66.7% | 30.2% |
-| Jakob Chychrun | bovada | Under 2.5 | 1.910 | 68.0% | 30.0% |
-| Adam Fox | betmgm | Under 1.5 | 1.910 | 66.7% | 27.5% |
-| Adam Fox | draftkings | Under 1.5 | 1.870 | 66.7% | 24.8% |
-| Adam Fox | bovada | Under 1.5 | 1.870 | 66.7% | 24.8% |
-| Dylan Strome | draftkings | Under 1.5 | 2.200 | 55.5% | 22.1% |
-| Filip Hronek | fanduel | Over 1.5 | 2.060 | 58.1% | 19.7% |
-| Filip Hronek | draftkings | Over 1.5 | 2.050 | 58.1% | 19.1% |
-| Pierre-Luc Dubois | betonlineag | Under 1.5 | 2.060 | 57.8% | 19.0% |
-| Shayne Gostisbehere | betmgm | Over 1.5 | 1.830 | 64.9% | 18.7% |
-| Filip Hronek | betonlineag | Over 1.5 | 2.030 | 58.1% | 18.0% |
-| Bobby McMann | betmgm | Over 2.5 | 2.050 | 57.5% | 17.9% |
-| Owen Tippett | draftkings | Over 2.5 | 2.200 | 53.4% | 17.5% |
-| Shayne Gostisbehere | betonlineag | Over 1.5 | 1.810 | 64.9% | 17.4% |
-| Dylan Strome | bovada | Under 1.5 | 2.100 | 55.5% | 16.6% |
-| Filip Hronek | bovada | Over 1.5 | 2.000 | 58.1% | 16.2% |
+| Anton Lundell | draftkings | Over 1.5 | 1.800 | 65.7% | 18.3% |
+| Josh Doan | fanduel | Under 1.5 | 2.400 | 48.1% | 15.4% |
+| Josh Doan | betonlineag | Under 1.5 | 2.360 | 48.1% | 13.4% |
+| Jack Quinn | betmgm | Over 2.5 | 2.050 | 53.6% | 9.8% |
+| Josh Doan | draftkings | Under 1.5 | 2.250 | 48.1% | 8.2% |
+| Josh Norris | fanduel | Under 1.5 | 1.880 | 57.0% | 7.2% |
+| Josh Norris | betonlineag | Under 1.5 | 1.870 | 57.0% | 6.7% |
+| Anton Lundell | betmgm | Over 1.5 | 1.620 | 65.7% | 6.5% |
+| Josh Doan | betmgm | Under 1.5 | 2.200 | 48.1% | 5.8% |
+| Tage Thompson | betonlineag | Over 3.5 | 2.120 | 49.7% | 5.4% |
 
 These are archived observations, not a statement that the price remains available.
