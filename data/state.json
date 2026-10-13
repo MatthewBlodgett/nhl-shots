@@ -323,7 +323,8 @@
     "2026-10-09": "hash_five_v2",
     "2026-10-10": "hash_five_v2",
     "2026-10-11": "hash_five_v2",
-    "2026-10-12": "hash_five_v2"
+    "2026-10-12": "hash_five_v2",
+    "2026-10-13": "hash_five_v2"
   },
   "days": {
     "2026-10-02": [
@@ -394,6 +395,13 @@
       "e85cb8fcbbddd2332b24db4bfe564345",
       "bddca6412454c40a2860b4e2e3e85968",
       "fcf3af0dc532d226597dc5a8a2d55f78"
+    ],
+    "2026-10-13": [
+      "5290af76525679fdfa4eebaacc9b283f",
+      "b9d4f3cf4a46b1fd55b2020f0a70783a",
+      "9cc2460df91fb95f776e0e893a60985c",
+      "e06b043ca7e5c58f3a5786e5c7479520",
+      "96c1dc95ee1b687f058a96a7153cf36a"
     ]
   },
   "event_census": {
@@ -408,6 +416,20 @@
       },
       "first_seen_at": "2026-10-08T06:04:07.494399+00:00",
       "last_seen_at": "2026-10-08T23:57:42.466650+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": false
+    },
+    "033a7fbe94c870533285eca92f2907fb": {
+      "event": {
+        "away_team": "Colorado Avalanche",
+        "commence_time": "2026-10-14T00:40:00Z",
+        "home_team": "Dallas Stars",
+        "id": "033a7fbe94c870533285eca92f2907fb",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -495,6 +517,20 @@
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
+    "11760a5fc0040c4da450ea890d491b7b": {
+      "event": {
+        "away_team": "Pittsburgh Penguins",
+        "commence_time": "2026-10-14T00:10:00Z",
+        "home_team": "Chicago Blackhawks",
+        "id": "11760a5fc0040c4da450ea890d491b7b",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": false
+    },
     "12a90ee4a941f857d0fc417663fb00c1": {
       "event": {
         "away_team": "Seattle Kraken",
@@ -565,6 +601,20 @@
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
+    "1fa1e7fd3028995ab8ffb6b498e4899d": {
+      "event": {
+        "away_team": "Edmonton Oilers",
+        "commence_time": "2026-10-14T02:40:00Z",
+        "home_team": "Los Angeles Kings",
+        "id": "1fa1e7fd3028995ab8ffb6b498e4899d",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": false
+    },
     "21ac7b574ba4b532a5962a3f55feabeb": {
       "event": {
         "away_team": "Utah Mammoth",
@@ -634,6 +684,20 @@
       "last_seen_at": "2026-10-09T23:16:01.684458+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
+    },
+    "3192c41b5eb5fad69e518d6eba5fcb91": {
+      "event": {
+        "away_team": "Boston Bruins",
+        "commence_time": "2026-10-14T03:10:00Z",
+        "home_team": "San Jose Sharks",
+        "id": "3192c41b5eb5fad69e518d6eba5fcb91",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": false
     },
     "3a95439904d3d0af12970bb0c8e66a3a": {
       "event": {
@@ -803,6 +867,34 @@
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
+    "5290af76525679fdfa4eebaacc9b283f": {
+      "event": {
+        "away_team": "Washington Capitals",
+        "commence_time": "2026-10-13T22:55:00Z",
+        "home_team": "Carolina Hurricanes",
+        "id": "5290af76525679fdfa4eebaacc9b283f",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
+    "52b4edae40c883606966ff2b620547a5": {
+      "event": {
+        "away_team": "Toronto Maple Leafs",
+        "commence_time": "2026-10-14T01:10:00Z",
+        "home_team": "Utah Mammoth",
+        "id": "52b4edae40c883606966ff2b620547a5",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": false
+    },
     "5393b504ffa70a2603259b2df414007f": {
       "event": {
         "away_team": "Utah Mammoth",
@@ -830,6 +922,20 @@
       "last_seen_at": "2026-10-04T00:37:36.036430+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
+    },
+    "587a79e5ddfb564cdee42db19af6422f": {
+      "event": {
+        "away_team": "Vegas Golden Knights",
+        "commence_time": "2026-10-14T00:55:00Z",
+        "home_team": "Nashville Predators",
+        "id": "587a79e5ddfb564cdee42db19af6422f",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": false
     },
     "5a731787bc9ea054ba101e14b0f3d9ca": {
       "event": {
@@ -1041,6 +1147,34 @@
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
+    "96c1dc95ee1b687f058a96a7153cf36a": {
+      "event": {
+        "away_team": "New Jersey Devils",
+        "commence_time": "2026-10-13T22:10:00Z",
+        "home_team": "Detroit Red Wings",
+        "id": "96c1dc95ee1b687f058a96a7153cf36a",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
+    "9cc2460df91fb95f776e0e893a60985c": {
+      "event": {
+        "away_team": "Florida Panthers",
+        "commence_time": "2026-10-13T22:25:00Z",
+        "home_team": "Columbus Blue Jackets",
+        "id": "9cc2460df91fb95f776e0e893a60985c",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
     "9f6db651fe2d7363616cc72625c4972d": {
       "event": {
         "away_team": "Philadelphia Flyers",
@@ -1111,6 +1245,20 @@
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
+    "ab01aeb40725b42695be877e6745effa": {
+      "event": {
+        "away_team": "Minnesota Wild",
+        "commence_time": "2026-10-14T00:25:00Z",
+        "home_team": "Winnipeg Jets",
+        "id": "ab01aeb40725b42695be877e6745effa",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": false
+    },
     "ab12d4dc632ea010114de1409ca7a64b": {
       "event": {
         "away_team": "New York Islanders",
@@ -1124,6 +1272,20 @@
       "last_seen_at": "2026-10-06T23:48:36.905560+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
+    },
+    "b4c66ffd89692fea91c3b1699915cc25": {
+      "event": {
+        "away_team": "Seattle Kraken",
+        "commence_time": "2026-10-13T23:10:00Z",
+        "home_team": "Philadelphia Flyers",
+        "id": "b4c66ffd89692fea91c3b1699915cc25",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": false
     },
     "b75f9f59f0f845e2ba7dc5f8e5b3e35d": {
       "event": {
@@ -1152,6 +1314,20 @@
       "last_seen_at": "2026-10-06T23:48:36.905560+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
+    },
+    "b9d4f3cf4a46b1fd55b2020f0a70783a": {
+      "event": {
+        "away_team": "Tampa Bay Lightning",
+        "commence_time": "2026-10-13T23:25:00Z",
+        "home_team": "New York Rangers",
+        "id": "b9d4f3cf4a46b1fd55b2020f0a70783a",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
     },
     "bae72d1f63e132b366d199db2807c4df": {
       "event": {
@@ -1335,6 +1511,48 @@
       "sampling_policy": "first_five_v1",
       "selected": true
     },
+    "e06b043ca7e5c58f3a5786e5c7479520": {
+      "event": {
+        "away_team": "Vancouver Canucks",
+        "commence_time": "2026-10-13T23:55:00Z",
+        "home_team": "New York Islanders",
+        "id": "e06b043ca7e5c58f3a5786e5c7479520",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
+    "e0f35b340012c950aac314ee30660274": {
+      "event": {
+        "away_team": "Buffalo Sabres",
+        "commence_time": "2026-10-13T22:40:00Z",
+        "home_team": "Montr\u00e9al Canadiens",
+        "id": "e0f35b340012c950aac314ee30660274",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": false
+    },
+    "e2c675c14d7afbf6164f9eb51e66e615": {
+      "event": {
+        "away_team": "Calgary Flames",
+        "commence_time": "2026-10-14T01:55:00Z",
+        "home_team": "Anaheim Ducks",
+        "id": "e2c675c14d7afbf6164f9eb51e66e615",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": false
+    },
     "e77f5de1229c03c1338f5cf3eb6797ba": {
       "event": {
         "away_team": "St Louis Blues",
@@ -1362,6 +1580,20 @@
       "last_seen_at": "2026-10-12T09:47:22.688202+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
+    },
+    "f29c6b46c06ecd7fedbc0eea607fcde6": {
+      "event": {
+        "away_team": "St Louis Blues",
+        "commence_time": "2026-10-13T23:40:00Z",
+        "home_team": "Ottawa Senators",
+        "id": "f29c6b46c06ecd7fedbc0eea607fcde6",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "last_seen_at": "2026-10-13T09:25:32.751829+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": false
     },
     "f5a9759e52a784d5fdcc1f3a2fcfc5a2": {
       "event": {
@@ -2436,6 +2668,10 @@
     },
     "89c5018d1ea1a2a1b79d4e805e10be46:early": {
       "day": "2026-10-08",
+      "reason": "14_call_daily_plan_preserves_middle_and_late"
+    },
+    "96c1dc95ee1b687f058a96a7153cf36a:early": {
+      "day": "2026-10-13",
       "reason": "14_call_daily_plan_preserves_middle_and_late"
     },
     "d10f933c7fb656c7cfd1c98df4a650f8:early": {
