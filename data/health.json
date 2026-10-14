@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-10-13T21:52:07.581205+00:00",
-  "last_success_at": "2026-10-13T21:52:07.581205+00:00",
+  "last_attempt_at": "2026-10-14T01:13:36.430504+00:00",
+  "last_success_at": "2026-10-14T01:13:36.430504+00:00",
   "consecutive_failures": 0,
   "quota": {
     "used": 88,
@@ -378,6 +378,13 @@
       "requests": 5,
       "snapshots": 5,
       "errors": []
+    },
+    {
+      "at": "2026-10-14T01:13:36.430504+00:00",
+      "success": true,
+      "requests": 0,
+      "snapshots": 0,
+      "errors": []
     }
   ],
   "recent_blocked_quote_counts": {
@@ -390,7 +397,7 @@
     "insufficient_current_season_history": 582
   },
   "observed_games_last_14_days": 52,
-  "missing_elapsed_windows_on_observed_games": 64,
+  "missing_elapsed_windows_on_observed_games": 67,
   "unsettled_games_more_than_6_hours_after_start": 9,
   "quota_paused": false,
   "discovered_games_last_14_days": 89,
