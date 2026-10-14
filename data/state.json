@@ -360,7 +360,8 @@
     "2026-10-10": "hash_five_v2",
     "2026-10-11": "hash_five_v2",
     "2026-10-12": "hash_five_v2",
-    "2026-10-13": "hash_five_v2"
+    "2026-10-13": "hash_five_v2",
+    "2026-10-14": "hash_five_v2"
   },
   "days": {
     "2026-10-02": [
@@ -438,6 +439,10 @@
       "9cc2460df91fb95f776e0e893a60985c",
       "e06b043ca7e5c58f3a5786e5c7479520",
       "96c1dc95ee1b687f058a96a7153cf36a"
+    ],
+    "2026-10-14": [
+      "9604eeafec33b8980e6565c617f04fc6",
+      "11b474310b2b60cbae546d9c517444c6"
     ]
   },
   "event_census": {
@@ -566,6 +571,20 @@
       "last_seen_at": "2026-10-14T01:13:20.677501+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
+    },
+    "11b474310b2b60cbae546d9c517444c6": {
+      "event": {
+        "away_team": "Montr\u00e9al Canadiens",
+        "commence_time": "2026-10-14T23:40:00Z",
+        "home_team": "Washington Capitals",
+        "id": "11b474310b2b60cbae546d9c517444c6",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-14T06:42:54.315472+00:00",
+      "last_seen_at": "2026-10-14T06:42:54.315472+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
     },
     "12a90ee4a941f857d0fc417663fb00c1": {
       "event": {
@@ -1180,6 +1199,20 @@
       },
       "first_seen_at": "2026-10-04T06:22:23.330181+00:00",
       "last_seen_at": "2026-10-05T02:24:35.576579+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
+    "9604eeafec33b8980e6565c617f04fc6": {
+      "event": {
+        "away_team": "Dallas Stars",
+        "commence_time": "2026-10-15T00:40:00Z",
+        "home_team": "Colorado Avalanche",
+        "id": "9604eeafec33b8980e6565c617f04fc6",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-14T06:42:54.315472+00:00",
+      "last_seen_at": "2026-10-14T06:42:54.315472+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
