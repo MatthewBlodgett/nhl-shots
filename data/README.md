@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-15T18:40:43.818250+00:00
+Updated: 2026-10-15T21:49:12.005797+00:00
 
-Today's archive: **4 snapshots / 564 quotes**.
+Today's archive: **8 snapshots / 1134 quotes**.
 
-Quotes with usable model history: 424. Blocked by history or team-change rules: 140.
+Quotes with usable model history: 836. Blocked by history or team-change rules: 294.
 
-API billing-cycle usage: 97 credits; 403 remaining.
+API billing-cycle usage: 101 credits; 399 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,25 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Easton Cowan | draftkings | Under 1.5 | 2.300 | 59.0% | 35.7% |
-| Denver Barkey | draftkings | Under 1.5 | 1.670 | 81.2% | 35.6% |
-| Denver Barkey | betonlineag | Under 1.5 | 1.670 | 81.2% | 35.6% |
-| Easton Cowan | betonlineag | Under 1.5 | 2.220 | 59.0% | 31.0% |
 | Zach Benson | bovada | Under 1.5 | 2.500 | 51.2% | 28.0% |
+| Owen Power | betmgm | Under 1.5 | 2.050 | 61.1% | 25.2% |
+| Denver Barkey | draftkings | Under 1.5 | 1.540 | 81.2% | 25.1% |
 | Zach Benson | draftkings | Under 1.5 | 2.400 | 51.2% | 22.9% |
-| Owen Power | betonlineag | Under 1.5 | 1.990 | 61.1% | 21.5% |
+| Owen Power | betonlineag | Under 1.5 | 2.010 | 61.1% | 22.7% |
+| Denver Barkey | betonlineag | Under 1.5 | 1.510 | 81.2% | 22.6% |
+| Owen Power | draftkings | Under 1.5 | 2.000 | 61.1% | 22.1% |
+| Owen Power | bovada | Under 1.5 | 2.000 | 61.1% | 22.1% |
 | Mikael Backlund | bovada | Over 1.5 | 1.830 | 66.3% | 21.3% |
 | Easton Cowan | betmgm | Under 1.5 | 2.050 | 59.0% | 21.0% |
 | Mikael Backlund | draftkings | Over 1.5 | 1.800 | 66.3% | 19.3% |
+| Zach Benson | fanduel | Under 1.5 | 2.320 | 51.2% | 18.8% |
+| Matvei Michkov | draftkings | Under 1.5 | 2.150 | 54.9% | 18.0% |
 | Matvei Michkov | bovada | Under 1.5 | 2.150 | 54.9% | 18.0% |
-| Zach Benson | betonlineag | Under 1.5 | 2.300 | 51.2% | 17.8% |
-| Zach Benson | fanduel | Under 1.5 | 2.300 | 51.2% | 17.8% |
-| Owen Power | draftkings | Under 1.5 | 1.910 | 61.1% | 16.6% |
+| Noah Östlund | fanduel | Under 1.5 | 1.880 | 62.7% | 17.9% |
+| Matvei Michkov | betonlineag | Under 1.5 | 2.110 | 54.9% | 15.8% |
 | Matt Coronato | betonlineag | Over 2.5 | 2.440 | 47.3% | 15.4% |
 | Matt Coronato | fanduel | Over 2.5 | 2.440 | 47.3% | 15.4% |
-| Matvei Michkov | draftkings | Under 1.5 | 2.100 | 54.9% | 15.2% |
-| Christian Dvorak | draftkings | Under 1.5 | 2.000 | 57.5% | 15.1% |
-| Christian Dvorak | bovada | Under 1.5 | 2.000 | 57.5% | 15.1% |
-| Matthew Wood | betmgm | Under 1.5 | 1.870 | 61.5% | 14.9% |
+| Zach Benson | draftkings | Under 2.5 | 1.510 | 76.3% | 15.2% |
+| Easton Cowan | draftkings | Under 1.5 | 1.950 | 59.0% | 15.1% |
 
 These are archived observations, not a statement that the price remains available.
