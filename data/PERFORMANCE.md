@@ -1,6 +1,6 @@
 # Prospective paper performance
 
-Updated: 2026-10-14T23:55:11.562496+00:00
+Updated: 2026-10-15T04:39:24.252221+00:00
 
 Fixed policy: middle window; at most one paper decision per player and game. Results are split by model version.
 
@@ -9,9 +9,9 @@ Eligible middle-window player games: 419.
 
 ## Model f52f4d8817de
 
-Settled forecasts: 387. Brier: 0.2541663000176552.
-Paper decisions: 225; resolved: 209; unresolved: 16.
-Hypothetical profit units: -8.920; ROI: -0.04267942583732057.
+Settled forecasts: 414. Brier: 0.2545818407832453.
+Paper decisions: 225; resolved: 221; unresolved: 4.
+Hypothetical profit units: -8.910; ROI: -0.04031674208144795.
 
 ## Limitations
 
