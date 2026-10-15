@@ -74,7 +74,7 @@
     },
     "30482712c8704ae61ad9ea6b033efccf:early": {
       "at": "2026-10-15T14:26:56.641306+00:00",
-      "status": "reserved"
+      "status": "saved"
     },
     "30e778f30fcb48f94af24793f5bd201a:early": {
       "at": "2026-10-09T13:18:58.726715+00:00",
@@ -1920,8 +1920,8 @@
     }
   },
   "last_quota": {
-    "remaining": 404,
-    "used": 96
+    "remaining": 403,
+    "used": 97
   },
   "paper_alert_keys": [
     "[\"5b5466f836933f5fb3ed4b9f267cce75\",\"draftkings\",8482109,2.5,\"Under\",1.65,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
@@ -3204,7 +3204,24 @@
     "[\"31352e6ab98e96d7f2505fa0432b96e2\",\"bovada\",8482679,1.5,\"Over\",1.54,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
     "[\"31352e6ab98e96d7f2505fa0432b96e2\",\"bovada\",8474150,1.5,\"Over\",1.83,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
     "[\"31352e6ab98e96d7f2505fa0432b96e2\",\"bovada\",8477447,1.5,\"Under\",2.1,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
-    "[\"31352e6ab98e96d7f2505fa0432b96e2\",\"bovada\",8476881,2.5,\"Under\",1.74,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]"
+    "[\"31352e6ab98e96d7f2505fa0432b96e2\",\"bovada\",8476881,2.5,\"Under\",1.74,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"draftkings\",8484145,1.5,\"Under\",2.4,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"draftkings\",8484158,1.5,\"Under\",2.3,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"draftkings\",8482671,1.5,\"Under\",1.91,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"draftkings\",8483500,1.5,\"Under\",1.8,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"betonlineag\",8484145,1.5,\"Under\",2.3,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"betonlineag\",8482671,1.5,\"Under\",1.99,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"betonlineag\",8482659,1.5,\"Under\",2.32,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"betonlineag\",8484158,1.5,\"Under\",2.22,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"betonlineag\",8483500,1.5,\"Under\",1.83,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"fanduel\",8482659,1.5,\"Under\",2.36,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"fanduel\",8484145,1.5,\"Under\",2.3,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"betmgm\",8484158,1.5,\"Under\",2.05,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"betmgm\",8482659,1.5,\"Under\",2.3,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"betmgm\",8484145,1.5,\"Under\",2.1,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"bovada\",8482659,1.5,\"Under\",2.35,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"bovada\",8482671,1.5,\"Under\",1.87,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"30482712c8704ae61ad9ea6b033efccf\",\"bovada\",8484145,1.5,\"Under\",2.5,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]"
   ],
   "planned_omissions": {
     "1e0601b21b573df36bc79e769dcd5e4b:early": {
