@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-15T21:49:12.005797+00:00
+Updated: 2026-10-16T00:24:44.012882+00:00
 
-Today's archive: **8 snapshots / 1134 quotes**.
+Today's archive: **9 snapshots / 1278 quotes**.
 
-Quotes with usable model history: 836. Blocked by history or team-change rules: 294.
+Quotes with usable model history: 966. Blocked by history or team-change rules: 308.
 
-API billing-cycle usage: 101 credits; 399 remaining.
+API billing-cycle usage: 102 credits; 398 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -28,17 +28,17 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 | Denver Barkey | betonlineag | Under 1.5 | 1.510 | 81.2% | 22.6% |
 | Owen Power | draftkings | Under 1.5 | 2.000 | 61.1% | 22.1% |
 | Owen Power | bovada | Under 1.5 | 2.000 | 61.1% | 22.1% |
-| Mikael Backlund | bovada | Over 1.5 | 1.830 | 66.3% | 21.3% |
 | Easton Cowan | betmgm | Under 1.5 | 2.050 | 59.0% | 21.0% |
-| Mikael Backlund | draftkings | Over 1.5 | 1.800 | 66.3% | 19.3% |
+| Brett Howden | draftkings | Under 1.5 | 1.910 | 62.3% | 19.0% |
 | Zach Benson | fanduel | Under 1.5 | 2.320 | 51.2% | 18.8% |
+| Brett Howden | betonlineag | Under 1.5 | 1.900 | 62.3% | 18.4% |
 | Matvei Michkov | draftkings | Under 1.5 | 2.150 | 54.9% | 18.0% |
 | Matvei Michkov | bovada | Under 1.5 | 2.150 | 54.9% | 18.0% |
 | Noah Östlund | fanduel | Under 1.5 | 1.880 | 62.7% | 17.9% |
+| Brayden McNabb | draftkings | Over 1.5 | 2.550 | 45.5% | 16.0% |
 | Matvei Michkov | betonlineag | Under 1.5 | 2.110 | 54.9% | 15.8% |
-| Matt Coronato | betonlineag | Over 2.5 | 2.440 | 47.3% | 15.4% |
-| Matt Coronato | fanduel | Over 2.5 | 2.440 | 47.3% | 15.4% |
 | Zach Benson | draftkings | Under 2.5 | 1.510 | 76.3% | 15.2% |
 | Easton Cowan | draftkings | Under 1.5 | 1.950 | 59.0% | 15.1% |
+| Matthew Wood | betmgm | Under 1.5 | 1.870 | 61.5% | 14.9% |
 
 These are archived observations, not a statement that the price remains available.

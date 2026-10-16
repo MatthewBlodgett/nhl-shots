@@ -1,13 +1,13 @@
 {
   "day": "2026-10-15",
   "errors": [],
-  "new_paper_candidates": 60,
+  "new_paper_candidates": 22,
   "quota": {
-    "remaining": 399,
-    "used": 101
+    "remaining": 398,
+    "used": 102
   },
-  "quotes": 570,
-  "recorded_at": "2026-10-15T21:49:12.005797+00:00",
-  "requests": 4,
-  "snapshots": 4
+  "quotes": 144,
+  "recorded_at": "2026-10-16T00:24:44.012882+00:00",
+  "requests": 1,
+  "snapshots": 1
 }
