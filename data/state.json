@@ -418,7 +418,8 @@
     "2026-10-12": "hash_five_v2",
     "2026-10-13": "hash_five_v2",
     "2026-10-14": "hash_five_v2",
-    "2026-10-15": "hash_five_v2"
+    "2026-10-15": "hash_five_v2",
+    "2026-10-16": "hash_five_v2"
   },
   "days": {
     "2026-10-02": [
@@ -507,6 +508,10 @@
       "31352e6ab98e96d7f2505fa0432b96e2",
       "30482712c8704ae61ad9ea6b033efccf",
       "6c6bbf8c46c5896d1498ab1cdc5b8be9"
+    ],
+    "2026-10-16": [
+      "7c44228f4c2e89133b34a3c70bfb30c5",
+      "343be4cf732ddd9fd0a058953456d811"
     ]
   },
   "event_census": {
@@ -902,6 +907,20 @@
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
+    "343be4cf732ddd9fd0a058953456d811": {
+      "event": {
+        "away_team": "Pittsburgh Penguins",
+        "commence_time": "2026-10-17T01:10:00Z",
+        "home_team": "Colorado Avalanche",
+        "id": "343be4cf732ddd9fd0a058953456d811",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-16T05:02:38.330082+00:00",
+      "last_seen_at": "2026-10-16T05:02:38.330082+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
     "3a95439904d3d0af12970bb0c8e66a3a": {
       "event": {
         "away_team": "Florida Panthers",
@@ -1292,6 +1311,20 @@
       "first_seen_at": "2026-10-02T22:35:13.282094+00:00",
       "last_seen_at": "2026-10-03T00:30:29.975512+00:00",
       "sampling_policy": "first_five_v1",
+      "selected": true
+    },
+    "7c44228f4c2e89133b34a3c70bfb30c5": {
+      "event": {
+        "away_team": "Boston Bruins",
+        "commence_time": "2026-10-17T02:10:00Z",
+        "home_team": "Anaheim Ducks",
+        "id": "7c44228f4c2e89133b34a3c70bfb30c5",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-16T05:02:38.330082+00:00",
+      "last_seen_at": "2026-10-16T05:02:38.330082+00:00",
+      "sampling_policy": "hash_five_v2",
       "selected": true
     },
     "7ff1567200cc7c7c7d901f32f81ad4d4": {
