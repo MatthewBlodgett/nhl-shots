@@ -156,8 +156,11 @@ def normalize_quotes(data):
 
 def map_nhl_game(event):
     day = parse_time(event["commence_time"]).astimezone(LOCAL_ZONE).date().isoformat()
+    home = shots.get_team_abbrev(event.get("home_team") or "")
+    away = shots.get_team_abbrev(event.get("away_team") or "")
+    if not home or not away:
+        return (None, home, away)
     schedule = shots.api_request(f"{shots.BASE_URL}/schedule/{day}") or {}
-    home, away = shots.get_team_abbrev(event["home_team"]), shots.get_team_abbrev(event["away_team"])
     matches = []
     for week in schedule.get("gameWeek", []):
         for game in week.get("games", []):
