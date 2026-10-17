@@ -30,10 +30,16 @@ def forecast(history, prior, game_date, team=None, config=None):
     if len(prior)<config['min_prior_games']:
         return {**base,'status':'insufficient_prior_season_history'}
     mean=blend_mean(history,prior,config['prior_strength'],config['prior_window'])
-    previous_team=prior[0].get('teamAbbrev')
-    changed=bool(team and previous_team and previous_team!=team)
-    if changed and len(history)<config['team_change_min_current_games']:
-        return {**base,'status':'team_change_review_required','expected_shots':mean}
+    latest_team=history[0].get('teamAbbrev')
+    on_roster=sum(1 for g in history if team and g.get('teamAbbrev')==team)
+    saw_other_team=any(g.get('teamAbbrev') not in (None,'',team) for g in history)
+    # Compare the roster to the latest appearance, and require ten games on the
+    # upcoming team when this season also contains another club.
+    changed=bool(team and latest_team and (latest_team!=team or (saw_other_team and on_roster<config['team_change_min_current_games'])))
+    base.update({'latest_team':latest_team,'appearances_on_roster_team':on_roster})
+    if team and latest_team and on_roster<config['team_change_min_current_games'] and (latest_team!=team or saw_other_team):
+        return {**base,'status':'team_change_review_required','expected_shots':mean,
+                'team_changed_since_prior':True}
     return {**base,'status':'ok','expected_shots':mean,'team_changed_since_prior':changed,
         'prediction':{'projection':{'expected_shots':mean},'count_distribution':{
             'name':'negative_binomial','dispersion':config['dispersion']},
