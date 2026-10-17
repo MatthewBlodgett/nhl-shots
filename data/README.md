@@ -1,6 +1,6 @@
 # NHL odds research recorder
 
-Updated: 2026-10-17T21:28:13.130200+00:00
+Updated: 2026-10-17T23:26:50.738376+00:00
 
 Today's archive: **10 snapshots / 1212 quotes**.
 
