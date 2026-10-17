@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-16T22:05:40.964036+00:00
+Updated: 2026-10-17T00:29:23.961256+00:00
 
-Today's archive: **3 snapshots / 462 quotes**.
+Today's archive: **5 snapshots / 764 quotes**.
 
-Quotes with usable model history: 396. Blocked by history or team-change rules: 46.
+Quotes with usable model history: 650. Blocked by history or team-change rules: 82.
 
-API billing-cycle usage: 105 credits; 395 remaining.
+API billing-cycle usage: 107 credits; 393 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,25 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Evgeni Malkin | betonlineag | Over 1.5 | 1.660 | 71.7% | 19.0% |
+| Jackson LaCombe | betonlineag | Under 1.5 | 2.100 | 57.6% | 21.0% |
 | Evgeni Malkin | betmgm | Over 1.5 | 1.650 | 71.7% | 18.3% |
 | Evgeni Malkin | bovada | Over 1.5 | 1.650 | 71.7% | 18.3% |
-| Evgeni Malkin | fanduel | Over 1.5 | 1.620 | 71.7% | 16.1% |
-| Morgan Geekie | bovada | Under 1.5 | 2.450 | 46.9% | 14.9% |
-| Evgeni Malkin | draftkings | Over 1.5 | 1.590 | 71.7% | 14.0% |
-| Morgan Geekie | draftkings | Under 1.5 | 2.400 | 46.9% | 12.5% |
+| Evgeni Malkin | betonlineag | Over 1.5 | 1.640 | 71.7% | 17.5% |
+| Evgeni Malkin | draftkings | Over 1.5 | 1.610 | 71.7% | 15.4% |
+| Jackson LaCombe | draftkings | Under 1.5 | 2.000 | 57.6% | 15.3% |
+| Evgeni Malkin | fanduel | Over 1.5 | 1.600 | 71.7% | 14.7% |
 | Jackson LaCombe | betmgm | Under 1.5 | 1.950 | 57.6% | 12.4% |
 | Jackson LaCombe | bovada | Under 1.5 | 1.950 | 57.6% | 12.4% |
-| Jackson LaCombe | betonlineag | Under 1.5 | 1.930 | 57.6% | 11.2% |
+| Martin Necas | betonlineag | Over 2.5 | 1.980 | 56.1% | 11.1% |
 | Martin Necas | fanduel | Over 2.5 | 1.980 | 56.1% | 11.1% |
-| Hampus Lindholm | betonlineag | Under 1.5 | 1.670 | 66.1% | 10.4% |
-| Morgan Geekie | fanduel | Under 1.5 | 2.340 | 46.9% | 9.7% |
-| Hampus Lindholm | draftkings | Under 1.5 | 1.650 | 66.1% | 9.1% |
+| Martin Necas | draftkings | Over 2.5 | 1.950 | 56.1% | 9.4% |
 | Artturi Lehkonen | draftkings | Under 1.5 | 2.100 | 52.0% | 9.1% |
 | Artturi Lehkonen | bovada | Under 1.5 | 2.100 | 52.0% | 9.1% |
-| Artturi Lehkonen | betonlineag | Under 1.5 | 2.090 | 52.0% | 8.6% |
+| Ben Kindel | draftkings | Over 1.5 | 1.770 | 61.3% | 8.5% |
 | Erik Karlsson | fanduel | Over 1.5 | 1.590 | 68.1% | 8.2% |
-| Morgan Geekie | betonlineag | Under 1.5 | 2.300 | 46.9% | 7.8% |
-| Jackson LaCombe | draftkings | Under 1.5 | 1.870 | 57.6% | 7.8% |
+| Hampus Lindholm | draftkings | Under 1.5 | 1.620 | 66.1% | 7.1% |
+| Brock Nelson | betmgm | Over 1.5 | 1.670 | 64.1% | 7.0% |
+| Erik Karlsson | betonlineag | Over 1.5 | 1.570 | 68.1% | 6.9% |
+| Artturi Lehkonen | betmgm | Under 1.5 | 2.050 | 52.0% | 6.5% |
 
 These are archived observations, not a statement that the price remains available.

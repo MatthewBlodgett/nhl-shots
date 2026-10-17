@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T22:05:52.654806+00:00",
+  "generated_at": "2026-10-17T00:29:57.698025+00:00",
   "policy": {
     "schema_version": 1,
     "stage": "middle",
@@ -10,27 +10,27 @@
     "confidence_interval": "1000 game-cluster resamples; minimum 20 settled games",
     "settlement": "official full-game SOG; unverified sportsbook participation and void rules"
   },
-  "snapshot_count": 100,
-  "quote_count": 12094,
+  "snapshot_count": 102,
+  "quote_count": 12396,
   "blocked_quote_counts": {
     "insufficient_current_season_history": 582,
-    "team_change_review_required": 1162,
-    "eligible": 8638,
+    "team_change_review_required": 1176,
+    "eligible": 8892,
     "nhl_game_unmatched": 1092,
-    "insufficient_prior_season_history": 494,
-    "player_unmatched_or_ambiguous": 116,
+    "insufficient_prior_season_history": 516,
+    "player_unmatched_or_ambiguous": 128,
     "outside_studied_lines": 10
   },
   "unique_observed_events": 57,
   "unique_observed_player_games": 956,
-  "eligible_middle_player_games": 503,
+  "eligible_middle_player_games": 516,
   "versions": {
     "f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902": {
       "forecast_player_games": 481,
-      "brier": 0.2539752866054756,
+      "brier": 0.25422771336247285,
       "matched_market_games": 481,
-      "matched_model_brier": 0.2539752866054756,
-      "market_no_vig_brier": 0.24683369182095527,
+      "matched_model_brier": 0.25422771336247285,
+      "market_no_vig_brier": 0.24697001982613576,
       "calibration": [
         {
           "lower": 0.1,
@@ -66,10 +66,10 @@
           "lower": 0.4,
           "count": 167,
           "predicted": 0.451575356516719,
-          "observed": 0.4251497005988024,
+          "observed": 0.4311377245508982,
           "observed_wilson_95": [
-            0.3526813872783688,
-            0.5009842304634459
+            0.3584073250976594,
+            0.5069650432248101
           ]
         },
         {
@@ -103,9 +103,9 @@
           ]
         }
       ],
-      "paper_decisions": 264,
+      "paper_decisions": 267,
       "resolved": 252,
-      "unresolved": 12,
+      "unresolved": 15,
       "hypothetical_profit_units": -10.559999999999995,
       "hypothetical_roi": -0.04190476190476188,
       "maximum_game_settled_drawdown_units": 24.3,
@@ -115,14 +115,14 @@
         "upper": 0.10057851239669421,
         "status": "descriptive_interval_not_a_profitability_guarantee"
       },
-      "incomplete_games_excluded_from_drawdown": 5,
+      "incomplete_games_excluded_from_drawdown": 6,
       "sportsbook_supported_decisions": 0,
-      "sportsbook_unresolved_decisions": 264,
-      "price_movement_pairs": 20,
-      "mean_late_implied_probability_change": 0.009408549440766,
+      "sportsbook_unresolved_decisions": 267,
+      "price_movement_pairs": 27,
+      "mean_late_implied_probability_change": 0.008553678752606864,
       "matched_brier_difference_interval": {
         "games": 35,
-        "lower": 0.00038862480051063956,
+        "lower": 0.0004675149591605943,
         "upper": 0.014105804293157298,
         "status": "descriptive_paired_game_cluster_interval"
       }
@@ -2089,8 +2089,8 @@
       "collected_at": "2026-10-16T22:05:42.812452+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.94,
+      "late_implied_probability_change": 0.010413412475268169
     },
     {
       "book": "betonlineag",
@@ -2116,8 +2116,8 @@
       "collected_at": "2026-10-16T22:05:42.812452+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.64,
+      "late_implied_probability_change": 0.007346459006758677
     },
     {
       "book": "fanduel",
@@ -2170,8 +2170,8 @@
       "collected_at": "2026-10-16T22:05:42.812452+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.67,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "bovada",
@@ -2197,8 +2197,8 @@
       "collected_at": "2026-10-16T22:05:42.812452+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.1,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "fanduel",
@@ -2224,8 +2224,8 @@
       "collected_at": "2026-10-16T22:05:42.812452+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.98,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "bovada",
@@ -2251,8 +2251,8 @@
       "collected_at": "2026-10-16T22:05:42.812452+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.87,
+      "late_implied_probability_change": 0.03475935828876997
     },
     {
       "book": "draftkings",
@@ -2278,8 +2278,8 @@
       "collected_at": "2026-10-16T22:05:42.812452+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.77,
+      "late_implied_probability_change": -0.009740892265731493
     },
     {
       "book": "draftkings",
@@ -3973,7 +3973,7 @@
       "quote_age_seconds": 72.541805,
       "side": "Over",
       "collected_at": "2026-10-15T21:49:52.541805+00:00",
-      "actual_shots": 0,
+      "actual_shots": 1,
       "result": "loss",
       "hypothetical_unit_return": -1,
       "sportsbook_settlement": {
@@ -4322,6 +4322,87 @@
       },
       "late_decimal_odds": 2.5,
       "late_implied_probability_change": 0.0
+    },
+    {
+      "book": "draftkings",
+      "book_updated_at": "2026-10-17T00:28:40Z",
+      "break_even_probability": 0.6172839506172839,
+      "decimal_odds": 1.62,
+      "event_id": "7c44228f4c2e89133b34a3c70bfb30c5",
+      "expected_return": 0.07137295932401577,
+      "game_start": "2026-10-17T02:10:00Z",
+      "line": 1.5,
+      "market_no_vig_probability": 0.5702917771883289,
+      "model_fair_decimal_odds": 1.5120784838756256,
+      "model_probability": 0.6613413329160591,
+      "model_status": "ok",
+      "model_version": "f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902",
+      "model_warning": "Unvalidated probability model; paper research only",
+      "paper_candidate": true,
+      "player": "Hampus Lindholm",
+      "player_id": 8476854,
+      "probability_edge": 0.044057382298775205,
+      "quote_age_seconds": 45.575558,
+      "side": "Under",
+      "collected_at": "2026-10-17T00:29:25.575558+00:00",
+      "actual_shots": null,
+      "result": "pending_or_unresolved",
+      "late_decimal_odds": null,
+      "late_implied_probability_change": null
+    },
+    {
+      "book": "betmgm",
+      "book_updated_at": "2026-10-17T00:29:07Z",
+      "break_even_probability": 0.4444444444444444,
+      "decimal_odds": 2.25,
+      "event_id": "7c44228f4c2e89133b34a3c70bfb30c5",
+      "expected_return": 0.05501702414950671,
+      "game_start": "2026-10-17T02:10:00Z",
+      "line": 1.5,
+      "market_no_vig_probability": 0.40633245382585753,
+      "model_fair_decimal_odds": 2.1326670077327132,
+      "model_probability": 0.4688964551775585,
+      "model_status": "ok",
+      "model_version": "f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902",
+      "model_warning": "Unvalidated probability model; paper research only",
+      "paper_candidate": true,
+      "player": "Morgan Geekie",
+      "player_id": 8479987,
+      "probability_edge": 0.024452010733114093,
+      "quote_age_seconds": 18.575558,
+      "side": "Under",
+      "collected_at": "2026-10-17T00:29:25.575558+00:00",
+      "actual_shots": null,
+      "result": "pending_or_unresolved",
+      "late_decimal_odds": null,
+      "late_implied_probability_change": null
+    },
+    {
+      "book": "betonlineag",
+      "book_updated_at": "2026-10-17T00:28:17Z",
+      "break_even_probability": 0.47619047619047616,
+      "decimal_odds": 2.1,
+      "event_id": "7c44228f4c2e89133b34a3c70bfb30c5",
+      "expected_return": 0.2102731540662235,
+      "game_start": "2026-10-17T02:10:00Z",
+      "line": 1.5,
+      "market_no_vig_probability": 0.4473684210526316,
+      "model_fair_decimal_odds": 1.735145485913251,
+      "model_probability": 0.5763205495553445,
+      "model_status": "ok",
+      "model_version": "f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902",
+      "model_warning": "Unvalidated probability model; paper research only",
+      "paper_candidate": true,
+      "player": "Jackson LaCombe",
+      "player_id": 8481605,
+      "probability_edge": 0.10013007336486834,
+      "quote_age_seconds": 68.575558,
+      "side": "Under",
+      "collected_at": "2026-10-17T00:29:25.575558+00:00",
+      "actual_shots": null,
+      "result": "pending_or_unresolved",
+      "late_decimal_odds": null,
+      "late_implied_probability_change": null
     },
     {
       "book": "betmgm",

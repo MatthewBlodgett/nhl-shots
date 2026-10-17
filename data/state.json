@@ -102,7 +102,7 @@
     },
     "343be4cf732ddd9fd0a058953456d811:late": {
       "at": "2026-10-17T00:29:34.275732+00:00",
-      "status": "reserved"
+      "status": "saved"
     },
     "343be4cf732ddd9fd0a058953456d811:middle": {
       "at": "2026-10-16T22:05:41.108988+00:00",
@@ -1993,8 +1993,8 @@
     }
   },
   "last_quota": {
-    "remaining": 394,
-    "used": 106
+    "remaining": 393,
+    "used": 107
   },
   "paper_alert_keys": [
     "[\"5b5466f836933f5fb3ed4b9f267cce75\",\"draftkings\",8482109,2.5,\"Under\",1.65,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
@@ -3423,7 +3423,12 @@
     "[\"7c44228f4c2e89133b34a3c70bfb30c5\",\"draftkings\",8481605,1.5,\"Under\",2.0,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
     "[\"7c44228f4c2e89133b34a3c70bfb30c5\",\"draftkings\",8476854,1.5,\"Under\",1.62,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
     "[\"7c44228f4c2e89133b34a3c70bfb30c5\",\"betonlineag\",8481605,1.5,\"Under\",2.1,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
-    "[\"7c44228f4c2e89133b34a3c70bfb30c5\",\"betmgm\",8479987,1.5,\"Under\",2.25,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]"
+    "[\"7c44228f4c2e89133b34a3c70bfb30c5\",\"betmgm\",8479987,1.5,\"Under\",2.25,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"343be4cf732ddd9fd0a058953456d811\",\"draftkings\",8480039,2.5,\"Over\",1.95,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"343be4cf732ddd9fd0a058953456d811\",\"draftkings\",8471215,1.5,\"Over\",1.61,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"343be4cf732ddd9fd0a058953456d811\",\"draftkings\",8485414,1.5,\"Over\",1.77,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"343be4cf732ddd9fd0a058953456d811\",\"betonlineag\",8480039,2.5,\"Over\",1.98,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
+    "[\"343be4cf732ddd9fd0a058953456d811\",\"fanduel\",8471215,1.5,\"Over\",1.6,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]"
   ],
   "planned_omissions": {
     "1e0601b21b573df36bc79e769dcd5e4b:early": {
