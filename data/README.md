@@ -1,6 +1,6 @@
 # NHL odds research recorder
 
-Updated: 2026-10-18T06:36:44.111681+00:00
+Updated: 2026-10-18T07:08:26.790291+00:00
 
 Today's archive: **0 snapshots / 0 quotes**.
 

@@ -682,7 +682,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-18T06:36:44.111681+00:00",
-      "last_seen_at": "2026-10-18T06:36:44.111681+00:00",
+      "last_seen_at": "2026-10-18T07:08:26.790291+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -1074,7 +1074,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-18T06:36:44.111681+00:00",
-      "last_seen_at": "2026-10-18T06:36:44.111681+00:00",
+      "last_seen_at": "2026-10-18T07:08:26.790291+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
