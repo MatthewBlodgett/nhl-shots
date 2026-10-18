@@ -135,10 +135,11 @@ The example is schematic, not an actual game result or an adequate evaluation
 sample. Add full logs for the requested players and seasons. For opponent
 adjustment, team_games should cover the entire league's completed regular
 season games, once per game, rather than only selected players' games.
-boxscores optionally maps string game IDs to the raw NHL boxscore objects;
-the existing engine reads playerByGameStats homeTeam/awayTeam forwards/defense
-entries with playerId and powerPlayToi. If that field is absent, PP adjustment
-remains neutral. Save raw data alongside reports to make runs reproducible.
+boxscores optionally maps string game IDs to the raw NHL boxscore objects.
+The engine no longer applies a power-play multiplier. `pp_data_available` is
+true only when a supplied boxscore contains `powerPlayToi`; current NHL
+boxscores do not, and a present field still leaves expected shots unchanged.
+Save raw data alongside reports to make runs reproducible.
 
 ```bash
 python backtest.py mcdavid 3 55 --dataset history.json \
@@ -174,7 +175,7 @@ The NHL standings-season, schedule/now, player game-log/now, team summary
 and latest-game boxscore endpoints returned HTTP 200 during live inspection.
 The current player log reports seasonId 20262027 and gameTypeId 2. McDavid's
 log contained two completed regular-season games. The fetched boxscore did
-not contain powerPlayToi, so PP adjustment correctly remains neutral.
+not contain powerPlayToi. The live power-play multiplier is no longer applied.
 
 The default season-specific log URL remains /player/ID/game-log/20262027/2.
 Returned season and game-type metadata are validated, logs are sorted, and

@@ -26,6 +26,21 @@ def test_paper_model_supports_validated_early_sample_and_exposes_inputs():
     assert paper_model.forecast(games(2,2026),games(5,2025),'2026-10-03','AAA')['status']=='insufficient_prior_season_history'
 
 
+def test_twelve_games_on_the_old_team_still_block_a_trade():
+    prior=games(25,2025,team='AAA')
+    blocked=paper_model.forecast(games(12,2026,team='AAA'),prior,'2026-10-20','BBB')
+    assert blocked['status']=='team_change_review_required'
+    assert blocked['latest_team']=='AAA'
+    assert blocked['appearances_on_roster_team']==0
+    moved=games(12,2026,team='AAA')+[{'gameDate':f'2026-11-{i+1:02d}','shots':2,'teamAbbrev':'BBB','homeRoadFlag':'H'} for i in range(3)]
+    still=paper_model.forecast(moved,prior,'2026-11-10','BBB')
+    assert still['status']=='team_change_review_required'
+    assert still['appearances_on_roster_team']==3
+    established=games(12,2026,team='AAA')+[{'gameDate':f'2026-11-{i+1:02d}','shots':2,'teamAbbrev':'BBB','homeRoadFlag':'H'} for i in range(10)]
+    allowed=paper_model.forecast(established,prior,'2026-11-20','BBB')
+    assert allowed['status']=='ok' and allowed['appearances_on_roster_team']==10
+
+
 def test_team_change_blocks_early_alerts_and_future_games_cannot_change_mean():
     old=games(25,2025)
     assert paper_model.forecast(games(2,2026),old,'2026-10-03','BBB')['status']=='team_change_review_required'

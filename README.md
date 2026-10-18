@@ -22,12 +22,15 @@ than assuming every season starts in October. Verified 2025/2026 boundaries
 are used with a warning if season metadata is unavailable. Supplied offline
 histories avoid network lookups and should include an explicit season.
 
-Predictions blend season, last-ten and last-five averages (default 50/30/20),
-then apply location, opponent, rest, power-play and ice-time factors.
-Fewer than ten completed games triggers an early-season sample warning;
-the engine does not silently replace the current season with last year's log.
-A Poisson distribution converts the expected shots into probabilities.
-These factors are heuristics, not proven effects.
+The default forecast is blend20_nb20 when the prior season has at least 20
+games, and the current-season mean otherwise. Location, opponent, and rest
+are not used. `--heuristic` prints the older multiplicative stack and the
+frozen 2024–25 validation comparison (the legacy stack lost to the season
+mean; the paired interval includes zero).
+Fewer than ten completed games triggers an early-season sample warning on
+the heuristic path. The engine does not silently replace the current season
+with last year's log. blend20_nb20 uses a negative binomial; the season-mean
+fallback uses Poisson.
 
 Explicit dates and supplied histories use isolated prediction context:
 current player metadata, season-end opponent statistics and live boxscores

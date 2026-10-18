@@ -12,6 +12,33 @@ import odds_recorder as r
 NOW = datetime(2026, 10, 2, 18, 0, tzinfo=timezone.utc)
 
 
+def test_unpunctuated_odds_name_matches_and_unknown_names_do_not_truncate(monkeypatch):
+    import shots
+    calls = []
+
+    def schedule(url, **kwargs):
+        calls.append(url)
+        return {"gameWeek": [{"games": [{
+            "gameType": 2,
+            "homeTeam": {"abbrev": "STL"},
+            "awayTeam": {"abbrev": "DAL"},
+            "startTimeUTC": "2026-10-02T23:00:00Z",
+        }]}]}
+
+    monkeypatch.setattr(shots, "api_request", schedule)
+    matched = {"home_team": "St Louis Blues", "away_team": "Dallas Stars",
+               "commence_time": "2026-10-02T23:00:00Z"}
+    game, home, away = r.map_nhl_game(matched)
+    assert (home, away) == ("STL", "DAL")
+    assert game["homeTeam"]["abbrev"] == "STL"
+    unknown = {"home_team": "Not A Real Club", "away_team": "Dallas Stars",
+               "commence_time": "2026-10-02T23:00:00Z"}
+    before = len(calls)
+    missed, home_abbrev, away_abbrev = r.map_nhl_game(unknown)
+    assert missed is None and home_abbrev is None and away_abbrev == "DAL"
+    assert len(calls) == before
+
+
 def event(number=1, hours=6):
     return {"id": f"{number:032x}", "commence_time": (NOW + timedelta(hours=hours)).isoformat(),
             "home_team": "St. Louis Blues", "away_team": "Dallas Stars"}

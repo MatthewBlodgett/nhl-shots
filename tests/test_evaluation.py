@@ -99,7 +99,7 @@ def test_n_plus_probability_and_scoring_agree():
     data = games(n=11)
     for g in data:
         g["shots"] = 3
-    # Home fallback and one rest day approximately cancel; still predicts over.
+    # One day of rest is neutral. The home fallback remains, and the outcome is still over.
     data[-1]["homeRoadFlag"] = "H"
     result = backtest_player(1, "t", 3, games=data, season="20242025")
     r = result["records"][0]
@@ -116,13 +116,16 @@ def test_rest_override_affects_applied_factor(flag, expected):
     result = shots.analyze_player(1, games=data, game_date="2024-10-02", is_b2b=flag)
     assert result["rest"]["days_rest"] == expected
     assert result["b2b"]["is_b2b"] == flag
-    assert result["rest"]["factor"] == 0.95
+    # One game cannot estimate a shrunk rest factor, and one day of rest is neutral.
+    assert result["rest"]["factor"] == 1.0
+    assert result["projection"]["rest_factor"] == 1.0
 
 
 def test_forced_b2b_overrides_long_rest():
     result = shots.analyze_player(1, games=games(n=1), game_date="2024-10-10", is_b2b=True)
     assert result["rest"]["days_rest"] == 0
-    assert result["projection"]["rest_factor"] == 0.95
+    assert result["projection"]["rest_factor"] == 1.0
+    assert result["rest"]["estimated"] is False
 
 
 def test_rest_ignores_same_day_and_future_games():

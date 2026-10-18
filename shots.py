@@ -3,13 +3,17 @@
 NHL Shots on Goal Predictor
 Predicts shot totals for NHL player prop bets using Poisson distribution.
 """
-import requests
 import json
 import time
+import unicodedata
 import warnings
 from math import factorial, exp, floor, isfinite
+from pathlib import Path
 from typing import Optional
 from datetime import datetime
+
+import requests
+from probability_model import blend_mean, count_over
 
 # ── API layer: caching, rate limiting, retry ────────────────────────
 
@@ -111,9 +115,22 @@ def get_current_season(game_date: str | None = None, *, use_api: bool = True) ->
 BASE_URL = "https://api-web.nhle.com/v1"
 STATS_URL = "https://api.nhle.com/stats/rest/en"
 
-# Default B2B fatigue factor (used when player sample size too small)
-DEFAULT_B2B_FACTOR = 0.95  # 5% reduction on back-to-backs
-MIN_B2B_SAMPLE = 5  # Minimum B2B games needed for player-specific factor
+# A rest tier is kept only when it can be shrunk toward the player's own mean.
+# Fewer games than this, and one day of rest, apply no multiplier.
+MIN_REST_TIER_GAMES = 5
+REST_SHRINK_GAMES = 20
+MIN_B2B_SAMPLE = MIN_REST_TIER_GAMES
+
+# Frozen 2024-25 validation table (research/README.md). Printed with --heuristic.
+# The 2025-26 holdout was not used.
+HEURISTIC_VALIDATION_COMPARISON = """\
+Frozen 2024-25 validation, 1343 player-games (research/README.md; 2025-26 holdout not used):
+  blend20_nb20 Brier 0.146610
+  season mean  Brier 0.148067
+  recent ten   Brier 0.153496
+  legacy stack Brier 0.149249
+The paired interval versus the season mean includes zero. The legacy stack is not the default forecast.
+"""
 
 # Common player IDs for quick lookup
 PLAYER_IDS = {
@@ -177,6 +194,9 @@ def get_team_stats(season: str | None = None) -> dict:
         games = team.get("gamesPlayed", 1)
 
         abbrev = get_team_abbrev(team_name)
+        if abbrev is None:
+            warnings.warn(f"Unmapped team name {team_name!r}; row skipped")
+            continue
 
         stats[abbrev] = {
             "name": team_name,
@@ -196,46 +216,68 @@ def get_team_stats(season: str | None = None) -> dict:
     return stats
 
 
-def get_team_abbrev(full_name: str) -> str:
-    """Convert full team name to abbreviation."""
-    mapping = {
-        "Anaheim Ducks": "ANA",
-        "Arizona Coyotes": "ARI",
-        "Boston Bruins": "BOS",
-        "Buffalo Sabres": "BUF",
-        "Calgary Flames": "CGY",
-        "Carolina Hurricanes": "CAR",
-        "Chicago Blackhawks": "CHI",
-        "Colorado Avalanche": "COL",
-        "Columbus Blue Jackets": "CBJ",
-        "Dallas Stars": "DAL",
-        "Detroit Red Wings": "DET",
-        "Edmonton Oilers": "EDM",
-        "Florida Panthers": "FLA",
-        "Los Angeles Kings": "LAK",
-        "Minnesota Wild": "MIN",
-        "Montreal Canadiens": "MTL",
-        "Montréal Canadiens": "MTL",
-        "Nashville Predators": "NSH",
-        "New Jersey Devils": "NJD",
-        "New York Islanders": "NYI",
-        "New York Rangers": "NYR",
-        "Ottawa Senators": "OTT",
-        "Philadelphia Flyers": "PHI",
-        "Pittsburgh Penguins": "PIT",
-        "San Jose Sharks": "SJS",
-        "Seattle Kraken": "SEA",
-        "St. Louis Blues": "STL",
-        "Tampa Bay Lightning": "TBL",
-        "Toronto Maple Leafs": "TOR",
-        "Utah Hockey Club": "UTA",
-        "Utah Mammoth": "UTA",
-        "Vancouver Canucks": "VAN",
-        "Vegas Golden Knights": "VGK",
-        "Washington Capitals": "WSH",
-        "Winnipeg Jets": "WPG",
-    }
-    return mapping.get(full_name, full_name[:3].upper())
+def normalize_team_name(full_name: str) -> str:
+    """Lowercase, strip accents and punctuation, and collapse whitespace."""
+    text = unicodedata.normalize("NFKD", full_name or "")
+    text = "".join(ch for ch in text if not unicodedata.combining(ch))
+    for mark in (".", "'", "’", "`"):
+        text = text.replace(mark, "")
+    return " ".join(text.lower().split())
+
+
+# Stats-API spelling, then the odds-feed spelling when it differs.
+# Both are indexed after normalize_team_name, so "St. Louis" and "St Louis" match.
+TEAM_SPELLINGS = {
+    "ANA": ("Anaheim Ducks", "Anaheim Ducks"),
+    "ARI": ("Arizona Coyotes", "Arizona Coyotes"),
+    "BOS": ("Boston Bruins", "Boston Bruins"),
+    "BUF": ("Buffalo Sabres", "Buffalo Sabres"),
+    "CGY": ("Calgary Flames", "Calgary Flames"),
+    "CAR": ("Carolina Hurricanes", "Carolina Hurricanes"),
+    "CHI": ("Chicago Blackhawks", "Chicago Blackhawks"),
+    "COL": ("Colorado Avalanche", "Colorado Avalanche"),
+    "CBJ": ("Columbus Blue Jackets", "Columbus Blue Jackets"),
+    "DAL": ("Dallas Stars", "Dallas Stars"),
+    "DET": ("Detroit Red Wings", "Detroit Red Wings"),
+    "EDM": ("Edmonton Oilers", "Edmonton Oilers"),
+    "FLA": ("Florida Panthers", "Florida Panthers"),
+    "LAK": ("Los Angeles Kings", "Los Angeles Kings"),
+    "MIN": ("Minnesota Wild", "Minnesota Wild"),
+    "MTL": ("Montréal Canadiens", "Montreal Canadiens"),
+    "NSH": ("Nashville Predators", "Nashville Predators"),
+    "NJD": ("New Jersey Devils", "New Jersey Devils"),
+    "NYI": ("New York Islanders", "New York Islanders"),
+    "NYR": ("New York Rangers", "New York Rangers"),
+    "OTT": ("Ottawa Senators", "Ottawa Senators"),
+    "PHI": ("Philadelphia Flyers", "Philadelphia Flyers"),
+    "PIT": ("Pittsburgh Penguins", "Pittsburgh Penguins"),
+    "SJS": ("San Jose Sharks", "San Jose Sharks"),
+    "SEA": ("Seattle Kraken", "Seattle Kraken"),
+    "STL": ("St. Louis Blues", "St Louis Blues"),
+    "TBL": ("Tampa Bay Lightning", "Tampa Bay Lightning"),
+    "TOR": ("Toronto Maple Leafs", "Toronto Maple Leafs"),
+    "UTA": ("Utah Hockey Club", "Utah Mammoth"),
+    "VAN": ("Vancouver Canucks", "Vancouver Canucks"),
+    "VGK": ("Vegas Golden Knights", "Vegas Golden Knights"),
+    "WSH": ("Washington Capitals", "Washington Capitals"),
+    "WPG": ("Winnipeg Jets", "Winnipeg Jets"),
+}
+
+_TEAM_INDEX = {
+    normalize_team_name(name): abbrev
+    for abbrev, names in TEAM_SPELLINGS.items()
+    for name in names
+}
+
+
+def get_team_abbrev(full_name: str) -> str | None:
+    """Map a full team name to its abbreviation, or None when it is unknown.
+
+    Unknown names are a hard miss. They are not truncated to three characters.
+    """
+    if not full_name or not str(full_name).strip():
+        return None
+    return _TEAM_INDEX.get(normalize_team_name(full_name))
 
 
 def get_opponent_adjustment(opponent_abbrev: str, team_stats: dict | None = None) -> float:
@@ -329,12 +371,41 @@ def prepare_game_log(games: list, before_date: str | None = None) -> list:
 
 # ── Rest analysis ──────────────────────────────────────────────────
 
+def shrunk_rest_factor(tier_shots: list, overall_shots: list) -> float | None:
+    """Shrunk tier_mean / overall_mean, or None when the tier is too small to keep.
+
+    Pseudo-counts pull the tier mean toward the player's own overall mean, so the
+    factor shrinks toward 1. One day of rest is the neutral bucket and is not
+    estimated here. Back-to-back uses the overall mean as the denominator.
+    """
+    if len(tier_shots) < MIN_REST_TIER_GAMES or not overall_shots:
+        return None
+    overall = sum(overall_shots) / len(overall_shots)
+    if overall <= 0:
+        return None
+    tier = sum(tier_shots) / len(tier_shots)
+    shrunk = (len(tier_shots) * tier + REST_SHRINK_GAMES * overall) / (
+        len(tier_shots) + REST_SHRINK_GAMES
+    )
+    return max(0.7, min(1.2, shrunk / overall))
+
+
+def _tier_factor(tier_shots: list, overall_shots: list) -> tuple[float, bool]:
+    estimated = shrunk_rest_factor(tier_shots, overall_shots)
+    if estimated is None:
+        return 1.0, False
+    return round(estimated, 3), True
+
+
 def analyze_rest_days(games: list) -> dict:
     """Analyze player's performance based on days of rest.
 
-    Tracks 0 (B2B), 1, 2, 3+ days rest and returns per-tier averages
-    plus a player-specific B2B factor.
+    One day of rest is neutral. Other tiers keep a multiplier only when a
+    shrunk tier-versus-overall factor can be estimated. Otherwise the
+    multiplier is removed (factor 1).
     """
+    empty_factors = {"b2b": 1.0, "one_day": 1.0, "two_day": 1.0, "three_plus": 1.0}
+    empty_estimated = {"b2b": False, "one_day": False, "two_day": False, "three_plus": False}
     if not games:
         return {
             "b2b_games": 0,
@@ -346,8 +417,10 @@ def analyze_rest_days(games: list) -> dict:
             "two_day_avg": 0,
             "three_plus_avg": 0,
             "rest_avg": 0,
-            "factor": DEFAULT_B2B_FACTOR,
+            "factor": 1.0,
             "is_default": True,
+            "tier_factors": empty_factors,
+            "tier_estimated": empty_estimated,
         }
 
     games = prepare_game_log(games)
@@ -386,14 +459,10 @@ def analyze_rest_days(games: list) -> dict:
 
     rest_shots = one_day_shots + two_day_shots + three_plus_shots
     rest_avg = sum(rest_shots) / len(rest_shots) if rest_shots else 0
-
-    if len(b2b_shots) >= MIN_B2B_SAMPLE and rest_avg > 0:
-        factor = b2b_avg / rest_avg
-        factor = max(0.7, min(1.2, factor))
-        is_default = False
-    else:
-        factor = DEFAULT_B2B_FACTOR
-        is_default = True
+    overall_shots = [g.get("shots", 0) for g in games]
+    b2b_factor, b2b_estimated = _tier_factor(b2b_shots, overall_shots)
+    two_factor, two_estimated = _tier_factor(two_day_shots, overall_shots)
+    three_factor, three_estimated = _tier_factor(three_plus_shots, overall_shots)
 
     return {
         "b2b_games": len(b2b_shots),
@@ -405,8 +474,20 @@ def analyze_rest_days(games: list) -> dict:
         "two_day_avg": round(two_day_avg, 2),
         "three_plus_avg": round(three_plus_avg, 2),
         "rest_avg": round(rest_avg, 2),
-        "factor": round(factor, 3),
-        "is_default": is_default,
+        "factor": b2b_factor,
+        "is_default": not b2b_estimated,
+        "tier_factors": {
+            "b2b": b2b_factor,
+            "one_day": 1.0,
+            "two_day": two_factor,
+            "three_plus": three_factor,
+        },
+        "tier_estimated": {
+            "b2b": b2b_estimated,
+            "one_day": False,
+            "two_day": two_estimated,
+            "three_plus": three_estimated,
+        },
     }
 
 
@@ -568,21 +649,14 @@ def analyze_pp_time(games: list, player_id: int, num_games: int = 5,
             pp_times.append(parse_toi(player_stats["powerPlayToi"]))
 
     avg_pp_toi = sum(pp_times) / len(pp_times) if pp_times else 0.0
-
-    if avg_pp_toi >= 5.0:
-        factor, significant = 1.12, True
-    elif avg_pp_toi >= 4.0:
-        factor, significant = 1.08, True
-    elif avg_pp_toi >= 2.0:
-        factor, significant = 1.03, False
-    else:
-        factor, significant = 1.0, False
-
+    # The live boxscore has no powerPlayToi, and realized PP time is not a
+    # pre-game deployment. The multiplier is removed; the flag only reports
+    # whether the field was present.
     return {
         "games_analyzed": len(pp_times),
         "avg_pp_toi": round(avg_pp_toi, 2),
-        "has_significant_pp": significant,
-        "factor": round(factor, 3),
+        "has_significant_pp": False,
+        "factor": 1.0,
         "error": None if pp_times else "No PP data available",
     }
 
@@ -780,20 +854,21 @@ def analyze_player(
             }
         adjusted_lambda *= opponent_factor
 
-    # Rest factor
-    if days_rest == 0:
-        rest_factor = b2b_analysis["factor"]
+    # One day of rest is neutral. Other tiers use a shrunk estimate or no multiplier.
+    if days_rest <= 0:
+        rest_key = "b2b"
     elif days_rest == 1:
-        rest_factor = 0.95
+        rest_key = "one_day"
     elif days_rest == 2:
-        rest_factor = 1.0
+        rest_key = "two_day"
     else:
-        rest_factor = 1.03
+        rest_key = "three_plus"
+    rest_factor = rest_analysis["tier_factors"][rest_key]
+    rest_estimated = rest_analysis["tier_estimated"][rest_key]
     adjusted_lambda *= rest_factor
 
-    # PP factor
-    pp_factor = pp_analysis["factor"]
-    adjusted_lambda *= pp_factor
+    # Power-play time is reported and not applied.
+    pp_factor = 1.0
 
     # TOI trend factor
     toi_factor = toi_analysis["factor"]
@@ -842,6 +917,8 @@ def analyze_player(
             "two_day_avg": rest_analysis["two_day_avg"],
             "three_plus_avg": rest_analysis["three_plus_avg"],
             "factor": round(rest_factor, 3),
+            "estimated": rest_estimated,
+            "neutral_one_day": days_rest == 1,
         },
         "pp_time": {
             "games_analyzed": pp_analysis["games_analyzed"],
@@ -926,6 +1003,12 @@ def print_analysis(result: dict):
     if rest:
         print(f"\n💤 Days Rest Analysis:")
         print(f"   Current: {rest['rest_label']} (factor: {rest['factor']}x)")
+        if rest.get("neutral_one_day"):
+            print("   One day of rest is neutral.")
+        elif rest.get("estimated"):
+            print("   Factor is the shrunk tier mean divided by the overall mean.")
+        else:
+            print("   Rest multiplier removed (fewer than 5 games in this tier).")
         if rest.get("b2b_avg", 0) > 0:
             print(f"   Historical: B2B={rest['b2b_avg']}, 1-day={rest['one_day_avg']}, "
                   f"2-day={rest['two_day_avg']}, 3+day={rest['three_plus_avg']}")
@@ -937,15 +1020,9 @@ def print_analysis(result: dict):
         ftype = "default" if b2b["is_default"] else "player-specific"
         print(f"   B2B factor: {b2b['factor']}x ({ftype})")
 
-    pp = result.get("pp_time", {})
-    if pp and pp["games_analyzed"] > 0:
-        emoji = "⚡" if pp["has_significant_pp"] else "🔌"
-        print(f"\n{emoji} Power Play Time (L{pp['games_analyzed']}):")
-        print(f"   Avg PP TOI: {pp['avg_pp_toi']:.2f} min/game")
-        if pp["has_significant_pp"]:
-            print(f"   Status: PP1 player (factor: {pp['factor']}x)")
-        else:
-            print(f"   Factor: {pp['factor']}x")
+    pp_available = result.get("data_quality", {}).get("pp_data_available", False)
+    print(f"\nPower play data available: {'yes' if pp_available else 'no'}.")
+    print("   Live power-play multiplier is not applied.")
 
     toi = result.get("toi_trend", {})
     if toi and toi.get("season_avg", 0) > 0:
@@ -984,8 +1061,8 @@ def print_analysis(result: dict):
         factors_applied.append(f"Opp: {proj['opponent_factor']}")
     if rest:
         factors_applied.append(f"Rest: {proj['rest_factor']}")
-    if pp and pp.get("factor", 1.0) != 1.0:
-        factors_applied.append(f"PP: {proj['pp_factor']}")
+    if pp_available:
+        factors_applied.append("PP: not applied")
     if toi and toi.get("factor", 1.0) != 1.0:
         factors_applied.append(f"TOI: {proj['toi_factor']}")
     print(f"   {' × '.join(factors_applied)}")
@@ -1055,6 +1132,118 @@ def clear_cache():
     TEAM_IDS.clear()
 
 
+# ── Default count forecast ─────────────────────────────────────────
+
+def prior_season_id(season: str) -> str:
+    start = int(season[:4]) - 1
+    return f"{start}{start + 1}"
+
+
+def paper_config() -> dict:
+    return json.loads(Path(__file__).with_name("paper_model_config.json").read_text())
+
+
+def default_count_forecast(history: list, prior: list | None, game_date: str) -> dict:
+    """Use blend20_nb20 when the prior log meets the frozen minimum.
+
+    Otherwise use the current-season mean and a Poisson tail. The legacy
+    location, opponent, rest, power-play, and ice-time stack is not applied.
+    """
+    config = paper_config()
+    history = prepare_game_log(history, game_date)
+    prior = prepare_game_log(prior or [], game_date)
+    if not history:
+        return {"error": "No game data found"}
+    season_mean = calculate_stats(history)["avg"]
+    base = {
+        "history_games": len(history),
+        "prior_games": len(prior),
+        "history_through": history[0]["gameDate"],
+        "game_date": game_date,
+        "season_mean": season_mean,
+    }
+    if len(prior) >= config["min_prior_games"] and len(history) >= config["min_current_games"]:
+        mean = blend_mean(history, prior, config["prior_strength"], config["prior_window"])
+        return {
+            **base,
+            "model": config["name"],
+            "distribution": "negative_binomial",
+            "dispersion": config["dispersion"],
+            "expected_shots": mean,
+        }
+    return {
+        **base,
+        "model": "season_mean",
+        "distribution": "poisson",
+        "dispersion": None,
+        "expected_shots": season_mean,
+    }
+
+
+def _count_under(line: float, mean: float, dispersion) -> float:
+    if float(line).is_integer():
+        if line < 1:
+            return 0.0
+        return max(0.0, min(1.0, 1 - count_over(line - 0.5, mean, dispersion)))
+    return max(0.0, min(1.0, 1 - count_over(line, mean, dispersion)))
+
+
+def print_count_forecast(result: dict, player_name: str, line: float | None = None):
+    """Print the default count forecast."""
+    if "error" in result:
+        print(f"Error: {result['error']}")
+        return
+    print(f"\n{'='*60}")
+    print(f"  {player_name}")
+    print(f"{'='*60}")
+    print(f"\nModel: {result['model']} ({result['distribution']})")
+    print(f"   Current games: {result['history_games']} through {result['history_through']}")
+    print(f"   Prior games: {result['prior_games']}")
+    if result["model"] != "blend20_nb20":
+        print("   Prior log is below the frozen minimum of 20 games; using the current-season mean.")
+    print(f"   Expected shots: {result['expected_shots']:.2f}")
+    print("   Location, opponent, and rest are not used. Pass --heuristic for the legacy stack.")
+    lines = [1.5, 2.5, 3.5, 4.5, 5.5]
+    if line is not None and line not in lines:
+        lines.append(line)
+        lines.sort()
+    print(f"\n   {'Line':<8} {'Over':<10} {'Under':<10}")
+    for value in lines:
+        over = count_over(value, result["expected_shots"], result["dispersion"])
+        under = _count_under(value, result["expected_shots"], result["dispersion"])
+        print(f"   {value:<8} {over*100:.1f}%{'':<5} {under*100:.1f}%")
+    print()
+
+
+def run_prediction(player_id: int, line: float | None, is_home: bool, opponent: str | None,
+                   is_b2b: bool | None, game_date: str | None, season: str | None,
+                   heuristic: bool) -> dict:
+    """Default to the frozen count model. --heuristic prints the legacy stack."""
+    if heuristic:
+        result = analyze_player(player_id, line, is_home, opponent, is_b2b,
+                                game_date=game_date, season=season)
+        print_analysis(result)
+        print(HEURISTIC_VALIDATION_COMPARISON)
+        return result
+    game_date = game_date or datetime.now().strftime("%Y-%m-%d")
+    season = season or get_current_season(game_date, use_api=True)
+    history = get_player_game_log(player_id, season)
+    prior: list = []
+    try:
+        prior = get_player_game_log(player_id, prior_season_id(season))
+    except ValueError as exc:
+        warnings.warn(f"Prior log ignored: {exc}")
+    info = get_player_info(player_id)
+    first = info.get("firstName", {}).get("default", "")
+    last = info.get("lastName", {}).get("default", "")
+    player_name = f"{first} {last}".strip() or f"Player {player_id}"
+    result = default_count_forecast(history, prior, game_date)
+    result["player"] = player_name
+    result["season_id"] = season
+    print_count_forecast(result, player_name, line)
+    return result
+
+
 # ── CLI ────────────────────────────────────────────────────────────
 
 def main():
@@ -1065,7 +1254,7 @@ def main():
         print(f"NHL Shots on Goal Predictor — {season[:4]}-{season[4:]} season")
         print("=" * 48)
         print("\nUsage:")
-        print("  python shots.py <player> [opponent] [line] [home|away] [b2b|rest] [--date YYYY-MM-DD] [--season ID]")
+        print("  python shots.py <player> [opponent] [line] [home|away] [b2b|rest] [--date YYYY-MM-DD] [--season ID] [--heuristic]")
         print("  python shots.py teams            (list team shot stats)")
         print("  python shots.py clear-cache      (flush API cache)")
         print("\nExamples:")
@@ -1076,7 +1265,10 @@ def main():
         print("\nFlags:")
         print("  home/away   - game location (default: home)")
         print("  b2b         - player is on a back-to-back")
-        print("  rest        - player is rested (not B2B)")
+        print("  rest        - player is rested (not B2B); used by --heuristic")
+        print("  --heuristic - legacy location/opponent/rest/TOI stack, plus the frozen validation comparison")
+        print("Default forecast is blend20_nb20 when a prior log of at least 20 games exists;")
+        print("otherwise it is the current-season mean.")
         print("\nQuick names:")
         for name in sorted(PLAYER_IDS.keys()):
             print(f"  - {name}")
@@ -1107,6 +1299,8 @@ def main():
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("--date", help="Target game date, YYYY-MM-DD (default: today)")
     parser.add_argument("--season", help="Season ID, e.g. 20242025")
+    parser.add_argument("--heuristic", action="store_true",
+                        help="Print the legacy multiplicative stack and the frozen validation comparison")
     options, remaining = parser.parse_known_args(sys.argv[2:])
     opponent = None
     line = None
@@ -1131,9 +1325,8 @@ def main():
             except ValueError:
                 pass
 
-    result = analyze_player(player_id, line, is_home, opponent, is_b2b,
-                            game_date=options.date, season=options.season)
-    print_analysis(result)
+    run_prediction(player_id, line, is_home, opponent, is_b2b,
+                   options.date, options.season, options.heuristic)
 
 
 if __name__ == "__main__":
