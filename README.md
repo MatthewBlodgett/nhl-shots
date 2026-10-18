@@ -77,11 +77,32 @@ python -m pytest tests/ -q
 Tests run offline and check future-data isolation, threshold scoring, rest
 overrides, holdout exclusion, development-only tuning, calibration and CLI export.
 
+## Deploy for free
+
+Streamlit Community Cloud hosts `streamlit_app.py` at no cost. The page reads
+the committed 2023–24 development and 2024–25 validation files. It does not
+use secrets or paid APIs, and it does not load the sealed 2025–26 holdout.
+
+1. Sign in at [share.streamlit.io](https://share.streamlit.io) with GitHub.
+2. Choose **New app**.
+3. Pick repository `MatthewBlodgett/nhl-shots`, branch `master`, and main file `streamlit_app.py`.
+4. Deploy. Community Cloud installs `requirements.txt` and starts the app.
+
+After the first build, the app is served at a `https://<app-name>.streamlit.app` URL.
+
+Local preview:
+
+```bash
+pip install -r requirements.txt
+streamlit run streamlit_app.py
+```
+
 ## Structure
 
 | Path | Role |
 | --- | --- |
 | shots.py | NHL API access and prediction engine |
+| streamlit_app.py | Display-only Community Cloud showcase |
 | backtest.py | Walk-forward evaluation, benchmarks and development-only tuning |
 | tests/ | Offline regression tests |
 | docs/EVALUATION_GUIDE.md | Protocol, dataset schema and verification |
