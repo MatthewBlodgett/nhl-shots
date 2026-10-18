@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T21:03:32.490853+00:00",
+  "generated_at": "2026-10-18T23:12:39.106518+00:00",
   "policy": {
     "schema_version": 1,
     "stage": "middle",
@@ -10,14 +10,14 @@
     "confidence_interval": "1000 game-cluster resamples; minimum 20 settled games",
     "settlement": "official full-game SOG; unverified sportsbook participation and void rules"
   },
-  "snapshot_count": 116,
-  "quote_count": 14201,
+  "snapshot_count": 117,
+  "quote_count": 14365,
   "blocked_quote_counts": {
     "insufficient_current_season_history": 582,
     "team_change_review_required": 1382,
-    "eligible": 10377,
+    "eligible": 10529,
     "nhl_game_unmatched": 1092,
-    "insufficient_prior_season_history": 618,
+    "insufficient_prior_season_history": 630,
     "player_unmatched_or_ambiguous": 140,
     "outside_studied_lines": 10
   },
@@ -47,8 +47,8 @@
       "incomplete_games_excluded_from_drawdown": 2,
       "sportsbook_supported_decisions": 0,
       "sportsbook_unresolved_decisions": 11,
-      "price_movement_pairs": 0,
-      "mean_late_implied_probability_change": null,
+      "price_movement_pairs": 4,
+      "mean_late_implied_probability_change": -5.5863456789734256e-05,
       "matched_brier_difference_interval": {
         "games": 0,
         "lower": null,
@@ -408,8 +408,8 @@
       "collected_at": "2026-10-18T21:03:22.574140+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.81,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "bovada",
@@ -435,8 +435,8 @@
       "collected_at": "2026-10-18T21:03:22.574140+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.1,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "fanduel",
@@ -462,8 +462,8 @@
       "collected_at": "2026-10-18T21:03:22.574140+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.02,
+      "late_implied_probability_change": 0.009612611746611543
     },
     {
       "book": "fanduel",
@@ -489,8 +489,8 @@
       "collected_at": "2026-10-18T21:03:22.574140+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.5,
+      "late_implied_probability_change": -0.00983606557377048
     },
     {
       "book": "betmgm",
