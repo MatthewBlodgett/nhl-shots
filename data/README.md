@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-20T19:17:28.648425+00:00
+Updated: 2026-10-20T22:40:54.724873+00:00
 
-Today's archive: **7 snapshots / 900 quotes**.
+Today's archive: **12 snapshots / 1566 quotes**.
 
-Quotes with usable model history: 820. Blocked by history or team-change rules: 52.
+Quotes with usable model history: 1438. Blocked by history or team-change rules: 86.
 
-API billing-cycle usage: 137 credits; 363 remaining.
+API billing-cycle usage: 142 credits; 358 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,25 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Mattias Ekholm | bovada | Under 1.5 | 2.100 | 65.2% | 36.8% |
-| Mattias Ekholm | draftkings | Under 1.5 | 2.050 | 65.2% | 33.6% |
-| Mattias Ekholm | betonlineag | Under 1.5 | 2.030 | 65.2% | 32.3% |
-| Mason Marchment | draftkings | Over 1.5 | 2.300 | 55.4% | 27.4% |
-| Mason Marchment | betmgm | Over 1.5 | 2.300 | 55.4% | 27.4% |
-| Mason Marchment | bovada | Over 1.5 | 2.300 | 55.4% | 27.4% |
+| Mattias Ekholm | draftkings | Under 1.5 | 1.950 | 65.2% | 27.0% |
+| Mattias Ekholm | bovada | Under 1.5 | 1.950 | 65.2% | 27.0% |
 | Trevor Moore | fanduel | Over 2.5 | 2.500 | 50.5% | 26.4% |
-| Mason Marchment | betonlineag | Over 1.5 | 2.200 | 55.4% | 21.8% |
+| Mattias Ekholm | betonlineag | Under 1.5 | 1.920 | 65.2% | 25.1% |
 | Trevor Moore | betonlineag | Over 2.5 | 2.390 | 50.5% | 20.8% |
 | Lane Hutson | draftkings | Under 2.5 | 1.530 | 78.4% | 19.9% |
 | Lane Hutson | bovada | Under 2.5 | 1.530 | 78.4% | 19.9% |
 | Macklin Celebrini | fanduel | Over 3.5 | 2.300 | 52.0% | 19.5% |
-| Anthony Duclair | draftkings | Under 1.5 | 1.670 | 71.5% | 19.3% |
-| Anthony Duclair | betonlineag | Under 1.5 | 1.660 | 71.5% | 18.6% |
+| Mikko Rantanen | betmgm | Under 2.5 | 1.620 | 73.5% | 19.1% |
 | Blake Coleman | betmgm | Over 1.5 | 1.670 | 70.9% | 18.4% |
 | Lane Hutson | draftkings | Under 1.5 | 2.200 | 53.8% | 18.3% |
 | Lane Hutson | bovada | Under 1.5 | 2.200 | 53.8% | 18.3% |
-| Ryan Hartman | draftkings | Over 1.5 | 2.050 | 57.5% | 17.9% |
-| Ryan Hartman | bovada | Over 1.5 | 2.050 | 57.5% | 17.9% |
-| Blake Coleman | betonlineag | Over 1.5 | 1.660 | 70.9% | 17.7% |
+| Anthony Duclair | draftkings | Under 1.5 | 1.650 | 71.5% | 17.9% |
+| Mikko Rantanen | betonlineag | Under 2.5 | 1.600 | 73.5% | 17.6% |
+| Lane Hutson | betonlineag | Under 2.5 | 1.500 | 78.4% | 17.6% |
+| Lane Hutson | betmgm | Under 2.5 | 1.500 | 78.4% | 17.6% |
+| Anthony Duclair | betonlineag | Under 1.5 | 1.640 | 71.5% | 17.2% |
+| Dylan Strome | bovada | Under 1.5 | 2.150 | 54.5% | 17.2% |
+| Blake Coleman | fanduel | Over 1.5 | 1.650 | 70.9% | 17.0% |
+| Macklin Celebrini | draftkings | Over 3.5 | 2.250 | 52.0% | 16.9% |
 
 These are archived observations, not a statement that the price remains available.
