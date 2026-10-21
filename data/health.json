@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-10-20T22:41:45.183185+00:00",
-  "last_success_at": "2026-10-20T22:41:45.183185+00:00",
+  "last_attempt_at": "2026-10-21T01:01:32.988316+00:00",
+  "last_success_at": "2026-10-21T01:01:32.988316+00:00",
   "consecutive_failures": 0,
   "quota": {
-    "used": 142,
-    "remaining": 358
+    "used": 143,
+    "remaining": 357
   },
   "recent_runs": [
     {
@@ -679,23 +679,30 @@
       "requests": 5,
       "snapshots": 5,
       "errors": []
+    },
+    {
+      "at": "2026-10-21T01:01:32.988316+00:00",
+      "success": true,
+      "requests": 1,
+      "snapshots": 1,
+      "errors": []
     }
   ],
   "recent_blocked_quote_counts": {
-    "eligible": 10415,
-    "insufficient_prior_season_history": 658,
-    "team_change_review_required": 1048,
+    "outside_studied_lines": 4,
+    "eligible": 10541,
     "player_unmatched_or_ambiguous": 156,
-    "insufficient_current_season_history": 4,
-    "nhl_game_unmatched": 510,
-    "outside_studied_lines": 4
+    "insufficient_prior_season_history": 664,
+    "team_change_review_required": 1048,
+    "nhl_game_unmatched": 236,
+    "insufficient_current_season_history": 4
   },
-  "observed_games_last_14_days": 58,
-  "missing_elapsed_windows_on_observed_games": 68,
-  "unsettled_games_more_than_6_hours_after_start": 6,
+  "observed_games_last_14_days": 54,
+  "missing_elapsed_windows_on_observed_games": 60,
+  "unsettled_games_more_than_6_hours_after_start": 5,
   "quota_paused": false,
-  "discovered_games_last_14_days": 108,
-  "selected_games_without_snapshots": 6,
+  "discovered_games_last_14_days": 101,
+  "selected_games_without_snapshots": 4,
   "sampling_policies": {
     "2026-10-03": "hash_five_v2",
     "2026-10-04": "hash_five_v2",
