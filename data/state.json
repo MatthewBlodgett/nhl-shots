@@ -587,7 +587,8 @@
     "2026-10-17": "hash_five_v2",
     "2026-10-18": "hash_five_v2",
     "2026-10-19": "hash_five_v2",
-    "2026-10-20": "hash_five_v2"
+    "2026-10-20": "hash_five_v2",
+    "2026-10-21": "hash_five_v2"
   },
   "days": {
     "2026-10-02": [
@@ -704,6 +705,10 @@
       "c3e7d800670fc3945c5b89ec09709eae",
       "84e20520cdbf52c71dfe697e7f789b86",
       "db38d272a56e929eac7005ab619af117"
+    ],
+    "2026-10-21": [
+      "0b4bab4d663e04a571655ec7477eb10a",
+      "5736c2282f978bfdf849f4b10876080e"
     ]
   },
   "event_census": {
@@ -802,6 +807,20 @@
       },
       "first_seen_at": "2026-10-18T06:36:44.111681+00:00",
       "last_seen_at": "2026-10-19T01:20:53.767448+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
+    "0b4bab4d663e04a571655ec7477eb10a": {
+      "event": {
+        "away_team": "Philadelphia Flyers",
+        "commence_time": "2026-10-21T23:40:00Z",
+        "home_team": "Buffalo Sabres",
+        "id": "0b4bab4d663e04a571655ec7477eb10a",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-21T06:02:30.024050+00:00",
+      "last_seen_at": "2026-10-21T06:02:30.024050+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -1446,6 +1465,20 @@
       },
       "first_seen_at": "2026-10-03T05:46:19.567618+00:00",
       "last_seen_at": "2026-10-04T00:37:36.036430+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
+    "5736c2282f978bfdf849f4b10876080e": {
+      "event": {
+        "away_team": "Florida Panthers",
+        "commence_time": "2026-10-21T23:40:00Z",
+        "home_team": "Ottawa Senators",
+        "id": "5736c2282f978bfdf849f4b10876080e",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-21T06:02:30.024050+00:00",
+      "last_seen_at": "2026-10-21T06:02:30.024050+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
