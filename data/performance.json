@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T10:04:17.097544+00:00",
+  "generated_at": "2026-10-23T15:05:10.091159+00:00",
   "policy": {
     "schema_version": 1,
     "stage": "middle",
@@ -10,19 +10,19 @@
     "confidence_interval": "1000 game-cluster resamples; minimum 20 settled games",
     "settlement": "official full-game SOG; unverified sportsbook participation and void rules"
   },
-  "snapshot_count": 152,
-  "quote_count": 18973,
+  "snapshot_count": 154,
+  "quote_count": 19207,
   "blocked_quote_counts": {
     "insufficient_current_season_history": 586,
     "team_change_review_required": 1382,
-    "eligible": 14819,
+    "eligible": 15027,
     "nhl_game_unmatched": 1092,
-    "insufficient_prior_season_history": 878,
+    "insufficient_prior_season_history": 904,
     "player_unmatched_or_ambiguous": 206,
     "outside_studied_lines": 10
   },
-  "unique_observed_events": 80,
-  "unique_observed_player_games": 1353,
+  "unique_observed_events": 82,
+  "unique_observed_player_games": 1381,
   "eligible_middle_player_games": 860,
   "versions": {
     "09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1": {
