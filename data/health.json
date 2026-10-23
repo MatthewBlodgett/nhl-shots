@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-10-23T19:13:26.180835+00:00",
-  "last_success_at": "2026-10-23T19:13:26.180835+00:00",
+  "last_attempt_at": "2026-10-23T22:19:42.052053+00:00",
+  "last_success_at": "2026-10-23T22:19:42.052053+00:00",
   "consecutive_failures": 0,
   "quota": {
-    "used": 159,
-    "remaining": 341
+    "used": 161,
+    "remaining": 339
   },
   "recent_runs": [
     {
@@ -791,13 +791,20 @@
       "requests": 0,
       "snapshots": 0,
       "errors": []
+    },
+    {
+      "at": "2026-10-23T22:19:42.052053+00:00",
+      "success": true,
+      "requests": 2,
+      "snapshots": 2,
+      "errors": []
     }
   ],
   "recent_blocked_quote_counts": {
     "outside_studied_lines": 4,
-    "eligible": 11025,
-    "player_unmatched_or_ambiguous": 164,
-    "insufficient_prior_season_history": 714,
+    "eligible": 11267,
+    "player_unmatched_or_ambiguous": 168,
+    "insufficient_prior_season_history": 742,
     "team_change_review_required": 942,
     "insufficient_current_season_history": 4,
     "nhl_game_unmatched": 236
