@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T22:19:41.250485+00:00",
+  "generated_at": "2026-10-24T01:08:57.378637+00:00",
   "policy": {
     "schema_version": 1,
     "stage": "middle",
@@ -10,14 +10,14 @@
     "confidence_interval": "1000 game-cluster resamples; minimum 20 settled games",
     "settlement": "official full-game SOG; unverified sportsbook participation and void rules"
   },
-  "snapshot_count": 156,
-  "quote_count": 19481,
+  "snapshot_count": 157,
+  "quote_count": 19623,
   "blocked_quote_counts": {
     "insufficient_current_season_history": 586,
     "team_change_review_required": 1382,
-    "eligible": 15269,
+    "eligible": 15403,
     "nhl_game_unmatched": 1092,
-    "insufficient_prior_season_history": 932,
+    "insufficient_prior_season_history": 940,
     "player_unmatched_or_ambiguous": 210,
     "outside_studied_lines": 10
   },
@@ -118,8 +118,8 @@
       "incomplete_games_excluded_from_drawdown": 3,
       "sportsbook_supported_decisions": 0,
       "sportsbook_unresolved_decisions": 141,
-      "price_movement_pairs": 34,
-      "mean_late_implied_probability_change": 0.003980404106759781,
+      "price_movement_pairs": 40,
+      "mean_late_implied_probability_change": 0.004700549503989598,
       "matched_brier_difference_interval": {
         "games": 18,
         "lower": null,
@@ -9429,7 +9429,7 @@
       "quote_age_seconds": 113.835415,
       "side": "Over",
       "collected_at": "2026-10-22T21:36:20.835415+00:00",
-      "actual_shots": 1,
+      "actual_shots": 0,
       "result": "loss",
       "hypothetical_unit_return": -1,
       "sportsbook_settlement": {
@@ -9614,7 +9614,7 @@
       "quote_age_seconds": 25.835415,
       "side": "Over",
       "collected_at": "2026-10-22T21:36:20.835415+00:00",
-      "actual_shots": 1,
+      "actual_shots": 0,
       "result": "loss",
       "hypothetical_unit_return": -1,
       "sportsbook_settlement": {
@@ -12138,8 +12138,8 @@
       "collected_at": "2026-10-23T22:19:33.893781+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.69,
+      "late_implied_probability_change": 0.042265426880811585
     },
     {
       "book": "betonlineag",
@@ -12165,8 +12165,8 @@
       "collected_at": "2026-10-23T22:19:33.893781+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.72,
+      "late_implied_probability_change": 0.003360666756284436
     },
     {
       "book": "bovada",
@@ -12192,8 +12192,8 @@
       "collected_at": "2026-10-23T22:19:33.893781+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.2,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "fanduel",
@@ -12219,8 +12219,8 @@
       "collected_at": "2026-10-23T22:19:33.893781+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.36,
+      "late_implied_probability_change": 0.007062146892655385
     },
     {
       "book": "betmgm",
@@ -12246,8 +12246,8 @@
       "collected_at": "2026-10-23T22:19:33.893781+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.61,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "betonlineag",
@@ -12273,8 +12273,8 @@
       "collected_at": "2026-10-23T22:19:33.893781+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.36,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "draftkings",
