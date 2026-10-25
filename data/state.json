@@ -488,6 +488,10 @@
       "at": "2026-10-25T10:10:09.386771+00:00",
       "status": "saved"
     },
+    "9c1309e10d95a3f6eb6b6b9105c565eb:middle": {
+      "at": "2026-10-25T20:51:17.765609+00:00",
+      "status": "reserved"
+    },
     "9cc2460df91fb95f776e0e893a60985c:early": {
       "at": "2026-10-13T17:09:12.928255+00:00",
       "status": "saved"
@@ -1823,7 +1827,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-25T05:20:30.642965+00:00",
-      "last_seen_at": "2026-10-25T17:52:32.818584+00:00",
+      "last_seen_at": "2026-10-25T20:51:17.618215+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2341,7 +2345,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-25T05:20:30.642965+00:00",
-      "last_seen_at": "2026-10-25T17:52:32.818584+00:00",
+      "last_seen_at": "2026-10-25T20:51:17.618215+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2803,7 +2807,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-25T05:20:30.642965+00:00",
-      "last_seen_at": "2026-10-25T17:52:32.818584+00:00",
+      "last_seen_at": "2026-10-25T20:51:17.618215+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2817,7 +2821,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-25T05:20:30.642965+00:00",
-      "last_seen_at": "2026-10-25T17:52:32.818584+00:00",
+      "last_seen_at": "2026-10-25T20:51:17.618215+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3027,7 +3031,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-25T05:20:30.642965+00:00",
-      "last_seen_at": "2026-10-25T17:52:32.818584+00:00",
+      "last_seen_at": "2026-10-25T20:51:17.618215+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
