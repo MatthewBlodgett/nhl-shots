@@ -1,10 +1,10 @@
 # Prospective paper performance
 
-Updated: 2026-10-25T05:20:32.622824+00:00
+Updated: 2026-10-25T10:10:27.456552+00:00
 
 Fixed policy: middle window; at most one paper decision per player and game. Results are split by model version.
 
-Archive: 170 snapshots / 21225 quotes.
+Archive: 172 snapshots / 21411 quotes.
 Eligible middle-window player games: 969.
 
 ## Model 09e8fd06ccd0
