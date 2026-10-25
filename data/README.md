@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-24T22:28:53.469813+00:00
+Updated: 2026-10-25T00:32:29.911460+00:00
 
-Today's archive: **12 snapshots / 1482 quotes**.
+Today's archive: **13 snapshots / 1602 quotes**.
 
-Quotes with usable model history: 1314. Blocked by history or team-change rules: 48.
+Quotes with usable model history: 1434. Blocked by history or team-change rules: 48.
 
-API billing-cycle usage: 174 credits; 326 remaining.
+API billing-cycle usage: 175 credits; 325 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -28,10 +28,10 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 | Seth Jarvis | fanduel | Over 2.5 | 2.200 | 58.7% | 29.2% |
 | Zach Benson | betmgm | Under 1.5 | 2.650 | 48.3% | 27.9% |
 | Logan Cooley | betmgm | Under 1.5 | 2.300 | 55.2% | 26.9% |
-| Logan Cooley | fanduel | Under 1.5 | 2.300 | 55.2% | 26.9% |
 | John Carlson | betmgm | Over 1.5 | 1.800 | 70.5% | 26.9% |
 | Seth Jarvis | betonlineag | Over 2.5 | 2.150 | 58.7% | 26.2% |
 | Seth Jarvis | bovada | Over 2.5 | 2.150 | 58.7% | 26.2% |
+| Logan Cooley | fanduel | Under 1.5 | 2.280 | 55.2% | 25.8% |
 | Ville Koivunen | betonlineag | Under 1.5 | 1.600 | 78.1% | 25.0% |
 | Logan Cooley | draftkings | Under 2.5 | 1.560 | 79.5% | 24.1% |
 | Dylan Holloway | betonlineag | Over 2.5 | 2.360 | 52.5% | 24.0% |

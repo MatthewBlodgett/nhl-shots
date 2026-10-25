@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T22:29:36.539831+00:00",
+  "generated_at": "2026-10-25T00:32:58.115414+00:00",
   "policy": {
     "schema_version": 1,
     "stage": "middle",
@@ -10,12 +10,12 @@
     "confidence_interval": "1000 game-cluster resamples; minimum 20 settled games",
     "settlement": "official full-game SOG; unverified sportsbook participation and void rules"
   },
-  "snapshot_count": 169,
-  "quote_count": 21105,
+  "snapshot_count": 170,
+  "quote_count": 21225,
   "blocked_quote_counts": {
     "insufficient_current_season_history": 586,
     "team_change_review_required": 1382,
-    "eligible": 16717,
+    "eligible": 16837,
     "nhl_game_unmatched": 1212,
     "insufficient_prior_season_history": 988,
     "player_unmatched_or_ambiguous": 210,
@@ -118,8 +118,8 @@
       "incomplete_games_excluded_from_drawdown": 5,
       "sportsbook_supported_decisions": 0,
       "sportsbook_unresolved_decisions": 182,
-      "price_movement_pairs": 68,
-      "mean_late_implied_probability_change": 0.0033132380166816986,
+      "price_movement_pairs": 76,
+      "mean_late_implied_probability_change": 0.0030772935319769543,
       "matched_brier_difference_interval": {
         "games": 21,
         "lower": -0.005223380640274709,
@@ -5166,8 +5166,8 @@
       "collected_at": "2026-10-24T22:28:56.032904+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.91,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "bovada",
@@ -5193,8 +5193,8 @@
       "collected_at": "2026-10-24T22:28:56.032904+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.25,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "fanduel",
@@ -5220,8 +5220,8 @@
       "collected_at": "2026-10-24T22:28:56.032904+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.14,
+      "late_implied_probability_change": 0.008574123295893021
     },
     {
       "book": "draftkings",
@@ -5247,8 +5247,8 @@
       "collected_at": "2026-10-24T22:28:56.032904+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.4,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "betmgm",
@@ -5274,8 +5274,8 @@
       "collected_at": "2026-10-24T22:28:56.032904+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.5,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "bovada",
@@ -5301,8 +5301,8 @@
       "collected_at": "2026-10-24T22:28:56.032904+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.3,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "betonlineag",
@@ -5328,8 +5328,8 @@
       "collected_at": "2026-10-24T22:28:56.032904+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 1.67,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "betonlineag",
@@ -5355,8 +5355,8 @@
       "collected_at": "2026-10-24T22:28:56.032904+00:00",
       "actual_shots": null,
       "result": "pending_or_unresolved",
-      "late_decimal_odds": null,
-      "late_implied_probability_change": null
+      "late_decimal_odds": 2.39,
+      "late_implied_probability_change": 0.0
     },
     {
       "book": "betonlineag",
