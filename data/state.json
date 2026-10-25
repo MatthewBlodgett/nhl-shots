@@ -719,7 +719,8 @@
     "2026-10-21": "hash_five_v2",
     "2026-10-22": "hash_five_v2",
     "2026-10-23": "hash_five_v2",
-    "2026-10-24": "hash_five_v2"
+    "2026-10-24": "hash_five_v2",
+    "2026-10-25": "hash_five_v2"
   },
   "days": {
     "2026-10-02": [
@@ -858,6 +859,13 @@
       "6f808f8ba28d3f5b26edeb74f752549f",
       "0b8a03e43524a57bae9c25a6c73c9024",
       "8e704270ddeb2ccdd00196b06cdb3bf6"
+    ],
+    "2026-10-25": [
+      "ccf447f1bbe822d28f87352436f70c7c",
+      "9c1309e10d95a3f6eb6b6b9105c565eb",
+      "cd9f65faa44f221a72638e49afb134fb",
+      "e13d36d055361cb7f59a37b7e5dca489",
+      "61198113cc96cb987aad067a15911db8"
     ]
   },
   "event_census": {
@@ -1785,6 +1793,20 @@
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
+    "61198113cc96cb987aad067a15911db8": {
+      "event": {
+        "away_team": "Colorado Avalanche",
+        "commence_time": "2026-10-26T00:00:00Z",
+        "home_team": "Nashville Predators",
+        "id": "61198113cc96cb987aad067a15911db8",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-25T05:20:30.642965+00:00",
+      "last_seen_at": "2026-10-25T05:20:30.642965+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
     "62fca8dce49c8fa3988f75322311b896": {
       "event": {
         "away_team": "Nashville Predators",
@@ -2289,6 +2311,20 @@
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
+    "9c1309e10d95a3f6eb6b6b9105c565eb": {
+      "event": {
+        "away_team": "New York Islanders",
+        "commence_time": "2026-10-25T22:00:00Z",
+        "home_team": "Dallas Stars",
+        "id": "9c1309e10d95a3f6eb6b6b9105c565eb",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-25T05:20:30.642965+00:00",
+      "last_seen_at": "2026-10-25T05:20:30.642965+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
     "9cc2460df91fb95f776e0e893a60985c": {
       "event": {
         "away_team": "Florida Panthers",
@@ -2737,6 +2773,34 @@
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
+    "ccf447f1bbe822d28f87352436f70c7c": {
+      "event": {
+        "away_team": "Minnesota Wild",
+        "commence_time": "2026-10-26T02:00:00Z",
+        "home_team": "Vancouver Canucks",
+        "id": "ccf447f1bbe822d28f87352436f70c7c",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-25T05:20:30.642965+00:00",
+      "last_seen_at": "2026-10-25T05:20:30.642965+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
+    "cd9f65faa44f221a72638e49afb134fb": {
+      "event": {
+        "away_team": "Montr\u00e9al Canadiens",
+        "commence_time": "2026-10-25T23:00:00Z",
+        "home_team": "Winnipeg Jets",
+        "id": "cd9f65faa44f221a72638e49afb134fb",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-25T05:20:30.642965+00:00",
+      "last_seen_at": "2026-10-25T05:20:30.642965+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
     "d10f933c7fb656c7cfd1c98df4a650f8": {
       "event": {
         "away_team": "Winnipeg Jets",
@@ -2932,6 +2996,20 @@
       "last_seen_at": "2026-10-14T01:13:20.677501+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
+    },
+    "e13d36d055361cb7f59a37b7e5dca489": {
+      "event": {
+        "away_team": "Florida Panthers",
+        "commence_time": "2026-10-25T19:00:00Z",
+        "home_team": "Chicago Blackhawks",
+        "id": "e13d36d055361cb7f59a37b7e5dca489",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-25T05:20:30.642965+00:00",
+      "last_seen_at": "2026-10-25T05:20:30.642965+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
     },
     "e2c675c14d7afbf6164f9eb51e66e615": {
       "event": {
@@ -5604,6 +5682,10 @@
     },
     "58afd2b5779b2e4f163314436900d379:early": {
       "day": "2026-10-22",
+      "reason": "14_call_daily_plan_preserves_middle_and_late"
+    },
+    "61198113cc96cb987aad067a15911db8:early": {
+      "day": "2026-10-25",
       "reason": "14_call_daily_plan_preserves_middle_and_late"
     },
     "6c6bbf8c46c5896d1498ab1cdc5b8be9:early": {
