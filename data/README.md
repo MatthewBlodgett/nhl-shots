@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-26T20:33:41.289158+00:00
+Updated: 2026-10-27T00:05:49.411046+00:00
 
-Today's archive: **4 snapshots / 534 quotes**.
+Today's archive: **6 snapshots / 832 quotes**.
 
-Quotes with usable model history: 518. Blocked by history or team-change rules: 16.
+Quotes with usable model history: 800. Blocked by history or team-change rules: 32.
 
-API billing-cycle usage: 190 credits; 310 remaining.
+API billing-cycle usage: 192 credits; 308 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,25 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Ryan Shea | bovada | Under 1.5 | 1.830 | 77.1% | 41.0% |
-| Ryan Shea | draftkings | Under 1.5 | 1.710 | 77.1% | 31.8% |
-| Ryan Shea | betonlineag | Under 1.5 | 1.680 | 77.1% | 29.5% |
-| Ben Jones | draftkings | Under 1.5 | 1.620 | 79.2% | 28.3% |
-| Ben Jones | betonlineag | Under 1.5 | 1.600 | 79.2% | 26.7% |
+| Ben Jones | draftkings | Under 1.5 | 1.650 | 79.2% | 30.6% |
+| Ryan Shea | draftkings | Under 1.5 | 1.620 | 77.1% | 24.8% |
+| Ben Jones | betonlineag | Under 1.5 | 1.550 | 79.2% | 22.7% |
+| Ryan Shea | bovada | Under 1.5 | 1.590 | 77.1% | 22.5% |
 | Matvei Gridin | betmgm | Under 1.5 | 2.800 | 43.6% | 22.2% |
 | Nick Paul | betmgm | Under 1.5 | 1.770 | 68.5% | 21.3% |
-| Yegor Sharangovich | bovada | Under 1.5 | 2.350 | 51.5% | 21.1% |
+| Simon Nemec | bovada | Under 1.5 | 2.000 | 60.4% | 20.8% |
 | Trevor Moore | draftkings | Over 1.5 | 1.690 | 71.3% | 20.5% |
 | Trevor Moore | bovada | Over 1.5 | 1.690 | 71.3% | 20.5% |
-| Joel Farabee | bovada | Under 2.5 | 1.670 | 71.1% | 18.8% |
-| Simon Nemec | draftkings | Under 1.5 | 1.950 | 60.4% | 17.8% |
+| Joel Farabee | fanduel | Under 2.5 | 1.660 | 71.1% | 18.1% |
+| Joel Farabee | bovada | Under 2.5 | 1.650 | 71.1% | 17.4% |
 | Joel Farabee | betmgm | Under 2.5 | 1.650 | 71.1% | 17.4% |
+| Dylan Larkin | bovada | Over 2.5 | 1.830 | 63.9% | 17.0% |
 | Adam Fox | betonlineag | Under 1.5 | 1.800 | 65.0% | 17.0% |
 | Adam Fox | betmgm | Under 1.5 | 1.800 | 65.0% | 17.0% |
 | Trevor Moore | betonlineag | Over 1.5 | 1.640 | 71.3% | 17.0% |
-| Nick Paul | betonlineag | Under 1.5 | 1.690 | 68.5% | 15.8% |
-| Simon Nemec | bovada | Under 1.5 | 1.910 | 60.4% | 15.4% |
-| Dylan Larkin | fanduel | Over 2.5 | 1.800 | 63.9% | 15.1% |
-| Trevor Moore | fanduel | Over 1.5 | 1.610 | 71.3% | 14.8% |
+| Joel Farabee | betonlineag | Under 2.5 | 1.640 | 71.1% | 16.7% |
+| Yegor Sharangovich | draftkings | Under 1.5 | 2.250 | 51.5% | 16.0% |
+| Yegor Sharangovich | bovada | Under 1.5 | 2.250 | 51.5% | 16.0% |
+| Ryan Shea | betonlineag | Under 1.5 | 1.500 | 77.1% | 15.6% |
 
 These are archived observations, not a statement that the price remains available.
