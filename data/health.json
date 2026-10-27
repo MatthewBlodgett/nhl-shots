@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-10-27T00:06:25.593946+00:00",
-  "last_success_at": "2026-10-27T00:06:25.593946+00:00",
+  "last_attempt_at": "2026-10-27T05:05:11.188712+00:00",
+  "last_success_at": "2026-10-27T05:05:11.188712+00:00",
   "consecutive_failures": 0,
   "quota": {
     "used": 192,
@@ -931,6 +931,13 @@
       "requests": 2,
       "snapshots": 2,
       "errors": []
+    },
+    {
+      "at": "2026-10-27T05:05:11.188712+00:00",
+      "success": true,
+      "requests": 0,
+      "snapshots": 0,
+      "errors": []
     }
   ],
   "recent_blocked_quote_counts": {
@@ -942,12 +949,12 @@
     "insufficient_current_season_history": 4,
     "nhl_game_unmatched": 120
   },
-  "observed_games_last_14_days": 53,
-  "missing_elapsed_windows_on_observed_games": 38,
+  "observed_games_last_14_days": 57,
+  "missing_elapsed_windows_on_observed_games": 36,
   "unsettled_games_more_than_6_hours_after_start": 0,
   "quota_paused": false,
-  "discovered_games_last_14_days": 99,
-  "selected_games_without_snapshots": 1,
+  "discovered_games_last_14_days": 109,
+  "selected_games_without_snapshots": 5,
   "sampling_policies": {
     "2026-10-03": "hash_five_v2",
     "2026-10-04": "hash_five_v2",
@@ -972,9 +979,10 @@
     "2026-10-23": "hash_five_v2",
     "2026-10-24": "hash_five_v2",
     "2026-10-25": "hash_five_v2",
-    "2026-10-26": "hash_five_v2"
+    "2026-10-26": "hash_five_v2",
+    "2026-10-27": "hash_five_v2"
   },
-  "planned_omitted_windows": 12,
+  "planned_omitted_windows": 13,
   "limitations": [
     "No external notifications. A failed GitHub runner cannot update this file.",
     "Discovery coverage starts with census deployment; games never discovered remain unknown."
