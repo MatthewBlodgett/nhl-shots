@@ -55895,5 +55895,200 @@
       "Tage Thompson",
       "Konsta Helenius"
     ]
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "lineup_status",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8483731,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": "projected_in_lineup"
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "line_assignment",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8483731,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": [
+      "Alex Bump",
+      "Sean Couturier",
+      "Tyson Foerster"
+    ]
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "lineup_status",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8477989,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": "projected_in_lineup"
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "line_assignment",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8477989,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": [
+      "Trevor Zegras",
+      "Christian Dvorak",
+      "Noel Acciari"
+    ]
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "lineup_status",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8484387,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": "projected_in_lineup"
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "line_assignment",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8484387,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": [
+      "Porter Martone",
+      "Noah Cates",
+      "Matvei Michkov"
+    ]
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "lineup_status",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8485406,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": "projected_in_lineup"
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "line_assignment",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8485406,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": [
+      "Porter Martone",
+      "Noah Cates",
+      "Matvei Michkov"
+    ]
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "lineup_status",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8477948,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": "projected_in_lineup"
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "line_assignment",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8477948,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": [
+      "Travis Sanheim",
+      "Oliver Bonk"
+    ]
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "lineup_status",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8481533,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": "projected_in_lineup"
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "line_assignment",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8481533,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": [
+      "Trevor Zegras",
+      "Christian Dvorak",
+      "Noel Acciari"
+    ]
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "lineup_status",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8482159,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": "projected_in_lineup"
+  },
+  {
+    "certainty": "projected",
+    "event_id": "46dec80debcc79de4c248a0edd4f8d74",
+    "evidence_sha256": "13705768dd73da1fcba97e46df8fa19fd9a988768c9f8312860b3978603308da",
+    "field": "line_assignment",
+    "game_start": "2026-10-28T23:40:00Z",
+    "observed_at": "2026-10-28T11:40:33.896863+00:00",
+    "player_id": 8482159,
+    "published_at": "2026-10-28T07:04:31.304Z",
+    "source_url": "https://www.nhl.com/news/nhl-lineup-projections-2026-27-season",
+    "value": [
+      "Alex Bump",
+      "Sean Couturier",
+      "Tyson Foerster"
+    ]
   }
 ]
