@@ -908,7 +908,8 @@
     "2026-10-26": "hash_five_v2",
     "2026-10-27": "hash_five_v2",
     "2026-10-28": "hash_five_v2",
-    "2026-10-29": "hash_five_v2"
+    "2026-10-29": "hash_five_v2",
+    "2026-10-30": "hash_five_v2"
   },
   "days": {
     "2026-10-02": [
@@ -1079,6 +1080,11 @@
       "35f166bc5dbb833315fe376ae27e63a3",
       "0320215ff7055c9c04ecefa36a8c36cb",
       "2f65119127127c0185cf3bdc236a00f2"
+    ],
+    "2026-10-30": [
+      "5c712e15e1cd4b9283b4bf410fb334f4",
+      "026d37181dd4ace0df7565d9b208ce7e",
+      "a536736a6da269d2e10edbdb27a789bd"
     ]
   },
   "event_census": {
@@ -1095,6 +1101,20 @@
       "last_seen_at": "2026-10-08T23:57:42.466650+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
+    },
+    "026d37181dd4ace0df7565d9b208ce7e": {
+      "event": {
+        "away_team": "Seattle Kraken",
+        "commence_time": "2026-10-31T00:10:00Z",
+        "home_team": "Calgary Flames",
+        "id": "026d37181dd4ace0df7565d9b208ce7e",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-30T06:29:24.866001+00:00",
+      "last_seen_at": "2026-10-30T06:29:24.866001+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
     },
     "0320215ff7055c9c04ecefa36a8c36cb": {
       "event": {
@@ -2146,6 +2166,20 @@
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
+    "5c712e15e1cd4b9283b4bf410fb334f4": {
+      "event": {
+        "away_team": "New Jersey Devils",
+        "commence_time": "2026-10-30T22:10:00Z",
+        "home_team": "Vegas Golden Knights",
+        "id": "5c712e15e1cd4b9283b4bf410fb334f4",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-30T06:29:24.866001+00:00",
+      "last_seen_at": "2026-10-30T06:29:24.866001+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
     "5ea535b759f889f989e5c6ed8f046bf7": {
       "event": {
         "away_team": "Columbus Blue Jackets",
@@ -2885,6 +2919,20 @@
       },
       "first_seen_at": "2026-10-11T09:00:05.658277+00:00",
       "last_seen_at": "2026-10-11T23:39:41.050331+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
+    "a536736a6da269d2e10edbdb27a789bd": {
+      "event": {
+        "away_team": "Winnipeg Jets",
+        "commence_time": "2026-10-30T23:10:00Z",
+        "home_team": "Florida Panthers",
+        "id": "a536736a6da269d2e10edbdb27a789bd",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-10-30T06:29:24.866001+00:00",
+      "last_seen_at": "2026-10-30T06:29:24.866001+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
