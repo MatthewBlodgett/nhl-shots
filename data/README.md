@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-31T08:54:18.263658+00:00
+Updated: 2026-10-31T15:19:52.324375+00:00
 
-Today's archive: **3 snapshots / 260 quotes**.
+Today's archive: **6 snapshots / 692 quotes**.
 
-Quotes with usable model history: 234. Blocked by history or team-change rules: 26.
+Quotes with usable model history: 612. Blocked by history or team-change rules: 64.
 
-API billing-cycle usage: 230 credits; 270 remaining.
+API billing-cycle usage: 233 credits; 267 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,25 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
+| Phillip Danault | betonlineag | Under 1.5 | 1.840 | 67.5% | 24.1% |
+| Phillip Danault | draftkings | Under 1.5 | 1.830 | 67.5% | 23.5% |
+| Alex Newhook | betmgm | Under 1.5 | 2.000 | 61.2% | 22.4% |
+| Alex Newhook | bovada | Under 1.5 | 2.000 | 61.2% | 22.4% |
+| Dylan Holloway | betonlineag | Over 2.5 | 2.300 | 52.9% | 21.6% |
+| Dylan Holloway | fanduel | Over 2.5 | 2.300 | 52.9% | 21.6% |
+| Emmitt Finnie | fanduel | Under 1.5 | 2.250 | 54.0% | 21.5% |
+| Emmitt Finnie | bovada | Under 1.5 | 2.250 | 54.0% | 21.5% |
 | David Pastrnak | betmgm | Under 3.5 | 2.000 | 60.3% | 20.6% |
 | Claude Giroux | betonlineag | Under 1.5 | 2.180 | 54.8% | 19.5% |
-| Jake Neighbours | betonlineag | Under 1.5 | 2.010 | 59.2% | 19.0% |
-| Dylan Holloway | betonlineag | Over 2.5 | 2.240 | 52.9% | 18.4% |
+| Alex Newhook | betonlineag | Under 1.5 | 1.950 | 61.2% | 19.4% |
+| Emmitt Finnie | betonlineag | Under 1.5 | 2.210 | 54.0% | 19.3% |
+| Dylan Holloway | betmgm | Over 2.5 | 2.250 | 52.9% | 19.0% |
+| Emmitt Finnie | draftkings | Under 1.5 | 2.200 | 54.0% | 18.8% |
 | Claude Giroux | draftkings | Under 1.5 | 2.150 | 54.8% | 17.9% |
-| Emmitt Finnie | betonlineag | Under 1.5 | 2.180 | 54.0% | 17.7% |
-| Dylan Holloway | fanduel | Over 2.5 | 2.220 | 52.9% | 17.4% |
-| JJ Peterka | fanduel | Under 2.5 | 1.610 | 72.8% | 17.1% |
-| Emmitt Finnie | fanduel | Under 1.5 | 2.160 | 54.0% | 16.6% |
+| Emmitt Finnie | betmgm | Under 2.5 | 1.500 | 78.6% | 17.9% |
+| Lane Hutson | bovada | Under 1.5 | 2.050 | 56.6% | 15.9% |
 | Elias Lindholm | draftkings | Under 2.5 | 1.560 | 74.3% | 15.9% |
-| Jake Neighbours | draftkings | Under 1.5 | 1.950 | 59.2% | 15.4% |
-| Robert Thomas | betonlineag | Under 1.5 | 1.950 | 59.2% | 15.4% |
-| Fabian Zetterlund | draftkings | Under 1.5 | 2.250 | 51.2% | 15.2% |
-| Fabian Zetterlund | betonlineag | Under 1.5 | 2.250 | 51.2% | 15.2% |
-| Elias Lindholm | fanduel | Under 2.5 | 1.550 | 74.3% | 15.1% |
-| Jake Sanderson | draftkings | Under 2.5 | 1.870 | 61.5% | 14.9% |
-| Elias Lindholm | betmgm | Under 1.5 | 2.350 | 48.9% | 14.9% |
-| Elias Lindholm | betonlineag | Under 2.5 | 1.540 | 74.3% | 14.4% |
-| JJ Peterka | draftkings | Under 2.5 | 1.570 | 72.8% | 14.2% |
-| JJ Peterka | betonlineag | Under 2.5 | 1.570 | 72.8% | 14.2% |
+| Casey Mittelstadt | betonlineag | Under 1.5 | 1.710 | 67.6% | 15.7% |
+| JJ Peterka | fanduel | Under 2.5 | 1.590 | 72.8% | 15.7% |
 
 These are archived observations, not a statement that the price remains available.
