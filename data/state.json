@@ -928,6 +928,10 @@
       "at": "2026-10-31T15:20:02.789917+00:00",
       "status": "saved"
     },
+    "fa8413d05f6c8b2d8f68cc0d17551fa9:late": {
+      "at": "2026-10-31T22:50:18.938740+00:00",
+      "status": "reserved"
+    },
     "fa8413d05f6c8b2d8f68cc0d17551fa9:middle": {
       "at": "2026-10-31T19:33:06.861530+00:00",
       "status": "saved"
@@ -1806,7 +1810,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-31T08:54:18.263658+00:00",
-      "last_seen_at": "2026-10-31T19:33:06.670195+00:00",
+      "last_seen_at": "2026-10-31T22:50:18.689170+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -1939,14 +1943,14 @@
     "3ec4c9abb60e5bf086a0460336248b16": {
       "event": {
         "away_team": "Buffalo Sabres",
-        "commence_time": "2026-10-31T20:10:00Z",
+        "commence_time": "2026-10-31T20:08:56Z",
         "home_team": "Los Angeles Kings",
         "id": "3ec4c9abb60e5bf086a0460336248b16",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-31T08:54:18.263658+00:00",
-      "last_seen_at": "2026-10-31T19:33:06.670195+00:00",
+      "last_seen_at": "2026-10-31T22:50:18.689170+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -2562,7 +2566,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-31T08:54:18.263658+00:00",
-      "last_seen_at": "2026-10-31T19:33:06.670195+00:00",
+      "last_seen_at": "2026-10-31T22:50:18.689170+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3108,7 +3112,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-31T08:54:18.263658+00:00",
-      "last_seen_at": "2026-10-31T19:33:06.670195+00:00",
+      "last_seen_at": "2026-10-31T22:50:18.689170+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -4004,7 +4008,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-10-31T08:54:18.263658+00:00",
-      "last_seen_at": "2026-10-31T19:33:06.670195+00:00",
+      "last_seen_at": "2026-10-31T22:50:18.689170+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
