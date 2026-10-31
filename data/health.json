@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-10-31T02:23:55.339899+00:00",
-  "last_success_at": "2026-10-31T02:23:55.339899+00:00",
+  "last_attempt_at": "2026-10-31T08:54:54.667529+00:00",
+  "last_success_at": "2026-10-31T08:54:54.667529+00:00",
   "consecutive_failures": 0,
   "quota": {
-    "used": 227,
-    "remaining": 273
+    "used": 230,
+    "remaining": 270
   },
   "recent_runs": [
     {
@@ -1064,23 +1064,30 @@
       "requests": 0,
       "snapshots": 0,
       "errors": []
+    },
+    {
+      "at": "2026-10-31T08:54:54.667529+00:00",
+      "success": true,
+      "requests": 3,
+      "snapshots": 3,
+      "errors": []
     }
   ],
   "recent_blocked_quote_counts": {
-    "eligible": 14725,
-    "insufficient_prior_season_history": 962,
-    "insufficient_current_season_history": 12,
+    "eligible": 14959,
+    "team_change_review_required": 222,
+    "insufficient_prior_season_history": 988,
     "player_unmatched_or_ambiguous": 126,
     "outside_studied_lines": 26,
-    "nhl_game_unmatched": 120,
-    "team_change_review_required": 222
+    "insufficient_current_season_history": 12,
+    "nhl_game_unmatched": 120
   },
-  "observed_games_last_14_days": 55,
+  "observed_games_last_14_days": 60,
   "missing_elapsed_windows_on_observed_games": 38,
   "unsettled_games_more_than_6_hours_after_start": 0,
   "quota_paused": false,
-  "discovered_games_last_14_days": 96,
-  "selected_games_without_snapshots": 0,
+  "discovered_games_last_14_days": 106,
+  "selected_games_without_snapshots": 2,
   "sampling_policies": {
     "2026-10-03": "hash_five_v2",
     "2026-10-04": "hash_five_v2",
@@ -1109,9 +1116,10 @@
     "2026-10-27": "hash_five_v2",
     "2026-10-28": "hash_five_v2",
     "2026-10-29": "hash_five_v2",
-    "2026-10-30": "hash_five_v2"
+    "2026-10-30": "hash_five_v2",
+    "2026-10-31": "hash_five_v2"
   },
-  "planned_omitted_windows": 14,
+  "planned_omitted_windows": 15,
   "limitations": [
     "No external notifications. A failed GitHub runner cannot update this file.",
     "Discovery coverage starts with census deployment; games never discovered remain unknown."

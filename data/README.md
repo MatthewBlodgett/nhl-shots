@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-10-31T02:23:32.962891+00:00
+Updated: 2026-10-31T08:54:18.263658+00:00
 
-Today's archive: **6 snapshots / 828 quotes**.
+Today's archive: **3 snapshots / 260 quotes**.
 
-Quotes with usable model history: 784. Blocked by history or team-change rules: 44.
+Quotes with usable model history: 234. Blocked by history or team-change rules: 26.
 
-API billing-cycle usage: 227 credits; 273 remaining.
+API billing-cycle usage: 230 credits; 270 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,25 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Matty Beniers | draftkings | Under 1.5 | 2.100 | 59.5% | 25.0% |
-| Matty Beniers | betonlineag | Under 1.5 | 2.100 | 59.5% | 25.0% |
-| Matty Beniers | bovada | Under 1.5 | 2.100 | 59.5% | 25.0% |
-| Simon Nemec | betonlineag | Under 1.5 | 1.960 | 62.2% | 22.0% |
-| Simon Nemec | draftkings | Under 1.5 | 1.950 | 62.2% | 21.4% |
-| Timo Meier | fanduel | Over 2.5 | 1.770 | 68.5% | 21.2% |
-| Kyle Connor | fanduel | Over 2.5 | 1.680 | 71.1% | 19.5% |
-| Timo Meier | draftkings | Over 2.5 | 1.740 | 68.5% | 19.1% |
-| Timo Meier | betonlineag | Over 2.5 | 1.740 | 68.5% | 19.1% |
-| Matty Beniers | betmgm | Under 1.5 | 2.000 | 59.5% | 19.0% |
-| Joel Farabee | bovada | Under 2.5 | 1.670 | 70.1% | 17.1% |
-| Nico Hischier | betonlineag | Over 2.5 | 2.460 | 47.4% | 16.5% |
-| Kyle Connor | betonlineag | Over 2.5 | 1.630 | 71.1% | 16.0% |
-| Timo Meier | betmgm | Over 2.5 | 1.690 | 68.5% | 15.7% |
-| Timo Meier | bovada | Over 2.5 | 1.690 | 68.5% | 15.7% |
-| Dougie Hamilton | betonlineag | Over 1.5 | 1.600 | 71.7% | 14.6% |
-| Kyle Connor | draftkings | Over 2.5 | 1.610 | 71.1% | 14.5% |
-| Kyle Connor | betmgm | Over 2.5 | 1.610 | 71.1% | 14.5% |
-| Kyle Connor | bovada | Over 2.5 | 1.610 | 71.1% | 14.5% |
-| Matvei Gridin | bovada | Under 2.5 | 1.690 | 67.7% | 14.4% |
+| David Pastrnak | betmgm | Under 3.5 | 2.000 | 60.3% | 20.6% |
+| Claude Giroux | betonlineag | Under 1.5 | 2.180 | 54.8% | 19.5% |
+| Jake Neighbours | betonlineag | Under 1.5 | 2.010 | 59.2% | 19.0% |
+| Dylan Holloway | betonlineag | Over 2.5 | 2.240 | 52.9% | 18.4% |
+| Claude Giroux | draftkings | Under 1.5 | 2.150 | 54.8% | 17.9% |
+| Emmitt Finnie | betonlineag | Under 1.5 | 2.180 | 54.0% | 17.7% |
+| Dylan Holloway | fanduel | Over 2.5 | 2.220 | 52.9% | 17.4% |
+| JJ Peterka | fanduel | Under 2.5 | 1.610 | 72.8% | 17.1% |
+| Emmitt Finnie | fanduel | Under 1.5 | 2.160 | 54.0% | 16.6% |
+| Elias Lindholm | draftkings | Under 2.5 | 1.560 | 74.3% | 15.9% |
+| Jake Neighbours | draftkings | Under 1.5 | 1.950 | 59.2% | 15.4% |
+| Robert Thomas | betonlineag | Under 1.5 | 1.950 | 59.2% | 15.4% |
+| Fabian Zetterlund | draftkings | Under 1.5 | 2.250 | 51.2% | 15.2% |
+| Fabian Zetterlund | betonlineag | Under 1.5 | 2.250 | 51.2% | 15.2% |
+| Elias Lindholm | fanduel | Under 2.5 | 1.550 | 74.3% | 15.1% |
+| Jake Sanderson | draftkings | Under 2.5 | 1.870 | 61.5% | 14.9% |
+| Elias Lindholm | betmgm | Under 1.5 | 2.350 | 48.9% | 14.9% |
+| Elias Lindholm | betonlineag | Under 2.5 | 1.540 | 74.3% | 14.4% |
+| JJ Peterka | draftkings | Under 2.5 | 1.570 | 72.8% | 14.2% |
+| JJ Peterka | betonlineag | Under 2.5 | 1.570 | 72.8% | 14.2% |
 
 These are archived observations, not a statement that the price remains available.
