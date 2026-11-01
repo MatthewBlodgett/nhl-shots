@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-01T02:14:46.462913+00:00
+Updated: 2026-11-01T09:45:14.555940+00:00
 
-Today's archive: **10 snapshots / 1312 quotes**.
+Today's archive: **2 snapshots / 158 quotes**.
 
-Quotes with usable model history: 1192. Blocked by history or team-change rules: 72.
+Quotes with usable model history: 148. Blocked by history or team-change rules: 10.
 
-API billing-cycle usage: 0 credits; 500 remaining.
+API billing-cycle usage: 2 credits; 498 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,25 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Phillip Danault | draftkings | Under 1.5 | 2.000 | 67.5% | 34.9% |
-| Oliver Kapanen | draftkings | Under 1.5 | 2.000 | 64.5% | 29.0% |
-| Josh Anderson | draftkings | Under 1.5 | 2.250 | 54.6% | 22.9% |
-| Dylan Holloway | betonlineag | Over 2.5 | 2.300 | 52.9% | 21.6% |
-| Dylan Holloway | fanduel | Over 2.5 | 2.300 | 52.9% | 21.6% |
-| Emmitt Finnie | fanduel | Under 1.5 | 2.250 | 54.0% | 21.5% |
-| Emmitt Finnie | bovada | Under 1.5 | 2.250 | 54.0% | 21.5% |
-| David Pastrnak | betmgm | Under 3.5 | 2.000 | 60.3% | 20.6% |
-| Emmitt Finnie | betonlineag | Under 1.5 | 2.210 | 54.0% | 19.3% |
-| Dylan Holloway | betmgm | Over 2.5 | 2.250 | 52.9% | 19.0% |
-| Emmitt Finnie | draftkings | Under 1.5 | 2.200 | 54.0% | 18.8% |
-| Ridly Greig | betmgm | Under 1.5 | 2.000 | 59.1% | 18.2% |
-| Ridly Greig | bovada | Under 1.5 | 2.000 | 59.1% | 18.2% |
-| Kaiden Guhle | draftkings | Under 1.5 | 1.670 | 70.7% | 18.1% |
-| Emmitt Finnie | betmgm | Under 2.5 | 1.500 | 78.6% | 17.9% |
-| Alex Newhook | betmgm | Under 1.5 | 1.910 | 61.2% | 16.9% |
-| Alex Newhook | bovada | Under 1.5 | 1.910 | 61.2% | 16.9% |
-| Kaiden Guhle | betonlineag | Under 1.5 | 1.650 | 70.7% | 16.7% |
-| Elias Lindholm | draftkings | Under 2.5 | 1.560 | 74.3% | 15.9% |
-| Casey Mittelstadt | betonlineag | Under 1.5 | 1.710 | 67.6% | 15.7% |
+| Nick Schmaltz | betonlineag | Over 2.5 | 2.460 | 49.7% | 22.2% |
+| Nick Schmaltz | draftkings | Over 2.5 | 2.450 | 49.7% | 21.7% |
+| MacKenzie Weegar | draftkings | Under 1.5 | 2.350 | 51.5% | 21.0% |
+| Nick Schmaltz | fanduel | Over 2.5 | 2.420 | 49.7% | 20.2% |
+| Logan Cooley | draftkings | Under 2.5 | 1.560 | 77.0% | 20.2% |
+| Logan Cooley | betonlineag | Under 2.5 | 1.550 | 77.0% | 19.4% |
+| Tyson Foerster | fanduel | Over 1.5 | 1.880 | 62.5% | 17.5% |
+| MacKenzie Weegar | betonlineag | Under 1.5 | 2.260 | 51.5% | 16.4% |
+| Tyson Foerster | betonlineag | Over 1.5 | 1.860 | 62.5% | 16.3% |
+| Alex Ovechkin | draftkings | Over 2.5 | 2.350 | 49.0% | 15.2% |
+| Owen Tippett | draftkings | Over 1.5 | 1.540 | 74.0% | 13.9% |
+| Alex Ovechkin | betonlineag | Over 2.5 | 2.320 | 49.0% | 13.7% |
+| MacKenzie Weegar | fanduel | Under 1.5 | 2.200 | 51.5% | 13.3% |
+| Tyson Foerster | draftkings | Over 1.5 | 1.800 | 62.5% | 12.5% |
+| Owen Tippett | fanduel | Over 1.5 | 1.520 | 74.0% | 12.4% |
+| Alex Ovechkin | fanduel | Over 2.5 | 2.280 | 49.0% | 11.8% |
+| Blake Coleman | fanduel | Over 1.5 | 1.550 | 71.2% | 10.3% |
+| Blake Coleman | draftkings | Over 1.5 | 1.540 | 71.2% | 9.6% |
+| Blake Coleman | betonlineag | Over 1.5 | 1.540 | 71.2% | 9.6% |
+| Trevor Zegras | fanduel | Over 1.5 | 1.850 | 59.1% | 9.3% |
 
 These are archived observations, not a statement that the price remains available.
