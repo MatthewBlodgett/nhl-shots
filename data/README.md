@@ -1,10 +1,10 @@
 # NHL odds research recorder
 
-Updated: 2026-11-02T00:48:25.638947+00:00
+Updated: 2026-11-02T07:41:24.035440+00:00
 
-Today's archive: **9 snapshots / 1154 quotes**.
+Today's archive: **0 snapshots / 0 quotes**.
 
-Quotes with usable model history: 1130. Blocked by history or team-change rules: 24.
+Quotes with usable model history: 0. Blocked by history or team-change rules: 0.
 
 API billing-cycle usage: 9 credits; 491 remaining.
 
@@ -18,27 +18,4 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 ## Latest paper candidates
 
-| Player | Book | Side / line | Decimal price | Model probability | Estimated return |
-| --- | --- | --- | ---: | ---: | ---: |
-| Kyle Connor | betmgm | Over 2.5 | 1.850 | 70.3% | 30.1% |
-| Neal Pionk | bovada | Over 1.5 | 2.200 | 58.1% | 27.8% |
-| Kyle Connor | fanduel | Over 2.5 | 1.800 | 70.3% | 26.6% |
-| Kyle Connor | betonlineag | Over 2.5 | 1.800 | 70.3% | 26.6% |
-| Kyle Connor | bovada | Over 2.5 | 1.800 | 70.3% | 26.6% |
-| Seth Jarvis | betmgm | Over 2.5 | 2.250 | 55.8% | 25.6% |
-| Kyle Connor | draftkings | Over 2.5 | 1.770 | 70.3% | 24.5% |
-| Alex Ovechkin | bovada | Over 2.5 | 2.500 | 49.0% | 22.6% |
-| Nick Schmaltz | betonlineag | Over 2.5 | 2.460 | 49.7% | 22.2% |
-| Neal Pionk | draftkings | Over 1.5 | 2.100 | 58.1% | 22.0% |
-| Neal Pionk | betmgm | Over 1.5 | 2.100 | 58.1% | 22.0% |
-| Nick Schmaltz | draftkings | Over 2.5 | 2.450 | 49.7% | 21.7% |
-| MacKenzie Weegar | draftkings | Under 1.5 | 2.350 | 51.5% | 21.0% |
-| Seth Jarvis | fanduel | Over 2.5 | 2.160 | 55.8% | 20.6% |
-| Nick Schmaltz | fanduel | Over 2.5 | 2.420 | 49.7% | 20.2% |
-| Logan Cooley | draftkings | Under 2.5 | 1.560 | 77.0% | 20.2% |
-| Alex Ovechkin | betonlineag | Over 1.5 | 1.650 | 72.8% | 20.0% |
-| Seth Jarvis | betonlineag | Over 2.5 | 2.150 | 55.8% | 20.0% |
-| Logan Cooley | betonlineag | Under 2.5 | 1.550 | 77.0% | 19.4% |
-| Adam Fox | betmgm | Under 1.5 | 1.910 | 62.2% | 18.8% |
-
-These are archived observations, not a statement that the price remains available.
+No qualifying paper candidates in today's recorded snapshots.
