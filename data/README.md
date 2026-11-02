@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-01T21:11:30.782274+00:00
+Updated: 2026-11-02T00:48:25.638947+00:00
 
-Today's archive: **8 snapshots / 1010 quotes**.
+Today's archive: **9 snapshots / 1154 quotes**.
 
-Quotes with usable model history: 986. Blocked by history or team-change rules: 24.
+Quotes with usable model history: 1130. Blocked by history or team-change rules: 24.
 
-API billing-cycle usage: 8 credits; 492 remaining.
+API billing-cycle usage: 9 credits; 491 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 

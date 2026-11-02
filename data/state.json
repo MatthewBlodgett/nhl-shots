@@ -674,7 +674,7 @@
     },
     "a5203c5f9248aa3653feba547eabd4b8:late": {
       "at": "2026-11-02T00:48:25.868740+00:00",
-      "status": "reserved"
+      "status": "saved"
     },
     "a5203c5f9248aa3653feba547eabd4b8:middle": {
       "at": "2026-11-01T21:11:30.970848+00:00",
@@ -4216,8 +4216,8 @@
     }
   },
   "last_quota": {
-    "remaining": 492,
-    "used": 8
+    "remaining": 491,
+    "used": 9
   },
   "paper_alert_keys": [
     "[\"5b5466f836933f5fb3ed4b9f267cce75\",\"draftkings\",8482109,2.5,\"Under\",1.65,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
@@ -7970,7 +7970,12 @@
     "[\"d8dd95fa4fc001a1ea9f6629a8c8ffee\",\"betonlineag\",8478402,2.5,\"Over\",1.71,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
     "[\"d8dd95fa4fc001a1ea9f6629a8c8ffee\",\"betonlineag\",8484210,1.5,\"Over\",2.0,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
     "[\"d8dd95fa4fc001a1ea9f6629a8c8ffee\",\"bovada\",8484210,1.5,\"Over\",1.95,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
-    "[\"d8dd95fa4fc001a1ea9f6629a8c8ffee\",\"bovada\",8481789,1.5,\"Under\",1.69,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]"
+    "[\"d8dd95fa4fc001a1ea9f6629a8c8ffee\",\"bovada\",8481789,1.5,\"Under\",1.69,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"a5203c5f9248aa3653feba547eabd4b8\",\"draftkings\",8478469,1.5,\"Over\",1.87,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"a5203c5f9248aa3653feba547eabd4b8\",\"draftkings\",8481605,1.5,\"Under\",1.8,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"a5203c5f9248aa3653feba547eabd4b8\",\"betonlineag\",8478469,1.5,\"Over\",1.91,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"a5203c5f9248aa3653feba547eabd4b8\",\"betonlineag\",8481605,1.5,\"Under\",1.78,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"a5203c5f9248aa3653feba547eabd4b8\",\"betonlineag\",8484153,2.5,\"Over\",2.32,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]"
   ],
   "planned_omissions": {
     "1e0601b21b573df36bc79e769dcd5e4b:early": {
