@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-03T15:07:48.726254+00:00
+Updated: 2026-11-03T20:59:06.242630+00:00
 
-Today's archive: **4 snapshots / 384 quotes**.
+Today's archive: **8 snapshots / 934 quotes**.
 
-Quotes with usable model history: 344. Blocked by history or team-change rules: 30.
+Quotes with usable model history: 850. Blocked by history or team-change rules: 64.
 
-API billing-cycle usage: 21 credits; 479 remaining.
+API billing-cycle usage: 25 credits; 475 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,25 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Brayden Point | draftkings | Under 2.5 | 1.800 | 68.7% | 23.7% |
-| Brayden Point | bovada | Under 2.5 | 1.800 | 68.7% | 23.7% |
+| Charle-Edouard D'Astous | draftkings | Under 1.5 | 1.910 | 66.9% | 27.8% |
 | John Carlson | betonlineag | Over 1.5 | 1.740 | 70.7% | 23.0% |
-| Brayden Point | fanduel | Under 2.5 | 1.770 | 68.7% | 21.7% |
-| Charle-Edouard D'Astous | draftkings | Under 1.5 | 1.800 | 66.9% | 20.5% |
-| Charle-Edouard D'Astous | betonlineag | Under 1.5 | 1.800 | 66.9% | 20.5% |
+| Owen Tippett | fanduel | Over 2.5 | 2.480 | 49.3% | 22.3% |
+| Kaiden Guhle | draftkings | Under 1.5 | 1.710 | 70.8% | 21.1% |
+| Matvei Michkov | bovada | Under 1.5 | 2.300 | 52.6% | 21.0% |
+| Alex Tuch | fanduel | Over 2.5 | 2.420 | 49.5% | 19.7% |
+| John Carlson | betmgm | Over 1.5 | 1.690 | 70.7% | 19.5% |
+| Blake Coleman | bovada | Over 1.5 | 1.690 | 70.3% | 18.9% |
+| Owen Tippett | betonlineag | Over 2.5 | 2.410 | 49.3% | 18.8% |
 | Charle-Edouard D'Astous | bovada | Under 1.5 | 1.770 | 66.9% | 18.4% |
 | Jackson LaCombe | betonlineag | Under 1.5 | 1.850 | 63.2% | 17.0% |
-| Brayden Point | betonlineag | Under 2.5 | 1.700 | 68.7% | 16.8% |
-| Anthony Cirelli | draftkings | Under 1.5 | 2.100 | 55.6% | 16.7% |
+| Matvei Michkov | fanduel | Under 1.5 | 2.220 | 52.6% | 16.8% |
 | Anthony Cirelli | bovada | Under 1.5 | 2.100 | 55.6% | 16.7% |
-| Jackson LaCombe | draftkings | Under 1.5 | 1.830 | 63.2% | 15.7% |
-| Jackson LaCombe | bovada | Under 1.5 | 1.830 | 63.2% | 15.7% |
-| Mikko Rantanen | draftkings | Under 2.5 | 1.590 | 71.7% | 14.1% |
-| Mikko Rantanen | fanduel | Under 2.5 | 1.590 | 71.7% | 14.1% |
-| Mikko Rantanen | bovada | Under 2.5 | 1.590 | 71.7% | 14.1% |
-| Lane Hutson | draftkings | Under 1.5 | 2.000 | 57.0% | 14.0% |
-| Lane Hutson | betonlineag | Under 1.5 | 2.000 | 57.0% | 14.0% |
-| Anthony Cirelli | betonlineag | Under 1.5 | 2.050 | 55.6% | 13.9% |
-| Mikko Rantanen | betonlineag | Under 2.5 | 1.580 | 71.7% | 13.4% |
+| Alex Ovechkin | draftkings | Over 2.5 | 2.400 | 48.6% | 16.5% |
+| Charle-Edouard D'Astous | betmgm | Under 1.5 | 1.740 | 66.9% | 16.4% |
+| Brayden Point | betmgm | Under 2.5 | 1.690 | 68.7% | 16.2% |
+| Owen Tippett | draftkings | Over 2.5 | 2.350 | 49.3% | 15.8% |
+| Owen Tippett | betmgm | Over 2.5 | 2.350 | 49.3% | 15.8% |
+| Alex Ovechkin | betonlineag | Over 1.5 | 1.600 | 72.4% | 15.8% |
+| Alex Tuch | betonlineag | Over 2.5 | 2.340 | 49.5% | 15.8% |
 
 These are archived observations, not a statement that the price remains available.
