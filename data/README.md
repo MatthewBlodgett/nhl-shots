@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-03T20:59:06.242630+00:00
+Updated: 2026-11-04T01:21:36.746172+00:00
 
-Today's archive: **8 snapshots / 934 quotes**.
+Today's archive: **9 snapshots / 1064 quotes**.
 
-Quotes with usable model history: 850. Blocked by history or team-change rules: 64.
+Quotes with usable model history: 952. Blocked by history or team-change rules: 86.
 
-API billing-cycle usage: 25 credits; 475 remaining.
+API billing-cycle usage: 26 credits; 474 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -30,7 +30,6 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 | Blake Coleman | bovada | Over 1.5 | 1.690 | 70.3% | 18.9% |
 | Owen Tippett | betonlineag | Over 2.5 | 2.410 | 49.3% | 18.8% |
 | Charle-Edouard D'Astous | bovada | Under 1.5 | 1.770 | 66.9% | 18.4% |
-| Jackson LaCombe | betonlineag | Under 1.5 | 1.850 | 63.2% | 17.0% |
 | Matvei Michkov | fanduel | Under 1.5 | 2.220 | 52.6% | 16.8% |
 | Anthony Cirelli | bovada | Under 1.5 | 2.100 | 55.6% | 16.7% |
 | Alex Ovechkin | draftkings | Over 2.5 | 2.400 | 48.6% | 16.5% |
@@ -40,5 +39,6 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 | Owen Tippett | betmgm | Over 2.5 | 2.350 | 49.3% | 15.8% |
 | Alex Ovechkin | betonlineag | Over 1.5 | 1.600 | 72.4% | 15.8% |
 | Alex Tuch | betonlineag | Over 2.5 | 2.340 | 49.5% | 15.8% |
+| Jackson LaCombe | draftkings | Under 1.5 | 1.830 | 63.2% | 15.7% |
 
 These are archived observations, not a statement that the price remains available.
