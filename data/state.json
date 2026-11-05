@@ -720,6 +720,10 @@
       "at": "2026-11-04T16:19:38.324070+00:00",
       "status": "saved"
     },
+    "a3c2f39dce2dbf9e8cb78acce24cd379:late": {
+      "at": "2026-11-05T02:49:31.217788+00:00",
+      "status": "reserved"
+    },
     "a49ddd8a44071e340299ae7f22b4f359:early": {
       "at": "2026-10-11T15:41:42.941047+00:00",
       "status": "saved"
@@ -1727,14 +1731,14 @@
     "1a1782b9fde64acd952ea9fd3aff7d83": {
       "event": {
         "away_team": "Ottawa Senators",
-        "commence_time": "2026-11-05T00:40:00Z",
+        "commence_time": "2026-11-05T00:45:18Z",
         "home_team": "Buffalo Sabres",
         "id": "1a1782b9fde64acd952ea9fd3aff7d83",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-04T08:02:28.042984+00:00",
-      "last_seen_at": "2026-11-04T22:14:48.708812+00:00",
+      "last_seen_at": "2026-11-05T02:49:31.092360+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2896,7 +2900,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-04T08:02:28.042984+00:00",
-      "last_seen_at": "2026-11-04T22:14:48.708812+00:00",
+      "last_seen_at": "2026-11-05T02:49:31.092360+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3400,7 +3404,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-04T08:02:28.042984+00:00",
-      "last_seen_at": "2026-11-04T22:14:48.708812+00:00",
+      "last_seen_at": "2026-11-05T02:49:31.092360+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3743,14 +3747,14 @@
     "bc22bdc8d7cca6b3695672a8ebf84456": {
       "event": {
         "away_team": "Chicago Blackhawks",
-        "commence_time": "2026-11-05T00:40:00Z",
+        "commence_time": "2026-11-05T00:38:54Z",
         "home_team": "Florida Panthers",
         "id": "bc22bdc8d7cca6b3695672a8ebf84456",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-04T08:02:28.042984+00:00",
-      "last_seen_at": "2026-11-04T22:14:48.708812+00:00",
+      "last_seen_at": "2026-11-05T02:49:31.092360+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
