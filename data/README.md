@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-06T07:25:49.984902+00:00
+Updated: 2026-11-06T15:24:30.072609+00:00
 
-Today's archive: **0 snapshots / 0 quotes**.
+Today's archive: **3 snapshots / 402 quotes**.
 
-Quotes with usable model history: 0. Blocked by history or team-change rules: 0.
+Quotes with usable model history: 386. Blocked by history or team-change rules: 16.
 
-API billing-cycle usage: 39 credits; 461 remaining.
+API billing-cycle usage: 42 credits; 458 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -18,4 +18,27 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 ## Latest paper candidates
 
-No qualifying paper candidates in today's recorded snapshots.
+| Player | Book | Side / line | Decimal price | Model probability | Estimated return |
+| --- | --- | --- | ---: | ---: | ---: |
+| Maxim Shabanov | draftkings | Under 1.5 | 1.910 | 64.7% | 23.7% |
+| Maxim Shabanov | bovada | Under 1.5 | 1.910 | 64.7% | 23.7% |
+| Jackson LaCombe | betmgm | Under 1.5 | 1.830 | 65.7% | 20.2% |
+| Noah Östlund | fanduel | Under 1.5 | 2.180 | 54.7% | 19.3% |
+| Maxim Shabanov | betonlineag | Under 1.5 | 1.840 | 64.7% | 19.1% |
+| Jackson LaCombe | bovada | Under 1.5 | 1.800 | 65.7% | 18.3% |
+| Danila Yurov | draftkings | Under 1.5 | 1.800 | 64.7% | 16.4% |
+| Jackson LaCombe | betonlineag | Under 1.5 | 1.770 | 65.7% | 16.3% |
+| Macklin Celebrini | betonlineag | Over 3.5 | 2.300 | 50.5% | 16.2% |
+| Macklin Celebrini | fanduel | Over 3.5 | 2.300 | 50.5% | 16.2% |
+| Macklin Celebrini | bovada | Over 3.5 | 2.300 | 50.5% | 16.2% |
+| Zach Benson | betmgm | Under 2.5 | 1.710 | 67.7% | 15.7% |
+| Noah Östlund | betonlineag | Under 1.5 | 2.110 | 54.7% | 15.5% |
+| Joel Farabee | betmgm | Under 2.5 | 1.650 | 69.8% | 15.2% |
+| Noah Östlund | draftkings | Under 1.5 | 2.100 | 54.7% | 14.9% |
+| Noah Östlund | betmgm | Under 1.5 | 2.100 | 54.7% | 14.9% |
+| Noah Östlund | bovada | Under 1.5 | 2.100 | 54.7% | 14.9% |
+| Yegor Sharangovich | betonlineag | Under 1.5 | 2.180 | 52.3% | 14.1% |
+| Danila Yurov | betonlineag | Under 1.5 | 1.760 | 64.7% | 13.8% |
+| Macklin Celebrini | draftkings | Over 3.5 | 2.250 | 50.5% | 13.7% |
+
+These are archived observations, not a statement that the price remains available.
