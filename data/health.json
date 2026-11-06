@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-11-06T15:25:05.758221+00:00",
-  "last_success_at": "2026-11-06T15:25:05.758221+00:00",
+  "last_attempt_at": "2026-11-06T21:05:27.307892+00:00",
+  "last_success_at": "2026-11-06T21:05:27.307892+00:00",
   "consecutive_failures": 0,
   "quota": {
-    "used": 42,
-    "remaining": 458
+    "used": 43,
+    "remaining": 457
   },
   "recent_runs": [
     {
@@ -1239,10 +1239,17 @@
       "requests": 3,
       "snapshots": 3,
       "errors": []
+    },
+    {
+      "at": "2026-11-06T21:05:27.307892+00:00",
+      "success": true,
+      "requests": 1,
+      "snapshots": 1,
+      "errors": []
     }
   ],
   "recent_blocked_quote_counts": {
-    "eligible": 14854,
+    "eligible": 14994,
     "team_change_review_required": 44,
     "insufficient_prior_season_history": 986,
     "player_unmatched_or_ambiguous": 146,
