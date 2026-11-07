@@ -852,6 +852,10 @@
       "at": "2026-11-06T15:24:30.327984+00:00",
       "status": "saved"
     },
+    "bc490c79c4f47b8a1eaa70a3e1907349:late": {
+      "at": "2026-11-07T00:56:44.274633+00:00",
+      "status": "reserved"
+    },
     "bddca6412454c40a2860b4e2e3e85968:middle": {
       "at": "2026-10-12T19:48:15.486416+00:00",
       "status": "saved"
@@ -3059,14 +3063,14 @@
     "8094c7dc6557caf1cc19194bf69477bb": {
       "event": {
         "away_team": "Columbus Blue Jackets",
-        "commence_time": "2026-11-07T00:10:00Z",
+        "commence_time": "2026-11-07T00:13:23Z",
         "home_team": "Buffalo Sabres",
         "id": "8094c7dc6557caf1cc19194bf69477bb",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-06T07:25:49.984902+00:00",
-      "last_seen_at": "2026-11-06T21:05:13.346242+00:00",
+      "last_seen_at": "2026-11-07T00:56:44.110804+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3346,7 +3350,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-06T07:25:49.984902+00:00",
-      "last_seen_at": "2026-11-06T21:05:13.346242+00:00",
+      "last_seen_at": "2026-11-07T00:56:44.110804+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3934,7 +3938,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-06T07:25:49.984902+00:00",
-      "last_seen_at": "2026-11-06T21:05:13.346242+00:00",
+      "last_seen_at": "2026-11-07T00:56:44.110804+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
