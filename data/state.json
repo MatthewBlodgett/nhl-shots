@@ -164,6 +164,10 @@
       "at": "2026-11-07T14:05:24.177527+00:00",
       "status": "saved"
     },
+    "1f21bf798afede04880e7a391f3990ed:middle": {
+      "at": "2026-11-07T22:45:42.943286+00:00",
+      "status": "reserved"
+    },
     "20277c97a62bde35c5494acdb5912a68:early": {
       "at": "2026-10-26T15:12:08.228141+00:00",
       "status": "saved"
@@ -1562,7 +1566,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-07T07:10:34.012716+00:00",
-      "last_seen_at": "2026-11-07T18:47:50.855621+00:00",
+      "last_seen_at": "2026-11-07T22:45:42.760515+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -1912,7 +1916,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-07T07:10:34.012716+00:00",
-      "last_seen_at": "2026-11-07T18:47:50.855621+00:00",
+      "last_seen_at": "2026-11-07T22:45:42.760515+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2038,7 +2042,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-07T07:10:34.012716+00:00",
-      "last_seen_at": "2026-11-07T18:47:50.855621+00:00",
+      "last_seen_at": "2026-11-07T22:45:42.760515+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2374,7 +2378,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-07T07:10:34.012716+00:00",
-      "last_seen_at": "2026-11-07T18:47:50.855621+00:00",
+      "last_seen_at": "2026-11-07T22:45:42.760515+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -2962,7 +2966,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-07T07:10:34.012716+00:00",
-      "last_seen_at": "2026-11-07T18:47:50.855621+00:00",
+      "last_seen_at": "2026-11-07T22:45:42.760515+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3053,14 +3057,14 @@
     "79334eedea6908f995f13dd5a8f11d20": {
       "event": {
         "away_team": "New York Rangers",
-        "commence_time": "2026-11-07T22:10:00Z",
+        "commence_time": "2026-11-07T22:09:46Z",
         "home_team": "Seattle Kraken",
         "id": "79334eedea6908f995f13dd5a8f11d20",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-07T07:10:34.012716+00:00",
-      "last_seen_at": "2026-11-07T18:47:50.855621+00:00",
+      "last_seen_at": "2026-11-07T22:45:42.760515+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3382,7 +3386,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-07T07:10:34.012716+00:00",
-      "last_seen_at": "2026-11-07T18:47:50.855621+00:00",
+      "last_seen_at": "2026-11-07T22:45:42.760515+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -3452,7 +3456,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-07T07:10:34.012716+00:00",
-      "last_seen_at": "2026-11-07T18:47:50.855621+00:00",
+      "last_seen_at": "2026-11-07T22:45:42.760515+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -3970,7 +3974,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-07T07:10:34.012716+00:00",
-      "last_seen_at": "2026-11-07T18:47:50.855621+00:00",
+      "last_seen_at": "2026-11-07T22:45:42.760515+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3998,7 +4002,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-07T07:10:34.012716+00:00",
-      "last_seen_at": "2026-11-07T18:47:50.855621+00:00",
+      "last_seen_at": "2026-11-07T22:45:42.760515+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
