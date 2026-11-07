@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-07T14:05:24.032244+00:00
+Updated: 2026-11-07T18:47:50.855621+00:00
 
-Today's archive: **3 snapshots / 300 quotes**.
+Today's archive: **5 snapshots / 612 quotes**.
 
-Quotes with usable model history: 288. Blocked by history or team-change rules: 12.
+Quotes with usable model history: 576. Blocked by history or team-change rules: 36.
 
-API billing-cycle usage: 48 credits; 452 remaining.
+API billing-cycle usage: 50 credits; 450 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -24,21 +24,21 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 | Jamie Benn | betonlineag | Under 1.5 | 1.970 | 71.9% | 41.7% |
 | Jamie Benn | betmgm | Under 1.5 | 1.800 | 71.9% | 29.5% |
 | Thomas Harley | draftkings | Under 2.5 | 1.800 | 71.5% | 28.7% |
+| Adam Fox | draftkings | Under 1.5 | 2.100 | 60.4% | 26.8% |
 | Thomas Harley | fanduel | Under 2.5 | 1.770 | 71.5% | 26.6% |
 | Thomas Harley | betonlineag | Under 2.5 | 1.770 | 71.5% | 26.6% |
 | Mikko Rantanen | draftkings | Under 2.5 | 1.740 | 72.2% | 25.7% |
+| Tye Kartye | bovada | Under 1.5 | 1.950 | 63.7% | 24.3% |
+| Adam Fox | bovada | Under 1.5 | 2.050 | 60.4% | 23.8% |
+| Matty Beniers | betmgm | Under 1.5 | 2.050 | 60.3% | 23.6% |
 | Mikko Rantanen | betmgm | Under 2.5 | 1.710 | 72.2% | 23.5% |
 | Brandon Hagel | fanduel | Over 2.5 | 1.850 | 66.7% | 23.5% |
+| Adam Fox | betonlineag | Under 1.5 | 2.030 | 60.4% | 22.6% |
 | Thomas Harley | betmgm | Under 2.5 | 1.710 | 71.5% | 22.3% |
 | John Carlson | fanduel | Over 1.5 | 1.780 | 68.4% | 21.7% |
 | John Carlson | betonlineag | Over 1.5 | 1.770 | 68.4% | 21.1% |
 | Mikko Rantanen | betonlineag | Under 2.5 | 1.670 | 72.2% | 20.6% |
 | Brandon Hagel | betmgm | Over 2.5 | 1.800 | 66.7% | 20.1% |
 | Brandon Hagel | betonlineag | Over 2.5 | 1.800 | 66.7% | 20.1% |
-| Mikko Rantanen | fanduel | Under 2.5 | 1.650 | 72.2% | 19.2% |
-| Macklin Celebrini | betonlineag | Over 3.5 | 2.300 | 51.7% | 18.9% |
-| Maxim Shabanov | draftkings | Under 1.5 | 1.870 | 63.1% | 18.0% |
-| Macklin Celebrini | fanduel | Over 3.5 | 2.280 | 51.7% | 17.8% |
-| Wyatt Johnston | draftkings | Under 2.5 | 2.150 | 54.7% | 17.5% |
 
 These are archived observations, not a statement that the price remains available.
