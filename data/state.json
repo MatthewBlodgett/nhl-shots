@@ -400,6 +400,10 @@
       "at": "2026-10-22T21:36:29.996796+00:00",
       "status": "saved"
     },
+    "5abfa3c29e722130d055164350facd72:early": {
+      "at": "2026-11-08T16:21:07.015970+00:00",
+      "status": "reserved"
+    },
     "5b5466f836933f5fb3ed4b9f267cce75:late": {
       "at": "2026-10-02T21:42:15.031037+00:00",
       "status": "saved"
@@ -2020,7 +2024,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-08T09:29:20.076575+00:00",
-      "last_seen_at": "2026-11-08T09:29:20.076575+00:00",
+      "last_seen_at": "2026-11-08T16:21:06.834392+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2216,7 +2220,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-08T09:29:20.076575+00:00",
-      "last_seen_at": "2026-11-08T09:29:20.076575+00:00",
+      "last_seen_at": "2026-11-08T16:21:06.834392+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2426,7 +2430,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-08T09:29:20.076575+00:00",
-      "last_seen_at": "2026-11-08T09:29:20.076575+00:00",
+      "last_seen_at": "2026-11-08T16:21:06.834392+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2748,7 +2752,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-08T09:29:20.076575+00:00",
-      "last_seen_at": "2026-11-08T09:29:20.076575+00:00",
+      "last_seen_at": "2026-11-08T16:21:06.834392+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3280,7 +3284,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-08T09:29:20.076575+00:00",
-      "last_seen_at": "2026-11-08T09:29:20.076575+00:00",
+      "last_seen_at": "2026-11-08T16:21:06.834392+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -3686,7 +3690,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-08T09:29:20.076575+00:00",
-      "last_seen_at": "2026-11-08T09:29:20.076575+00:00",
+      "last_seen_at": "2026-11-08T16:21:06.834392+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
