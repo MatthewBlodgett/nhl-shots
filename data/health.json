@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-11-08T09:29:23.855348+00:00",
-  "last_success_at": "2026-11-08T09:29:23.855348+00:00",
+  "last_attempt_at": "2026-11-08T16:22:05.240678+00:00",
+  "last_success_at": "2026-11-08T16:22:05.240678+00:00",
   "consecutive_failures": 0,
   "quota": {
-    "used": 54,
-    "remaining": 446
+    "used": 58,
+    "remaining": 442
   },
   "recent_runs": [
     {
@@ -1295,22 +1295,29 @@
       "requests": 0,
       "snapshots": 0,
       "errors": []
+    },
+    {
+      "at": "2026-11-08T16:22:05.240678+00:00",
+      "success": true,
+      "requests": 4,
+      "snapshots": 4,
+      "errors": []
     }
   ],
   "recent_blocked_quote_counts": {
-    "eligible": 14548,
-    "team_change_review_required": 52,
-    "insufficient_prior_season_history": 978,
-    "player_unmatched_or_ambiguous": 142,
-    "outside_studied_lines": 42,
+    "eligible": 14716,
+    "team_change_review_required": 54,
+    "insufficient_prior_season_history": 990,
+    "player_unmatched_or_ambiguous": 144,
+    "outside_studied_lines": 50,
     "insufficient_current_season_history": 8
   },
   "observed_games_last_14_days": 66,
-  "missing_elapsed_windows_on_observed_games": 59,
+  "missing_elapsed_windows_on_observed_games": 63,
   "unsettled_games_more_than_6_hours_after_start": 1,
   "quota_paused": false,
   "discovered_games_last_14_days": 103,
-  "selected_games_without_snapshots": 6,
+  "selected_games_without_snapshots": 2,
   "sampling_policies": {
     "2026-10-03": "hash_five_v2",
     "2026-10-04": "hash_five_v2",
