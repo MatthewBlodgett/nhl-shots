@@ -940,6 +940,10 @@
       "at": "2026-10-15T21:49:25.749553+00:00",
       "status": "saved"
     },
+    "c0de79c9c801e5fc0d1bb3873b10a164:early": {
+      "at": "2026-11-09T18:49:19.359915+00:00",
+      "status": "reserved"
+    },
     "c3e7d800670fc3945c5b89ec09709eae:early": {
       "at": "2026-10-20T15:06:41.452789+00:00",
       "status": "saved"
@@ -2583,14 +2587,14 @@
     "4b345990c8a04ff88ce31d233a406011": {
       "event": {
         "away_team": "New York Islanders",
-        "commence_time": "2026-11-10T03:00:00Z",
+        "commence_time": "2026-11-10T03:10:00Z",
         "home_team": "San Jose Sharks",
         "id": "4b345990c8a04ff88ce31d233a406011",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-09T07:58:31.722572+00:00",
-      "last_seen_at": "2026-11-09T07:58:31.722572+00:00",
+      "last_seen_at": "2026-11-09T18:49:19.193360+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -4361,14 +4365,14 @@
     "c0de79c9c801e5fc0d1bb3873b10a164": {
       "event": {
         "away_team": "New York Rangers",
-        "commence_time": "2026-11-10T01:00:00Z",
+        "commence_time": "2026-11-10T01:10:00Z",
         "home_team": "Edmonton Oilers",
         "id": "c0de79c9c801e5fc0d1bb3873b10a164",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-09T07:58:31.722572+00:00",
-      "last_seen_at": "2026-11-09T07:58:31.722572+00:00",
+      "last_seen_at": "2026-11-09T18:49:19.193360+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -4585,14 +4589,14 @@
     "d6c28acaab1a3d7db58968f5f33fbf3a": {
       "event": {
         "away_team": "Philadelphia Flyers",
-        "commence_time": "2026-11-10T02:30:00Z",
+        "commence_time": "2026-11-10T02:40:00Z",
         "home_team": "Vancouver Canucks",
         "id": "d6c28acaab1a3d7db58968f5f33fbf3a",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-09T07:58:31.722572+00:00",
-      "last_seen_at": "2026-11-09T07:58:31.722572+00:00",
+      "last_seen_at": "2026-11-09T18:49:19.193360+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
