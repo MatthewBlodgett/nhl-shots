@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-08T20:46:55.636360+00:00
+Updated: 2026-11-09T00:55:13.757985+00:00
 
-Today's archive: **7 snapshots / 1030 quotes**.
+Today's archive: **8 snapshots / 1172 quotes**.
 
-Quotes with usable model history: 954. Blocked by history or team-change rules: 66.
+Quotes with usable model history: 1072. Blocked by history or team-change rules: 80.
 
-API billing-cycle usage: 61 credits; 439 remaining.
+API billing-cycle usage: 62 credits; 438 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -34,11 +34,11 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 | Darren Raddysh | bovada | Over 2.5 | 2.150 | 55.4% | 19.1% |
 | Kyle Connor | betonlineag | Over 3.5 | 2.320 | 51.3% | 18.9% |
 | Jackson LaCombe | betmgm | Under 1.5 | 1.830 | 65.0% | 18.9% |
-| Jackson LaCombe | bovada | Under 1.5 | 1.830 | 65.0% | 18.9% |
 | Timo Meier | draftkings | Over 2.5 | 1.690 | 69.9% | 18.1% |
 | Kyle Connor | draftkings | Over 3.5 | 2.300 | 51.3% | 17.9% |
 | Kyle Connor | fanduel | Over 3.5 | 2.300 | 51.3% | 17.9% |
 | Kyle Connor | bovada | Over 3.5 | 2.300 | 51.3% | 17.9% |
-| Mikael Granlund | fanduel | Under 1.5 | 2.500 | 46.9% | 17.2% |
+| Owen Tippett | draftkings | Over 2.5 | 2.350 | 49.7% | 16.9% |
+| Timo Meier | betonlineag | Over 2.5 | 1.660 | 69.9% | 16.0% |
 
 These are archived observations, not a statement that the price remains available.
