@@ -366,7 +366,7 @@
     },
     "4b345990c8a04ff88ce31d233a406011:early": {
       "at": "2026-11-09T18:49:49.237497+00:00",
-      "status": "reserved"
+      "status": "saved"
     },
     "4b444895e9b0169627abc9d6df1baae9:early": {
       "at": "2026-10-24T14:33:22.624467+00:00",
@@ -5254,8 +5254,8 @@
     }
   },
   "last_quota": {
-    "remaining": 436,
-    "used": 64
+    "remaining": 435,
+    "used": 65
   },
   "paper_alert_keys": [
     "[\"5b5466f836933f5fb3ed4b9f267cce75\",\"draftkings\",8482109,2.5,\"Under\",1.65,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
@@ -9898,7 +9898,24 @@
     "[\"d6c28acaab1a3d7db58968f5f33fbf3a\",\"bovada\",8477989,1.5,\"Under\",2.0,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
     "[\"d6c28acaab1a3d7db58968f5f33fbf3a\",\"bovada\",8484387,1.5,\"Under\",2.25,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
     "[\"d6c28acaab1a3d7db58968f5f33fbf3a\",\"bovada\",8480015,2.5,\"Over\",2.1,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
-    "[\"d6c28acaab1a3d7db58968f5f33fbf3a\",\"betmgm\",8480015,2.5,\"Over\",2.4,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]"
+    "[\"d6c28acaab1a3d7db58968f5f33fbf3a\",\"betmgm\",8480015,2.5,\"Over\",2.4,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"betonlineag\",8475151,2.5,\"Over\",2.52,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"betonlineag\",8481601,1.5,\"Under\",2.14,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"betonlineag\",8485402,1.5,\"Under\",1.84,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"betonlineag\",8476885,1.5,\"Over\",2.06,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"draftkings\",8475151,2.5,\"Over\",2.35,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"draftkings\",8481601,1.5,\"Under\",2.15,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"draftkings\",8485402,1.5,\"Under\",1.87,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"draftkings\",8476885,1.5,\"Over\",2.05,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"bovada\",8476885,1.5,\"Over\",2.05,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"bovada\",8475151,2.5,\"Over\",2.35,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"bovada\",8485402,1.5,\"Under\",1.91,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"bovada\",8481601,1.5,\"Under\",2.3,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"betmgm\",8477407,1.5,\"Under\",1.71,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"betmgm\",8485402,1.5,\"Under\",1.74,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"betmgm\",8481601,1.5,\"Under\",2.15,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"betmgm\",8475726,2.5,\"Under\",1.61,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"4b345990c8a04ff88ce31d233a406011\",\"betmgm\",8475151,1.5,\"Over\",1.53,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]"
   ],
   "planned_omissions": {
     "18dd8ea86db020028f8d1c130b99d616:early": {
