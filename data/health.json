@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-11-10T02:09:25.163383+00:00",
-  "last_success_at": "2026-11-10T02:09:25.163383+00:00",
+  "last_attempt_at": "2026-11-10T09:50:40.094730+00:00",
+  "last_success_at": "2026-11-10T09:50:40.094730+00:00",
   "consecutive_failures": 0,
   "quota": {
     "used": 67,
@@ -1337,6 +1337,13 @@
       "requests": 2,
       "snapshots": 2,
       "errors": []
+    },
+    {
+      "at": "2026-11-10T09:50:40.094730+00:00",
+      "success": true,
+      "requests": 0,
+      "snapshots": 0,
+      "errors": []
     }
   ],
   "recent_blocked_quote_counts": {
@@ -1347,12 +1354,12 @@
     "outside_studied_lines": 52,
     "insufficient_current_season_history": 8
   },
-  "observed_games_last_14_days": 61,
-  "missing_elapsed_windows_on_observed_games": 62,
+  "observed_games_last_14_days": 66,
+  "missing_elapsed_windows_on_observed_games": 63,
   "unsettled_games_more_than_6_hours_after_start": 2,
   "quota_paused": false,
-  "discovered_games_last_14_days": 98,
-  "selected_games_without_snapshots": 2,
+  "discovered_games_last_14_days": 105,
+  "selected_games_without_snapshots": 7,
   "sampling_policies": {
     "2026-10-03": "hash_five_v2",
     "2026-10-04": "hash_five_v2",
@@ -1391,9 +1398,10 @@
     "2026-11-06": "hash_five_v2",
     "2026-11-07": "hash_five_v2",
     "2026-11-08": "hash_five_v2",
-    "2026-11-09": "hash_five_v2"
+    "2026-11-09": "hash_five_v2",
+    "2026-11-10": "hash_five_v2"
   },
-  "planned_omitted_windows": 20,
+  "planned_omitted_windows": 21,
   "limitations": [
     "No external notifications. A failed GitHub runner cannot update this file.",
     "Discovery coverage starts with census deployment; games never discovered remain unknown."
