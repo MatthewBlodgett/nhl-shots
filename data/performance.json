@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T23:22:45.931762+00:00",
+  "generated_at": "2026-11-11T03:04:06.736580+00:00",
   "policy": {
     "schema_version": 1,
     "stage": "middle",
@@ -9949,7 +9949,7 @@
       "quote_age_seconds": 58.279694,
       "side": "Under",
       "collected_at": "2026-11-10T02:08:50.279694+00:00",
-      "actual_shots": 5,
+      "actual_shots": 6,
       "result": "loss",
       "hypothetical_unit_return": -1,
       "sportsbook_settlement": {
