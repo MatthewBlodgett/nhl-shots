@@ -916,6 +916,10 @@
       "at": "2026-10-17T16:39:28.725652+00:00",
       "status": "saved"
     },
+    "a837b9f2f6922e8208a6ccbb1534bb85:early": {
+      "at": "2026-11-12T17:05:55.857583+00:00",
+      "status": "reserved"
+    },
     "ab12d4dc632ea010114de1409ca7a64b:early": {
       "at": "2026-10-06T14:28:50.079733+00:00",
       "status": "saved"
@@ -2040,7 +2044,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-12T08:20:06.187280+00:00",
-      "last_seen_at": "2026-11-12T08:20:06.187280+00:00",
+      "last_seen_at": "2026-11-12T17:05:55.730856+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -2180,7 +2184,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-12T08:20:06.187280+00:00",
-      "last_seen_at": "2026-11-12T08:20:06.187280+00:00",
+      "last_seen_at": "2026-11-12T17:05:55.730856+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2320,7 +2324,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-12T08:20:06.187280+00:00",
-      "last_seen_at": "2026-11-12T08:20:06.187280+00:00",
+      "last_seen_at": "2026-11-12T17:05:55.730856+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2999,14 +3003,14 @@
     "5a2820b80e20b69258bd5eb25c18eb78": {
       "event": {
         "away_team": "Carolina Hurricanes",
-        "commence_time": "2026-11-12T17:00:00Z",
+        "commence_time": "2026-11-12T17:08:00Z",
         "home_team": "Seattle Kraken",
         "id": "5a2820b80e20b69258bd5eb25c18eb78",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-12T08:20:06.187280+00:00",
-      "last_seen_at": "2026-11-12T08:20:06.187280+00:00",
+      "last_seen_at": "2026-11-12T17:05:55.730856+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -3398,7 +3402,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-12T08:20:06.187280+00:00",
-      "last_seen_at": "2026-11-12T08:20:06.187280+00:00",
+      "last_seen_at": "2026-11-12T17:05:55.730856+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -3762,7 +3766,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-12T08:20:06.187280+00:00",
-      "last_seen_at": "2026-11-12T08:20:06.187280+00:00",
+      "last_seen_at": "2026-11-12T17:05:55.730856+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3818,7 +3822,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-12T08:20:06.187280+00:00",
-      "last_seen_at": "2026-11-12T08:20:06.187280+00:00",
+      "last_seen_at": "2026-11-12T17:05:55.730856+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -4210,7 +4214,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-12T08:20:06.187280+00:00",
-      "last_seen_at": "2026-11-12T08:20:06.187280+00:00",
+      "last_seen_at": "2026-11-12T17:05:55.730856+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -4322,7 +4326,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-12T08:20:06.187280+00:00",
-      "last_seen_at": "2026-11-12T08:20:06.187280+00:00",
+      "last_seen_at": "2026-11-12T17:05:55.730856+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -5428,7 +5432,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-12T08:20:06.187280+00:00",
-      "last_seen_at": "2026-11-12T08:20:06.187280+00:00",
+      "last_seen_at": "2026-11-12T17:05:55.730856+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -5680,7 +5684,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-12T08:20:06.187280+00:00",
-      "last_seen_at": "2026-11-12T08:20:06.187280+00:00",
+      "last_seen_at": "2026-11-12T17:05:55.730856+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     }
