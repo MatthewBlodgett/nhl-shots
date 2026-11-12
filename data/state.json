@@ -352,6 +352,10 @@
       "at": "2026-11-11T18:42:03.733506+00:00",
       "status": "saved"
     },
+    "43a0ad5ba8bff6cdca19964348b53eff:middle": {
+      "at": "2026-11-12T01:03:12.947714+00:00",
+      "status": "reserved"
+    },
     "446de9651d2d2948326d970e9f858a33:early": {
       "at": "2026-11-05T18:45:19.003121+00:00",
       "status": "saved"
@@ -2636,7 +2640,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-11T10:57:21.580584+00:00",
-      "last_seen_at": "2026-11-11T18:42:03.585714+00:00",
+      "last_seen_at": "2026-11-12T01:03:12.816146+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3336,7 +3340,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-11T10:57:21.580584+00:00",
-      "last_seen_at": "2026-11-11T18:42:03.585714+00:00",
+      "last_seen_at": "2026-11-12T01:03:12.816146+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3357,14 +3361,14 @@
     "79041ec71c97248859299c4b6211cc17": {
       "event": {
         "away_team": "Tampa Bay Lightning",
-        "commence_time": "2026-11-12T00:10:00Z",
+        "commence_time": "2026-11-12T00:08:28Z",
         "home_team": "Buffalo Sabres",
         "id": "79041ec71c97248859299c4b6211cc17",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-11T10:57:21.580584+00:00",
-      "last_seen_at": "2026-11-11T18:42:03.585714+00:00",
+      "last_seen_at": "2026-11-12T01:03:12.816146+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3574,7 +3578,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-11T10:57:21.580584+00:00",
-      "last_seen_at": "2026-11-11T18:42:03.585714+00:00",
+      "last_seen_at": "2026-11-12T01:03:12.816146+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -4813,14 +4817,14 @@
     "d6fb69c3f844f53b1bb2619066cd7947": {
       "event": {
         "away_team": "New York Rangers",
-        "commence_time": "2026-11-12T00:40:00Z",
+        "commence_time": "2026-11-12T00:49:19Z",
         "home_team": "Calgary Flames",
         "id": "d6fb69c3f844f53b1bb2619066cd7947",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-11T10:57:21.580584+00:00",
-      "last_seen_at": "2026-11-11T18:42:03.585714+00:00",
+      "last_seen_at": "2026-11-12T01:03:12.816146+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -5100,7 +5104,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-11T10:57:21.580584+00:00",
-      "last_seen_at": "2026-11-11T18:42:03.585714+00:00",
+      "last_seen_at": "2026-11-12T01:03:12.816146+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
