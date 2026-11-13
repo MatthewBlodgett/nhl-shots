@@ -1350,7 +1350,8 @@
     "2026-11-09": "hash_five_v2",
     "2026-11-10": "hash_five_v2",
     "2026-11-11": "hash_five_v2",
-    "2026-11-12": "hash_five_v2"
+    "2026-11-12": "hash_five_v2",
+    "2026-11-13": "hash_five_v2"
   },
   "days": {
     "2026-10-02": [
@@ -1611,6 +1612,10 @@
       "89806a3740a856eb0cb991e427d5dcfa",
       "2df93287814e2ffcbf1186e138b4a3d8",
       "206230c7db215749b099353074bb5c13"
+    ],
+    "2026-11-13": [
+      "21cd36d8c877a851efe2016178ff0bd1",
+      "069bea369487ef0cd3017c9ceea68817"
     ]
   },
   "event_census": {
@@ -1737,6 +1742,20 @@
       },
       "first_seen_at": "2026-10-03T05:46:19.567618+00:00",
       "last_seen_at": "2026-10-04T00:37:36.036430+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
+    },
+    "069bea369487ef0cd3017c9ceea68817": {
+      "event": {
+        "away_team": "New York Rangers",
+        "commence_time": "2026-11-14T02:10:00Z",
+        "home_team": "Vancouver Canucks",
+        "id": "069bea369487ef0cd3017c9ceea68817",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-11-13T11:36:18.349815+00:00",
+      "last_seen_at": "2026-11-13T11:36:18.349815+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2229,6 +2248,20 @@
       "last_seen_at": "2026-10-06T23:48:36.905560+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
+    },
+    "21cd36d8c877a851efe2016178ff0bd1": {
+      "event": {
+        "away_team": "Nashville Predators",
+        "commence_time": "2026-11-14T03:10:00Z",
+        "home_team": "Vegas Golden Knights",
+        "id": "21cd36d8c877a851efe2016178ff0bd1",
+        "sport_key": "icehockey_nhl",
+        "sport_title": "NHL"
+      },
+      "first_seen_at": "2026-11-13T11:36:18.349815+00:00",
+      "last_seen_at": "2026-11-13T11:36:18.349815+00:00",
+      "sampling_policy": "hash_five_v2",
+      "selected": true
     },
     "25079431893a620763e5a454d7991922": {
       "event": {
