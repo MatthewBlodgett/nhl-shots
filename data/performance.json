@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T22:44:48.131076+00:00",
+  "generated_at": "2026-11-13T03:25:34.405362+00:00",
   "policy": {
     "schema_version": 1,
     "stage": "middle",
@@ -26,11 +26,11 @@
   "eligible_middle_player_games": 1867,
   "versions": {
     "09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1": {
-      "forecast_player_games": 1210,
-      "brier": 0.25086798352620626,
-      "matched_market_games": 1210,
-      "matched_model_brier": 0.25086798352620626,
-      "market_no_vig_brier": 0.2444229316352859,
+      "forecast_player_games": 1262,
+      "brier": 0.251477896396068,
+      "matched_market_games": 1262,
+      "matched_model_brier": 0.251477896396068,
+      "market_no_vig_brier": 0.2447674239264726,
       "calibration": [
         {
           "lower": 0.1,
@@ -44,52 +44,52 @@
         },
         {
           "lower": 0.2,
-          "count": 52,
-          "predicted": 0.2618034362391857,
-          "observed": 0.4230769230769231,
+          "count": 53,
+          "predicted": 0.26160823115807375,
+          "observed": 0.4339622641509434,
           "observed_wilson_95": [
-            0.29867847908860445,
-            0.558059150205685
+            0.30950190698960345,
+            0.5673488502023123
           ]
         },
         {
           "lower": 0.3,
-          "count": 232,
-          "predicted": 0.3597603950304881,
-          "observed": 0.40086206896551724,
+          "count": 242,
+          "predicted": 0.3598655876038126,
+          "observed": 0.4090909090909091,
           "observed_wilson_95": [
-            0.3399090350427434,
-            0.4650447983776541
+            0.3490342085606171,
+            0.47198875907382737
           ]
         },
         {
           "lower": 0.4,
-          "count": 464,
-          "predicted": 0.4541069542989793,
-          "observed": 0.4547413793103448,
+          "count": 482,
+          "predicted": 0.4537790311678621,
+          "observed": 0.45020746887966806,
           "observed_wilson_95": [
-            0.4099892931543778,
-            0.5002367320644141
+            0.40635949591522985,
+            0.49484287127605237
           ]
         },
         {
           "lower": 0.5,
-          "count": 334,
-          "predicted": 0.5415497558098531,
-          "observed": 0.5089820359281437,
+          "count": 354,
+          "predicted": 0.5413761811135239,
+          "observed": 0.5056497175141242,
           "observed_wilson_95": [
-            0.4555709394272757,
-            0.5621888627995668
+            0.4537862652433886,
+            0.5573918649684144
           ]
         },
         {
           "lower": 0.6,
-          "count": 111,
-          "predicted": 0.637153689066603,
-          "observed": 0.5405405405405406,
+          "count": 114,
+          "predicted": 0.6372981048859542,
+          "observed": 0.543859649122807,
           "observed_wilson_95": [
-            0.4480269392157108,
-            0.630341874872564
+            0.45248954319403045,
+            0.6323701328456705
           ]
         },
         {
@@ -104,26 +104,26 @@
         }
       ],
       "paper_decisions": 594,
-      "resolved": 556,
-      "unresolved": 38,
-      "hypothetical_profit_units": -52.5,
-      "hypothetical_roi": -0.09442446043165467,
-      "maximum_game_settled_drawdown_units": 49.790000000000006,
+      "resolved": 579,
+      "unresolved": 15,
+      "hypothetical_profit_units": -55.71,
+      "hypothetical_roi": -0.09621761658031089,
+      "maximum_game_settled_drawdown_units": 50.16,
       "roi_interval": {
-        "games": 78,
-        "lower": -0.17375224416517057,
-        "upper": -0.011657848324514997,
+        "games": 81,
+        "lower": -0.17397111913357402,
+        "upper": -0.018455008488964347,
         "status": "descriptive_interval_not_a_profitability_guarantee"
       },
-      "incomplete_games_excluded_from_drawdown": 9,
+      "incomplete_games_excluded_from_drawdown": 6,
       "sportsbook_supported_decisions": 0,
       "sportsbook_unresolved_decisions": 594,
       "price_movement_pairs": 128,
       "mean_late_implied_probability_change": 0.002823880113752028,
       "matched_brier_difference_interval": {
-        "games": 78,
-        "lower": 0.0023141045732372606,
-        "upper": 0.010465415436050052,
+        "games": 81,
+        "lower": 0.0028930872811890897,
+        "upper": 0.010586796617070413,
         "status": "descriptive_paired_game_cluster_interval"
       }
     },
@@ -5049,8 +5049,18 @@
       "quote_age_seconds": 25.136923,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:37.136923+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 2,
+      "result": "win",
+      "hypothetical_unit_return": 1.15,
+      "sportsbook_settlement": {
+        "book": "draftkings",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -5076,8 +5086,18 @@
       "quote_age_seconds": 24.136923,
       "side": "Under",
       "collected_at": "2026-11-12T22:44:37.136923+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 1,
+      "result": "win",
+      "hypothetical_unit_return": 1.0499999999999998,
+      "sportsbook_settlement": {
+        "book": "betmgm",
+        "reasons": [
+          "book_not_reviewed"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -5103,8 +5123,18 @@
       "quote_age_seconds": 25.136923,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:37.136923+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 5,
+      "result": "win",
+      "hypothetical_unit_return": 1.2999999999999998,
+      "sportsbook_settlement": {
+        "book": "draftkings",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -5130,8 +5160,18 @@
       "quote_age_seconds": 21.136923,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:37.136923+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 1,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "betonlineag",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -5157,8 +5197,18 @@
       "quote_age_seconds": 25.136923,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:37.136923+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 4,
+      "result": "win",
+      "hypothetical_unit_return": 1.2000000000000002,
+      "sportsbook_settlement": {
+        "book": "draftkings",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -5184,8 +5234,18 @@
       "quote_age_seconds": 25.136923,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:37.136923+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 1,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "draftkings",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -5211,8 +5271,18 @@
       "quote_age_seconds": 101.136923,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:37.136923+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 2,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "bovada",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -5238,8 +5308,18 @@
       "quote_age_seconds": 21.136923,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:37.136923+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 0,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "betonlineag",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -5265,8 +5345,18 @@
       "quote_age_seconds": 21.136923,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:37.136923+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 1,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "betonlineag",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -5292,8 +5382,18 @@
       "quote_age_seconds": 101.136923,
       "side": "Under",
       "collected_at": "2026-11-12T22:44:37.136923+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 2,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "bovada",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -5319,8 +5419,18 @@
       "quote_age_seconds": 21.136923,
       "side": "Under",
       "collected_at": "2026-11-12T22:44:37.136923+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 1,
+      "result": "win",
+      "hypothetical_unit_return": 0.8500000000000001,
+      "sportsbook_settlement": {
+        "book": "betonlineag",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -18254,8 +18364,18 @@
       "quote_age_seconds": 8.545325,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:22.545325+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 3,
+      "result": "win",
+      "hypothetical_unit_return": 0.74,
+      "sportsbook_settlement": {
+        "book": "betonlineag",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -18281,8 +18401,19 @@
       "quote_age_seconds": 1.545325,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:22.545325+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 6,
+      "result": "win",
+      "hypothetical_unit_return": 0.72,
+      "sportsbook_settlement": {
+        "book": "fanduel",
+        "reasons": [
+          "rules_incomplete",
+          "jurisdiction_unknown_or_unmatched"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -18308,8 +18439,18 @@
       "quote_age_seconds": 44.545325,
       "side": "Under",
       "collected_at": "2026-11-12T22:44:22.545325+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 3,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "draftkings",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -18335,8 +18476,19 @@
       "quote_age_seconds": 1.545325,
       "side": "Under",
       "collected_at": "2026-11-12T22:44:22.545325+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 4,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "fanduel",
+        "reasons": [
+          "rules_incomplete",
+          "jurisdiction_unknown_or_unmatched"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -18362,8 +18514,18 @@
       "quote_age_seconds": 172.545325,
       "side": "Under",
       "collected_at": "2026-11-12T22:44:22.545325+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 3,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "betmgm",
+        "reasons": [
+          "book_not_reviewed"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -32833,8 +32995,18 @@
       "quote_age_seconds": 74.833339,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:12.833339+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 1,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "betonlineag",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -32860,8 +33032,18 @@
       "quote_age_seconds": 74.833339,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:12.833339+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 0,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "betonlineag",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -32887,8 +33069,19 @@
       "quote_age_seconds": 30.833339,
       "side": "Over",
       "collected_at": "2026-11-12T22:44:12.833339+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 2,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "fanduel",
+        "reasons": [
+          "rules_incomplete",
+          "jurisdiction_unknown_or_unmatched"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -32914,8 +33107,18 @@
       "quote_age_seconds": 32.833339,
       "side": "Under",
       "collected_at": "2026-11-12T22:44:12.833339+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 1,
+      "result": "win",
+      "hypothetical_unit_return": 0.8300000000000001,
+      "sportsbook_settlement": {
+        "book": "bovada",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -32941,8 +33144,18 @@
       "quote_age_seconds": 32.833339,
       "side": "Under",
       "collected_at": "2026-11-12T22:44:12.833339+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 4,
+      "result": "loss",
+      "hypothetical_unit_return": -1,
+      "sportsbook_settlement": {
+        "book": "bovada",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -32968,8 +33181,19 @@
       "quote_age_seconds": 30.833339,
       "side": "Under",
       "collected_at": "2026-11-12T22:44:12.833339+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 1,
+      "result": "win",
+      "hypothetical_unit_return": 1.04,
+      "sportsbook_settlement": {
+        "book": "fanduel",
+        "reasons": [
+          "rules_incomplete",
+          "jurisdiction_unknown_or_unmatched"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     },
@@ -32995,8 +33219,18 @@
       "quote_age_seconds": 32.833339,
       "side": "Under",
       "collected_at": "2026-11-12T22:44:12.833339+00:00",
-      "actual_shots": null,
-      "result": "pending_or_unresolved",
+      "actual_shots": 0,
+      "result": "win",
+      "hypothetical_unit_return": 0.9099999999999999,
+      "sportsbook_settlement": {
+        "book": "bovada",
+        "reasons": [
+          "rules_incomplete"
+        ],
+        "rule_revision": "2026-10-02-review-1",
+        "status": "unresolved",
+        "warning": "Official SOG result is a statistical paper outcome, not an executable settlement."
+      },
       "late_decimal_odds": null,
       "late_implied_probability_change": null
     }
