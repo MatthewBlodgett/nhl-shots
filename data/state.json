@@ -460,6 +460,10 @@
       "at": "2026-11-15T17:11:33.177008+00:00",
       "status": "saved"
     },
+    "539a387d9fd0da9af213bf8002fdb0d4:middle": {
+      "at": "2026-11-15T21:52:28.848156+00:00",
+      "status": "reserved"
+    },
     "53b58ae0f99c8172ebee3bd82e7c83a7:middle": {
       "at": "2026-10-03T22:08:26.784690+00:00",
       "status": "saved"
@@ -1294,7 +1298,7 @@
     },
     "edbb603c4a7ed77b892f7bba6dcef824:middle": {
       "at": "2026-11-15T21:52:19.202075+00:00",
-      "status": "reserved"
+      "status": "saved"
     },
     "f05e184ffd9a6192d19ceee27d51a9de:early": {
       "at": "2026-11-05T18:45:52.073677+00:00",
@@ -6109,8 +6113,8 @@
     }
   },
   "last_quota": {
-    "remaining": 391,
-    "used": 109
+    "remaining": 390,
+    "used": 110
   },
   "paper_alert_keys": [
     "[\"5b5466f836933f5fb3ed4b9f267cce75\",\"draftkings\",8482109,2.5,\"Under\",1.65,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
@@ -11531,7 +11535,26 @@
     "[\"d2834086e817eeb75c1ea2cd312f62c5\",\"betonlineag\",8480015,2.5,\"Over\",2.41,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
     "[\"d2834086e817eeb75c1ea2cd312f62c5\",\"betonlineag\",8475218,1.5,\"Under\",1.67,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
     "[\"d2834086e817eeb75c1ea2cd312f62c5\",\"betonlineag\",8484387,1.5,\"Under\",2.19,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
-    "[\"d2834086e817eeb75c1ea2cd312f62c5\",\"betonlineag\",8482703,1.5,\"Under\",1.65,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]"
+    "[\"d2834086e817eeb75c1ea2cd312f62c5\",\"betonlineag\",8482703,1.5,\"Under\",1.65,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"draftkings\",8480801,2.5,\"Over\",1.65,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"draftkings\",8477933,2.5,\"Over\",2.15,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"draftkings\",8478420,1.5,\"Under\",2.45,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"draftkings\",8481581,1.5,\"Under\",2.45,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"draftkings\",8482113,1.5,\"Over\",1.61,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"draftkings\",8477935,1.5,\"Over\",1.62,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"draftkings\",8484938,1.5,\"Under\",2.0,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"draftkings\",8477495,1.5,\"Over\",1.87,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"betonlineag\",8481581,2.5,\"Under\",1.52,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"betonlineag\",8478420,2.5,\"Under\",1.48,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"betonlineag\",8477495,1.5,\"Over\",1.84,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"betonlineag\",8482113,1.5,\"Over\",1.64,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"fanduel\",8481581,2.5,\"Under\",1.52,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"fanduel\",8477933,2.5,\"Over\",2.22,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"bovada\",8478420,2.5,\"Under\",1.54,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"bovada\",8477935,1.5,\"Over\",1.57,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"bovada\",8477933,2.5,\"Over\",2.05,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"bovada\",8477495,1.5,\"Over\",1.8,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"edbb603c4a7ed77b892f7bba6dcef824\",\"bovada\",8481581,2.5,\"Under\",1.54,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]"
   ],
   "planned_omissions": {
     "11f3c6f0f406c5ffb575dbcd671cf964:early": {
