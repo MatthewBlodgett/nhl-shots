@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-14T23:00:22.303092+00:00
+Updated: 2026-11-15T02:39:25.403803+00:00
 
-Today's archive: **8 snapshots / 976 quotes**.
+Today's archive: **9 snapshots / 1116 quotes**.
 
-Quotes with usable model history: 806. Blocked by history or team-change rules: 48.
+Quotes with usable model history: 924. Blocked by history or team-change rules: 70.
 
-API billing-cycle usage: 103 credits; 397 remaining.
+API billing-cycle usage: 104 credits; 396 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -24,6 +24,7 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 | Troy Terry | betonlineag | Over 2.5 | 2.520 | 50.2% | 26.6% |
 | Owen Tippett | fanduel | Over 2.5 | 2.540 | 49.0% | 24.5% |
 | Kent Johnson | fanduel | Under 1.5 | 2.540 | 47.8% | 21.3% |
+| Jackson LaCombe | draftkings | Under 1.5 | 1.870 | 64.5% | 20.6% |
 | Troy Terry | draftkings | Over 2.5 | 2.400 | 50.2% | 20.6% |
 | Troy Terry | betmgm | Over 2.5 | 2.400 | 50.2% | 20.6% |
 | Troy Terry | bovada | Over 2.5 | 2.400 | 50.2% | 20.6% |
@@ -38,7 +39,6 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 | Timo Meier | bovada | Over 3.5 | 2.300 | 50.8% | 16.8% |
 | Thomas Harley | draftkings | Under 2.5 | 1.620 | 72.0% | 16.6% |
 | Kent Johnson | bovada | Under 2.5 | 1.590 | 73.3% | 16.5% |
-| Jackson LaCombe | betmgm | Under 1.5 | 1.800 | 64.5% | 16.1% |
 | Jamie Benn | betmgm | Under 1.5 | 1.650 | 70.1% | 15.7% |
 
 These are archived observations, not a statement that the price remains available.
