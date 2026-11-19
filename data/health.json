@@ -1,20 +1,13 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-11-19T01:30:49.076077+00:00",
-  "last_success_at": "2026-11-19T01:30:49.076077+00:00",
+  "last_attempt_at": "2026-11-19T09:30:30.170157+00:00",
+  "last_success_at": "2026-11-19T09:30:30.170157+00:00",
   "consecutive_failures": 0,
   "quota": {
     "used": 124,
     "remaining": 376
   },
   "recent_runs": [
-    {
-      "at": "2026-10-06T14:29:00.469456+00:00",
-      "success": true,
-      "requests": 3,
-      "snapshots": 3,
-      "errors": []
-    },
     {
       "at": "2026-10-06T19:51:16.637312+00:00",
       "success": true,
@@ -1407,24 +1400,31 @@
       "requests": 1,
       "snapshots": 1,
       "errors": []
+    },
+    {
+      "at": "2026-11-19T09:30:30.170157+00:00",
+      "success": true,
+      "requests": 0,
+      "snapshots": 0,
+      "errors": []
     }
   ],
   "recent_blocked_quote_counts": {
-    "eligible": 11662,
-    "team_change_review_required": 84,
-    "insufficient_prior_season_history": 732,
+    "eligible": 11392,
+    "team_change_review_required": 76,
+    "insufficient_prior_season_history": 716,
     "player_unmatched_or_ambiguous": 138,
     "outside_studied_lines": 46,
     "nhl_game_unmatched": 112,
     "insufficient_current_season_history": 12,
     "stale_or_future_quote": 18
   },
-  "observed_games_last_14_days": 60,
-  "missing_elapsed_windows_on_observed_games": 78,
+  "observed_games_last_14_days": 63,
+  "missing_elapsed_windows_on_observed_games": 75,
   "unsettled_games_more_than_6_hours_after_start": 2,
   "quota_paused": false,
-  "discovered_games_last_14_days": 98,
-  "selected_games_without_snapshots": 2,
+  "discovered_games_last_14_days": 108,
+  "selected_games_without_snapshots": 7,
   "sampling_policies": {
     "2026-10-03": "hash_five_v2",
     "2026-10-04": "hash_five_v2",
@@ -1472,9 +1472,10 @@
     "2026-11-15": "hash_five_v2",
     "2026-11-16": "hash_five_v2",
     "2026-11-17": "hash_five_v2",
-    "2026-11-18": "hash_five_v2"
+    "2026-11-18": "hash_five_v2",
+    "2026-11-19": "hash_five_v2"
   },
-  "planned_omitted_windows": 26,
+  "planned_omitted_windows": 27,
   "limitations": [
     "No external notifications. A failed GitHub runner cannot update this file.",
     "Discovery coverage starts with census deployment; games never discovered remain unknown."
