@@ -376,6 +376,10 @@
       "at": "2026-10-03T22:07:53.417415+00:00",
       "status": "saved"
     },
+    "3e6894e350f62db024db622aedba4507:early": {
+      "at": "2026-11-19T18:40:50.387870+00:00",
+      "status": "reserved"
+    },
     "41a3f4e9221afae1081031d9f6af0db4:early": {
       "at": "2026-11-08T16:21:22.752216+00:00",
       "status": "saved"
@@ -2252,7 +2256,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2756,7 +2760,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -2980,7 +2984,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -3666,7 +3670,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -3722,7 +3726,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -3792,7 +3796,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -3848,7 +3852,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -4086,7 +4090,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -4212,7 +4216,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -4352,7 +4356,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
@@ -4380,7 +4384,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
@@ -4534,7 +4538,7 @@
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-19T09:30:26.523406+00:00",
-      "last_seen_at": "2026-11-19T09:30:26.523406+00:00",
+      "last_seen_at": "2026-11-19T18:40:50.234256+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": false
     },
