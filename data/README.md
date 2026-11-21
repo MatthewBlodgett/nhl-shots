@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-21T13:02:06.895153+00:00
+Updated: 2026-11-21T20:06:04.799417+00:00
 
-Today's archive: **3 snapshots / 314 quotes**.
+Today's archive: **8 snapshots / 1008 quotes**.
 
-Quotes with usable model history: 290. Blocked by history or team-change rules: 24.
+Quotes with usable model history: 930. Blocked by history or team-change rules: 76.
 
-API billing-cycle usage: 134 credits; 366 remaining.
+API billing-cycle usage: 139 credits; 361 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,25 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Emmitt Finnie | draftkings | Under 1.5 | 2.400 | 50.5% | 21.2% |
+| Dylan Holloway | draftkings | Over 2.5 | 2.400 | 52.5% | 26.1% |
+| Dylan Holloway | betonlineag | Over 2.5 | 2.390 | 52.5% | 25.6% |
+| Kyle Palmieri | fanduel | Over 1.5 | 1.870 | 67.1% | 25.5% |
+| Timo Meier | betonlineag | Over 3.5 | 2.490 | 50.1% | 24.7% |
+| Dylan Holloway | fanduel | Over 2.5 | 2.340 | 52.5% | 23.0% |
+| Maxim Shabanov | betonlineag | Under 1.5 | 2.000 | 60.6% | 21.2% |
 | Yegor Sharangovich | draftkings | Under 1.5 | 2.150 | 56.3% | 21.0% |
-| Kyle Palmieri | betonlineag | Over 1.5 | 1.790 | 67.1% | 20.1% |
-| Kyle Palmieri | fanduel | Over 1.5 | 1.780 | 67.1% | 19.5% |
+| Yegor Sharangovich | bovada | Under 1.5 | 2.150 | 56.3% | 21.0% |
+| Dylan Holloway | betmgm | Over 2.5 | 2.300 | 52.5% | 20.9% |
+| Kyle Palmieri | betonlineag | Over 1.5 | 1.800 | 67.1% | 20.8% |
+| Simon Nemec | draftkings | Under 1.5 | 2.050 | 58.0% | 18.9% |
+| Simon Nemec | bovada | Under 1.5 | 2.050 | 58.0% | 18.9% |
 | Kyle Palmieri | draftkings | Over 1.5 | 1.770 | 67.1% | 18.8% |
-| Yegor Sharangovich | betonlineag | Under 1.5 | 2.100 | 56.3% | 18.2% |
+| Kyle Palmieri | bovada | Over 1.5 | 1.770 | 67.1% | 18.8% |
+| Yegor Sharangovich | betonlineag | Under 1.5 | 2.110 | 56.3% | 18.7% |
+| Emmitt Finnie | bovada | Under 1.5 | 2.350 | 50.5% | 18.7% |
+| Dylan Holloway | bovada | Over 2.5 | 2.250 | 52.5% | 18.2% |
 | Mathew Barzal | betonlineag | Over 2.5 | 2.490 | 47.4% | 18.1% |
-| Emmitt Finnie | betonlineag | Under 1.5 | 2.330 | 50.5% | 17.7% |
-| Emmitt Finnie | fanduel | Under 1.5 | 2.300 | 50.5% | 16.1% |
-| Emmitt Finnie | betmgm | Under 1.5 | 2.300 | 50.5% | 16.1% |
-| Simon Nemec | draftkings | Under 1.5 | 2.000 | 58.0% | 16.0% |
-| Yegor Sharangovich | betmgm | Under 1.5 | 2.050 | 56.3% | 15.3% |
-| Kyle Palmieri | betmgm | Over 1.5 | 1.710 | 67.1% | 14.8% |
-| Alex Laferriere | draftkings | Over 2.5 | 2.050 | 55.9% | 14.7% |
-| Joel Farabee | draftkings | Under 2.5 | 1.800 | 63.5% | 14.3% |
-| Simon Nemec | betonlineag | Under 1.5 | 1.970 | 58.0% | 14.3% |
-| Adam Klapka | betmgm | Under 1.5 | 1.740 | 65.6% | 14.2% |
-| Adrian Kempe | draftkings | Over 2.5 | 2.050 | 55.2% | 13.2% |
-| Alex Laferriere | betonlineag | Over 2.5 | 2.020 | 55.9% | 13.0% |
-| Bo Horvat | draftkings | Over 2.5 | 1.870 | 60.1% | 12.3% |
+| Alex Laferriere | bovada | Over 2.5 | 2.100 | 55.9% | 17.5% |
+| Simon Nemec | betonlineag | Under 1.5 | 2.010 | 58.0% | 16.6% |
 
 These are archived observations, not a statement that the price remains available.
