@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-22T00:20:42.560413+00:00
+Updated: 2026-11-22T07:28:38.804661+00:00
 
-Today's archive: **9 snapshots / 1132 quotes**.
+Today's archive: **1 snapshots / 24 quotes**.
 
-Quotes with usable model history: 1032. Blocked by history or team-change rules: 96.
+Quotes with usable model history: 24. Blocked by history or team-change rules: 0.
 
-API billing-cycle usage: 140 credits; 360 remaining.
+API billing-cycle usage: 141 credits; 359 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -20,25 +20,9 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 | Player | Book | Side / line | Decimal price | Model probability | Estimated return |
 | --- | --- | --- | ---: | ---: | ---: |
-| Dylan Holloway | draftkings | Over 2.5 | 2.400 | 52.5% | 26.1% |
-| Dylan Holloway | betonlineag | Over 2.5 | 2.390 | 52.5% | 25.6% |
-| Kyle Palmieri | fanduel | Over 1.5 | 1.870 | 67.1% | 25.5% |
-| Timo Meier | betonlineag | Over 3.5 | 2.490 | 50.1% | 24.7% |
-| Dylan Holloway | fanduel | Over 2.5 | 2.340 | 52.5% | 23.0% |
-| Maxim Shabanov | betonlineag | Under 1.5 | 2.000 | 60.6% | 21.2% |
-| Yegor Sharangovich | draftkings | Under 1.5 | 2.150 | 56.3% | 21.0% |
-| Yegor Sharangovich | bovada | Under 1.5 | 2.150 | 56.3% | 21.0% |
-| Dylan Holloway | betmgm | Over 2.5 | 2.300 | 52.5% | 20.9% |
-| Kyle Palmieri | betonlineag | Over 1.5 | 1.800 | 67.1% | 20.8% |
-| Simon Nemec | draftkings | Under 1.5 | 2.050 | 58.0% | 18.9% |
-| Simon Nemec | bovada | Under 1.5 | 2.050 | 58.0% | 18.9% |
-| Kyle Palmieri | draftkings | Over 1.5 | 1.770 | 67.1% | 18.8% |
-| Kyle Palmieri | bovada | Over 1.5 | 1.770 | 67.1% | 18.8% |
-| Yegor Sharangovich | betonlineag | Under 1.5 | 2.110 | 56.3% | 18.7% |
-| Emmitt Finnie | bovada | Under 1.5 | 2.350 | 50.5% | 18.7% |
-| Dylan Holloway | bovada | Over 2.5 | 2.250 | 52.5% | 18.2% |
-| Maxim Shabanov | draftkings | Under 1.5 | 1.950 | 60.6% | 18.1% |
-| Maxim Shabanov | bovada | Under 1.5 | 1.950 | 60.6% | 18.1% |
-| Mathew Barzal | betonlineag | Over 2.5 | 2.490 | 47.4% | 18.1% |
+| Tye Kartye | draftkings | Under 1.5 | 1.910 | 58.4% | 11.6% |
+| Seth Jarvis | draftkings | Over 2.5 | 2.300 | 47.6% | 9.4% |
+| Andrei Svechnikov | draftkings | Under 2.5 | 2.050 | 53.2% | 9.1% |
+| J.T. Miller | draftkings | Under 2.5 | 1.570 | 69.3% | 8.8% |
 
 These are archived observations, not a statement that the price remains available.

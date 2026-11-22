@@ -910,7 +910,7 @@
     },
     "95e13bf4ee868af6f8fe243270b31835:early": {
       "at": "2026-11-22T07:28:39.004560+00:00",
-      "status": "reserved"
+      "status": "saved"
     },
     "9600ca13a787cb4772bf21e6e61bdf07:early": {
       "at": "2026-11-10T17:50:57.292006+00:00",
@@ -6934,8 +6934,8 @@
     }
   },
   "last_quota": {
-    "remaining": 360,
-    "used": 140
+    "remaining": 359,
+    "used": 141
   },
   "paper_alert_keys": [
     "[\"5b5466f836933f5fb3ed4b9f267cce75\",\"draftkings\",8482109,2.5,\"Under\",1.65,\"f52f4d8817de4bd411b1b9867b2f3e1fe5b9e87ddc024022de47bb87c3018902\"]",
@@ -12908,7 +12908,11 @@
     "[\"3e00ca5a69a2b305ed1f78590d590c7e\",\"betonlineag\",8482122,2.5,\"Under\",1.67,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
     "[\"3e00ca5a69a2b305ed1f78590d590c7e\",\"bovada\",8485702,1.5,\"Under\",1.95,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
     "[\"3e00ca5a69a2b305ed1f78590d590c7e\",\"fanduel\",8478864,3.5,\"Under\",1.77,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
-    "[\"3e00ca5a69a2b305ed1f78590d590c7e\",\"fanduel\",8482122,2.5,\"Under\",1.62,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]"
+    "[\"3e00ca5a69a2b305ed1f78590d590c7e\",\"fanduel\",8482122,2.5,\"Under\",1.62,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"95e13bf4ee868af6f8fe243270b31835\",\"draftkings\",8480830,2.5,\"Under\",2.05,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"95e13bf4ee868af6f8fe243270b31835\",\"draftkings\",8476468,2.5,\"Under\",1.57,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"95e13bf4ee868af6f8fe243270b31835\",\"draftkings\",8482093,2.5,\"Over\",2.3,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]",
+    "[\"95e13bf4ee868af6f8fe243270b31835\",\"draftkings\",8481789,1.5,\"Under\",1.91,\"09e8fd06ccd0b4c780bbb76abffc2bc431f4710cb09be0bb5e47cdda2d8660c1\"]"
   ],
   "planned_omissions": {
     "11f3c6f0f406c5ffb575dbcd671cf964:early": {
