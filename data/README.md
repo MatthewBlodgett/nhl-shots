@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-21T20:06:04.799417+00:00
+Updated: 2026-11-22T00:20:42.560413+00:00
 
-Today's archive: **8 snapshots / 1008 quotes**.
+Today's archive: **9 snapshots / 1132 quotes**.
 
-Quotes with usable model history: 930. Blocked by history or team-change rules: 76.
+Quotes with usable model history: 1032. Blocked by history or team-change rules: 96.
 
-API billing-cycle usage: 139 credits; 361 remaining.
+API billing-cycle usage: 140 credits; 360 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -37,8 +37,8 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 | Yegor Sharangovich | betonlineag | Under 1.5 | 2.110 | 56.3% | 18.7% |
 | Emmitt Finnie | bovada | Under 1.5 | 2.350 | 50.5% | 18.7% |
 | Dylan Holloway | bovada | Over 2.5 | 2.250 | 52.5% | 18.2% |
+| Maxim Shabanov | draftkings | Under 1.5 | 1.950 | 60.6% | 18.1% |
+| Maxim Shabanov | bovada | Under 1.5 | 1.950 | 60.6% | 18.1% |
 | Mathew Barzal | betonlineag | Over 2.5 | 2.490 | 47.4% | 18.1% |
-| Alex Laferriere | bovada | Over 2.5 | 2.100 | 55.9% | 17.5% |
-| Simon Nemec | betonlineag | Under 1.5 | 2.010 | 58.0% | 16.6% |
 
 These are archived observations, not a statement that the price remains available.
