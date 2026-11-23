@@ -1,6 +1,6 @@
 # Prospective paper performance
 
-Updated: 2026-11-22T21:19:09.491918+00:00
+Updated: 2026-11-23T01:58:59.261872+00:00
 
 Fixed policy: middle window; at most one paper decision per player and game. Results are split by model version.
 
