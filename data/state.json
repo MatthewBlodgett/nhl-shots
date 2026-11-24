@@ -164,6 +164,10 @@
       "at": "2026-10-28T21:54:39.076141+00:00",
       "status": "saved"
     },
+    "155fbdda10b6474a41649023baadfdf3:early": {
+      "at": "2026-11-24T18:20:34.635440+00:00",
+      "status": "reserved"
+    },
     "18d63193c9a696acd715bc27d9fb65f6:early": {
       "at": "2026-11-10T17:51:12.550553+00:00",
       "status": "saved"
@@ -2417,14 +2421,14 @@
     "155fbdda10b6474a41649023baadfdf3": {
       "event": {
         "away_team": "Vegas Golden Knights",
-        "commence_time": "2026-11-25T01:00:00Z",
+        "commence_time": "2026-11-25T01:10:00Z",
         "home_team": "Edmonton Oilers",
         "id": "155fbdda10b6474a41649023baadfdf3",
         "sport_key": "icehockey_nhl",
         "sport_title": "NHL"
       },
       "first_seen_at": "2026-11-24T06:26:37.929003+00:00",
-      "last_seen_at": "2026-11-24T06:26:37.929003+00:00",
+      "last_seen_at": "2026-11-24T18:20:34.538312+00:00",
       "sampling_policy": "hash_five_v2",
       "selected": true
     },
