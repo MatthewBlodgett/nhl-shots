@@ -1,20 +1,13 @@
 {
   "schema_version": 1,
-  "last_attempt_at": "2026-11-26T04:25:14.542952+00:00",
-  "last_success_at": "2026-11-26T04:25:14.542952+00:00",
+  "last_attempt_at": "2026-11-26T14:29:37.622251+00:00",
+  "last_success_at": "2026-11-26T14:29:37.622251+00:00",
   "consecutive_failures": 0,
   "quota": {
     "used": 162,
     "remaining": 338
   },
   "recent_runs": [
-    {
-      "at": "2026-10-11T19:45:11.562113+00:00",
-      "success": true,
-      "requests": 3,
-      "snapshots": 3,
-      "errors": []
-    },
     {
       "at": "2026-10-11T23:39:42.574624+00:00",
       "success": true,
@@ -1403,6 +1396,13 @@
     },
     {
       "at": "2026-11-26T04:25:14.542952+00:00",
+      "success": true,
+      "requests": 0,
+      "snapshots": 0,
+      "errors": []
+    },
+    {
+      "at": "2026-11-26T14:29:37.622251+00:00",
       "success": true,
       "requests": 0,
       "snapshots": 0,
