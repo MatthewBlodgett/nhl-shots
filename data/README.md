@@ -1,12 +1,12 @@
 # NHL odds research recorder
 
-Updated: 2026-11-27T05:22:27.405447+00:00
+Updated: 2026-11-27T15:36:47.381037+00:00
 
-Today's archive: **0 snapshots / 0 quotes**.
+Today's archive: **4 snapshots / 530 quotes**.
 
-Quotes with usable model history: 0. Blocked by history or team-change rules: 0.
+Quotes with usable model history: 510. Blocked by history or team-change rules: 20.
 
-API billing-cycle usage: 162 credits; 338 remaining.
+API billing-cycle usage: 166 credits; 334 remaining.
 
 Five selected games per Chicago calendar day; three collection windows; 450-credit cap.
 
@@ -18,4 +18,27 @@ Snapshots are in snapshots/YYYY-MM-DD/*.json.gz; official outcomes are in settle
 
 ## Latest paper candidates
 
-No qualifying paper candidates in today's recorded snapshots.
+| Player | Book | Side / line | Decimal price | Model probability | Estimated return |
+| --- | --- | --- | ---: | ---: | ---: |
+| Kasperi Kapanen | bovada | Under 1.5 | 2.100 | 59.3% | 24.5% |
+| Brandon Hagel | betmgm | Over 2.5 | 1.850 | 66.6% | 23.2% |
+| Martin Necas | betmgm | Over 2.5 | 2.500 | 49.1% | 22.8% |
+| Kasperi Kapanen | draftkings | Under 1.5 | 2.050 | 59.3% | 21.5% |
+| Martin Necas | betonlineag | Over 2.5 | 2.460 | 49.1% | 20.9% |
+| Martin Necas | bovada | Over 2.5 | 2.450 | 49.1% | 20.4% |
+| Colton Dach | betmgm | Under 1.5 | 1.910 | 63.0% | 20.3% |
+| Brandon Hagel | fanduel | Over 2.5 | 1.800 | 66.6% | 19.8% |
+| Darren Raddysh | fanduel | Over 2.5 | 2.080 | 56.9% | 18.3% |
+| Martin Necas | draftkings | Over 2.5 | 2.400 | 49.1% | 17.9% |
+| Brandon Hagel | betonlineag | Over 2.5 | 1.770 | 66.6% | 17.8% |
+| Brandon Hagel | bovada | Over 2.5 | 1.770 | 66.6% | 17.8% |
+| Morgan Geekie | fanduel | Under 1.5 | 2.540 | 46.2% | 17.2% |
+| David Pastrnak | draftkings | Under 3.5 | 2.100 | 55.7% | 17.1% |
+| David Pastrnak | bovada | Under 3.5 | 2.100 | 55.7% | 17.1% |
+| Kasperi Kapanen | betonlineag | Under 1.5 | 1.970 | 59.3% | 16.8% |
+| Darren Raddysh | bovada | Over 2.5 | 2.050 | 56.9% | 16.6% |
+| Martin Necas | fanduel | Over 1.5 | 1.600 | 72.8% | 16.5% |
+| Darren Raddysh | betonlineag | Over 2.5 | 2.030 | 56.9% | 15.5% |
+| David Pastrnak | fanduel | Under 3.5 | 2.060 | 55.7% | 14.8% |
+
+These are archived observations, not a statement that the price remains available.
