@@ -1,13 +1,13 @@
 {
-  "day": "2026-11-27",
+  "day": "2026-11-28",
   "errors": [],
-  "new_paper_candidates": 25,
+  "new_paper_candidates": 0,
   "quota": {
     "remaining": 332,
     "used": 168
   },
-  "quotes": 251,
-  "recorded_at": "2026-11-27T23:44:46.616634+00:00",
-  "requests": 2,
-  "snapshots": 2
+  "quotes": 0,
+  "recorded_at": "2026-11-28T07:48:54.943133+00:00",
+  "requests": 0,
+  "snapshots": 0
 }
